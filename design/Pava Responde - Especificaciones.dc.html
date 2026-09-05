@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Cairo:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#F7F5F2; }
+  * { box-sizing:border-box; }
+  a { color:#0A6E9E; }
+  a:hover { color:#075A82; }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline:3px solid #0A6E9E; outline-offset:2px; }
+</style>
+</helmet>
+
+<div style="font-family:Archivo, system-ui, sans-serif;color:#0E1116;padding:36px 20px 80px">
+ <div style="max-width:920px;margin:0 auto">
+
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <img src="logo-pava.png" alt="Partido Popular Democrático" style="width:44px;height:44px;object-fit:contain">
+    <div style="display:flex;align-items:baseline;gap:7px;line-height:1">
+      <span style="font:900 26px Cairo;text-transform:uppercase;color:#E41E26">Pava</span>
+      <span style="font:900 26px Cairo;font-style:italic;text-transform:uppercase;color:#0089BF;display:inline-block;transform:skewX(-9deg)">Responde</span>
+    </div>
+    <span style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Especificaciones</span>
+  </div>
+
+  <h1 style="margin:24px 0 0;font:900 clamp(30px,5vw,42px)/1.05 Cairo;text-transform:uppercase;max-width:24ch">Tokens, componentes y notas de implementación</h1>
+  <p style="margin:16px 0 0;max-width:66ch;font:400 18px/1.55 Archivo;color:#4E545C;text-wrap:pretty">Documento de traspaso. El prototipo navegable está en <a href="Pava Responde.dc.html">Pava Responde</a>, con los siete estados, la versión de escritorio y /admin. Aquí están los valores exactos, los nombres para Tailwind y las decisiones que conviene no cambiar sin pensarlo dos veces.</p>
+
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px">
+    <a href="Pava Responde.dc.html" style="min-height:48px;display:flex;align-items:center;padding:0 22px;background:#E41E26;color:#fff;font:700 16px Cairo;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:12px">Abrir el prototipo</a>
+    <a href="reglamento.pdf" target="_blank" rel="noopener" style="min-height:48px;display:flex;align-items:center;padding:0 24px;background:#fff;border:2px solid #0A6E9E;color:#0A6E9E;font:700 15px Cairo;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transform:skewX(-10deg)"><span style="display:inline-block;transform:skewX(10deg)">Reglamento (PDF)</span></a>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">01 · Color</h2>
+  <p style="margin:12px 0 22px;max-width:66ch;font:400 17px/1.55 Archivo;color:#4E545C;text-wrap:pretty">Contraste medido sobre blanco salvo donde se indique. El rojo de marca pasa AA sobre blanco (4.7:1) pero no sobre el fondo cálido: para texto rojo pequeño usa <strong>red-700</strong>. El cyan de marca no sirve como texto en ningún tamaño pequeño; para el wordmark se usa <strong>cyan-700</strong>.</p>
+
+  <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);overflow:hidden">
+    <div style="display:grid;grid-template-columns:52px 1fr 1fr 1.5fr;gap:14px;padding:12px 18px;border-bottom:1px solid #E6E2DC;font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">
+      <div></div><div>Token</div><div>Hex</div><div>Uso</div>
+    </div>
+    <sc-for list="{{ colors }}" as="c" hint-placeholder-count="14">
+      <div style="display:grid;grid-template-columns:52px 1fr 1fr 1.5fr;gap:14px;padding:12px 18px;border-bottom:1px solid #F1EEE9;align-items:center;font:400 15px/1.4 Archivo">
+        <div style="height:32px;border-radius:8px;background:{{ c.swatch }};border:1px solid #E6E2DC"></div>
+        <div style="font-weight:600">{{ c.name }}</div>
+        <div style="color:#4E545C;font-variant-numeric:tabular-nums">{{ c.hex }}</div>
+        <div style="color:#4E545C">{{ c.use }}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">02 · Tipografía</h2>
+  <p style="margin:12px 0 22px;max-width:66ch;font:400 17px/1.55 Archivo;color:#4E545C;text-wrap:pretty">Cairo 900 y 700 para display y botones, siempre en mayúsculas. Archivo para todo lo que se lee de corrido. El único texto de 13px es la línea legal del footer.</p>
+
+  <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);overflow:hidden">
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="display:flex;align-items:baseline;gap:6px;line-height:1"><span style="font:900 26px Cairo;text-transform:uppercase;color:#E41E26">Pava</span><span style="font:900 26px Cairo;font-style:italic;text-transform:uppercase;color:#0089BF;display:inline-block;transform:skewX(-9deg)">Responde</span></div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">display</strong> · Cairo 900 · 26px móvil / 28px escritorio · uppercase · lh 1 · segunda palabra en cyan-700 con skewX(−9°)</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:700 22px Cairo;text-transform:uppercase">Sin conexión</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">title</strong> · Cairo 700 · 22px · uppercase · títulos de tarjeta de estado</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:700 21px Cairo;letter-spacing:.03em;text-transform:uppercase">Preguntar</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">button</strong> · Cairo 700 · 21px primario / 19px en tarjetas · tracking 0.03em</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:700 15px Cairo;letter-spacing:.08em;text-transform:uppercase">Exportar CSV</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">button-sm</strong> · Cairo 700 · 15px · tracking 0.08em · botón sesgado</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:400 19px/1.5 Archivo">La Juventud Popular Nacional está compuesta por todos los populares con menos de treinta y cinco (35) años.</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">answer</strong> · Archivo 400 · 19px/1.5 móvil · 20px/1.55 escritorio · el tamaño más importante de la app</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:400 18px/1.35 Archivo;color:#5A6068">Escribe tu pregunta…</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">body</strong> · Archivo 400 · 18px/1.35 · campo de texto y párrafos de apoyo</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:500 17px/1.35 Archivo">¿Quién puede votar el 11 de octubre?</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">chip</strong> · Archivo 500 · 17px/1.35 · pregunta frecuente</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:500 16px/1.4 Archivo;color:#3A3F47">Tu pregunta, repetida</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">meta</strong> · Archivo 500 · 16px/1.4 · burbuja de eco y celdas de la tabla</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:600 15px Archivo;color:#0A6E9E">Ver el Reglamento (PDF)</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">link</strong> · Archivo 600 · 15px · dentro de un área táctil de 44px de alto como mínimo</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:baseline">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Tu pregunta</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">micro-label</strong> · Archivo 600 · 12px · tracking 0.15em · uppercase · ink-soft</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:20px;padding:18px;align-items:baseline">
+      <div style="font:400 13px/1.4 Archivo;color:#4E545C">Las respuestas se generan con inteligencia artificial y pueden contener errores.</div>
+      <div style="font:400 14px/1.5 Archivo;color:#4E545C"><strong style="color:#0E1116">legal</strong> · Archivo 400 · 13px/1.4 · divulgación exigida por la Ley 105-2026</div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">03 · Espacio, radios, sombras</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:22px">
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Escala de espacio</div>
+      <p style="margin:10px 0 14px;font:400 15px/1.5 Archivo;color:#4E545C">Base 4px. En la app solo se usan estos valores.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;font:400 15px Archivo">
+        <sc-for list="{{ space }}" as="s" hint-placeholder-count="7">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:64px;color:#0E1116;font-weight:600">{{ s.name }}</div>
+            <div style="height:10px;border-radius:3px;background:#E41E26;width:{{ s.w }}"></div>
+            <div style="color:#4E545C">{{ s.px }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <p style="margin:14px 0 0;font:400 14px/1.5 Archivo;color:#4E545C">Margen lateral móvil 16px. Separación entre bloques 22 a 28px. Padding de tarjeta 16px móvil / 24px escritorio.</p>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Radios</div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:14px">
+        <div style="text-align:center"><div style="width:64px;height:52px;background:#F1EEE9;border-radius:10px"></div><div style="font:400 13px Archivo;color:#4E545C;margin-top:6px">10px · campo /admin</div></div>
+        <div style="text-align:center"><div style="width:64px;height:52px;background:#F1EEE9;border-radius:12px"></div><div style="font:400 13px Archivo;color:#4E545C;margin-top:6px">12px · botón, eco</div></div>
+        <div style="text-align:center"><div style="width:64px;height:52px;background:#F1EEE9;border-radius:14px"></div><div style="font:400 13px Archivo;color:#4E545C;margin-top:6px">14px · input, chip</div></div>
+        <div style="text-align:center"><div style="width:64px;height:52px;background:#F1EEE9;border-radius:16px"></div><div style="font:400 13px Archivo;color:#4E545C;margin-top:6px">16px · tarjeta</div></div>
+        <div style="text-align:center"><div style="width:64px;height:52px;background:#F1EEE9;border-radius:999px"></div><div style="font:400 13px Archivo;color:#4E545C;margin-top:6px">999px · chip de artículo, mic</div></div>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Sombras</div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px">
+        <div style="background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 2px rgba(14,17,22,.05);font:400 14px/1.4 Archivo"><strong>shadow-flat</strong><div style="color:#4E545C">0 1px 2px rgba(14,17,22,.05) · chips, tabla</div></div>
+        <div style="background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06);font:400 14px/1.4 Archivo"><strong>shadow-card</strong><div style="color:#4E545C">+ 0 8px 24px rgba(14,17,22,.06) · tarjeta de respuesta</div></div>
+        <div style="background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 3px 10px rgba(196,22,28,.32);font:400 14px/1.4 Archivo"><strong>shadow-mic</strong><div style="color:#4E545C">0 3px 10px rgba(196,22,28,.32) · botón de micrófono</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">04 · Componentes</h2>
+  <p style="margin:12px 0 24px;max-width:66ch;font:400 17px/1.55 Archivo;color:#4E545C;text-wrap:pretty">Siete piezas cubren toda la app. Cada muestra de abajo está a tamaño real.</p>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Campo de pregunta + micrófono</div>
+        <div style="display:flex;gap:10px;align-items:flex-start;margin-top:14px">
+          <textarea aria-label="Muestra del campo" placeholder="Escribe tu pregunta…" style="flex:1;min-width:0;height:72px;border:1.5px solid #D8D2C9;border-radius:14px;background:#fff;padding:14px 16px;font:400 18px/1.35 Archivo;color:#0E1116;resize:none"></textarea>
+          <div style="width:72px;height:72px;flex:none;border-radius:50%;background:#E41E26;box-shadow:0 3px 10px rgba(196,22,28,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"></path><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"></path><path d="M12 17.7V21"></path></svg>
+            <span style="font:700 9px Cairo;letter-spacing:.1em;color:#fff;text-transform:uppercase">Hablar</span>
+          </div>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0">Textarea de 72px de alto (dos líneas visibles, sin auto-crecer más allá de cuatro), borde <strong>line-strong</strong> 1.5px, radio 14px, texto 18px. El texto nunca se corta en horizontal: la pregunta se envuelve.</p>
+        <p style="margin:10px 0 0">Micrófono: círculo de 72px, rojo lleno, sombra <strong>shadow-mic</strong>, con la palabra HABLAR bajo el icono. Es el objeto más grande de la pantalla después del botón rojo, a propósito. Lleva <code>aria-label="Hablar tu pregunta"</code>.</p>
+        <p style="margin:10px 0 0">Si el navegador no soporta dictado, el botón no desaparece: abre el teclado y muestra “Este teléfono no puede escuchar. Escribe tu pregunta.”</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Botones</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:14px">
+          <div style="width:100%;min-height:56px;border-radius:12px;background:#E41E26;color:#fff;font:700 21px Cairo;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px">Preguntar<span style="font:400 20px Archivo">→</span></div>
+          <div style="align-self:flex-start;min-height:48px;display:flex;align-items:center;padding:0 24px;background:#fff;border:2px solid #0A6E9E;color:#0A6E9E;font:700 15px Cairo;letter-spacing:.08em;text-transform:uppercase;transform:skewX(-10deg)"><span style="display:inline-block;transform:skewX(10deg)">Exportar CSV</span></div>
+          <div style="width:100%;min-height:56px;border:1.5px solid #C9C3BA;border-radius:12px;background:#fff;color:#0E1116;font:500 17px Archivo;display:flex;align-items:center;justify-content:center">Llamar al (787) 721-2000</div>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0"><strong>Primario:</strong> ancho completo, 56px de alto, rojo lleno, Cairo 700 en mayúsculas. Un solo primario por pantalla.</p>
+        <p style="margin:10px 0 0"><strong>Secundario sesgado:</strong> <code>transform: skewX(-10deg)</code> en el botón y <code>skewX(10deg)</code> en el texto para que la letra quede recta. Solo para acciones secundarias de escritorio y /admin, nunca para acciones críticas en móvil: el paralelogramo recorta el área táctil en las esquinas.</p>
+        <p style="margin:10px 0 0"><strong>Terciario:</strong> borde gris, fondo blanco, Archivo 500. Para llamar por teléfono dentro de una tarjeta de estado.</p>
+        <p style="margin:10px 0 0">Estado presionado: 96% de opacidad y desplazamiento de 1px. Foco: contorno azul de 3px con 2px de separación.</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Chip de pregunta y chip de artículo</div>
+        <div style="width:100%;min-height:60px;background:#fff;border:1px solid #E4DFD7;border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 1px 2px rgba(14,17,22,.05);font:500 17px/1.35 Archivo;margin-top:14px">
+          <span>¿Quién puede votar el 11 de octubre?</span><span style="color:#0A6E9E;font:600 20px Archivo">›</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+          <span style="display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 16px;border:1.5px solid #A9CFE3;border-radius:999px;background:#F2F8FC;color:#0A6E9E;font:600 15px Archivo">Artículo 8<span style="font:400 13px Archivo">PDF ↗</span></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 16px;border:1.5px solid #A9CFE3;border-radius:999px;background:#F2F8FC;color:#0A6E9E;font:600 15px Archivo">Artículo 9<span style="font:400 13px Archivo">PDF ↗</span></span>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0"><strong>Chip de pregunta:</strong> ancho completo en móvil, 60px mínimo, texto a la izquierda y chevrón azul a la derecha. Tres en la pantalla vacía; desaparecen cuando hay respuesta.</p>
+        <p style="margin:10px 0 0"><strong>Chip de artículo:</strong> píldora de 48px, azul sobre blue-50, con “PDF ↗” para que se entienda que abre otra cosa. Enlaza a <code>reglamento.pdf#page=N</code>; el mapa de artículo a página lo genera el backend al indexar el PDF. Nunca más de cuatro por respuesta.</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Tarjeta de respuesta</div>
+        <div style="margin-top:14px;background:#fff;border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+          <div style="background:#F1EEE9;border-radius:12px;padding:12px 14px;font:500 16px/1.4 Archivo;color:#3A3F47">¿Cuál es la edad máxima para la Juventud Popular?</div>
+          <p style="margin:16px 0 0;font:400 19px/1.5 Archivo;text-wrap:pretty">La Juventud Popular Nacional está compuesta por todos los populares con menos de treinta y cinco (35) años.</p>
+          <div style="margin-top:18px;padding-top:14px;border-top:1px solid #EDE9E3;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+            <span style="font:500 16px Archivo;color:#3A3F47">¿Te ayudó?</span>
+            <span style="min-width:56px;min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px">👍</span>
+            <span style="min-width:56px;min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px">👎</span>
+          </div>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0">Orden fijo: eco de la pregunta, respuesta, artículos, “¿Te ayudó?”. El eco va primero para que quien llama por teléfono pueda leer en voz alta lo que el sistema entendió.</p>
+        <p style="margin:10px 0 0">Párrafos de dos a cuatro líneas, máximo tres párrafos. Si la respuesta necesita más, el backend la recorta y ofrece el artículo.</p>
+        <p style="margin:10px 0 0">Pulgares: 56 × 48px, borde gris; al elegir uno se pinta blue-50 con borde azul y aparece “Gracias por decirnos.” No se puede deshacer y no se pide más.</p>
+        <p style="margin:10px 0 0">La respuesta nueva reemplaza la anterior. No hay historial de conversación: una pregunta, una respuesta.</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Footer permanente</div>
+        <div style="margin-top:14px;border:1px solid #E6E2DC;border-radius:12px;background:#fff;padding:10px 16px 12px;max-width:358px">
+          <p style="margin:0;font:400 13px/1.4 Archivo;color:#4E545C;text-wrap:pretty">Las respuestas se generan con inteligencia artificial y pueden contener errores. Verifica con el Reglamento oficial.</p>
+          <div style="min-height:44px;display:flex;align-items:center;font:600 15px Archivo;color:#0A6E9E">Ver el Reglamento (PDF)</div>
+          <div style="min-height:44px;display:flex;align-items:center;gap:8px;font:600 15px Archivo;color:#0A6E9E;border-top:1px solid #F1EEE9">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A6E9E"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20A15.4 15.4 0 0 1 4 5.6A2.6 2.6 0 0 1 6.6 3Z"></path></svg>
+            Hablar con una persona: (787) 721-2000
+          </div>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0">Fijo al fondo del viewport en móvil (<code>position: sticky</code> dentro de un contenedor de altura completa; el contenido hace scroll por encima). Nunca se esconde, ni al escribir, ni al escuchar, ni al cargar.</p>
+        <p style="margin:10px 0 0">Alto total 138 a 150px. La línea legal es el único 13px de la app y cumple la Ley 105-2026; es también el único lugar donde se menciona la inteligencia artificial.</p>
+        <p style="margin:10px 0 0">El teléfono es <code>tel:+17877212000</code>, con el número escrito completo y visible. En escritorio los dos enlaces van en una sola fila.</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px;display:grid;grid-template-columns:minmax(240px,1fr) minmax(240px,1.1fr);gap:24px;align-items:start">
+      <div>
+        <div style="font:700 18px Cairo;text-transform:uppercase">Tabla de /admin</div>
+        <div style="margin-top:14px;border:1px solid #E6E2DC;border-radius:12px;overflow:hidden">
+          <div style="display:grid;grid-template-columns:1fr 1.4fr .8fr;gap:10px;padding:10px 14px;border-bottom:1px solid #E6E2DC;font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068"><div>Hora</div><div>Pregunta</div><div>Sin resp.</div></div>
+          <div style="display:grid;grid-template-columns:1fr 1.4fr .8fr;gap:10px;padding:12px 14px;border-bottom:1px solid #F1EEE9;font:400 15px/1.35 Archivo;align-items:center"><div style="color:#4E545C">9:14 a.m.</div><div>¿Quién puede votar?</div><div style="color:#5A6068">No</div></div>
+          <div style="display:grid;grid-template-columns:1fr 1.4fr .8fr;gap:10px;padding:12px 14px;font:400 15px/1.35 Archivo;align-items:center"><div style="color:#4E545C">9:22 a.m.</div><div>¿Hay estacionamiento?</div><div><span style="display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:0 10px;border-radius:999px;background:#FDECEC;border:1.5px solid #E9A7AA;color:#A5121A;font:600 14px Archivo">⚠ Sí</span></div></div>
+        </div>
+      </div>
+      <div style="font:400 15px/1.6 Archivo;color:#4E545C">
+        <p style="margin:0">Cuatro columnas: hora, pregunta, artículos citados, sin respuesta. Filas de 48px, divisor <strong>#F1EEE9</strong>, hora en cifras tabulares. Sin ordenamiento ni paginación en la primera versión: el rango de fechas ya acota.</p>
+        <p style="margin:10px 0 0">La marca “sin respuesta” usa píldora + símbolo ⚠ + la palabra “Sí”. No depende del color.</p>
+        <p style="margin:10px 0 0">Exportar CSV descarga lo que está filtrado en pantalla, en UTF-8 con BOM para que Excel abra bien los acentos. Columnas: <code>hora, pregunta, articulos_citados, sin_respuesta</code>.</p>
+        <p style="margin:10px 0 0">La tabla nunca guarda datos personales. Solo el texto de la pregunta, la hora y los artículos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">05 · El micrófono, paso a paso</h2>
+  <p style="margin:12px 0 24px;max-width:66ch;font:400 17px/1.55 Archivo;color:#4E545C;text-wrap:pretty">Es la parte más delicada de la app: mucha gente va a hablar en vez de escribir, y el dictado del navegador falla de maneras raras en teléfonos viejos. Cada paso tiene salida.</p>
+
+  <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);overflow:hidden">
+    <sc-for list="{{ mic }}" as="m" hint-placeholder-count="7">
+      <div style="display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px;border-bottom:1px solid #F1EEE9;align-items:start">
+        <div style="width:36px;height:36px;border-radius:50%;background:#F1EEE9;display:flex;align-items:center;justify-content:center;font:700 16px Cairo;color:#C4161C">{{ m.n }}</div>
+        <div>
+          <div style="font:600 17px/1.35 Archivo;color:#0E1116">{{ m.title }}</div>
+          <p style="margin:6px 0 0;font:400 15px/1.6 Archivo;color:#4E545C;text-wrap:pretty">{{ m.body }}</p>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">06 · Accesibilidad y copy</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:22px">
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Reglas que no se negocian</div>
+      <ul style="margin:12px 0 0;padding-left:20px;font:400 16px/1.65 Archivo;color:#0E1116">
+        <li>Cuerpo 18px, respuesta 19 a 20px, interlínea 1.5.</li>
+        <li>Toda área táctil de 48px de alto o más; enlaces del footer, 44px.</li>
+        <li>Contraste AA en todo, incluido el gris sobre el fondo cálido.</li>
+        <li>Foco visible: contorno azul de 3px, separado 2px. Nunca <code>outline:none</code>.</li>
+        <li>Nada depende del color: los estados llevan icono o palabra.</li>
+        <li>Funciona con una mano en 390px y aguanta zoom de texto al 200%.</li>
+        <li>Cargando y respuesta se anuncian con <code>aria-live="polite"</code>.</li>
+        <li>Sin animación decorativa; el pulso del micrófono se detiene con <code>prefers-reduced-motion</code>.</li>
+      </ul>
+    </div>
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Voz del producto</div>
+      <ul style="margin:12px 0 0;padding-left:20px;font:400 16px/1.65 Archivo;color:#0E1116">
+        <li>Todo en español, tratando de “tú”.</li>
+        <li>Frases cortas, tono tranquilo, sin signos de exclamación.</li>
+        <li>No se dice “inteligencia artificial” en ninguna parte salvo la línea legal del footer.</li>
+        <li>No se pide disculpas ni se culpa al usuario: “No pudimos buscar tu pregunta”, no “Error 500”.</li>
+        <li>Cuando no hay respuesta, la salida siempre es el teléfono del partido.</li>
+        <li>Las citas del Reglamento se parafrasean en lenguaje llano y se enlaza el artículo para el texto exacto.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#E6E2DC;margin:44px 0"></div>
+
+  <h2 style="margin:0;font:700 15px Cairo;letter-spacing:.16em;text-transform:uppercase;color:#C4161C">07 · Traspaso técnico</h2>
+  <p style="margin:12px 0 22px;max-width:66ch;font:400 17px/1.55 Archivo;color:#4E545C;text-wrap:pretty">La app es una sola pantalla pública y una interna. Cualquier stack sirve; lo que importa es que la primera pantalla llegue en poco peso y que la respuesta se sienta inmediata en señal débil.</p>
+
+  <div style="background:#15181D;border-radius:16px;padding:22px;overflow-x:auto">
+    <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#8E949E;margin-bottom:14px">tailwind.config · theme.extend</div>
+    <pre style="margin:0;font:400 13px/1.7 ui-monospace, SFMono-Regular, Menlo, monospace;color:#E7EAEE;white-space:pre">colors: {
+  warm:      '#F7F5F2',   // fondo
+  surface:   '#FFFFFF',
+  ink:       '#0E1116',
+  'ink-muted':'#4E545C',
+  'ink-soft': '#5A6068',
+  red:       '#E41E26',   // primario
+  'red-700': '#C4161C',   // texto rojo pequeño
+  'red-900': '#A5121A',
+  'red-50':  '#FDECEC',
+  'red-200': '#E9A7AA',
+  blue:      '#0A6E9E',   // enlaces, foco
+  'blue-50': '#F2F8FC',
+  'blue-200':'#A9CFE3',
+  cyan:      '#00AEEF',   // solo rellenos
+  'cyan-700':'#0089BF',   // wordmark
+  echo:      '#F1EEE9',
+  line:      '#E6E2DC',
+  'line-strong':'#D8D2C9',
+},
+fontFamily: {
+  display: ['Cairo', 'system-ui', 'sans-serif'],
+  sans:    ['Archivo', 'system-ui', 'sans-serif'],
+},
+fontSize: {
+  legal:  ['13px', { lineHeight: '1.4' }],
+  meta:   ['16px', { lineHeight: '1.4' }],
+  chip:   ['17px', { lineHeight: '1.35' }],
+  body:   ['18px', { lineHeight: '1.35' }],
+  answer: ['19px', { lineHeight: '1.5' }],
+  'answer-lg': ['20px', { lineHeight: '1.55' }],
+},
+borderRadius: { field: '14px', card: '16px', btn: '12px' },
+boxShadow: {
+  flat: '0 1px 2px rgba(14,17,22,.05)',
+  card: '0 1px 2px rgba(14,17,22,.05), 0 8px 24px rgba(14,17,22,.06)',
+  mic:  '0 3px 10px rgba(196,22,28,.32)',
+},
+minHeight: { tap: '48px', btn: '56px' },</pre>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px">
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Rendimiento en señal débil</div>
+      <ul style="margin:12px 0 0;padding-left:20px;font:400 16px/1.65 Archivo;color:#0E1116">
+        <li>La pantalla vacía debe pintar sin esperar red: HTML y CSS críticos en el documento.</li>
+        <li>Dos fuentes, cuatro pesos, <code>font-display: swap</code>, precarga de Archivo 400 y Cairo 700.</li>
+        <li>El esqueleto de carga aparece antes de los 100 ms de haber tocado Preguntar, aunque la respuesta tarde.</li>
+        <li>Si la respuesta pasa de 6 segundos, se cae al estado de error con reintento.</li>
+        <li>El PDF del Reglamento se abre en pestaña nueva; no se precarga (son varios MB).</li>
+        <li>Sin analítica de terceros en la ruta pública.</li>
+      </ul>
+    </div>
+    <div style="background:#fff;border-radius:16px;box-shadow:0 1px 2px rgba(14,17,22,.05);padding:22px">
+      <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Rutas, datos y logo</div>
+      <ul style="margin:12px 0 0;padding-left:20px;font:400 16px/1.65 Archivo;color:#0E1116">
+        <li><code>/</code> pública, sin sesión ni cuenta. <code>/admin</code> tras contraseña, sin índice para buscadores.</li>
+        <li>Se guarda: pregunta, hora, artículos citados, si hubo respuesta, y el pulgar. Nunca IP, nombre ni teléfono.</li>
+        <li>Límite por dispositivo, no por persona: al pasarlo, el estado 7, siempre con el teléfono a la vista.</li>
+        <li>La marca de la pava (<code>logo-pava.png</code>, 590 × 590, fondo transparente) se muestra a 44px. Recortada del logo oficial que enviaste.</li>
+        <li>El Artículo 3 reserva la insignia a la Junta de Gobierno: conviene dejar por escrito la autorización de uso antes de publicar.</li>
+        <li>El wordmark “PAVA RESPONDE” es texto, no imagen: escala y se lee con lector de pantalla.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin:40px 0 0;max-width:66ch;font:400 15px/1.6 Archivo;color:#5A6068;text-wrap:pretty">Las respuestas del prototipo están tomadas del Reglamento que enviaste (Artículos 5, 7, 8, 9, 10, 11, 20, 23 y 41). El contenido definitivo lo debe revisar el Secretario General antes de publicar.</p>
+
+ </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  colors = [
+    ['bg-warm', '#F7F5F2', 'Fondo de toda la app'],
+    ['surface', '#FFFFFF', 'Tarjetas, footer, tabla'],
+    ['ink', '#0E1116', 'Texto principal · 17.5:1'],
+    ['ink-muted', '#4E545C', 'Texto secundario · 6.9:1'],
+    ['ink-soft', '#5A6068', 'Microetiquetas · 5.7:1'],
+    ['red', '#E41E26', 'Botón primario y títulos ≥18px · blanco encima 4.7:1'],
+    ['red-700', '#C4161C', 'Texto rojo pequeño, etiqueta de escucha · 5.5:1'],
+    ['red-900', '#A5121A', 'Texto de la píldora sin respuesta · 6.8:1'],
+    ['blue', '#0A6E9E', 'Enlaces, chips de artículo, contorno de foco · 5.2:1'],
+    ['cyan', '#00AEEF', 'Rellenos y filetes. Nunca texto: 2.6:1'],
+    ['cyan-700', '#0089BF', 'Segunda palabra del wordmark · 3.6:1, solo texto grande'],
+    ['blue-50 / blue-200', '#F2F8FC / #A9CFE3', 'Fondo y borde del chip de artículo'],
+    ['red-50 / red-200', '#FDECEC / #E9A7AA', 'Píldora de alerta en /admin'],
+    ['echo', '#F1EEE9', 'Burbuja con la pregunta repetida'],
+    ['line / line-strong', '#E6E2DC / #D8D2C9', 'Divisores · borde de campos']
+  ];
+
+  space = [
+    ['space-1', 4], ['space-2', 8], ['space-3', 12], ['space-4', 16],
+    ['space-5', 20], ['space-6', 24], ['space-7', 28]
+  ];
+
+  mic = [
+    ['Reposo', 'El botón rojo de 72px está siempre a la derecha del campo, con la palabra HABLAR debajo del icono. No se esconde nunca, ni cuando ya hay texto escrito.'],
+    ['Permiso', 'Al primer toque el navegador pide el micrófono. Antes de que salga el diálogo, la app muestra una línea: “Tu teléfono te va a preguntar si nos dejas escuchar. Toca Permitir.” Si lo deniega, se explica cómo activarlo y el teclado sigue disponible.'],
+    ['Escuchando', 'El campo se reemplaza por el panel de escucha: círculo rojo de 76px con dos anillos que pulsan cada 1.6 s, la etiqueta TE ESTAMOS ESCUCHANDO en red-700, y el transcrito apareciendo palabra por palabra a 19px. Dos salidas: LISTO, ancho completo, y una X de 56px para cancelar.'],
+    ['Silencio', 'A los 6 segundos sin voz: “No te escuchamos. Acércate el teléfono y habla otra vez.” El panel sigue abierto. A los 12 segundos se cierra solo y vuelve el campo con lo que se haya transcrito.'],
+    ['Listo', 'LISTO envía lo transcrito tal como está, sin pantalla de confirmación. Un paso menos importa más que la corrección perfecta; si entendió mal, la pregunta repetida en la respuesta lo delata y se puede corregir en el campo.'],
+    ['Cancelar', 'La X detiene el micrófono y borra el transcrito. Vuelve al estado vacío. No hay diálogo de “¿estás seguro?”.'],
+    ['Sin soporte', 'Si el navegador no tiene dictado, o el permiso está bloqueado, el botón enfoca el campo y abre el teclado con el aviso “Este teléfono no puede escuchar. Escribe tu pregunta.” El botón nunca desaparece: su ausencia se leería como una app rota.']
+  ];
+
+  renderVals() {
+    return {
+      colors: this.colors.map(c => ({ name: c[0], hex: c[1], use: c[2], swatch: c[1].split(' / ')[0] })),
+      space: this.space.map(s => ({ name: s[0], px: s[1] + 'px', w: (s[1] * 2.2) + 'px' })),
+      mic: this.mic.map((m, i) => ({ n: i + 1, title: m[0], body: m[1] }))
+    };
+  }
+}
+</script>
+</body>
+</html>

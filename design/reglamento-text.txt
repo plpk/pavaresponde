@@ -1,0 +1,1437 @@
+
+
+-- 1 of 44 --
+
+PREÁMBULO ......................................................................................................................................1
+CAPÍTULO I FUNDAMENTOS ..............................................................................................................2
+ARTÍCULO 1. NOMBRE OFICIAL ........................................................................................................ 2
+ARTÍCULO 2. PROPÓSITO ................................................................................................................. 2
+ARTÍCULO 3. INSIGNIA ...................................................................................................................... 2
+ARTÍCULO 4. DEBERES DE LOS FUNCIONARIOS DEL PARTIDO ......................................................... 2
+CAPÍTULO II DEFINICIONES ................................................................................................................3
+ARTÍCULO 5. DEFINICIONES ............................................................................................................. 3
+CAPÍTULO III ESTRUCTURA DE GOBIERNO ..........................................................................................6
+ASAMBLEA GENERAL......................................................................................................................6
+ARTÍCULO 6. AUTORIDAD................................................................................................................. 6
+ARTÍCULO 7. FUNCIONES ................................................................................................................. 6
+ARTÍCULO 8. COMPOSICIÓN ............................................................................................................ 6
+ARTÍCULO 9. ELECCIÓN DE DELEGADOS PROPORCIONALES ........................................................... 7
+ARTÍCULO 10. SESIÓN ORDINARIA ..................................................................................................... 7
+ARTÍCULO 11. SESIÓN EXTRAORDINARIA .......................................................................................... 7
+CONSEJO DE GOBIERNO .................................................................................................................7
+ARTÍCULO 12. AUTORIDAD ................................................................................................................ 7
+ARTÍCULO 13. FUNCIONES ................................................................................................................. 7
+ARTÍCULO 14. COMPOSICIÓN ............................................................................................................ 8
+ARTÍCULO 15. REUNIÓN ORDINARIA ................................................................................................. 9
+ARTÍCULO 16. REUNIÓN EXTRAORDINARIA....................................................................................... 9
+JUNTA DE GOBIERNO .....................................................................................................................9
+ARTÍCULO 17. AUTORIDAD ................................................................................................................ 9
+ARTÍCULO 18. FUNCIONES ................................................................................................................. 9
+ARTÍCULO 19. COMPOSICIÓN ..........................................................................................................10
+ARTÍCULO 20. ELECCIONES ORDINARIAS .........................................................................................11
+ARTÍCULO 21. ELECCIÓN EXTRAORDINARIA DEL PRESIDENTE ........................................................11
+ARTÍCULO 22. VICEPRESIDENCIAS ...................................................................................................11
+ARTÍCULO 23. MIEMBROS POR ACUMULACIÓN .............................................................................11
+ARTÍCULO 24. REUNIÓN ORDINARIA ...............................................................................................12
+ARTÍCULO 25. REUNIÓN EXTRAORDINARIA.....................................................................................12
+ARTÍCULO 26. REUNIONES VIRTUALES Y VOTACIÓN ELECTRÓNICA ...............................................12
+ARTÍCULO 27. ASISTENCIA DE LOS MIEMBROS ...............................................................................12
+CAPÍTULO IV ESTRUCTURA DE APOYO .............................................................................................. 13
+CONFERENCIA LEGISLATIVA.......................................................................................................... 13
+ARTÍCULO 28. COMPOSICIÓN ..........................................................................................................13
+
+-- 2 of 44 --
+
+ii
+ARTÍCULO 29. FUNCIONES ...............................................................................................................13
+ARTÍCULO 30. REUNIONES ...............................................................................................................13
+ARTÍCULO 31. ACUERDOS ................................................................................................................13
+ARTÍCULO 32. REGLAMENTO DE LA CONFERENCIA LEGISLATIVA ...................................................14
+ARTÍCULO 33. REGLAMENTO DE CAUCUS .......................................................................................14
+ASOCIACIÓN DE ALCALDES POPULARES ........................................................................................ 14
+ARTÍCULO 34. PROPÓSITO ...............................................................................................................14
+ARTÍCULO 35. COMPOSICIÓN ..........................................................................................................14
+ASOCIACIÓN DE LEGISLADORES MUNICIPALES POPULARES ........................................................... 14
+ARTÍCULO 36. PROPÓSITO ...............................................................................................................14
+ARTÍCULO 37. COMPOSICIÓN ..........................................................................................................14
+ARTÍCULO 38. AUTONOMÍA .............................................................................................................15
+ARTÍCULO 39. ELECCIONES ..............................................................................................................15
+JUVENTUD POPULAR NACIONAL...................................................................................................15
+ARTÍCULO 40. PROPÓSITO ...............................................................................................................15
+ARTÍCULO 41. COMPOSICIÓN ..........................................................................................................15
+ARTÍCULO 42. AUTONOMÍA .............................................................................................................15
+ARTÍCULO 43. FUNCIONES ...............................................................................................................15
+ARTÍCULO 44. ELECCIONES ..............................................................................................................16
+ASOCIACIÓN DE SERVIDORES PÚBLICOS POPULARES ....................................................................16
+ARTÍCULO 45. PROPÓSITO ...............................................................................................................16
+ARTÍCULO 46. COMPOSICIÓN ..........................................................................................................16
+ARTÍCULO 47. AUTONOMÍA .............................................................................................................16
+ARTÍCULO 48. FUNCIONES ...............................................................................................................16
+ARTÍCULO 49. ELECCIONES ..............................................................................................................17
+ASOCIACIÓN DE MUJERES POPULARES ......................................................................................... 17
+ARTÍCULO 50. PROPÓSITO ...............................................................................................................17
+ARTÍCULO 51. COMPOSICIÓN ..........................................................................................................17
+ARTÍCULO 52. AUTONOMÍA .............................................................................................................17
+ARTÍCULO 53. FUNCIONES ...............................................................................................................17
+ARTÍCULO 54. ELECCIONES ..............................................................................................................18
+ORGANIZACIONES SECTORIALES ...................................................................................................18
+ARTÍCULO 55. PROPÓSITO ...............................................................................................................18
+ARTÍCULO 56. FUNCIONES ...............................................................................................................18
+ARTÍCULO 57. COMPOSICIÓN ..........................................................................................................18
+ARTÍCULO 58. AUTONOMÍA .............................................................................................................18
+ARTÍCULO 59. RECONOCIMIENTO OFICIAL ......................................................................................19
+ARTÍCULO 60. ELECCIÓN ..................................................................................................................19
+
+-- 3 of 44 --
+
+iii
+ARTÍCULO 61. REVOCACIÓN, RECHAZO, O SUSTITUCIÓN ...............................................................19
+RESTRICCIONES A LAS ESTRUCTURAS DE APOYO ........................................................................... 19
+ARTÍCULO 62. RESTRICCIÓN ............................................................................................................19
+CAPÍTULO V ESTRUCTURA DE EJECUCIÓN ......................................................................................... 21
+COMITÉ CENTRAL ......................................................................................................................... 21
+ARTÍCULO 63. COMPOSICIÓN ..........................................................................................................21
+ARTÍCULO 64. FUNCIONES DEL PRESIDENTE DEL PARTIDO.............................................................21
+ARTÍCULO 65. SECRETARIO GENERAL ..............................................................................................22
+ARTÍCULO 66. SUBSECRETARIO GENERAL .......................................................................................22
+ARTÍCULO 67. TESORERO .................................................................................................................23
+ARTÍCULO 68. COMISIONADO ELECTORAL Y ALTERNO ...................................................................23
+ARTÍCULO 69. DELEGADO PRESIDENCIAL ........................................................................................23
+COMITÉS MUNICIPALES................................................................................................................ 24
+ARTÍCULO 70. COMITÉ MUNICIPAL .................................................................................................24
+ARTÍCULO 71. COMPOSICIÓN ..........................................................................................................24
+ARTÍCULO 72. FUNCIONES DEL COMITÉ MUNICIPAL ......................................................................25
+ARTÍCULO 73. FUNCIONES DEL PRESIDENTE ...................................................................................25
+ARTÍCULO 74. FUNCIONES DEL VICEPRESIDENTE ............................................................................25
+ARTÍCULO 75. FUNCIONES DEL SECRETARIO ...................................................................................25
+ARTÍCULO 76. FUNCIONES DEL TESORERO ......................................................................................25
+ARTÍCULO 77. FUNCIONES DEL COORDINADOR ELECTORAL ..........................................................26
+ARTÍCULO 78. FUNCIONES DEL COMISIONADO ELECTORAL DE PRECINTO ....................................26
+ARTÍCULO 79. FUNCIONES DEL PRESIDENTE DE PRECINTO ............................................................26
+ARTÍCULO 80. ELECCIONES ..............................................................................................................26
+ARTÍCULO 81. VACANTES .................................................................................................................27
+ARTÍCULO 82. TRANSICIÓN ..............................................................................................................27
+ARTÍCULO 83. REUNIONES ORDINARIAS .........................................................................................27
+ARTÍCULO 84. REUNIONES EXTRAORDINARIAS ...............................................................................27
+ARTÍCULO 85. REUNIONES VIRTUALES ............................................................................................27
+ARTÍCULO 86. ASISTENCIA ...............................................................................................................27
+COMITÉS DE UNIDAD ELECTORAL .................................................................................................28
+ARTÍCULO 87. COMITÉ DE UNIDAD ELECTORAL ..............................................................................28
+ARTÍCULO 88. COMPOSICIÓN ..........................................................................................................28
+ARTÍCULO 89. FUNCIONES DEL PRESIDENTE Y VICEPRESIDENTE ....................................................28
+ARTÍCULO 90. FUNCIONES DEL COORDINADOR Y SUBCOORDINADOR ELECTORAL .......................28
+ARTÍCULO 91. ELECCIÓN ..................................................................................................................28
+CAPÍTULO VI CANDIDATURAS .......................................................................................................... 30
+ARTÍCULO 92. RADICACIÓN DE CANDIDATURAS .............................................................................30
+
+-- 4 of 44 --
+
+iv
+ARTÍCULO 93. COMISIÓN CALIFICADORA ........................................................................................30
+ARTÍCULO 94. DOCUMENTOS REQUERIDOS....................................................................................30
+ARTÍCULO 95. CRITERIOS DE CALIFICACIÓN ....................................................................................31
+CAPÍTULO VII DISCIPLINA ................................................................................................................. 33
+NORMAS DE CONDUCTA .............................................................................................................. 33
+ARTÍCULO 96. APLICACIÓN ..............................................................................................................33
+ARTÍCULO 97. ACCIONES SUJETAS A MEDIDAS DISCIPLINARIAS .....................................................33
+ARTÍCULO 98. LIMITACIONES...........................................................................................................33
+ARTÍCULO 99. MEDIDAS DISCIPLINARIAS ........................................................................................34
+ARTÍCULO 100. SUSPENSIÓN SUMARIA ...........................................................................................34
+ARTÍCULO 101. PROCEDIMIENTO EXPEDITO ...................................................................................34
+PROCEDIMIENTO ADMINISTRATIVO ............................................................................................. 35
+ARTÍCULO 102. QUERELLA ...............................................................................................................35
+ARTÍCULO 103. PRESENTACIÓN DE LA QUERELLA ...........................................................................35
+ARTÍCULO 104. CONTENIDO DE LA QUERELLA ................................................................................35
+ARTÍCULO 105. REVISIÓN PRELIMINAR DE LA QUERELLA ...............................................................36
+ARTÍCULO 106. OFICIAL EXAMINADOR ............................................................................................36
+ARTÍCULO 107. CONTESTACIÓN A LA QUERELLA ............................................................................36
+ARTÍCULO 108. FALTA DE CONTESTACIÓN ......................................................................................36
+ARTÍCULO 109. FACULTADES Y FUNCIONES DEL OFICIAL EXAMINADOR ........................................36
+ARTÍCULO 110. RESOLUCIÓN FINAL .................................................................................................36
+RECONSIDERACIÓN Y REVISIÓN JUDICIAL ..................................................................................... 37
+ARTÍCULO 111. RECONSIDERACIÓN.................................................................................................37
+ARTÍCULO 112. REVISIÓN JUDICIAL .................................................................................................37
+CAPÍTULO VIII DISPOSICIONES GENERALES ....................................................................................... 38
+ARTÍCULO 113. QUÓRUM ................................................................................................................38
+ARTÍCULO 114. ACUERDOS ..............................................................................................................38
+ARTÍCULO 115. LIMITACIÓN ............................................................................................................38
+ARTÍCULO 116. ENMIENDAS AL REGLAMENTO ...............................................................................38
+ARTÍCULO 117. TRANSICIÓN ............................................................................................................38
+ARTÍCULO 118. DEROGACIÓN Y PUBLICACIÓN................................................................................39
+ARTÍCULO 119. SEPARABILIDAD ......................................................................................................39
+ARTÍCULO 120. SUPREMACÍA ..........................................................................................................39
+ARTÍCULO 121. VIGENCIA ................................................................................................................39
+
+-- 5 of 44 --
+
+1
+PREÁMBULO
+El Partido Popular Democrático es un partido realista, autonomista y de centro, fundado el 22 de
+julio de 1938 y refundado el 2 de febrero de 2025. El Partido Popular Democrático se fundó para
+combatir la injusticia social y económica. Para hacerlo, no fue rehén de dogmas políticos, sino
+propulsor de las medidas que mejor atendieran los problemas del momento. Como Partido,
+reconocemos la importancia de ser un instrumento de cambio para Puerto Rico que le dé
+prioridad a la transformación energética, al costo de vida y al buen gobierno, mientras
+mantenemos y mejoramos el Estado Libre Asociado.
+Hoy, que las corrientes internacionales y tradicionales de derecha e izquierda entran en la
+discusión política puertorriqueña con más fuerza que antes, el Partido Popular Democrático
+afirma que es un partido de centro. Es un partido de balance y moderación frente a los extremos
+que impulsan agendas radicales y extremistas. Abrazamos la paz y repudiamos la violencia.
+Defendemos la democracia y combatimos el autoritarismo. Atesoramos nuestra ciudadanía
+estadounidense y celebramos nuestra puertorriqueñidad. Y como puertorriqueños, valoramos la
+estabilidad que nos brinda cada pedazo de pan, tierra y libertad.
+El Partido Popular Democrático ha protagonizado los mayores avances sociales, económicos y
+democráticos en la historia de Puerto Rico. Refundar el Partido es reconocer que nos desviamos
+de las raíces que guiaron nuestra fundación y que tenemos que reconectar con ellas.
+Parte de la transformación que el Partido Popular Democrático necesita es estructural. La
+estructura del Partido Popular Democrático, codificada en sus reglamentos, comenzó en los años
+60. Surgió como un esfuerzo de nuestro fundador Luis Muñoz Marín para institucionalizar el
+Partido y reducir la dependencia en su figura. La estructura vigente hasta la aprobación de este
+Reglamento data principalmente del reglamento adoptado en 1981. Desde entonces, hemos
+añadido mucho y quitado poco. El resultado ha sido un Partido que trabaja para su estructura, en
+vez de una estructura que trabaja para un Partido. Este nuevo Reglamento busca corregir esa falla
+y facilitar nuestro trabajo de ganar elecciones para gobernar a Puerto Rico.
+Este Reglamento reestructura al Partido Popular Democrático para hacerlo más popular y más
+democrático. Lo hace más popular porque atraerá más electores al servicio del Partido y sus
+causas con menos burocracia y más acción. Y lo hace más democrático porque se gobernará por
+una Junta de Gobierno electa en su mayoría por el voto libre y directo de los populares y una
+Asamblea General con más representación de la base.
+Este Reglamento es más que un conjunto de normas. Es el fruto de un partido que escuchó al
+pueblo, que se modernizó para el pueblo, y que vuelve a caminar con el pueblo jalda arriba hacia
+la cumbre de su refundación, consciente de que al cambiar el Partido da el primer paso para
+cambiar el país.
+
+-- 6 of 44 --
+
+2
+CAPÍTULO I
+FUNDAMENTOS
+ARTÍCULO 1. NOMBRE OFICIAL
+El nombre oficial del Partido es “Partido Popular Democrático”.
+ARTÍCULO 2. PROPÓSITO
+El Partido Popular Democrático es un partido realista, autonomista y de centro, fundado para
+adelantar la justicia social y económica del pueblo de Puerto Rico.
+ARTÍCULO 3. INSIGNIA
+La insignia oficial del Partido consistirá en:
+1. El rostro de un campesino, de perfil hacia la izquierda (desde la perspectiva del
+observador).
+2. Una pava con el ala doblada hacia arriba en la frente y hacia abajo en la parte posterior.
+3. Todo en color rojo, sobre fondo blanco, o en color blanco, sobre fondo rojo.
+4. Debajo de la figura aparecerá el lema “PAN, TIERRA Y LIBERTAD” en el mismo color que
+la figura.
+Tanto la insignia como el nombre del Partido son propiedad de la colectividad. Nadie podrá
+usarlos sin autorización de la Junta de Gobierno.
+ARTÍCULO 4. DEBERES DE LOS FUNCIONARIOS DEL PARTIDO
+Todas las personas que ostenten una posición en virtud de este Reglamento se consideran
+funcionarios del Partido y sus deberes incluyen:
+1. Comunicar al pueblo el mensaje del Partido.
+2. Comunicar al Partido el sentir del pueblo.
+3. Ayudar en la recaudación de fondos.
+4. Movilizar simpatizantes a las actividades del Partido.
+5. Reclutar voluntarios y funcionarios de colegio para los procesos electorales.
+6. Movilizar electores a los centros de votación para que voten por el Partido y por todos los
+candidatos oficialmente postulados.
+7. Gobernar con honestidad y responsabilidad en representación del Partido.
+8. Resolver las diferencias políticas o personales con otros funcionarios del Partido dentro
+de los canales internos.
+
+-- 7 of 44 --
+
+3
+CAPÍTULO II
+DEFINICIONES
+ARTÍCULO 5. DEFINICIONES
+Para propósitos de este Reglamento, los siguientes términos y frases tendrán el significado que a
+continuación se expresa, a menos que del texto se desprenda claramente un significado distinto:
+1. Barrio: Demarcación geográfica que constituye una de las divisiones de un término
+municipal.
+2. Censura: Expresión formal de desaprobación, donde el Partido deja claro que la conducta
+del funcionario no es aceptable.
+3. Código Electoral: Ley Núm. 58 de 20 de junio de 2020, según enmendada, conocida
+como “Código Electoral de Puerto Rico de 2020”, o cualquier legislación electoral que la
+sustituya y esté vigente al momento.
+4. Colegio de Votación o Colegio: Lugar destinado para ejercer el derecho al voto en una
+elección interna o primaria.
+5. Comisión Calificadora de Aspirantes: Comisión adscrita a la Secretaría General, que
+evaluará la calificación de todo aspirante a posiciones electivas dentro del Partido.
+6. Delegado Presidencial: Persona designada por el Presidente del Partido para cumplir
+encomiendas especiales.
+7. Elección interna: Procedimiento utilizado por el Partido para seleccionar
+democráticamente y por voto los integrantes de los organismos directivos, candidatos a
+puestos electivos y funcionarios del Partido.
+8. Elección especial: Proceso de votación que el Partido deba realizar en una fecha distinta
+a una “Elección General” con el fin de cubrir una o más vacantes de cargos públicos
+electivos.
+9. Elector afiliado: Toda persona que estando debidamente inscrita para votar en Puerto
+Rico, o que tuviera edad para votar en las próximas elecciones generales, haya hecho su
+ingreso al Partido, realizando actos afirmativos en pro de la colectividad, tales como
+manifestar públicamente su ingreso, participar en la organización de actividades, brindar
+públicamente cooperación en funciones del Partido, o actuaciones similares; y quien
+apoya los postulados del plan de gobierno del Partido; cumple sus convenios contraídos
+con los funcionarios u organismos del Partido, y observa y acata todas las disposiciones
+del Reglamento, al igual que los acuerdos y las decisiones tomadas en cumplimiento de la
+autoridad conferida en el Reglamento, por los funcionarios y organismos reglamentarios
+del Partido.
+10. Funcionario: Toda persona reglamentariamente electa o nombrada a quien le ha sido
+conferida autoridad bajo las disposiciones de este Reglamento.
+
+-- 8 of 44 --
+
+4
+11. Indiferencia: Hacer caso omiso de una conducta cuyo fin es llamar la atención que,
+aunque pueda considerarse impropia, no afecta ni va en contra de los principios
+fundamentales del Partido.
+12. Joven o juventud: Todo elector afiliado al Partido con menos de treinta (30) años de
+edad.
+13. Legislador: Se refiere a los Senadores y Representantes del Estado Libre Asociado de
+Puerto Rico.
+14. Mayoría absoluta: Se refiere a la mayoría de la totalidad de los miembros.
+15. Mayoría simple: Se refiere a la mitad más uno de los miembros presentes.
+16. Método alterno: Procedimiento alternativo que sustituye una primaria o elección especial,
+según sea aprobado por la Junta de Gobierno para la elección de candidatos a cargos
+públicos y que cumpla, procesalmente, con las garantías mínimas dispuestas en la ley
+electoral vigente.
+17. Oficial examinador: Funcionario designado por el Presidente o por el Secretario
+General del Partido para intervenir en controversias, examinar e investigar las mismas y
+someter informes y recomendaciones.
+18. Organismos: Cualquier entidad, organización, o agrupación contenida en las estructuras
+del Partido y reconocida por este Reglamento.
+19. Precinto: División geográfica para fines electorales y políticos de los municipios.
+20. Partido o “PPD”: El Partido Popular Democrático, a nivel de todo Puerto Rico.
+21. Plan de Gobierno: El plan vigente que contiene todas las posiciones y compromisos del
+Partido para con el electorado, debidamente aprobado por el Consejo de Gobierno, y se
+consideran parte del mismo las resoluciones programáticas aprobadas por la Junta de
+Gobierno. La Junta de Gobierno interpretará toda controversia relacionada al plan de
+gobierno. Su vigencia se extenderá desde la fecha en que el mismo es aprobado hasta la
+fecha en que se apruebe el nuevo plan de gobierno a ser sometido al electorado en la
+próxima elección general.
+22. Plan de Reorganización: Documento que someterá el Secretario General para la
+aprobación de la Junta de Gobierno, el cual contendrá las unidades de reorganización de
+cada precinto y municipio, así como los procedimientos, fechas y lugares en que se
+realizarán las mismas.
+23. Presidente: El Presidente del Partido Popular Democrático, a nivel de todo Puerto Rico.
+24. Primarias: El procedimiento mediante el cual, con arreglo al Código Electoral de Puerto
+Rico y a las reglas que adopte la Comisión Estatal de Elecciones y el Partido, serán electos
+los candidatos a cargos públicos en las siguientes elecciones generales o en una elección
+interna celebrada para llenar una vacante.
+
+-- 9 of 44 --
+
+5
+25. Pueblo Popular o populares: Se compondrá de todos los electores afiliados al Partido
+Popular Democrático.
+26. Quórum: El número de personas presentes requerido por este Reglamento para que un
+organismo pueda válidamente tomar acuerdos.
+27. Reglamento: Es el reglamento debidamente aprobado por el Consejo de Gobierno del
+Partido.
+28. Secretario: El Secretario General del Partido Popular Democrático.
+29. Unidad Electoral: Delimitación geográfica cuyos vecinos son asignados a un mismo
+centro o escuela según acordado por la Comisión Estatal de Elecciones. En la mayoría de
+los casos la unidad electoral coincide con el concepto tradicional del barrio, en otros
+incluye más de un barrio y en otros casos puede incluir sólo sectores de un barrio. La
+unidad puede contener un número indeterminado de electores; su único límite numérico
+es la capacidad de la facilidad de votación.
+Las palabras y frases contenidas en este Reglamento se interpretarán según el contexto en que
+sean utilizadas y tendrán el significado reconocido en el uso común y corriente, salvo que se haya
+incluido una definición expresa en este artículo. En los casos aplicables, las palabras o frases
+utilizadas en el género masculino incluyen el femenino, el número singular incluye al plural y, a
+su vez, este último incluye el singular.
+Cualquier interpretación de este Reglamento deberá estar guiada por los postulados y
+compromisos programáticos del Partido.
+
+-- 10 of 44 --
+
+6
+CAPÍTULO III
+ESTRUCTURA DE GOBIERNO
+ASAMBLEA GENERAL
+ARTÍCULO 6. AUTORIDAD
+La Asamblea General es el organismo soberano del Partido, representa al pueblo popular en la
+elección de sus máximos oficiales y ejercerá los poderes que le confiere este Reglamento.
+ARTÍCULO 7. FUNCIONES
+La Asamblea General fijará las pautas fundamentales del Partido y, con la votación de al menos
+tres cuartas (¾) partes de los delegados presentes, podrá revocar decisiones de los organismos
+directivos del Partido y del Presidente del Partido.
+ARTÍCULO 8. COMPOSICIÓN
+La Asamblea General estará compuesta por los siguientes miembros:
+1. Un delegado por cada 400 votos o fracción obtenidos por el candidato popular más votado
+en la papeleta estatal de la elección general anterior, divididos por municipio.
+2. Miembros de la Junta de Gobierno.
+3. Alcaldes.
+4. Senadores.
+5. Representantes.
+6. Candidatos certificados al Senado y a la Cámara de Representantes.
+7. Legisladores Municipales.
+8. Miembros del Comité Central.
+9. Miembros de cada Comité Municipal.
+10. Presidentes de Comité de Unidad.
+11. Directiva de Asociación de Jóvenes Populares y sus presidentes municipales.
+12. Directiva de Asociación de Mujeres Populares y sus presidentes municipales.
+13. Directiva de Asociación de Servidores Públicos Populares y sus presidentes en cada
+agencia.
+14. Directivas de las organizaciones sectoriales reconocidas bajo este Reglamento.
+15. Exgobernadores.
+
+-- 11 of 44 --
+
+7
+16. Excomisionados residentes.
+17. Exalcaldes.
+18. Exsenadores.
+19. Exrepresentantes.
+20. Excomisionados electorales.
+21. Exsecretarios generales.
+22. Expresidentes del Partido.
+ARTÍCULO 9. ELECCIÓN DE DELEGADOS PROPORCIONALES
+El Comité Municipal cubrirá las posiciones de un delegado por cada 400 votos de la lista de los
+funcionarios de colegio de la pasada elección, o los vicepresidentes, coordinadores o
+subcoordinadores electorales de unidad electoral en su municipio.
+ARTÍCULO 10. SESIÓN ORDINARIA
+La Asamblea General celebrará por lo menos una (1) sesión ordinaria cada cuatro (4) años,
+convocada por la Junta de Gobierno.
+El Secretario General deberá:
+1. Citar a los miembros con al menos veintiún (21) días de anticipación.
+2. Establecer un mecanismo para que los miembros puedan someter asuntos adicionales.
+3. Llevar un registro de asistencia y redactar un acta de los acuerdos adoptados.
+ARTÍCULO 11. SESIÓN EXTRAORDINARIA
+Podrán convocar una sesión extraordinaria de la Asamblea General:
+1. El Presidente del Partido.
+2. Dos terceras partes de los miembros con voto en la Junta de Gobierno.
+3. Dos terceras partes de los miembros de la Asamblea General.
+CONSEJO DE GOBIERNO
+ARTÍCULO 12. AUTORIDAD
+El Consejo de Gobierno es el organismo deliberativo del Partido encargado de aprobar el plan de
+gobierno y el reglamento del Partido, recibir informes y elegir vacantes a la Junta de Gobierno.
+ARTÍCULO 13. FUNCIONES
+Las funciones del Consejo de Gobierno serán las siguientes:
+
+-- 12 of 44 --
+
+8
+1. Evaluar y aprobar el reglamento, el plan de gobierno y resoluciones programáticas
+sometidas por la Junta de Gobierno.
+2. Recibir y discutir un informe anual del Presidente del Partido sobre asuntos
+administrativos y políticos.
+3. Cubrir vacantes en la Junta de Gobierno por voto directo y secreto de sus miembros. La
+vacante para el puesto de Presidente del Partido será cubierta dentro de treinta (30) días
+de surgida. Las vacantes para los demás puestos serán cubiertas en la próxima reunión
+ordinaria del Consejo de Gobierno.
+4. Elegir al Presidente del Partido en elección extraordinaria si no prevalece como candidato
+a gobernador.
+ARTÍCULO 14. COMPOSICIÓN
+El Consejo de Gobierno estará compuesto por los siguientes miembros:
+1. Miembros de la Junta de Gobierno.
+2. Alcaldes.
+3. Senadores.
+4. Representantes.
+5. Candidatos certificados al Senado y a la Cámara de Representantes.
+6. Presidentes y vicepresidentes de las legislaturas municipales, donde el Partido sea
+mayoría.
+7. Portavoces y portavoces alternos de minoría de las legislaturas municipales, donde el
+Partido sea minoría.
+8. Presidentes y vicepresidentes de los Comités Municipales.
+9. Directiva de la Asociación de Mujeres Populares.
+10. Directiva de la Asociación de Jóvenes Populares.
+11. Directiva de la Asociación de Servidores Públicos Populares.
+12. Directivas de las organizaciones sectoriales reconocidas bajo este Reglamento.
+13. Excomisionados residentes del Partido, que al 2025 hayan sido miembros del Consejo
+General.
+14. Expresidentes del Partido.
+15. Exalcaldes, que al 2025 hayan sido miembros del Consejo General.
+16. Exlegisladores, que al 2025 hayan sido miembros del Consejo General.
+17. Excomisionados electorales, que al 2025 hayan sido miembros del Consejo General.
+18. Exsecretarios generales, que al 2025 hayan sido miembros del Consejo General.
+
+-- 13 of 44 --
+
+9
+ARTÍCULO 15. REUNIÓN ORDINARIA
+El Presidente del Partido convocará al Consejo de Gobierno a una (1) reunión ordinaria al menos
+una (1) vez al año.
+El Secretario General deberá:
+1. Citar a los miembros con al menos diez (10) días de anticipación.
+2. Establecer un mecanismo para que los miembros propongan asuntos adicionales.
+3. Registrar la asistencia y levantar acta de los acuerdos tomados.
+ARTÍCULO 16. REUNIÓN EXTRAORDINARIA
+Podrán convocar una (1) reunión extraordinaria del Consejo de Gobierno:
+1. El Presidente del Partido, o
+2. Dos terceras partes de los miembros del Consejo de Gobierno.
+El Secretario General será responsable de tramitar la convocatoria e informar los asuntos a
+considerarse.
+JUNTA DE GOBIERNO
+ARTÍCULO 17. AUTORIDAD
+La Junta de Gobierno es el organismo supremo del Partido cuando no está reunida la Asamblea
+General.
+ARTÍCULO 18. FUNCIONES
+Las funciones de la Junta de Gobierno serán las siguientes:
+1. Establecer la posición política del Partido en asuntos de interés público.
+2. Aprobar los planes del Partido para su reorganización, finanzas y trabajo electoral.
+3. Interpretar el reglamento y el plan de gobierno y resolver cualquier controversia que surja
+sobre su aplicación.
+4. Asesorar al Presidente del Partido en los asuntos relacionados al Consejo de Gobierno y la
+Asamblea General.
+5. Aprobar los nombramientos que haga el Presidente del Partido para los siguientes cargos
+del Comité Central:
+a. Secretario General
+b. Subsecretario General
+c. Comisionado Electoral
+
+-- 14 of 44 --
+
+10
+d. Comisionado Electoral Alterno
+e. Tesorero
+6. Atender apelaciones de decisiones tomadas por:
+a. Comités de Unidad
+b. Comités Municipales
+c. Asociaciones y Organizaciones Sectoriales
+d. Comisión Calificadora de Candidatos
+7. Crear cualquier comité especial para atender asuntos internos.
+8. Establecer las cuotas que deben aportar o recaudar los funcionarios o aspirantes del
+Partido.
+ARTÍCULO 19. COMPOSICIÓN
+Tendrán voz y voto en la Junta de Gobierno las siguientes personas:
+1. Presidente del Partido.
+2. Vicepresidente Ejecutivo.
+3. Vicepresidente Sectorial.
+4. Gobernador de Puerto Rico, si pertenece al Partido y no ocupa la presidencia.
+5. Comisionado Residente, y/o el candidato certificado a dicho cargo.
+6. Presidente del Senado, o el portavoz de la minoría popular en el Senado.
+7. Presidente de la Cámara de Representantes, o el portavoz de la minoría popular en la
+Cámara.
+8. Presidente de la Asociación de Alcaldes Populares de Puerto Rico.
+9. Presidente de la Asociación de Legisladores Municipales Populares.
+10. Presidente de la Asociación de Jóvenes Populares.
+11. Presidente de la Asociación de Servidores Públicos Populares.
+12. Presidenta de la Asociación de Mujeres Populares.
+13. Cinco (5) miembros por acumulación.
+14. Un (1) miembro por cada distrito senatorial.
+Tendrán voz, pero no voto, los siguientes miembros:
+1. Exgobernadores.
+2. Secretario General.
+3. Subsecretario General.
+
+-- 15 of 44 --
+
+11
+4. Comisionado Electoral.
+5. Comisionado Electoral Alterno.
+6. Un expresidente del Partido escogido entre sus pares.
+El Presidente del Partido podrá invitar a cualquier miembro del Partido que considere pertinente
+para aportar a la discusión y dará prioridad a las organizaciones sectoriales cuando considere un
+asunto de su interés. Los invitados tendrán derecho a voz, pero no a voto.
+ARTÍCULO 20. ELECCIONES ORDINARIAS
+El Presidente del Partido, las vicepresidencias, los miembros por acumulación y los miembros por
+distrito serán electos por voto libre, directo y secreto de los afiliados del Partido, o por
+los delegados a la Asamblea General, según lo decida la Junta de Gobierno. Los miembros por
+distrito serán electos por los populares de su respectivo distrito. La elección se celebrará en la
+fecha que disponga la Junta de Gobierno, en o antes del 31 de diciembre del segundo año después
+de las elecciones y ocuparán sus puestos hasta que sus sucesores sean electos.
+ARTÍCULO 21. ELECCIÓN EXTRAORDINARIA DEL PRESIDENTE
+Si una persona que no es Presidente del Partido es certificada como candidato a la Gobernación,
+ya sea luego de una primaria o por ser el único aspirante, asumirá el cargo de Presidente del
+Partido automáticamente.
+En caso de que el Partido pierda la elección para gobernador, el Presidente del Partido deberá
+convocar al Consejo de Gobierno en o antes del 28 de febrero del año siguiente a las elecciones
+para celebrar una elección al cargo de Presidente del Partido.
+En todos los casos, el Presidente del Partido continuará en funciones hasta que su sucesor sea
+electo y asuma el cargo.
+ARTÍCULO 22. VICEPRESIDENCIAS
+El Partido contará con dos (2) vicepresidencias fijas:
+1. Vicepresidencia Ejecutiva: Esta persona sustituirá al Presidente del Partido en caso
+de ausencia o vacante.
+2. Vicepresidencia de Sectores: Esta persona representará en la Junta de Gobierno a las
+asociaciones u organizaciones sectoriales del Partido y solo podrá ocupar este puesto un
+miembro activo de una asociación u organización sectorial.
+En caso de que ninguna Vicepresidencia esté ocupada por una mujer, se creará una Segunda
+Vicepresidencia Ejecutiva que ocupará la Presidenta de la Asociación de Mujeres Populares.
+ARTÍCULO 23. MIEMBROS POR ACUMULACIÓN
+Cada elector podrá votar por hasta cinco (5) personas para miembros por acumulación. Los
+miembros de la Junta de Gobierno en virtud de las posiciones que ocupan en el Gobierno o alguna
+asociación del Partido no podrán aspirar a ser miembros por acumulación.
+
+-- 16 of 44 --
+
+12
+ARTÍCULO 24. REUNIÓN ORDINARIA
+La Junta de Gobierno se reunirá ordinariamente una (1) vez cada dos (2) meses en año no electoral
+y una (1) vez al mes en año electoral.
+ARTÍCULO 25. REUNIÓN EXTRAORDINARIA
+La Junta de Gobierno podrá reunirse de forma extraordinaria si así lo convoca:
+1. El Presidente del Partido, o
+2. Dos terceras partes de los miembros con derecho al voto.
+El Secretario General será responsable de tramitar la convocatoria e informar los asuntos a
+considerarse.
+ARTÍCULO 26. REUNIONES VIRTUALES Y VOTACIÓN ELECTRÓNICA
+La Junta de Gobierno podrá celebrar reuniones extraordinarias por videoconferencia.
+El Comisionado Residente podrá participar virtualmente de todas las reuniones.
+Cuando la Junta de Gobierno no se encuentre reunida, el Presidente del Partido podrá someter
+resoluciones o nombramientos a votación electrónica.
+ARTÍCULO 27. ASISTENCIA DE LOS MIEMBROS
+Los miembros de la Junta de Gobierno deberán asistir puntualmente a todas sus reuniones.
+Cualquier miembro, excepto el Comisionado Residente, perderá su cargo automáticamente si:
+1. Falta a tres reuniones consecutivas, o
+2. Falta a cuatro reuniones dentro de un año natural.
+Una vez relevado, su puesto no contará para efectos de quórum.
+
+-- 17 of 44 --
+
+13
+CAPÍTULO IV
+ESTRUCTURA DE APOYO
+CONFERENCIA LEGISLATIVA
+ARTÍCULO 28. COMPOSICIÓN
+La Conferencia Legislativa estará compuesta por:
+1. El Presidente del Partido, quien la presidirá.
+2. El Comisionado Residente.
+3. Los senadores y representantes.
+La Conferencia Legislativa se dividirá en dos grupos:
+1. El caucus del Senado.
+2. El caucus de la Cámara de Representantes.
+El Presidente del Partido podrá invitar personas a participar de la Conferencia Legislativa según
+lo entienda necesario.
+ARTÍCULO 29. FUNCIONES
+La Conferencia Legislativa tendrá las siguientes funciones:
+1. Implementar el plan de gobierno del Partido y la línea programática establecida por la
+Junta de Gobierno, el Consejo de Gobierno o la Asamblea General.
+2. Definir la estrategia legislativa del Partido en la Asamblea Legislativa y en el Congreso de
+los Estados Unidos.
+3. Elegir el liderazgo legislativo en cada cámara, por los integrantes de cada cámara.
+ARTÍCULO 30. REUNIONES
+El Presidente del Partido convocará una reunión de la Conferencia Legislativa al comienzo de cada
+sesión legislativa y cuando lo estime necesario.
+ARTÍCULO 31. ACUERDOS
+Los acuerdos de la Conferencia Legislativa serán por escrito y vinculantes a todos sus miembros,
+salvo que se indique lo contrario.
+
+-- 18 of 44 --
+
+14
+ARTÍCULO 32. REGLAMENTO DE LA CONFERENCIA LEGISLATIVA
+La Conferencia Legislativa redactará y someterá a aprobación de la Junta de Gobierno un
+reglamento para su gobierno interno, en o antes de veinte (20) días, contados a partir de la
+juramentación de sus miembros a los cargos públicos.
+ARTÍCULO 33. REGLAMENTO DE CAUCUS
+Los caucus se regirán por un reglamento de su propia adopción, que tendrá que cumplir con los
+preceptos de este Reglamento y del reglamento de la Conferencia Legislativa. Los reglamentos de
+ambos caucus tendrán que ser aprobados en o antes de diez (10) días a partir de la aprobación del
+reglamento de la Conferencia Legislativa por la Junta de Gobierno.
+ASOCIACIÓN DE ALCALDES POPULARES
+ARTÍCULO 34. PROPÓSITO
+Se crea la Asociación de Alcaldes Populares con el fin de fortalecer la participación de los alcaldes
+en el Partido y promover la coordinación de políticas públicas a nivel municipal.
+ARTÍCULO 35. COMPOSICIÓN
+Su composición y funciones reflejarán la composición y funciones de la Asociación de Alcaldes de
+Puerto Rico en todo aquello que sea compatible con este Reglamento.
+ASOCIACIÓN DE LEGISLADORES MUNICIPALES POPULARES
+ARTÍCULO 36. PROPÓSITO
+Se crea la Asociación de Legisladores Municipales Populares con el fin de fortalecer la
+participación de Legisladores Municipales en las estructuras del Partido y promover la
+coordinación de políticas públicas a nivel municipal.
+ARTÍCULO 37. COMPOSICIÓN
+La Asociación de Legisladores Municipales Populares estará compuesta por todos los legisladores
+municipales populares de Puerto Rico. Contará con una directiva estatal compuesta por:
+1. Presidente.
+2. Vicepresidente.
+3. Una representante por cada distrito senatorial.
+4. Cinco (5) miembros por acumulación.
+
+-- 19 of 44 --
+
+15
+ARTÍCULO 38. AUTONOMÍA
+La Asociación de Legisladores Municipales Populares tendrá autonomía para autogobernarse y
+crear una estructura conforme a las necesidades y realidades que determine su Directiva.
+ARTÍCULO 39. ELECCIONES
+La Junta de Gobierno convocará elecciones para escoger la Directiva de la Asociación de
+Legisladores Municipales Populares en o antes del 30 de junio del segundo año después de las
+elecciones generales.
+JUVENTUD POPULAR NACIONAL
+ARTÍCULO 40. PROPÓSITO
+Se crea la Juventud Popular Nacional (“JPN”) con el fin de organizar y movilizar a los jóvenes
+Populares de Puerto Rico.
+ARTÍCULO 41. COMPOSICIÓN
+La JPN estará compuesta por todos los populares con menos de treinta y cinco (35) años. Contará
+con un presidente en cada municipio y una directiva estatal compuesta por:
+5. Presidente.
+6. Vicepresidente.
+7. Una representante por cada distrito senatorial.
+8. Cinco (5) miembros por acumulación.
+ARTÍCULO 42. AUTONOMÍA
+La JPN tendrá autonomía para autogobernarse y crear una estructura conforme a las necesidades
+y realidades que determine su Directiva en coordinación con los presidentes de la Asociación en
+cada municipio.
+ARTÍCULO 43. FUNCIONES
+La JPN tendrá las siguientes funciones:
+1. Identificar un representante de la JPN en cada Comité de Unidad.
+2. Aportar en la formulación de política pública del plan de gobierno del Partido.
+3. Inscribir y movilizar electores pertenecientes al sector que representan.
+4. Identificar y conformar una base de datos de personas afines al sector que representan y
+al Partido.
+5. Comunicar la visión del Partido a sus miembros.
+
+-- 20 of 44 --
+
+16
+6. Aportar a la recaudación de fondos del Partido.
+ARTÍCULO 44. ELECCIONES
+La Junta de Gobierno convocará elecciones para escoger los presidentes municipales y la Directiva
+de la JPN en o antes del 30 de junio del segundo año después de las elecciones generales. El
+método de elección para el cargo de presidente en cada municipio será acordado entre la Juventud
+Popular Nacional y la Junta de Gobierno.
+ASOCIACIÓN DE SERVIDORES PÚBLICOS POPULARES
+ARTÍCULO 45. PROPÓSITO
+Se crea la Asociación de Servidores Públicos Populares (“ASPP”) con el fin de organizar y
+movilizar a los servidores públicos populares de Puerto Rico.
+ARTÍCULO 46. COMPOSICIÓN
+La ASPP estará compuesta por todos los servidores públicos afiliados al Partido. Contará con un
+presidente en cada agencia y una directiva estatal compuesta por:
+1. Presidente.
+2. Vicepresidente.
+3. Un representante por cada distrito senatorial.
+4. Cinco (5) miembros escogidos entre los presidentes de agencias.
+ARTÍCULO 47. AUTONOMÍA
+La ASPP tendrá autonomía para autogobernarse y crear una estructura conforme a las
+necesidades y realidades que determine su Directiva.
+ARTÍCULO 48. FUNCIONES
+La ASPP tendrá las siguientes funciones:
+1. Convocar una elección para escoger un presidente de la ASPP en cada agencia.
+2. Aportar en la formulación de política pública del plan de gobierno del Partido.
+3. Inscribir y movilizar electores pertenecientes al sector que representan.
+4. Identificar y conformar una base de datos de personas afines al sector que representan y
+al Partido.
+5. Comunicar la visión del Partido a sus miembros.
+6. Aportar a la recaudación de fondos del Partido.
+
+-- 21 of 44 --
+
+17
+ARTÍCULO 49. ELECCIONES
+La Junta de Gobierno convocará elecciones para escoger la Directiva de la ASPP en o antes del 30
+de junio del segundo año después de las elecciones generales. El método de elección para el cargo
+de presidente en cada agencia será acordado entre la Asociación y la Junta de Gobierno.
+ASOCIACIÓN DE MUJERES POPULARES
+ARTÍCULO 50. PROPÓSITO
+Se crea la Asociación de Mujeres Populares (“AMP”) con el fin de organizar y movilizar a las
+mujeres Populares de Puerto Rico.
+ARTÍCULO 51. COMPOSICIÓN
+La AMP estará compuesta por todas las mujeres Populares de Puerto Rico. Contará con una
+presidenta en cada municipio y una directiva estatal compuesta por:
+1. Presidenta.
+2. Vicepresidenta.
+3. Una representante por cada distrito senatorial.
+4. Cinco (5) miembros por acumulación.
+ARTÍCULO 52. AUTONOMÍA
+La AMP tendrá autonomía para autogobernarse y crear una estructura conforme a las necesidades
+y realidades que determine su directiva en coordinación con las presidentas de la Asociación en
+cada municipio.
+ARTÍCULO 53. FUNCIONES
+La AMP tendrá las siguientes funciones:
+1. Identificar una representante de la AMP en cada Comité de Unidad.
+2. Aportar en la formulación de política pública del plan de gobierno del Partido.
+3. Inscribir y movilizar electores pertenecientes al sector que representan.
+4. Identificar y conformar una base de datos de personas afines al sector que representan y
+al Partido.
+5. Comunicar la visión del Partido a sus miembros.
+6. Aportar a la recaudación de fondos del Partido.
+7. Impulsar que los organismos del partido tengan una composición equilibrada y equitativa
+entre hombres y mujeres.
+
+-- 22 of 44 --
+
+18
+8. Promover la capacitación de las mujeres contra los obstáculos que le impiden aspirar a
+puestos políticos electivos.
+9. Organizar actividades de base para educar a las mujeres sobre el marco legal de equidad
+producto del PPD, sus derechos civiles y políticos.
+10. Capacitar a las mujeres en el diseño de campañas políticas para fomentar las candidaturas
+de mujeres por competencia y el éxito de sus campañas.
+ARTÍCULO 54. ELECCIONES
+La Junta de Gobierno convocará elecciones para escoger las presidentas municipales y la Directiva
+de la AMP en o antes del 30 de junio del segundo año después de las elecciones generales. El
+método de elección para el cargo de presidenta en cada municipio será acordado entre la
+Asociación y la Junta de Gobierno.
+ORGANIZACIONES SECTORIALES
+ARTÍCULO 55. PROPÓSITO
+Los populares podrán crear organizaciones sectoriales que representen a grupos de interés para
+fortalecer la participación y representación de diversos sectores en las estructuras del Partido.
+ARTÍCULO 56. FUNCIONES
+Las organizaciones sectoriales tendrán las siguientes funciones:
+1. Aportar en la formulación de política pública del plan de gobierno del Partido.
+2. Inscribir y movilizar electores del sector que representan.
+3. Identificar y conformar una base de datos de personas afines al sector que representan y
+al Partido.
+ARTÍCULO 57. COMPOSICIÓN
+Cada organización sectorial deberá contar, como mínimo, con la siguiente directiva:
+1. Presidente.
+2. Vicepresidente.
+3. Representante por cada distrito senatorial.
+ARTÍCULO 58. AUTONOMÍA
+Las organizaciones sectoriales tendrán autonomía para autogobernarse conforme a las
+necesidades y realidades que determine su Directiva.
+
+-- 23 of 44 --
+
+19
+ARTÍCULO 59. RECONOCIMIENTO OFICIAL
+Para que una organización sectorial obtenga o mantenga representación en el Consejo de
+Gobierno y la Asamblea General deberá:
+1. Solicitar reconocimiento oficial a la vicepresidencia de sectores.
+2. Celebrar una elección interna con un mínimo de participación.
+Con el consentimiento de la Junta de Gobierno, la vicepresidencia de sectores fijará los requisitos
+para el reconocimiento oficial y el mínimo de participación según los siguientes criterios:
+1. Tamaño y capacidad de convocatoria del sector.
+2. Importancia estratégica del sector para el Partido.
+3. Nivel de activismo, presente o pasado.
+ARTÍCULO 60. ELECCIÓN
+La Junta de Gobierno convocará elecciones para escoger las directivas de las organizaciones
+sectoriales en o antes del 30 de junio del segundo año después de las elecciones generales. Si una
+organización sectorial es creada después de esta fecha, la Junta convocará las elecciones cuando
+lo estime conveniente.
+ARTÍCULO 61. REVOCACIÓN, RECHAZO, O SUSTITUCIÓN
+La Junta de Gobierno podrá:
+1. Revocar el reconocimiento oficial de una organización sectorial existente.
+2. Rechazar la creación de una organización sectorial nueva.
+3. Iniciar un proceso para sustituir el liderazgo de cualquier organización.
+Estas acciones podrán tomarse por cualquiera de las siguientes razones:
+1. Redundancia con organizaciones sectoriales ya existentes.
+2. Actividades incompatibles con el plan de gobierno o la línea programática aprobada por
+la Junta de Gobierno, Consejo de Gobierno o Asamblea General.
+3. Inactividad o falta de cumplimiento con los deberes del Partido.
+4. Cualquier otra razón legítima que responda a los intereses del Partido.
+RESTRICCIONES A LAS ESTRUCTURAS DE APOYO
+ARTÍCULO 62. RESTRICCIÓN
+Con la excepción de la Asociación de Alcaldes Populares y la Asociación de Legisladores
+Municipales Populares:
+
+-- 24 of 44 --
+
+20
+1. Ningún funcionario electo incumbente podrá ser presidente o vicepresidente de una
+organización sectorial o de una asociación.
+2. El presidente de una organización sectorial o una asociación podrá aspirar a una posición
+electiva durante el año electoral. Sin embargo, una vez el presidente de la asociación
+advenga candidato oficial del Partido Popular Democrático, su vicepresidente asumirá
+interinamente las funciones de presidente de la asociación hasta que culminen las
+elecciones. En caso de que el vicepresidente también advenga candidato, la Junta de
+Gobierno podrá designar de forma interina ambas posiciones.
+
+-- 25 of 44 --
+
+21
+CAPÍTULO V
+ESTRUCTURA DE EJECUCIÓN
+COMITÉ CENTRAL
+ARTÍCULO 63. COMPOSICIÓN
+El Comité Central estará compuesto por:
+1. Presidente del Partido.
+2. Vicepresidente Ejecutivo.
+3. Vicepresidente Sectorial.
+4. Secretario General.
+5. Subsecretario General.
+6. Comisionado Electoral.
+7. Comisionado Electoral Alterno.
+8. Tesorero.
+9. Cualquier otra persona que el Presidente del Partido designe para cumplir sus funciones.
+ARTÍCULO 64. FUNCIONES DEL PRESIDENTE DEL PARTIDO
+El Presidente del Partido tendrá las siguientes funciones:
+1. Establecer la dirección ejecutiva, política y administrativa del Partido cuando la Junta de
+Gobierno no esté reunida.
+2. Implantar los acuerdos tomados por la estructura de gobierno del Partido.
+3. Nombrar al personal del Partido.
+4. Presidir las reuniones de los organismos del Partido.
+5. Nombrar los miembros del Comité Central.
+6. Rendir un informe anual al Consejo de Gobierno sobre la situación política, electoral y
+financiera del Partido.
+7. Dirigir la campaña política del Partido.
+8. Crear posiciones, subsecretarías, grupos de trabajo o programas especiales para cumplir
+los objetivos del Partido en asuntos no contemplados por este Reglamento.
+9. Supervisar a todos los comités del Partido, de los cuales será miembro exoficio.
+
+-- 26 of 44 --
+
+22
+10. Tomar las medidas de emergencia necesarias en situaciones no previstas por este
+Reglamento.
+11. Suspender provisionalmente cualquier acuerdo o decisión de un organismo interno en lo
+que la Junta de Gobierno atiende el mismo.
+ARTÍCULO 65. SECRETARIO GENERAL
+El Presidente del Partido nombrará un Secretario General.
+Ninguna persona podrá ser Secretario durante el año electoral si es aspirante a una posición
+electiva.
+El Secretario General tendrá las siguientes funciones:
+1. Ejecutar las funciones administrativas y ejecutivas que le delegue el Presidente del
+Partido.
+2. Actuar como secretario de la Junta de Gobierno, del Consejo de Gobierno y de las
+Asambleas del Partido.
+3. Redactar, certificar y custodiar las actas, resoluciones, acuerdos y documentos oficiales
+del Partido.
+4. Velar por el cumplimiento de este Reglamento y de los acuerdos de los organismos
+directivos del Partido.
+5. Presidir el Partido de manera interina si estuvieran ausentes el Presidente y los
+vicepresidentes.
+6. Actuar como portavoz oficial del Partido.
+7. Elaborar y ejecutar el Plan de Reorganización del Partido.
+8. Mantener un registro actualizado con los datos de contacto de todos los miembros de los
+órganos del Partido.
+9. Rendir informes sobre los asuntos bajo su responsabilidad y entregar toda la
+documentación, fondos, archivos y recursos al concluir su gestión.
+ARTÍCULO 66. SUBSECRETARIO GENERAL
+El Presidente del Partido podrá nombrar un Subsecretario General que tendrá las siguientes
+funciones:
+1. Asumir las funciones del Secretario en su ausencia.
+2. Apoyar al Secretario General en todas sus gestiones.
+Si el Secretario General es un funcionario electo, el Subsecretario no podrá serlo.
+Ninguna persona podrá ser Subsecretario durante el año electoral si es aspirante a una posición
+electiva.
+
+-- 27 of 44 --
+
+23
+ARTÍCULO 67. TESORERO
+El Presidente nombrará un Tesorero que tendrá las siguientes funciones:
+1. Recibir y custodiar los fondos del Partido.
+2. Desembolsar fondos en consulta con el Secretario General, cuando sea necesario.
+3. Mantener una contabilidad detallada de las operaciones fiscales del Partido.
+4. Preparar, junto al secretario general, el presupuesto anual del Partido.
+5. Someter los informes financieros requeridos por ley y representar al partido ante
+requerimientos de la Oficina del Contralor Electoral.
+6. Informar al Presidente y a la Junta de Gobierno sobre la situación financiera del Partido.
+7. Cumplir con otras funciones que le asigne el Presidente o la Junta de Gobierno.
+ARTÍCULO 68. COMISIONADO ELECTORAL Y ALTERNO
+El Presidente del Partido nombrará un Comisionado Electoral y un Comisionado Electoral
+Alterno.
+Ninguna de estas personas podrá ser funcionario electo ni aspirante a cargos electivos.
+El Comisionado Electoral tendrá las siguientes funciones:
+1. Redactar los reglamentos para las elecciones internas de los Comités Municipales, Comités
+de Unidad y la Junta de Gobierno, y someterlos a la Junta de Gobierno para su aprobación.
+2. Organizar y dirigir todos los procesos electorales internos establecidos por ley y por este
+Reglamento.
+3. Representar al Partido en procedimientos relacionados con los procesos electorales ante
+los tribunales.
+4. Mantener comunicación continua con los organismos del Partido en todos los niveles e
+instruirlos sobre sus funciones.
+5. Rendir informes al Presidente y a la Junta de Gobierno sobre los asuntos electorales del
+Partido y sobre cambios en la legislación electoral.
+6. Asesorar al Presidente y a la Junta de Gobierno en todos los asuntos electorales.
+7. Reclutar y capacitar a los funcionarios de colegio.
+8. Organizar y supervisar el voto adelantado.
+9. Establecer un sistema de información electoral para recopilar y distribuir datos sobre
+inscripciones, solicitudes de voto adelantado y resultados electorales.
+ARTÍCULO 69. DELEGADO PRESIDENCIAL
+El Presidente del Partido podrá designar un Delegado Presidencial ante cualquier organismo
+interno con propósitos específicos.
+
+-- 28 of 44 --
+
+24
+El Delegado Presidencial deberá:
+1. Actuar con imparcialidad.
+2. Resolver controversias internas.
+3. Cumplir con cualquier encomienda del Presidente o del Secretario General.
+COMITÉS MUNICIPALES
+ARTÍCULO 70. COMITÉ MUNICIPAL
+El Comité Municipal será la estructura organizativa del Partido en cada municipio.
+ARTÍCULO 71. COMPOSICIÓN
+El Comité Municipal estará compuesto por los siguientes miembros:
+1. Presidente.
+2. Vicepresidente.
+3. Secretario.
+4. Tesorero.
+5. Presidentes de los Comités de Unidad.
+6. Presidenta de la Asociación de Mujeres Populares en el municipio.
+7. Presidente de la Asociación de Jóvenes Populares en el municipio.
+8. Coordinador Electoral (en municipios multiprecintales).
+9. Comisionado Electoral de Precinto.
+10. Comisionado Electoral Alterno de Precinto.
+11. Alcalde.
+12. Legisladores municipales populares del municipio.
+13. Legisladores populares residentes en el municipio.
+14. Miembros de la Junta de Gobierno residentes en el municipio.
+15. Presidente de Precinto (en los precintos que constituyan un distrito representativo).
+16. Expresidentes del Comité Municipal, exlegisladores, exalcaldes, exgobernadores,
+excomisionados residentes domiciliados en el Municipio, quienes serán miembros
+exoficio con derecho a voz, pero sin voto, y no cuentan para asuntos de quórum.
+La Junta de Gobierno podrá aprobar cualquier otro tipo de composición del Comité Municipal
+que se ajuste a las necesidades del Partido.
+
+-- 29 of 44 --
+
+25
+ARTÍCULO 72. FUNCIONES DEL COMITÉ MUNICIPAL
+El Comité Municipal tendrá las siguientes funciones:
+1. Dirigir la gestión política, administrativa y electoral del Partido en su municipio.
+2. Mantener una sede para sus actividades políticas y electorales en el año electoral.
+3. Cubrir las vacantes en la legislatura municipal o de un alcalde, en un año electoral,
+conforme a la legislación vigente.
+ARTÍCULO 73. FUNCIONES DEL PRESIDENTE
+El Presidente del Comité Municipal tendrá las siguientes funciones:
+1. Dirigir el Comité Municipal y tomar decisiones ejecutivas cuando este no esté reunido.
+Estas decisiones solo podrán ser revocadas por mayoría absoluta del Comité o por la Junta
+de Gobierno del Partido.
+2. Cumplir con las metas de voto adelantado, reclutamiento y adiestramiento de los
+funcionarios de colegio.
+3. Representar al Comité Municipal ante las estructuras del Partido y en sus reuniones o
+asambleas, asegurando la comunicación efectiva entre el nivel municipal y la dirección del
+Partido.
+4. Dirigir la campaña electoral del Partido en el municipio hasta la selección oficial del
+candidato a alcalde.
+5. Designar los miembros no electos del Comité Municipal.
+6. Recomendar candidatos para comisionados locales al comisionado electoral del Partido.
+7. Supervisar la administración de fondos y bienes del Comité Municipal.
+ARTÍCULO 74. FUNCIONES DEL VICEPRESIDENTE
+El Vicepresidente del Comité Municipal apoyará la gestión del Presidente y garantizará la
+continuidad de la dirección del Comité en caso de ausencia.
+ARTÍCULO 75. FUNCIONES DEL SECRETARIO
+El Secretario del Comité Municipal será responsable de la gestión documental, la convocatoria de
+reuniones y la comunicación interna del Comité, y presidirá interinamente el Comité en ausencia
+del Presidente y Vicepresidente. Será su responsabilidad enviar copia de la minuta de cada
+reunión al Secretario General.
+ARTÍCULO 76. FUNCIONES DEL TESORERO
+El Tesorero del Comité Municipal será responsable de la administración, supervisión y
+cumplimiento de las obligaciones financieras del Comité, incluyendo las leyes aplicables vigentes
+y los reglamentos adoptados por la Oficina del Contralor Electoral.
+
+-- 30 of 44 --
+
+26
+ARTÍCULO 77. FUNCIONES DEL COORDINADOR ELECTORAL
+El Coordinador Electoral será responsable de organizar y supervisar los trabajos electorales en su
+municipio en coordinación con los Comisionados Electorales en aquellos municipios que cuenten
+con más de un precinto electoral. El Coordinador Electoral podrá ser uno de los comisionados
+electorales del municipio.
+ARTÍCULO 78. FUNCIONES DEL COMISIONADO ELECTORAL DE PRECINTO
+El Comisionado Electoral y el Comisionado Electoral Alterno serán responsables de los trabajos
+electorales en su precinto, conforme al Código Electoral de Puerto Rico vigente y las directrices
+del comisionado electoral del Partido.
+ARTÍCULO 79. FUNCIONES DEL PRESIDENTE DE PRECINTO
+En los municipios donde haya un precinto que constituya en su totalidad un distrito
+representativo, el Comité Municipal tendrá un Presidente de Precinto quien tendrá autonomía y
+será responsable del trabajo político necesario para ganar el distrito representativo.
+ARTÍCULO 80. ELECCIONES
+1. Presidente de Comité Municipal: Será electo mediante voto directo y secreto de los
+electores populares del municipio o mediante asamblea de delegados a la Asamblea
+General residentes en el municipio.
+Toda persona que asuma la candidatura oficial del Partido a la alcaldía de un municipio
+será automáticamente Presidente del Comité Municipal. Una vez electo, será Presidente
+mientras sea alcalde, excepto si renuncia como alcalde, renuncia como presidente, u otra
+persona asume la candidatura oficial del Partido a alcalde.
+2. Vicepresidente, Secretario, Tesorero: Serán designados por el Presidente del
+Comité Municipal y servirán a su discreción.
+3. Coordinador Electoral y Comisionados Electorales: Serán nombrados por el
+Comisionado Electoral del Partido, a recomendación del Presidente del Comité Municipal.
+4. Presidente de Precinto: Será electo mediante voto directo y secreto de los electores
+populares del precinto o mediante asamblea de delegados a la Asamblea General
+residentes en el precinto.
+Toda persona que asuma la candidatura oficial del Partido a representante del distrito que
+compone el precinto será automáticamente Presidente de Precinto. Una vez electo, será
+Presidente mientras sea representante, excepto si renuncia como representante, renuncia
+como Presidente, u otra persona asume la candidatura oficial del Partido a representante.
+
+-- 31 of 44 --
+
+27
+ARTÍCULO 81. VACANTES
+El Presidente del Comité Municipal o el Secretario del Comité Municipal notificará al Secretario
+General de cualquier vacante o renuncia. Si la vacante es para Presidente o Presidente de Precinto,
+la Junta de Gobierno determinará cómo cubrir la vacante tomando en consideración el momento
+y las circunstancias locales del Partido. Si la vacante es para cualquier otra posición, se cubrirá de
+la misma forma en que se eligió a su predecesor.
+ARTÍCULO 82. TRANSICIÓN
+Cualquier funcionario saliente del Comité Municipal deberá efectuar un proceso de transición con
+su sucesor. El proceso incluirá la entrega de todos los bienes, fondos, archivos y documentos
+oficiales bajo su poder dentro de catorce (14) días de salir de la posición. En caso de
+incumplimiento, el Comité Municipal podrá informar al Secretario General del Partido, quien,
+por instrucciones del Presidente o la Junta de Gobierno, podrá imponer las medidas disciplinarias
+necesarias o acudir al foro correspondiente para exigir el cumplimiento de esta disposición.
+ARTÍCULO 83. REUNIONES ORDINARIAS
+Los Comités Municipales tendrán una reunión ordinaria cada tres meses en año no electoral y
+cada mes en año electoral. El Secretario del Comité Municipal deberá:
+1. Convocar con al menos setenta y dos (72) horas de anticipación, por el medio más eficaz
+disponible.
+2. Registrar la asistencia e informar al Secretario General.
+3. Redactar el acta de los acuerdos adoptados.
+ARTÍCULO 84. REUNIONES EXTRAORDINARIAS
+El Presidente o la mayoría absoluta de los miembros con derecho al voto en el Comité Municipal
+podrán convocar una reunión extraordinaria cuando lo estimen necesario.
+ARTÍCULO 85. REUNIONES VIRTUALES
+El Comité Municipal podrá celebrar reuniones extraordinarias por videoconferencia.
+ARTÍCULO 86. ASISTENCIA
+Los miembros con derecho a voto en el Comité Municipal deberán asistir puntualmente a todas
+las reuniones. El Presidente del Comité Municipal podrá declarar vacante cualquier posición cuyo
+titular se ausente a más de dos (2) reuniones consecutivas sin justificación.
+
+-- 32 of 44 --
+
+28
+COMITÉS DE UNIDAD ELECTORAL
+ARTÍCULO 87. COMITÉ DE UNIDAD ELECTORAL
+El Comité de Unidad Electoral es la base organizativa del Partido y estará compuesto por los
+electores de un barrio o sector asignado a un centro de votación según la demarcación establecida
+por la Comisión Estatal de Elecciones.
+ARTÍCULO 88. COMPOSICIÓN
+El Comité de Unidad Electoral estará compuesto por:
+1. Presidente.
+2. Vicepresidente.
+3. Coordinador Electoral.
+4. Subcoordinador Electoral.
+El Presidente del Comité Municipal podrá designar coordinadores de sector y otros miembros
+auxiliares, según sea necesario para el cumplimiento de las funciones del Comité.
+ARTÍCULO 89. FUNCIONES DEL PRESIDENTE Y VICEPRESIDENTE
+El Presidente y Vicepresidente Comité de Unidad Electoral serán responsables de:
+1. Cumplir con los deberes de comunicación, movilización y recaudación de fondos
+establecidos por este Reglamento y el Presidente del Comité Municipal.
+2. Reunirse una vez cada tres (3) meses en año no electoral y reunirse mensualmente en año
+electoral.
+ARTÍCULO 90. FUNCIONES DEL COORDINADOR Y SUBCOORDINADOR ELECTORAL
+El Coordinador y Subcoordinador Electoral del Comité de Unidad serán responsables de dirigir
+las tareas electorales en su unidad.
+ARTÍCULO 91. ELECCIÓN
+1. Los presidentes y vicepresidentes serán electos mediante el voto directo y secreto de los
+afiliados del Partido domiciliados en la unidad electoral correspondiente, en una asamblea
+convocada para tales fines. El Comité Municipal podrá celebrar asambleas conjuntas o
+virtuales para la elección del liderato de dos o más unidades electorales, cuando lo estime
+necesario para fines organizativos.
+2. Los coordinadores y subcoordinadores electorales del Comité de Unidad Electoral serán
+designados por el Presidente del Comité Municipal. Los presidentes y vicepresidentes de
+unidad electoral no podrán ser coordinadores ni subcoordinadores electorales.
+
+-- 33 of 44 --
+
+29
+3. El Secretario del Comité Municipal deberá anunciar las elecciones de los comités de
+unidad por el mecanismo que estime efectivo y razonable con un mínimo de cuarenta y
+ocho (48) horas de anticipación.
+
+-- 34 of 44 --
+
+30
+CAPÍTULO VI
+CANDIDATURAS
+ARTÍCULO 92. RADICACIÓN DE CANDIDATURAS
+Los aspirantes a posiciones en la Junta de Gobierno, Presidente de Comité Municipal, Presidente
+de Precinto, o posiciones electivas en las elecciones generales radicarán sus candidaturas ante el
+Secretario General mediante el método autorizado por la Junta de Gobierno y conforme al Código
+Electoral de Puerto Rico. El Secretario General certificará si cada aspirante cumple con los
+requisitos legales, reglamentarios y constitucionales para la posición que aspira.
+ARTÍCULO 93. COMISIÓN CALIFICADORA
+Se crea una Comisión Calificadora de Aspirantes adscrita a la Secretaría General. Estará
+compuesta por un (1) presidente y cuatro (4) miembros nombrados por el Presidente del Partido,
+con la ratificación de la Junta de Gobierno. Uno de los miembros deberá ser un Contador Público
+Autorizado. La Comisión escogerá un secretario entre sus miembros. El Presidente del Partido
+podrá cambiar el número de integrantes cuando lo entienda necesario.
+Los miembros de la Comisión no podrán aspirar a cargos electivos en las próximas elecciones
+luego de haber servido en la misma. La Comisión evaluará, investigará y decidirá si un aspirante
+es idóneo para aspirar a un cargo electivo, conforme a las leyes y los reglamentos internos del
+partido. Toda decisión se formalizará mediante una resolución escrita con sus fundamentos.
+La Comisión deberá emitir su determinación dentro de diez (10) días luego de recibirse toda la
+documentación requerida. Este plazo podrá extenderse, por justa causa, hasta un máximo de
+veinte (20) días.
+Cualquier aspirante que no esté de acuerdo con la decisión final de la Comisión podrá solicitar
+revisión ante la Junta de Gobierno dentro de cinco (5) días de ser notificado.
+ARTÍCULO 94. DOCUMENTOS REQUERIDOS
+Todo aspirante a una posición electiva en las elecciones generales, o a una posición en la Junta de
+Gobierno, Presidente de Comité Municipal o Presidente de Precinto en elecciones internas,
+deberá presentar los siguientes documentos ante la Secretaría General:
+1. Toda la documentación exigida por ley para un aspirante en las elecciones generales.
+2. Certificación que acredite que se encuentra en cumplimiento con el pago de cuotas
+establecido por el Partido.
+3. Cualquier otro documento que le sea requerido por la Secretaría General o la Comisión
+Calificadora de Aspirantes.
+Todo aspirante que haya presentado la documentación requerida para un puesto electivo en las
+elecciones anteriores no tendrá que volver a someterla si busca un cargo interno dentro de los dos
+
+-- 35 of 44 --
+
+31
+(2) años siguientes, salvo que el Secretario General o la Comisión Calificadora disponga lo
+contrario.
+ARTÍCULO 95. CRITERIOS DE CALIFICACIÓN
+No podrá aspirar a una candidatura:
+1. Una persona que haya sido convicta de delito grave, o de delito menos grave que implique
+depravación moral.
+2. Una persona que no cumpla con los requisitos de ley y de reglamento del cargo al cual
+aspira, o que esté impedido por ley de ocupar dicho cargo.
+3. Una persona que no someta a tiempo ante la Secretaría General todos los documentos
+requeridos para su candidatura.
+4. Una persona que un tribunal haya encontrado responsable, mediante sentencia final y
+firme, de haber cometido hostigamiento sexual o discrimen por género, edad, raza u otra
+circunstancia análoga.
+5. Una persona que haya sido destituida de un puesto público como resultado de un proceso
+administrativo o judicial, a menos que la Comisión decida unánimemente que el aspirante
+merece aspirar a figurar en la papeleta del Partido.
+6. Una persona que, en el ejercicio de una función pública, y luego de habérsele formulado
+cargos administrativos o determinada causa probable para arresto, renuncie a su cargo
+para evitar ser procesada o como parte de un acuerdo o negociación con la agencia o
+funcionario a cargo del proceso, siempre que su salida del cargo sea por renuncia o
+destitución, a menos que la Comisión decida unánimemente que el aspirante merece
+aspirar a figurar en la papeleta del Partido.
+7. Una persona que haya sido despojada de su título o impedida de ejercer su profesión de
+forma permanente como resultado de violaciones a cánones o normas de ética profesional
+o institucional, a menos que la Comisión decida unánimemente que el aspirante merece
+aspirar a figurar en la papeleta del Partido.
+8. Una persona que se encuentre suspendida de ejercer su profesión, mientras dure dicha
+suspensión, a menos que la Comisión decida unánimemente que el aspirante merece
+aspirar a figurar en la papeleta del Partido.
+9. Una persona que se haya beneficiado de un perdón ejecutivo o indulto, a menos que la
+Comisión decida unánimemente que el aspirante merece aspirar a figurar en la papeleta
+del Partido.
+10. Una persona que, siendo funcionario del Partido, haya respaldado o votado por un
+candidato de otro partido.
+11. Una persona que, en las elecciones anteriores, después de perder unas elecciones internas
+o primarias, decida competir contra el candidato oficial como candidato independiente o
+por nominación directa o que incumpla con acuerdos suscritos con el Partido.
+
+-- 36 of 44 --
+
+32
+12. Una persona que, en las elecciones anteriores, después de perder unas elecciones internas
+o primarias, se una a la campaña de un candidato opositor al que lo derrotó.
+13. Una persona que, en las elecciones anteriores, haya recibido una solicitud del Secretario
+General del Partido Popular Democrático para que desautorice públicamente un
+movimiento de campaña por nominación directa a favor suyo y se haya negado a hacerlo.
+14. Una persona que provea información falsa con relación a los hechos y el contenido de la
+información requerida a todo candidato por el Partido o cualquiera de sus organismos.
+15. Una persona que haya hecho uso ilegal de los fondos y propiedad del Partido.
+16. Una persona que no haya cumplido con sus obligaciones fiscales con el Estado Libre
+Asociado, excepto aquellas que mantengan un plan de pago con las agencias.
+17. Una persona que esté en incumplimiento con sus obligaciones de pensión alimentaria,
+según declaración del tribunal competente.
+18. Cualquier otra razón que la Comisión Calificadora de Aspirantes o la Junta de Gobierno
+entendiera va en contra de los mejores intereses del Partido y que hace que no sea un
+candidato idóneo.
+
+-- 37 of 44 --
+
+33
+CAPÍTULO VII
+DISCIPLINA
+NORMAS DE CONDUCTA
+ARTÍCULO 96. APLICACIÓN
+Todos los funcionarios, aspirantes y candidatos del Partido deberán cumplir cabalmente con las
+normas de conducta establecidas en este Capítulo.
+ARTÍCULO 97. ACCIONES SUJETAS A MEDIDAS DISCIPLINARIAS
+El Secretario General, por instrucciones del Presidente del Partido o la Junta de Gobierno, podrá
+imponer medidas disciplinarias a los funcionarios, aspirantes y candidatos del Partido por:
+1. Incumplir con el Reglamento, el plan de gobierno o las decisiones tomadas por la
+Asamblea General, el Consejo de Gobierno, la Junta de Gobierno, los Comités
+Municipales, el Comité de Unidad Electoral, las Asociaciones y Organismos Sectoriales, y
+la Conferencia Legislativa, según corresponda.
+2. Criticar públicamente a otro miembro del Partido en su capacidad personal, oficial o
+política.
+3. Respaldar directa o indirectamente a un candidato que no sea del Partido.
+4. Incumplir con el pago de la cuota del Partido.
+5. Enfrentar un procedimiento penal, administrativo o civil.
+6. Ser arrestado por un delito grave o un delito menos grave que implique depravación moral.
+7. Usar un cargo público o político para beneficio personal, de parientes o allegados, o para
+beneficio de intereses privados en contra del interés público.
+8. Ser destituido de un cargo público por conducta impropia.
+9. Incumplir cualquier convenio o acuerdo contraído con el Partido.
+10. Cometer cualquier acción o crear cualquier situación que pueda poner en riesgo o afectar
+negativamente la imagen, el nombre o los intereses del Partido.
+ARTÍCULO 98. LIMITACIONES
+El Presidente del Partido o la Junta de Gobierno no podrán imponer medidas disciplinarias a los
+funcionarios, aspirantes y candidatos del Partido por:
+1. Debatir respetuosamente y sin personalismos ideas que estén bajo consideración de algún
+organismo del Partido.
+
+-- 38 of 44 --
+
+34
+2. Contrastar respetuosamente y sin personalismos las ejecutorias, trayectoria profesional o
+posiciones políticas de candidatos primaristas.
+3. Proveer servicios profesionales a un funcionario electo de un partido opositor en su
+capacidad oficial, siempre y cuando no exista un conflicto de interés con un asunto bajo
+su jurisdicción en el Partido. En caso de que el Presidente determine que existe un
+conflicto, el Presidente podrá relevar limitada y temporalmente a la persona involucrada
+de sus funciones dentro del Partido, por el tiempo que sea necesario para evitar dicho
+conflicto.
+ARTÍCULO 99. MEDIDAS DISCIPLINARIAS
+El Secretario General, por instrucciones del Presidente del Partido o la Junta de Gobierno, podrá
+imponer las siguientes medidas disciplinarias a los funcionarios, aspirantes y candidatos del
+Partido:
+1. Indiferencia.
+2. Ordenar el “cese y desista” de una práctica o actividad.
+3. Censura.
+4. Retiro de confianza.
+5. Suspensión o expulsión de posiciones dentro del Partido.
+6. Suspensión del derecho a ser aspirante y candidato a puesto interno del Partido o a un
+cargo público bajo el Partido.
+7. Imposición de multas o sanciones económicas.
+8. Suspensión Sumaria.
+9. Cualquier otra medida que considere apropiada y justa.
+ARTÍCULO 100. SUSPENSIÓN SUMARIA
+En caso de violaciones graves a este Reglamento, de incumplir con compromisos con el partido, o
+de determinarse causa probable para arresto por delitos graves o menos graves que impliquen
+depravación moral, el Presidente del Partido o el Secretario General podrán suspender
+sumariamente a la persona afectada de sus posiciones dentro del Partido o de la candidatura que
+ostente.
+La suspensión sumaria deberá ser notificada por escrito a la persona afectada, quien tendrá
+derecho a participar de un procedimiento expedito.
+ARTÍCULO 101. PROCEDIMIENTO EXPEDITO
+Todo funcionario, aspirante o candidato que reciba una de las siguientes medidas disciplinarias
+tendrá derecho a un procedimiento expedito:
+1. Suspensión o expulsión de posiciones dentro del Partido.
+
+-- 39 of 44 --
+
+35
+2. Suspensión del derecho a ser candidato a puesto interno del Partido o a un cargo público
+bajo el Partido.
+3. Suspensión sumaria.
+La Junta de Gobierno, o quien la Junta designe, celebrará una vista oral para que la parte
+sancionada presente su defensa dentro de cinco (5) días laborables desde la notificación de las
+medidas disciplinarias.
+La Junta de Gobierno resolverá la controversia dentro de dos (2) días laborables y notificará su
+decisión por escrito. La determinación será una Resolución Final que informará a la parte afectada
+sobre su derecho a Revisión Judicial conforme a este Reglamento.
+PROCEDIMIENTO ADMINISTRATIVO
+ARTÍCULO 102. QUERELLA
+Cualquier persona podrá radicar una querella contra un funcionario del Partido ante el Secretario
+General por las acciones sujetas a medidas disciplinarias o los criterios de calificación dispuestos
+en este Reglamento.
+ARTÍCULO 103. PRESENTACIÓN DE LA QUERELLA
+La querella deberá ser presentada en un plazo de treinta (30) días calendario tras el conocimiento
+de la conducta o hecho que se denuncia.
+ARTÍCULO 104. CONTENIDO DE LA QUERELLA
+La querella debe contener los siguientes elementos:
+1. Identificación de las partes: Los nombres completos, cargos (si corresponde) y
+cualquier otra información relevante de las partes involucradas (querellante y querellado).
+2. Descripción detallada de los hechos: Una exposición clara y cronológica de los
+hechos que motivan la querella, especificando cuándo, dónde y cómo ocurrió la situación.
+3. Pruebas de apoyo: Toda documentación, evidencia o testigos que respalden las
+afirmaciones del querellante. Esto puede incluir, pero no se limita a:
+a. Declaraciones juradas o testimonios de testigos.
+b. Correspondencia escrita (correos electrónicos, cartas, etc.).
+c. Registros oficiales o cualquier otro tipo de evidencia relevante.
+4. Violación al Reglamento o principios del Partido: Explicación de cómo la conducta
+denunciada viola el Reglamento del Partido, las decisiones de sus órganos de gobierno, o
+los principios fundamentales del mismo.
+La querella deberá estar firmada por el querellante, y puede entregarse físicamente o de manera
+electrónica según lo disponga el Secretario.
+
+-- 40 of 44 --
+
+36
+ARTÍCULO 105. REVISIÓN PRELIMINAR DE LA QUERELLA
+El Secretario General, o un funcionario autorizado por este, tendrá cinco (5) días laborables para
+determinar si la querella cumple con los requisitos. Si cumple, el Secretario General nombrará un
+Oficial Examinador.
+ARTÍCULO 106. OFICIAL EXAMINADOR
+El Oficial Examinador:
+1. Gestionará el caso y podrá tomar las decisiones necesarias para resolver la situación de
+manera imparcial.
+2. Notificará al querellado sobre el inicio de la investigación y le dará una copia de la querella
+presentada en su contra.
+3. Informará a las partes las reglas internas que regirán el proceso administrativo ante su
+consideración.
+ARTÍCULO 107. CONTESTACIÓN A LA QUERELLA
+El querellado tendrá treinta (30) días calendario para contestar la querella, a partir de ser
+notificado de la misma y sujeto a las instrucciones del Oficial Examinador.
+ARTÍCULO 108. FALTA DE CONTESTACIÓN
+La falta de contestación a la querella dentro de treinta (30) días calendario bastará para que el
+Oficial Examinador evalúe los méritos de la querella sin considerar la postura del querellado.
+ARTÍCULO 109. FACULTADES Y FUNCIONES DEL OFICIAL EXAMINADOR
+El Oficial Examinador tendrá las siguientes facultades y funciones:
+1. Podrá convocar una vista oral para permitir a las partes presentar pruebas y testigos.
+2. Podrá establecer medidas adicionales para garantizar el derecho de las partes a ser
+escuchadas y presentar pruebas.
+3. Deberá actuar conforme a este Reglamento y respetar todos los procedimientos
+establecidos.
+4. Emitirá un informe al Presidente del Partido con su recomendación sobre la imposición
+de medidas disciplinarias dentro de sesenta (60) días calendario desde su designación.
+ARTÍCULO 110. RESOLUCIÓN FINAL
+El Presidente o la Junta de Gobierno tendrán treinta (30) días calendario desde recibir el informe
+del Oficial Examinador para resolver la controversia y notificar a las partes la Resolución Final.
+
+-- 41 of 44 --
+
+37
+RECONSIDERACIÓN Y REVISIÓN JUDICIAL
+ARTÍCULO 111. RECONSIDERACIÓN
+Toda persona afectada por una Resolución Final producto del Procedimiento Administrativo
+dispuesto en este Reglamento podrá, dentro de un término de diez (10) días laborables contados
+a partir de su notificación, solicitar reconsideración ante la Junta de Gobierno.
+ARTÍCULO 112. REVISIÓN JUDICIAL
+Toda persona afectada por (i) una Resolución Final emitida en un Procedimiento Expedito, o (ii)
+una Resolución Final mediante la cual, tras la celebración del Procedimiento Administrativo aquí
+dispuesto, se le haya impuesto alguna de las siguientes medidas disciplinarias: (a) suspensión o
+expulsión de posiciones dentro del Partido; o (b) suspensión del derecho a ser aspirante o
+candidato a un puesto interno del Partido o a un cargo público bajo el Partido; y que, en tal caso,
+haya agotado los remedios administrativos correspondientes, podrá solicitar revisión judicial ante
+el Tribunal de Primera Instancia dentro del término de treinta (30) días calendario contados a
+partir de la notificación de la Resolución Final.
+
+-- 42 of 44 --
+
+38
+CAPÍTULO VIII
+DISPOSICIONES GENERALES
+ARTÍCULO 113. QUÓRUM
+En organismos de cien (100) personas o menos, el quórum será la mitad más uno de sus miembros
+con derecho a voto.
+En organismos de más de cien (100) personas, el quórum será una tercera parte (1/3) de sus
+miembros con derecho a voto.
+Cuando no se pueda constituir un organismo por falta de quórum, deberá convocar una segunda
+reunión dentro de catorce (14) días y el quórum lo compondrán los miembros presentes.
+Cuando se celebre una votación electrónica de un organismo que no esté reunido
+presencialmente, se determinará el quórum a base de la cantidad de votos emitidos.
+ARTÍCULO 114. ACUERDOS
+Los acuerdos se tomarán por mayoría simple de los miembros presentes cuando haya quórum.
+ARTÍCULO 115. LIMITACIÓN
+Cuando ocurra más de una representación en un mismo miembro en un organismo directivo, este
+emitirá un solo voto. Esta disposición se interpretará en igual sentido para fines de quórum en
+este Reglamento.
+ARTÍCULO 116. ENMIENDAS AL REGLAMENTO
+Este Reglamento podrá ser enmendado por el Consejo de Gobierno o la Asamblea General.
+La Junta de Gobierno podrá someter hasta tres enmiendas cada año por votación electrónica al
+Consejo de Gobierno.
+ARTÍCULO 117. TRANSICIÓN
+Todo funcionario que ocupe un cargo al momento de aprobarse este Reglamento continuará en
+funciones hasta que se elija su sucesor. A los efectos de esta disposición:
+1. La primera vicepresidencia se entenderá como la vicepresidencia ejecutiva.
+2. La segunda vicepresidencia se entenderá como la vicepresidencia de sectores.
+3. Los miembros por acumulación de la Junta de Gobierno pasarán a ser miembros por
+acumulación de la nueva Junta de Gobierno.
+4. Los presidentes de la Organización de Servidores Públicos, Juventud Popular Nacional y
+Organización de las Mujeres Populares pasarán a ser presidentes de sus respectivas
+asociaciones.
+
+-- 43 of 44 --
+
+39
+5. El representante de los expresidentes del Partido ante la Junta de Gobierno al aprobarse
+este Reglamento mantendrá su derecho al voto en la Junta de Gobierno si lo solicitan al
+Secretario General dentro de diez (10) días de aprobarse el Reglamento.
+6. Los exgobernadores al aprobarse este Reglamento mantendrán su derecho al voto en la
+Junta de Gobierno si lo solicitan al Secretario General dentro de diez (10) días de
+aprobarse el Reglamento.
+7. El Consejo de Exfuncionarios, la Organización Popular LGBTTIQ+, Organización Popular
+de los PYMES, Organización Popular de los Trabajadores del Sector Privado, Organización
+Popular Base de Fe, Organización Popular de Líderes Comunitarios, Organización Popular
+de la Comunidad Inmigrantes, Organización Popular de Veteranos, Organización Popular
+de los Pensionados, Organización Popular de Líderes Sindicales, y la Organización Popular
+de las Personas con Diversidad Funcional mantendrán su reconocimiento oficial en el
+Consejo de Gobierno y la Asamblea General hasta el 30 de junio de 2026 o la próxima
+elección de su Directiva sujeto a los requisitos para mantener su reconocimiento oficial, lo
+que ocurra primero.
+ARTÍCULO 118. DEROGACIÓN Y PUBLICACIÓN
+Este Reglamento deroga cualquier otro reglamento, reglas y normas. El Secretario General
+publicará el reglamento en forma adecuada.
+ARTÍCULO 119. SEPARABILIDAD
+Si cualquier disposición de este Reglamento fuere declarada nula, inválida o inaplicable por un
+tribunal, dicha determinación no afectará la validez ni aplicabilidad de las demás disposiciones.
+ARTÍCULO 120. SUPREMACÍA
+En caso de conflicto, contradicción o inconsistencia entre las disposiciones de este Reglamento y
+el Código Electoral de Puerto Rico vigente, prevalecerán las disposiciones del Código.
+ARTÍCULO 121. VIGENCIA
+Este Reglamento entrará en vigor inmediatamente después de cerrar los trabajos de la Asamblea
+de Programa y Reglamento en donde haya sido aprobado.
+Certifico que este Reglamento fue aprobado por la Asamblea de Programa y Reglamento del
+Partido Popular Democrático el domingo, 28 de septiembre de 2025, en Coamo, Puerto Rico.
+CERTIFICO CORRECTO:
+Pablo José Hernández Rivera Manuel Calderón Cerame
+Presidente Secretario General
+
+-- 44 of 44 --
+

@@ -1,0 +1,486 @@
+{
+  "1": {
+    "page": 6,
+    "title": "NOMBRE OFICIAL"
+  },
+  "2": {
+    "page": 6,
+    "title": "PROPÓSITO"
+  },
+  "3": {
+    "page": 6,
+    "title": "INSIGNIA"
+  },
+  "4": {
+    "page": 6,
+    "title": "DEBERES DE LOS FUNCIONARIOS DEL PARTIDO"
+  },
+  "5": {
+    "page": 7,
+    "title": "DEFINICIONES"
+  },
+  "6": {
+    "page": 10,
+    "title": "AUTORIDAD"
+  },
+  "7": {
+    "page": 10,
+    "title": "FUNCIONES"
+  },
+  "8": {
+    "page": 10,
+    "title": "COMPOSICIÓN"
+  },
+  "9": {
+    "page": 11,
+    "title": "ELECCIÓN DE DELEGADOS PROPORCIONALES"
+  },
+  "10": {
+    "page": 11,
+    "title": "SESIÓN ORDINARIA"
+  },
+  "11": {
+    "page": 11,
+    "title": "SESIÓN EXTRAORDINARIA"
+  },
+  "12": {
+    "page": 11,
+    "title": "AUTORIDAD"
+  },
+  "13": {
+    "page": 11,
+    "title": "FUNCIONES"
+  },
+  "14": {
+    "page": 12,
+    "title": "COMPOSICIÓN"
+  },
+  "15": {
+    "page": 13,
+    "title": "REUNIÓN ORDINARIA"
+  },
+  "16": {
+    "page": 13,
+    "title": "REUNIÓN EXTRAORDINARIA"
+  },
+  "17": {
+    "page": 13,
+    "title": "AUTORIDAD"
+  },
+  "18": {
+    "page": 13,
+    "title": "FUNCIONES"
+  },
+  "19": {
+    "page": 14,
+    "title": "COMPOSICIÓN"
+  },
+  "20": {
+    "page": 15,
+    "title": "ELECCIONES ORDINARIAS"
+  },
+  "21": {
+    "page": 15,
+    "title": "ELECCIÓN EXTRAORDINARIA DEL PRESIDENTE"
+  },
+  "22": {
+    "page": 15,
+    "title": "VICEPRESIDENCIAS"
+  },
+  "23": {
+    "page": 15,
+    "title": "MIEMBROS POR ACUMULACIÓN"
+  },
+  "24": {
+    "page": 16,
+    "title": "REUNIÓN ORDINARIA"
+  },
+  "25": {
+    "page": 16,
+    "title": "REUNIÓN EXTRAORDINARIA"
+  },
+  "26": {
+    "page": 16,
+    "title": "REUNIONES VIRTUALES Y VOTACIÓN ELECTRÓNICA"
+  },
+  "27": {
+    "page": 16,
+    "title": "ASISTENCIA DE LOS MIEMBROS"
+  },
+  "28": {
+    "page": 17,
+    "title": "COMPOSICIÓN"
+  },
+  "29": {
+    "page": 17,
+    "title": "FUNCIONES"
+  },
+  "30": {
+    "page": 17,
+    "title": "REUNIONES"
+  },
+  "31": {
+    "page": 17,
+    "title": "ACUERDOS"
+  },
+  "32": {
+    "page": 18,
+    "title": "REGLAMENTO DE LA CONFERENCIA LEGISLATIVA"
+  },
+  "33": {
+    "page": 18,
+    "title": "REGLAMENTO DE CAUCUS"
+  },
+  "34": {
+    "page": 18,
+    "title": "PROPÓSITO"
+  },
+  "35": {
+    "page": 18,
+    "title": "COMPOSICIÓN"
+  },
+  "36": {
+    "page": 18,
+    "title": "PROPÓSITO"
+  },
+  "37": {
+    "page": 18,
+    "title": "COMPOSICIÓN"
+  },
+  "38": {
+    "page": 19,
+    "title": "AUTONOMÍA"
+  },
+  "39": {
+    "page": 19,
+    "title": "ELECCIONES"
+  },
+  "40": {
+    "page": 19,
+    "title": "PROPÓSITO"
+  },
+  "41": {
+    "page": 19,
+    "title": "COMPOSICIÓN"
+  },
+  "42": {
+    "page": 19,
+    "title": "AUTONOMÍA"
+  },
+  "43": {
+    "page": 19,
+    "title": "FUNCIONES"
+  },
+  "44": {
+    "page": 20,
+    "title": "ELECCIONES"
+  },
+  "45": {
+    "page": 20,
+    "title": "PROPÓSITO"
+  },
+  "46": {
+    "page": 20,
+    "title": "COMPOSICIÓN"
+  },
+  "47": {
+    "page": 20,
+    "title": "AUTONOMÍA"
+  },
+  "48": {
+    "page": 20,
+    "title": "FUNCIONES"
+  },
+  "49": {
+    "page": 21,
+    "title": "ELECCIONES"
+  },
+  "50": {
+    "page": 21,
+    "title": "PROPÓSITO"
+  },
+  "51": {
+    "page": 21,
+    "title": "COMPOSICIÓN"
+  },
+  "52": {
+    "page": 21,
+    "title": "AUTONOMÍA"
+  },
+  "53": {
+    "page": 21,
+    "title": "FUNCIONES"
+  },
+  "54": {
+    "page": 22,
+    "title": "ELECCIONES"
+  },
+  "55": {
+    "page": 22,
+    "title": "PROPÓSITO"
+  },
+  "56": {
+    "page": 22,
+    "title": "FUNCIONES"
+  },
+  "57": {
+    "page": 22,
+    "title": "COMPOSICIÓN"
+  },
+  "58": {
+    "page": 22,
+    "title": "AUTONOMÍA"
+  },
+  "59": {
+    "page": 23,
+    "title": "RECONOCIMIENTO OFICIAL"
+  },
+  "60": {
+    "page": 23,
+    "title": "ELECCIÓN"
+  },
+  "61": {
+    "page": 23,
+    "title": "REVOCACIÓN, RECHAZO, O SUSTITUCIÓN"
+  },
+  "62": {
+    "page": 23,
+    "title": "RESTRICCIÓN"
+  },
+  "63": {
+    "page": 25,
+    "title": "COMPOSICIÓN"
+  },
+  "64": {
+    "page": 25,
+    "title": "FUNCIONES DEL PRESIDENTE DEL PARTIDO"
+  },
+  "65": {
+    "page": 26,
+    "title": "SECRETARIO GENERAL"
+  },
+  "66": {
+    "page": 26,
+    "title": "SUBSECRETARIO GENERAL"
+  },
+  "67": {
+    "page": 27,
+    "title": "TESORERO"
+  },
+  "68": {
+    "page": 27,
+    "title": "COMISIONADO ELECTORAL Y ALTERNO"
+  },
+  "69": {
+    "page": 27,
+    "title": "DELEGADO PRESIDENCIAL"
+  },
+  "70": {
+    "page": 28,
+    "title": "COMITÉ MUNICIPAL"
+  },
+  "71": {
+    "page": 28,
+    "title": "COMPOSICIÓN"
+  },
+  "72": {
+    "page": 29,
+    "title": "FUNCIONES DEL COMITÉ MUNICIPAL"
+  },
+  "73": {
+    "page": 29,
+    "title": "FUNCIONES DEL PRESIDENTE"
+  },
+  "74": {
+    "page": 29,
+    "title": "FUNCIONES DEL VICEPRESIDENTE"
+  },
+  "75": {
+    "page": 29,
+    "title": "FUNCIONES DEL SECRETARIO"
+  },
+  "76": {
+    "page": 29,
+    "title": "FUNCIONES DEL TESORERO"
+  },
+  "77": {
+    "page": 30,
+    "title": "FUNCIONES DEL COORDINADOR ELECTORAL"
+  },
+  "78": {
+    "page": 30,
+    "title": "FUNCIONES DEL COMISIONADO ELECTORAL DE PRECINTO"
+  },
+  "79": {
+    "page": 30,
+    "title": "FUNCIONES DEL PRESIDENTE DE PRECINTO"
+  },
+  "80": {
+    "page": 30,
+    "title": "ELECCIONES"
+  },
+  "81": {
+    "page": 31,
+    "title": "VACANTES"
+  },
+  "82": {
+    "page": 31,
+    "title": "TRANSICIÓN"
+  },
+  "83": {
+    "page": 31,
+    "title": "REUNIONES ORDINARIAS"
+  },
+  "84": {
+    "page": 31,
+    "title": "REUNIONES EXTRAORDINARIAS"
+  },
+  "85": {
+    "page": 31,
+    "title": "REUNIONES VIRTUALES"
+  },
+  "86": {
+    "page": 31,
+    "title": "ASISTENCIA"
+  },
+  "87": {
+    "page": 32,
+    "title": "COMITÉ DE UNIDAD ELECTORAL"
+  },
+  "88": {
+    "page": 32,
+    "title": "COMPOSICIÓN"
+  },
+  "89": {
+    "page": 32,
+    "title": "FUNCIONES DEL PRESIDENTE Y VICEPRESIDENTE"
+  },
+  "90": {
+    "page": 32,
+    "title": "FUNCIONES DEL COORDINADOR Y SUBCOORDINADOR ELECTORAL"
+  },
+  "91": {
+    "page": 32,
+    "title": "ELECCIÓN"
+  },
+  "92": {
+    "page": 34,
+    "title": "RADICACIÓN DE CANDIDATURAS"
+  },
+  "93": {
+    "page": 34,
+    "title": "COMISIÓN CALIFICADORA"
+  },
+  "94": {
+    "page": 34,
+    "title": "DOCUMENTOS REQUERIDOS"
+  },
+  "95": {
+    "page": 35,
+    "title": "CRITERIOS DE CALIFICACIÓN"
+  },
+  "96": {
+    "page": 37,
+    "title": "APLICACIÓN"
+  },
+  "97": {
+    "page": 37,
+    "title": "ACCIONES SUJETAS A MEDIDAS DISCIPLINARIAS"
+  },
+  "98": {
+    "page": 37,
+    "title": "LIMITACIONES"
+  },
+  "99": {
+    "page": 38,
+    "title": "MEDIDAS DISCIPLINARIAS"
+  },
+  "100": {
+    "page": 38,
+    "title": "SUSPENSIÓN SUMARIA"
+  },
+  "101": {
+    "page": 38,
+    "title": "PROCEDIMIENTO EXPEDITO"
+  },
+  "102": {
+    "page": 39,
+    "title": "QUERELLA"
+  },
+  "103": {
+    "page": 39,
+    "title": "PRESENTACIÓN DE LA QUERELLA"
+  },
+  "104": {
+    "page": 39,
+    "title": "CONTENIDO DE LA QUERELLA"
+  },
+  "105": {
+    "page": 40,
+    "title": "REVISIÓN PRELIMINAR DE LA QUERELLA"
+  },
+  "106": {
+    "page": 40,
+    "title": "OFICIAL EXAMINADOR"
+  },
+  "107": {
+    "page": 40,
+    "title": "CONTESTACIÓN A LA QUERELLA"
+  },
+  "108": {
+    "page": 40,
+    "title": "FALTA DE CONTESTACIÓN"
+  },
+  "109": {
+    "page": 40,
+    "title": "FACULTADES Y FUNCIONES DEL OFICIAL EXAMINADOR"
+  },
+  "110": {
+    "page": 40,
+    "title": "RESOLUCIÓN FINAL"
+  },
+  "111": {
+    "page": 41,
+    "title": "RECONSIDERACIÓN"
+  },
+  "112": {
+    "page": 41,
+    "title": "REVISIÓN JUDICIAL"
+  },
+  "113": {
+    "page": 42,
+    "title": "QUÓRUM"
+  },
+  "114": {
+    "page": 42,
+    "title": "ACUERDOS"
+  },
+  "115": {
+    "page": 42,
+    "title": "LIMITACIÓN"
+  },
+  "116": {
+    "page": 42,
+    "title": "ENMIENDAS AL REGLAMENTO"
+  },
+  "117": {
+    "page": 42,
+    "title": "TRANSICIÓN"
+  },
+  "118": {
+    "page": 43,
+    "title": "DEROGACIÓN Y PUBLICACIÓN"
+  },
+  "119": {
+    "page": 43,
+    "title": "SEPARABILIDAD"
+  },
+  "120": {
+    "page": 43,
+    "title": "SUPREMACÍA"
+  },
+  "121": {
+    "page": 43,
+    "title": "VIGENCIA"
+  }
+}
