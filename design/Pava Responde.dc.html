@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Cairo:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#EDE9E3; -webkit-text-size-adjust:100%; }
+  * { box-sizing:border-box; }
+  a { color:#0A6E9E; }
+  a:hover { color:#075A82; }
+  button:focus-visible, a:focus-visible, textarea:focus-visible, input:focus-visible {
+    outline:3px solid #0A6E9E; outline-offset:2px;
+  }
+  @keyframes ringPulse { 0%{transform:scale(1);opacity:.55} 100%{transform:scale(1.7);opacity:0} }
+  @keyframes shimmer { 0%{background-position:-320px 0} 100%{background-position:320px 0} }
+</style>
+</helmet>
+
+<div style="min-height:100vh;font-family:Archivo, system-ui, sans-serif;color:#0E1116">
+
+  <div style="position:sticky;top:0;z-index:20;background:#15181D;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:14px">
+    <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#8E949E">Pava Responde · prototipo</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
+        <button onClick="{{ t.onClick }}" style="min-height:36px;padding:0 14px;border-radius:8px;border:1px solid {{ t.border }};background:{{ t.bg }};color:{{ t.fg }};font:600 14px Archivo;cursor:pointer">{{ t.label }}</button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;justify-content:center;padding:28px 16px 48px">
+
+    <sc-for list="{{ frames }}" as="f" hint-placeholder-count="1">
+      <div data-screen-label="{{ f.label }}" style="display:flex;flex-direction:column;gap:10px;align-items:center">
+        <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#6C6659;text-align:center">{{ f.label }}</div>
+
+        <div style="width:390px;height:768px;flex:none;background:#F7F5F2;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(14,17,22,.08),0 14px 40px rgba(14,17,22,.12)">
+
+          <div style="flex:1;overflow-y:auto;padding:20px 16px 20px">
+
+            <div style="display:flex;align-items:center;gap:12px">
+              <img src="logo-pava.png" alt="Partido Popular Democrático" style="width:44px;height:44px;flex:none;object-fit:contain">
+              <div style="display:flex;align-items:baseline;gap:7px;line-height:1">
+                <span style="font:900 26px Cairo;text-transform:uppercase;color:#E41E26">Pava</span>
+                <span style="font:900 26px Cairo;font-style:italic;text-transform:uppercase;color:#0089BF;display:inline-block;transform:skewX(-9deg)">Responde</span>
+              </div>
+            </div>
+            <p style="margin:12px 0 0;font:400 15px/1.45 Archivo;color:#4E545C;text-wrap:pretty">Preguntas sobre el Reglamento del PPD y la Asamblea del 11 de octubre</p>
+
+            <sc-if value="{{ f.showAsk }}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top:22px">
+                <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:8px">Tu pregunta</div>
+                <div style="display:flex;gap:10px;align-items:flex-start">
+                  <textarea aria-label="Escribe tu pregunta" placeholder="Escribe tu pregunta…" value="{{ f.input }}" onChange="{{ f.onInput }}" style="flex:1;min-width:0;height:72px;border:1.5px solid #D8D2C9;border-radius:14px;background:#fff;padding:14px 16px;font:400 18px/1.35 Archivo;color:#0E1116;resize:none"></textarea>
+                  <button onClick="{{ f.onMic }}" aria-label="Hablar tu pregunta" style="width:72px;height:72px;flex:none;border-radius:50%;border:none;background:#E41E26;box-shadow:0 3px 10px rgba(196,22,28,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"></path><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"></path><path d="M12 17.7V21"></path></svg>
+                    <span style="font:700 9px Cairo;letter-spacing:.1em;color:#fff;text-transform:uppercase">Hablar</span>
+                  </button>
+                </div>
+                <p style="margin:8px 0 0;font:400 14px/1.4 Archivo;color:#4E545C">Toca el botón rojo y habla. También puedes escribir.</p>
+
+                <sc-if value="{{ f.sendFull }}" hint-placeholder-val="{{ true }}">
+                  <button onClick="{{ f.onSend }}" style="margin-top:12px;width:100%;min-height:56px;border:none;border-radius:12px;background:#E41E26;color:#fff;font:700 21px Cairo;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer">Preguntar<span style="font:400 20px Archivo">→</span></button>
+                </sc-if>
+                <sc-if value="{{ f.sendArrow }}" hint-placeholder-val="{{ false }}">
+                  <div style="display:flex;justify-content:flex-end;margin-top:10px">
+                    <button onClick="{{ f.onSend }}" aria-label="Enviar tu pregunta" style="width:56px;height:56px;border:none;border-radius:50%;background:#E41E26;color:#fff;font:400 24px Archivo;cursor:pointer">→</button>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isListening }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border:1.5px solid #F2C6C8;border-radius:16px;padding:20px 16px;box-shadow:0 1px 3px rgba(14,17,22,.06)">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+                  <div style="position:relative;width:104px;height:104px;display:flex;align-items:center;justify-content:center">
+                    <div style="position:absolute;inset:0;border-radius:50%;border:3px solid #E41E26;animation:ringPulse 1.6s ease-out infinite"></div>
+                    <div style="position:absolute;inset:0;border-radius:50%;border:3px solid #E41E26;animation:ringPulse 1.6s ease-out .8s infinite"></div>
+                    <div style="width:76px;height:76px;border-radius:50%;background:#E41E26;display:flex;align-items:center;justify-content:center">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"></path><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"></path><path d="M12 17.7V21"></path></svg>
+                    </div>
+                  </div>
+                  <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#C4161C">Te estamos escuchando</div>
+                  <div style="width:100%;min-height:84px;background:#F7F5F2;border-radius:12px;padding:14px;font:400 19px/1.45 Archivo;color:#0E1116">{{ f.transcript }}</div>
+                </div>
+                <div style="display:flex;gap:10px;margin-top:16px">
+                  <button onClick="{{ f.onDone }}" style="flex:1;min-height:56px;border:none;border-radius:12px;background:#E41E26;color:#fff;font:700 21px Cairo;letter-spacing:.03em;text-transform:uppercase;cursor:pointer">Listo</button>
+                  <button onClick="{{ f.onCancel }}" aria-label="Cancelar y volver" style="width:56px;min-height:56px;border:1.5px solid #C9C3BA;border-radius:12px;background:#fff;color:#0E1116;font:400 22px Archivo;cursor:pointer">✕</button>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.showChips }}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top:26px">
+                <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:10px">Preguntas frecuentes</div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <sc-for list="{{ f.samples }}" as="s" hint-placeholder-count="3">
+                    <button onClick="{{ s.onClick }}" style="width:100%;min-height:60px;background:#fff;border:1px solid #E4DFD7;border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;font:500 17px/1.35 Archivo;color:#0E1116;box-shadow:0 1px 2px rgba(14,17,22,.05);cursor:pointer">
+                      <span>{{ s.label }}</span>
+                      <span style="color:#0A6E9E;font:600 20px Archivo;flex:none">›</span>
+                    </button>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isLoading }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+                <div style="background:#F1EEE9;border-radius:12px;padding:12px 14px;font:500 16px/1.4 Archivo;color:#3A3F47">{{ f.echo }}</div>
+                <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px" role="status" aria-label="Buscando la respuesta">
+                  <div style="height:16px;border-radius:6px;background:linear-gradient(90deg,#EFECE7 25%,#E3DED7 50%,#EFECE7 75%);background-size:320px 100%;animation:shimmer 1.1s linear infinite"></div>
+                  <div style="height:16px;border-radius:6px;background:linear-gradient(90deg,#EFECE7 25%,#E3DED7 50%,#EFECE7 75%);background-size:320px 100%;animation:shimmer 1.1s linear infinite"></div>
+                  <div style="height:16px;width:72%;border-radius:6px;background:linear-gradient(90deg,#EFECE7 25%,#E3DED7 50%,#EFECE7 75%);background-size:320px 100%;animation:shimmer 1.1s linear infinite"></div>
+                </div>
+                <div style="margin-top:16px;font:400 14px Archivo;color:#5A6068">Buscando en el Reglamento…</div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isAnswer }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+                <div style="background:#F1EEE9;border-radius:12px;padding:12px 14px;font:500 16px/1.4 Archivo;color:#3A3F47">{{ f.echo }}</div>
+                <div style="display:flex;flex-direction:column;gap:14px;margin-top:16px">
+                  <sc-for list="{{ f.paras }}" as="p" hint-placeholder-count="2">
+                    <p style="margin:0;font:400 19px/1.5 Archivo;color:#0E1116;text-wrap:pretty">{{ p.t }}</p>
+                  </sc-for>
+                </div>
+                <sc-if value="{{ f.hasArts }}" hint-placeholder-val="{{ true }}">
+                  <div style="margin-top:18px">
+                    <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:8px">En el Reglamento</div>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px">
+                      <sc-for list="{{ f.arts }}" as="a" hint-placeholder-count="2">
+                        <a href="{{ a.href }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 16px;border:1.5px solid #A9CFE3;border-radius:999px;background:#F2F8FC;color:#0A6E9E;font:600 15px Archivo;text-decoration:none">{{ a.n }}<span style="font:400 13px Archivo">PDF ↗</span></a>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+                <div style="margin-top:18px;padding-top:14px;border-top:1px solid #EDE9E3;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                  <span style="font:500 16px Archivo;color:#3A3F47">¿Te ayudó?</span>
+                  <button onClick="{{ f.onUp }}" aria-label="Sí, me ayudó" style="min-width:56px;min-height:48px;border:1.5px solid {{ f.upBorder }};border-radius:10px;background:{{ f.upBg }};font:400 20px Archivo;cursor:pointer">👍</button>
+                  <button onClick="{{ f.onDown }}" aria-label="No me ayudó" style="min-width:56px;min-height:48px;border:1.5px solid {{ f.downBorder }};border-radius:10px;background:{{ f.downBg }};font:400 20px Archivo;cursor:pointer">👎</button>
+                  <span style="font:400 15px Archivo;color:#4E545C">{{ f.fbMsg }}</span>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isOutscope }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border-radius:16px;padding:18px 16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+                <div style="background:#F1EEE9;border-radius:12px;padding:12px 14px;font:500 16px/1.4 Archivo;color:#3A3F47">{{ f.echo }}</div>
+                <p style="margin:16px 0 0;font:400 19px/1.5 Archivo;color:#0E1116;text-wrap:pretty">Eso no está en el Reglamento ni en la información de la Asamblea. Para orientación, llama al partido al (787) 721-2000.</p>
+                <a href="tel:+17877212000" style="margin-top:16px;width:100%;min-height:56px;border-radius:12px;background:#E41E26;color:#fff;font:700 19px Cairo;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20A15.4 15.4 0 0 1 4 5.6A2.6 2.6 0 0 1 6.6 3Z"></path></svg>
+                  Llamar al partido
+                </a>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isError }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border-radius:16px;padding:18px 16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C4161C" stroke-width="2" stroke-linecap="round"><path d="M2 8.5A15 15 0 0 1 22 8.5"></path><path d="M6 12.5a10 10 0 0 1 12 0"></path><path d="M12 20h.01"></path><path d="M19 4L5 18"></path></svg>
+                  <h2 style="margin:0;font:700 22px Cairo;text-transform:uppercase;color:#0E1116">Sin conexión</h2>
+                </div>
+                <p style="margin:12px 0 0;font:400 19px/1.5 Archivo;color:#0E1116;text-wrap:pretty">No pudimos buscar tu pregunta. Revisa tu señal y vuelve a intentar.</p>
+                <button onClick="{{ f.onRetry }}" style="margin-top:16px;width:100%;min-height:56px;border:none;border-radius:12px;background:#E41E26;color:#fff;font:700 19px Cairo;letter-spacing:.03em;text-transform:uppercase;cursor:pointer">Intentar otra vez</button>
+                <a href="tel:+17877212000" style="margin-top:10px;width:100%;min-height:56px;border:1.5px solid #C9C3BA;border-radius:12px;background:#fff;color:#0E1116;font:500 17px Archivo;display:flex;align-items:center;justify-content:center;text-decoration:none">Llamar al (787) 721-2000</a>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ f.isRate }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:22px;background:#fff;border-radius:16px;padding:18px 16px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+                <h2 style="margin:0;font:700 22px Cairo;text-transform:uppercase;color:#0E1116">Espera un momento</h2>
+                <p style="margin:12px 0 0;font:400 19px/1.5 Archivo;color:#0E1116;text-wrap:pretty">Recibimos varias preguntas tuyas seguidas. Espera un minuto y vuelve a preguntar.</p>
+                <p style="margin:10px 0 0;font:400 17px/1.5 Archivo;color:#4E545C">Si es algo urgente, llama al partido.</p>
+                <a href="tel:+17877212000" style="margin-top:16px;width:100%;min-height:56px;border-radius:12px;background:#E41E26;color:#fff;font:700 19px Cairo;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;text-decoration:none">Llamar al (787) 721-2000</a>
+              </div>
+            </sc-if>
+
+          </div>
+
+          <div style="flex:none;border-top:1px solid #E6E2DC;background:#fff;padding:10px 16px 12px">
+            <p style="margin:0;font:400 13px/1.4 Archivo;color:#4E545C;text-wrap:pretty">Las respuestas se generan con inteligencia artificial y pueden contener errores. Verifica con el Reglamento oficial.</p>
+            <div style="display:flex;flex-direction:column;margin-top:2px">
+              <a href="reglamento.pdf" target="_blank" rel="noopener" style="min-height:44px;display:flex;align-items:center;font:600 15px Archivo;color:#0A6E9E">Ver el Reglamento (PDF)</a>
+              <a href="tel:+17877212000" style="min-height:44px;display:flex;align-items:center;gap:8px;font:600 15px Archivo;color:#0A6E9E;border-top:1px solid #F1EEE9">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A6E9E"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20A15.4 15.4 0 0 1 4 5.6A2.6 2.6 0 0 1 6.6 3Z"></path></svg>
+                Hablar con una persona: (787) 721-2000
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+
+    <sc-if value="{{ showDemo }}" hint-placeholder-val="{{ true }}">
+      <div style="width:260px;flex:none;background:#15181D;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px">
+        <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#8E949E">Controles de demostración</div>
+        <p style="margin:0;font:400 13px/1.5 Archivo;color:#B9BFC7">No forman parte del producto. Sirven para ver cada estado sin esperar.</p>
+        <sc-for list="{{ demoBtns }}" as="d" hint-placeholder-count="7">
+          <button onClick="{{ d.onClick }}" style="min-height:40px;border-radius:8px;border:1px solid {{ d.border }};background:{{ d.bg }};color:{{ d.fg }};font:500 14px Archivo;text-align:left;padding:0 12px;cursor:pointer">{{ d.label }}</button>
+        </sc-for>
+        <p style="margin:6px 0 0;font:400 12px/1.5 Archivo;color:#8E949E">Escribe cualquier cosa y toca Preguntar: si no está en el Reglamento, verás el estado Fuera de alcance.</p>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Escritorio" style="width:100%;max-width:1120px;background:#F7F5F2;border-radius:16px;box-shadow:0 1px 3px rgba(14,17,22,.08),0 14px 40px rgba(14,17,22,.10);overflow:hidden;display:flex;flex-direction:column">
+        <div style="background:#fff;border-bottom:1px solid #E6E2DC;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:14px">
+            <img src="logo-pava.png" alt="Partido Popular Democrático" style="width:44px;height:44px;flex:none;object-fit:contain">
+            <div style="display:flex;align-items:baseline;gap:8px;line-height:1">
+              <span style="font:900 28px Cairo;text-transform:uppercase;color:#E41E26">Pava</span>
+              <span style="font:900 28px Cairo;font-style:italic;text-transform:uppercase;color:#0089BF;display:inline-block;transform:skewX(-9deg)">Responde</span>
+            </div>
+          </div>
+          <a href="reglamento.pdf" target="_blank" rel="noopener" style="min-height:48px;display:flex;align-items:center;padding:0 26px;background:#fff;border:2px solid #0A6E9E;color:#0A6E9E;font:700 15px Cairo;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transform:skewX(-10deg)"><span style="display:inline-block;transform:skewX(10deg)">Ver el Reglamento (PDF)</span></a>
+        </div>
+
+        <div style="padding:40px 32px 32px;display:flex;justify-content:center">
+          <div style="width:100%;max-width:640px">
+            <p style="margin:0;font:400 17px/1.5 Archivo;color:#4E545C;text-wrap:pretty">Preguntas sobre el Reglamento del PPD y la Asamblea del 11 de octubre</p>
+
+            <div style="margin-top:24px">
+              <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:8px">Tu pregunta</div>
+              <div style="display:flex;gap:12px;align-items:flex-start">
+                <textarea aria-label="Escribe tu pregunta" placeholder="Escribe tu pregunta…" value="{{ dInput }}" onChange="{{ onDeskInput }}" style="flex:1;min-width:0;height:76px;border:1.5px solid #D8D2C9;border-radius:14px;background:#fff;padding:16px;font:400 18px/1.4 Archivo;color:#0E1116;resize:none"></textarea>
+                <button onClick="{{ onDeskMic }}" aria-label="Hablar tu pregunta" style="width:76px;height:76px;flex:none;border-radius:50%;border:none;background:#E41E26;box-shadow:0 3px 10px rgba(196,22,28,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"></path><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"></path><path d="M12 17.7V21"></path></svg>
+                  <span style="font:700 9px Cairo;letter-spacing:.1em;color:#fff;text-transform:uppercase">Hablar</span>
+                </button>
+              </div>
+              <button onClick="{{ onDeskSend }}" style="margin-top:14px;width:100%;min-height:56px;border:none;border-radius:12px;background:#E41E26;color:#fff;font:700 21px Cairo;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer">Preguntar<span style="font:400 20px Archivo">→</span></button>
+            </div>
+
+            <div style="margin-top:28px">
+              <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:10px">Preguntas frecuentes</div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+                <sc-for list="{{ deskSamples }}" as="s" hint-placeholder-count="3">
+                  <button onClick="{{ s.onClick }}" style="min-height:88px;background:#fff;border:1px solid #E4DFD7;border-radius:14px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;gap:10px;text-align:left;font:500 16px/1.35 Archivo;color:#0E1116;box-shadow:0 1px 2px rgba(14,17,22,.05);cursor:pointer">
+                    <span>{{ s.label }}</span>
+                    <span style="color:#0A6E9E;font:600 18px Archivo">›</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="margin-top:28px;background:#fff;border-radius:16px;padding:24px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+              <div style="background:#F1EEE9;border-radius:12px;padding:14px 16px;font:500 17px/1.4 Archivo;color:#3A3F47">{{ deskEcho }}</div>
+              <div style="display:flex;flex-direction:column;gap:16px;margin-top:18px">
+                <sc-for list="{{ deskParas }}" as="p" hint-placeholder-count="2">
+                  <p style="margin:0;font:400 20px/1.55 Archivo;color:#0E1116;text-wrap:pretty">{{ p.t }}</p>
+                </sc-for>
+              </div>
+              <sc-if value="{{ deskHasArts }}" hint-placeholder-val="{{ true }}">
+                <div style="margin-top:22px">
+                  <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:8px">En el Reglamento</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <sc-for list="{{ deskArts }}" as="a" hint-placeholder-count="3">
+                      <a href="{{ a.href }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 18px;border:1.5px solid #A9CFE3;border-radius:999px;background:#F2F8FC;color:#0A6E9E;font:600 16px Archivo;text-decoration:none">{{ a.n }}<span style="font:400 13px Archivo">PDF ↗</span></a>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-if>
+              <div style="margin-top:22px;padding-top:16px;border-top:1px solid #EDE9E3;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+                <span style="font:500 17px Archivo;color:#3A3F47">¿Te ayudó?</span>
+                <button onClick="{{ onUp }}" aria-label="Sí, me ayudó" style="min-width:56px;min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;background:#fff;font:400 20px Archivo;cursor:pointer">👍</button>
+                <button onClick="{{ onDown }}" aria-label="No me ayudó" style="min-width:56px;min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;background:#fff;font:400 20px Archivo;cursor:pointer">👎</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex:none;border-top:1px solid #E6E2DC;background:#fff;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+          <p style="margin:0;max-width:520px;font:400 14px/1.45 Archivo;color:#4E545C;text-wrap:pretty">Las respuestas se generan con inteligencia artificial y pueden contener errores. Verifica con el Reglamento oficial.</p>
+          <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+            <a href="reglamento.pdf" target="_blank" rel="noopener" style="min-height:48px;display:flex;align-items:center;font:600 15px Archivo;color:#0A6E9E">Ver el Reglamento (PDF)</a>
+            <a href="tel:+17877212000" style="min-height:48px;display:flex;align-items:center;gap:8px;font:600 15px Archivo;color:#0A6E9E">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A6E9E"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20A15.4 15.4 0 0 1 4 5.6A2.6 2.6 0 0 1 6.6 3Z"></path></svg>
+              Hablar con una persona: (787) 721-2000
+            </a>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isAdmin }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Admin" style="width:100%;max-width:1120px;background:#F7F5F2;border-radius:16px;box-shadow:0 1px 3px rgba(14,17,22,.08),0 14px 40px rgba(14,17,22,.10);overflow:hidden">
+        <div style="background:#fff;border-bottom:1px solid #E6E2DC;padding:14px 28px;display:flex;align-items:center;gap:12px">
+          <div style="display:flex;align-items:baseline;gap:7px;line-height:1">
+            <span style="font:900 20px Cairo;text-transform:uppercase;color:#E41E26">Pava</span>
+            <span style="font:900 20px Cairo;font-style:italic;text-transform:uppercase;color:#0089BF;display:inline-block;transform:skewX(-9deg)">Responde</span>
+          </div>
+          <span style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">Uso interno</span>
+        </div>
+
+        <sc-if value="{{ locked }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:64px 28px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:380px;background:#fff;border-radius:16px;padding:28px;box-shadow:0 1px 2px rgba(14,17,22,.05),0 8px 24px rgba(14,17,22,.06)">
+              <h1 style="margin:0;font:700 24px Cairo;text-transform:uppercase;color:#E41E26">Entrar</h1>
+              <p style="margin:10px 0 0;font:400 16px/1.5 Archivo;color:#4E545C">Solo para el personal del partido.</p>
+              <div style="font:600 12px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin:22px 0 8px">Contraseña</div>
+              <input type="password" aria-label="Contraseña" value="{{ pass }}" onChange="{{ onPass }}" style="width:100%;min-height:52px;border:1.5px solid #D8D2C9;border-radius:12px;background:#fff;padding:0 14px;font:400 18px Archivo;color:#0E1116">
+              <button onClick="{{ onUnlock }}" style="margin-top:14px;width:100%;min-height:52px;border:none;border-radius:12px;background:#E41E26;color:#fff;font:700 19px Cairo;letter-spacing:.03em;text-transform:uppercase;cursor:pointer">Entrar</button>
+              <p style="margin:14px 0 0;font:400 14px/1.5 Archivo;color:#5A6068">En el prototipo, cualquier contraseña entra.</p>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ unlocked }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:28px">
+            <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+              <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end">
+                <div>
+                  <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:6px">Desde</div>
+                  <input type="date" value="{{ from }}" onChange="{{ onFrom }}" style="min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;background:#fff;padding:0 12px;font:400 16px Archivo;color:#0E1116">
+                </div>
+                <div>
+                  <div style="font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068;margin-bottom:6px">Hasta</div>
+                  <input type="date" value="{{ to }}" onChange="{{ onTo }}" style="min-height:48px;border:1.5px solid #D8D2C9;border-radius:10px;background:#fff;padding:0 12px;font:400 16px Archivo;color:#0E1116">
+                </div>
+                <label style="min-height:48px;display:flex;align-items:center;gap:10px;font:500 16px Archivo;color:#0E1116;cursor:pointer">
+                  <input type="checkbox" checked="{{ onlyNoAns }}" onChange="{{ onToggleNoAns }}" style="width:22px;height:22px;accent-color:#E41E26">
+                  Solo sin respuesta
+                </label>
+              </div>
+              <button onClick="{{ onExport }}" style="min-height:48px;padding:0 26px;background:#fff;border:2px solid #0A6E9E;color:#0A6E9E;font:700 15px Cairo;letter-spacing:.08em;text-transform:uppercase;transform:skewX(-10deg);cursor:pointer"><span style="display:inline-block;transform:skewX(10deg)">Exportar CSV</span></button>
+            </div>
+
+            <div style="margin-top:20px;background:#fff;border-radius:14px;box-shadow:0 1px 2px rgba(14,17,22,.05);overflow:hidden">
+              <div style="display:grid;grid-template-columns:120px 1fr 220px 130px;gap:16px;padding:12px 20px;border-bottom:1px solid #E6E2DC;font:600 11px Archivo;letter-spacing:.15em;text-transform:uppercase;color:#5A6068">
+                <div>Hora</div><div>Pregunta</div><div>Artículos citados</div><div>Sin respuesta</div>
+              </div>
+              <sc-for list="{{ rows }}" as="r" hint-placeholder-count="8">
+                <div style="display:grid;grid-template-columns:120px 1fr 220px 130px;gap:16px;padding:14px 20px;border-bottom:1px solid #F1EEE9;font:400 16px/1.4 Archivo;color:#0E1116;align-items:center">
+                  <div style="color:#4E545C;font-variant-numeric:tabular-nums">{{ r.time }}</div>
+                  <div>{{ r.q }}</div>
+                  <div style="color:#0A6E9E;font-weight:500">{{ r.arts }}</div>
+                  <div>
+                    <sc-if value="{{ r.flag }}" hint-placeholder-val="{{ false }}">
+                      <span style="display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:0 10px;border-radius:999px;background:#FDECEC;border:1.5px solid #E9A7AA;color:#A5121A;font:600 14px Archivo">⚠ Sí</span>
+                    </sc-if>
+                    <sc-if value="{{ r.noFlag }}" hint-placeholder-val="{{ true }}">
+                      <span style="color:#5A6068;font:400 16px Archivo">No</span>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-for>
+              <div style="padding:14px 20px;font:400 14px Archivo;color:#5A6068">{{ rowNote }}</div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;sendButtonStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;boton-completo&quot;,&quot;flecha-en-campo&quot;],&quot;default&quot;:&quot;boton-completo&quot;,&quot;tsType&quot;:&quot;'boton-completo' | 'flecha-en-campo'&quot;,&quot;section&quot;:&quot;Variantes&quot;},&quot;respuestaLarga&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Variantes&quot;},&quot;mostrarControles&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prototipo&quot;}}">
+class Component extends DCLogic {
+  state = { view:'app', st:'empty', input:'', transcript:'', qa:null, echo:'', fb:null,
+            locked:true, pass:'', from:'2026-09-28', to:'2026-10-05', onlyNoAns:false, dInput:'' };
+
+  pdf = 'reglamento.pdf';
+
+  kb = [
+    { keys:['quien puede votar','quien vota','puedo votar','votar el 11','votar en la asamblea','derecho al voto'],
+      q:'¿Quién puede votar el 11 de octubre?',
+      paras:[
+        'Votan los miembros de la Asamblea General. El Reglamento la compone con un delegado por cada 400 votos del candidato popular más votado en la papeleta estatal de la elección anterior, divididos por municipio, y además con los alcaldes, senadores, representantes, legisladores municipales, los miembros de la Junta de Gobierno, del Comité Central y de los comités municipales, los presidentes de comité de unidad, las directivas de las asociaciones y los exfuncionarios que menciona el Artículo 8.',
+        'Los delegados por votos los cubre tu Comité Municipal, con la lista de funcionarios de colegio de la pasada elección o los coordinadores electorales de unidad.',
+        'La Junta de Gobierno decide si la elección se hace por voto de todos los afiliados o por los delegados a la Asamblea. Si no sabes si te toca, llama al partido y pregunta por tu Comité Municipal.'
+      ],
+      arts:['Artículo 8','Artículo 9','Artículo 20'] },
+    { keys:['que se elige','que se vota','se elige en la asamblea','para que es la asamblea','funciones de la asamblea','que hace la asamblea'],
+      q:'¿Qué se elige en la Asamblea General?',
+      paras:[
+        'Se eligen el Presidente del Partido, las dos vicepresidencias, los miembros por acumulación y los miembros por distrito de la Junta de Gobierno. Cada elector puede votar por hasta cinco personas para miembros por acumulación.',
+        'La Asamblea General también fija las pautas fundamentales del Partido y, con el voto de tres cuartas partes de los delegados presentes, puede revocar decisiones de los organismos directivos y del Presidente.'
+      ],
+      arts:['Artículo 7','Artículo 20','Artículo 23'] },
+    { keys:['edad maxima','juventud popular','jpn','joven','jovenes','35 anos','edad para la juventud'],
+      q:'¿Cuál es la edad máxima para la Juventud Popular?',
+      paras:[
+        'La Juventud Popular Nacional está compuesta por todos los populares con menos de treinta y cinco (35) años.',
+        'Ojo con una diferencia: en las definiciones del Reglamento, joven o juventud es el elector afiliado con menos de treinta (30) años. La JPN llega hasta los 35.'
+      ],
+      arts:['Artículo 41','Artículo 5'] },
+    { keys:['donde es','cuando es','a que hora','lugar de la asamblea','ponce','complejo ferial','direccion'],
+      q:'¿Dónde y cuándo es la Asamblea?',
+      paras:[
+        'La Asamblea es el domingo 11 de octubre de 2026 en el Complejo Ferial de Puerto Rico, en Ponce.',
+        'El Secretario General cita a los miembros con al menos veintiún (21) días de anticipación, y lleva el registro de asistencia y el acta de los acuerdos.'
+      ],
+      arts:['Artículo 10'] },
+    { keys:['cada cuanto','sesion ordinaria','sesion extraordinaria','se reune la asamblea','convocatoria'],
+      q:'¿Cada cuánto se reúne la Asamblea General?',
+      paras:[
+        'La Asamblea General celebra por lo menos una sesión ordinaria cada cuatro años, convocada por la Junta de Gobierno.',
+        'Una sesión extraordinaria la puede convocar el Presidente del Partido, dos terceras partes de los miembros con voto en la Junta de Gobierno, o dos terceras partes de los miembros de la Asamblea General.'
+      ],
+      arts:['Artículo 10','Artículo 11'] }
+  ];
+
+  samples = ['¿Quién puede votar el 11 de octubre?','¿Qué se elige en la Asamblea General?','¿Cuál es la edad máxima para la Juventud Popular?'];
+
+  adminRows = [
+    { time:'05 oct · 9:14 a.m.', q:'¿Quién puede votar el 11 de octubre?', arts:'8, 9, 20', flag:false },
+    { time:'05 oct · 9:22 a.m.', q:'¿Puedo llevar a mi esposa a la Asamblea?', arts:'—', flag:true },
+    { time:'05 oct · 10:03 a.m.', q:'¿Cuál es la edad máxima para la Juventud Popular?', arts:'41, 5', flag:false },
+    { time:'05 oct · 10:41 a.m.', q:'¿Hay estacionamiento en el Complejo Ferial?', arts:'—', flag:true },
+    { time:'04 oct · 4:58 p.m.', q:'¿Qué se elige en la Asamblea General?', arts:'7, 20, 23', flag:false },
+    { time:'04 oct · 3:12 p.m.', q:'¿Cómo se cubren los delegados por votos?', arts:'9', flag:false },
+    { time:'03 oct · 11:30 a.m.', q:'¿Quién nombra al oficial examinador?', arts:'5', flag:false },
+    { time:'03 oct · 8:47 a.m.', q:'¿Van a dar transportación desde Coamo?', arts:'—', flag:true },
+    { time:'02 oct · 7:15 p.m.', q:'¿Cuántas vicepresidencias tiene el Partido?', arts:'22', flag:false },
+    { time:'02 oct · 1:05 p.m.', q:'¿Cada cuánto se reúne la Asamblea General?', arts:'10, 11', flag:false }
+  ];
+
+  componentWillUnmount() { clearInterval(this.mic); clearTimeout(this.tm); }
+
+  norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[¿?¡!.,]/g, ''); }
+
+  match(text) {
+    const n = this.norm(text);
+    return this.kb.find(e => e.keys.some(k => n.indexOf(k) >= 0)) || null;
+  }
+
+  ask = (text) => {
+    const t = (text || '').trim();
+    if (!t) return;
+    clearInterval(this.mic); clearTimeout(this.tm);
+    this.setState({ st:'loading', echo:t, input:'', transcript:'', fb:null });
+    this.tm = setTimeout(() => {
+      const hit = this.match(t);
+      this.setState({ st: hit ? 'answer' : 'outscope', qa: hit });
+    }, 850);
+  };
+
+  startMic = () => {
+    clearTimeout(this.tm);
+    const utter = this.samples[Math.floor(Math.random() * this.samples.length)].replace(/[¿?]/g, '');
+    const words = utter.split(' ');
+    let i = 0;
+    this.setState({ st:'listening', transcript:'' });
+    clearInterval(this.mic);
+    this.mic = setInterval(() => {
+      i += 1;
+      this.setState({ transcript: words.slice(0, i).join(' ') });
+      if (i >= words.length) clearInterval(this.mic);
+    }, 420);
+  };
+
+  frameFor(st, live) {
+    const labels = { empty:'1 · Vacío (primera visita)', listening:'2 · Escuchando', loading:'3 · Cargando',
+      answer:'4 · Respuesta', outscope:'5 · Fuera de alcance', error:'6 · Error o sin señal', ratelimit:'7 · Límite de preguntas' };
+    const qa = live ? this.state.qa : this.kb[0];
+    const echo = live ? this.state.echo : this.kb[0].q;
+    const noop = () => {};
+    const sendMode = this.props.sendButtonStyle || 'boton-completo';
+    const fb = live ? this.state.fb : null;
+    const arts = (qa ? qa.arts : []).map(n => ({ n, href: this.pdf }));
+    const long = this.props.respuestaLarga !== false;
+    const paras = (qa ? qa.paras : []).filter((p, i) => long || i < 1).map(t => ({ t }));
+    return {
+      label: live ? 'Prototipo en vivo · 390 px' : labels[st],
+      showAsk: st !== 'listening',
+      showChips: st === 'empty',
+      isListening: st === 'listening', isLoading: st === 'loading', isAnswer: st === 'answer',
+      isOutscope: st === 'outscope', isError: st === 'error', isRate: st === 'ratelimit',
+      sendFull: sendMode === 'boton-completo', sendArrow: sendMode === 'flecha-en-campo',
+      input: live ? this.state.input : (st === 'empty' ? '' : ''),
+      transcript: live ? (this.state.transcript || 'Habla ahora…') : 'quién puede votar el once de octubre',
+      echo, paras, arts, hasArts: arts.length > 0,
+      upBorder: fb === 'up' ? '#0A6E9E' : '#D8D2C9', upBg: fb === 'up' ? '#F2F8FC' : '#fff',
+      downBorder: fb === 'down' ? '#0A6E9E' : '#D8D2C9', downBg: fb === 'down' ? '#F2F8FC' : '#fff',
+      fbMsg: fb ? 'Gracias por decirnos.' : '',
+      samples: this.samples.map(label => ({ label, onClick: live ? () => this.ask(label) : noop })),
+      onInput: live ? (e => this.setState({ input: e.target.value })) : noop,
+      onMic: live ? this.startMic : noop,
+      onSend: live ? (() => this.ask(this.state.input)) : noop,
+      onDone: live ? (() => this.ask(this.state.transcript)) : noop,
+      onCancel: live ? (() => { clearInterval(this.mic); this.setState({ st:'empty', transcript:'' }); }) : noop,
+      onRetry: live ? (() => this.ask(this.state.echo || this.samples[0])) : noop,
+      onUp: live ? (() => this.setState({ fb:'up' })) : noop,
+      onDown: live ? (() => this.setState({ fb:'down' })) : noop
+    };
+  }
+
+  exportCsv = () => {
+    const rows = this.visibleRows();
+    const head = ['hora','pregunta','articulos_citados','sin_respuesta'];
+    const body = rows.map(r => [r.time, r.q, r.arts, r.flag ? 'si' : 'no']);
+    const csv = [head].concat(body).map(r => r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')).join('\n');
+    const url = URL.createObjectURL(new Blob([csv], { type:'text/csv;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = 'pava-responde-preguntas.csv'; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  };
+
+  visibleRows() { return this.adminRows.filter(r => !this.state.onlyNoAns || r.flag); }
+
+  renderVals() {
+    const v = this.state.view;
+    const tab = (id, label) => ({ label, onClick: () => this.setState({ view:id }),
+      bg: v === id ? '#F7F5F2' : 'transparent', fg: v === id ? '#15181D' : '#D3D8DE',
+      border: v === id ? '#F7F5F2' : '#3A4048' });
+    const dbtn = (st, label) => ({ label, onClick: () => this.setState({ st, echo: st === 'empty' ? '' : (this.state.echo || this.kb[0].q), qa: st === 'answer' ? this.kb[0] : this.state.qa, fb:null }),
+      bg: this.state.st === st ? '#F7F5F2' : 'transparent', fg: this.state.st === st ? '#15181D' : '#D3D8DE',
+      border: this.state.st === st ? '#F7F5F2' : '#3A4048' });
+    const states = ['empty','listening','loading','answer','outscope','error','ratelimit'];
+    const rows = this.visibleRows();
+    const deskQa = this.kb[1];
+    return {
+      tabs: [tab('app','App en vivo'), tab('estados','Los 7 estados'), tab('desktop','Escritorio'), tab('admin','/admin')],
+      frames: v === 'app' ? [this.frameFor(this.state.st, true)]
+            : v === 'estados' ? states.map(s => this.frameFor(s, false)) : [],
+      showDemo: v === 'app' && this.props.mostrarControles !== false,
+      demoBtns: [dbtn('empty','Vacío'), dbtn('listening','Escuchando'), dbtn('loading','Cargando'),
+        dbtn('answer','Respuesta'), dbtn('outscope','Fuera de alcance'), dbtn('error','Error o sin señal'),
+        dbtn('ratelimit','Límite de preguntas')],
+      isDesktop: v === 'desktop', isAdmin: v === 'admin',
+      dInput: this.state.dInput,
+      onDeskInput: e => this.setState({ dInput: e.target.value }),
+      onDeskMic: () => this.setState({ view:'app' }, this.startMic),
+      onDeskSend: () => this.setState({ view:'app' }, () => this.ask(this.state.dInput)),
+      deskSamples: this.samples.map(label => ({ label, onClick: () => this.setState({ view:'app' }, () => this.ask(label)) })),
+      deskEcho: deskQa.q,
+      deskParas: deskQa.paras.map(t => ({ t })),
+      deskArts: deskQa.arts.map(n => ({ n, href: this.pdf })),
+      deskHasArts: true,
+      onUp: () => {}, onDown: () => {},
+      locked: this.state.locked, unlocked: !this.state.locked,
+      pass: this.state.pass, onPass: e => this.setState({ pass: e.target.value }),
+      onUnlock: () => this.setState({ locked:false }),
+      from: this.state.from, to: this.state.to,
+      onFrom: e => this.setState({ from: e.target.value }),
+      onTo: e => this.setState({ to: e.target.value }),
+      onlyNoAns: this.state.onlyNoAns,
+      onToggleNoAns: e => this.setState({ onlyNoAns: e.target.checked }),
+      onExport: this.exportCsv,
+      rows: rows.map(r => ({ time:r.time, q:r.q, arts:r.arts, flag:r.flag, noFlag:!r.flag })),
+      rowNote: rows.length + ' preguntas en el rango seleccionado'
+    };
+  }
+}
+</script>
+</body>
+</html>
