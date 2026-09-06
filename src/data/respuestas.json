@@ -41,7 +41,7 @@
     ],
     "parrafos": [
       "Este año puede votar cualquier persona que sea elector activo en el Registro General de Electores al 30 de septiembre de 2026 y vaya a la Asamblea. Es la primera vez que votan todos los asistentes y no solo los delegados.",
-      "El Reglamento permite las dos formas y la Junta de Gobierno escogió el voto directo (Artículo 20). Ojo con la fecha: cuenta tu estado en el registro electoral al 30 de septiembre. Si tienes dudas, llama al (787) 721-2000."
+      "El Reglamento permite las dos formas y la Junta de Gobierno escogió el voto directo (Artículo 20). Ojo con la fecha: lo que cuenta es tu estado en el registro electoral al 30 de septiembre. Si tienes dudas, llama al (787) 721-2000."
     ],
     "articulos": [
       20,
@@ -89,7 +89,7 @@
       "¿Cómo sé si soy delegado?"
     ],
     "parrafos": [
-      "Son miembros los delegados de cada municipio (1 por cada 400 votos del PPD en la última elección), los alcaldes, legisladores y legisladores municipales, los miembros de la Junta de Gobierno, del Comité Central y de los comités municipales, los presidentes de unidad, las directivas de las asociaciones y varios exfuncionarios. La lista completa está en el Artículo 8.",
+      "Son miembros los delegados de cada municipio (1 por cada 400 votos del PPD en la última elección), los alcaldes, senadores, representantes y legisladores municipales, los miembros de la Junta de Gobierno, del Comité Central y de los comités municipales, los presidentes de unidad, las directivas de las asociaciones y varios exfuncionarios. La lista completa está en el Artículo 8.",
       "Este año, además, vota cualquier elector activo que asista. Si no sabes si eres delegado, pregunta en tu Comité Municipal."
     ],
     "articulos": [
@@ -215,7 +215,7 @@
       "¿Quién cita a los miembros de la asamblea?"
     ],
     "parrafos": [
-      "Con al menos 21 días de anticipación. Cita el Secretario General."
+      "Con al menos 21 días de anticipación. La citación la envía el Secretario General."
     ],
     "articulos": [
       10
@@ -233,7 +233,7 @@
       "¿Se puede convocar una asamblea fuera de fecha?"
     ],
     "parrafos": [
-      "El Presidente del Partido, dos terceras partes de la Junta de Gobierno con voto, o dos terceras partes de los miembros de la Asamblea."
+      "El Presidente del Partido, dos terceras partes de los miembros con voto de la Junta de Gobierno, o dos terceras partes de los miembros de la Asamblea."
     ],
     "articulos": [
       11
@@ -275,7 +275,7 @@
     ],
     "parrafos": [
       "Una tercera parte de los miembros con voto, porque la Asamblea tiene más de 100 miembros.",
-      "Si no se llega, se convoca otra reunión dentro de 14 días y ahí el quórum lo hacen los que estén."
+      "Si no se llega, se convoca otra reunión dentro de 14 días y ahí el quórum lo forman los presentes."
     ],
     "articulos": [
       113
@@ -315,7 +315,7 @@
       "¿Cuántos votos tiene una persona con varios cargos?"
     ],
     "parrafos": [
-      "No. Aunque tengas más de un cargo, votas una sola vez y cuentas una sola vez para el quórum."
+      "No. Aunque tengas más de un cargo o representes a más de un organismo, votas una sola vez y cuentas una sola vez para el quórum."
     ],
     "articulos": [
       115
@@ -336,7 +336,7 @@
       "¿Se puede votar por teléfono?"
     ],
     "parrafos": [
-      "En la Asamblea General no. Se vota en persona, en Ponce, de 8:00 a 11:00 de la mañana.",
+      "En la Asamblea General no. No se puede votar por internet ni por teléfono: se vota en persona, en Ponce, de 8:00 a 11:00 de la mañana.",
       "El Reglamento solo prevé votación electrónica para la Junta de Gobierno, cuando el Presidente somete asuntos entre reuniones, y para enmiendas que la Junta manda al Consejo de Gobierno."
     ],
     "articulos": [
@@ -426,7 +426,7 @@
       "¿Cuándo se elige el presidente?"
     ],
     "parrafos": [
-      "Este ciclo, el 11 de octubre de 2026 en la Asamblea General de Ponce.",
+      "En este ciclo, el 11 de octubre de 2026 en la Asamblea General de Ponce.",
       "La regla general: la fecha la fija la Junta de Gobierno, y tiene que ser antes del 31 de diciembre del segundo año después de las elecciones generales."
     ],
     "articulos": [
@@ -468,7 +468,7 @@
       "¿Quién es presidente del partido después de una primaria de gobernación?"
     ],
     "parrafos": [
-      "Sí. Si el candidato certificado a gobernador no es el Presidente del Partido, asume la presidencia automáticamente."
+      "Asume la presidencia automáticamente. Si la persona certificada como candidata a gobernador no es el Presidente del Partido, pasa a serlo desde ese momento."
     ],
     "articulos": [
       21
@@ -752,7 +752,7 @@
       "¿Cuántas ausencias se permiten en la Junta?"
     ],
     "parrafos": [
-      "Pierde el cargo automáticamente si falta a 3 reuniones seguidas o a 4 en un año. La excepción es el Comisionado Residente."
+      "Se pierde el cargo automáticamente a la tercera ausencia seguida o a la cuarta en un año natural. Solo el Comisionado Residente está exento."
     ],
     "articulos": [
       27
@@ -771,8 +771,8 @@
       "¿A quién le pregunto si no entiendo una regla?"
     ],
     "parrafos": [
-      "La Junta de Gobierno. Ella interpreta el Reglamento y resuelve las controversias.",
-      "Para tu caso concreto, llama al (787) 721-2000."
+      "Para una duda del día a día, llama al partido al (787) 721-2000.",
+      "La interpretación oficial del Reglamento la da la Junta de Gobierno, que es quien resuelve las controversias."
     ],
     "articulos": [
       18
@@ -1007,7 +1007,7 @@
     ],
     "parrafos": [
       "La unidad electoral es el grupo de vecinos que vota en un mismo centro, según la Comisión Estatal de Elecciones. Casi siempre coincide con el barrio.",
-      "El precinto es la división del municipio para fines electorales."
+      "El barrio es una de las divisiones del municipio. El precinto es la división del municipio para fines electorales."
     ],
     "articulos": [
       5
@@ -1159,7 +1159,7 @@
       "¿Puede el Secretario General ser candidato?"
     ],
     "parrafos": [
-      "Lo nombra el Presidente con el visto bueno de la Junta de Gobierno. Es el secretario de todos los organismos, custodia las actas, vela por el Reglamento, es el portavoz oficial y elabora el plan de reorganización.",
+      "Lo nombra el Presidente con el visto bueno de la Junta de Gobierno. Es el secretario de la Junta, del Consejo y de las Asambleas, custodia las actas, vela por el Reglamento, es el portavoz oficial y elabora el plan de reorganización.",
       "No puede ser Secretario en año electoral quien aspire a un cargo."
     ],
     "articulos": [
@@ -1293,7 +1293,7 @@
       "¿Quién escoge al presidente del comité municipal?"
     ],
     "parrafos": [
-      "Por voto directo de los populares del municipio, o en una asamblea de los delegados del municipio.",
+      "Por voto directo de los populares del municipio, o en una asamblea de los delegados a la Asamblea General que viven en el municipio.",
       "Quien sea candidato oficial a alcalde pasa a ser presidente del comité automáticamente, mientras sea alcalde."
     ],
     "articulos": [
@@ -1355,7 +1355,7 @@
     ],
     "parrafos": [
       "Cada 3 meses en año normal y cada mes en año electoral, convocadas con al menos 72 horas de aviso.",
-      "El presidente, o la mayoría absoluta de los miembros con voto, puede convocar una extraordinaria, también por video."
+      "El presidente, o la mayoría absoluta de los miembros con voto, puede convocar una extraordinaria, también por videoconferencia."
     ],
     "articulos": [
       83,
@@ -1431,7 +1431,7 @@
     ],
     "parrafos": [
       "Existe en los pueblos donde un precinto es por sí solo un distrito representativo. Es responsable de ganar ese distrito.",
-      "Lo eligen los populares del precinto, o sus delegados. Quien sea candidato oficial a representante por ese distrito ocupa el puesto automáticamente."
+      "Lo eligen los populares del precinto, o los delegados a la Asamblea General que viven en él. Quien sea candidato oficial a representante por ese distrito ocupa el puesto automáticamente."
     ],
     "articulos": [
       79,
@@ -1683,7 +1683,7 @@
       "¿Por qué pueden rechazar una organización sectorial nueva?"
     ],
     "parrafos": [
-      "Sí. La Junta de Gobierno puede quitar el reconocimiento, rechazar una organización nueva o cambiar su liderazgo. Por ejemplo, si repite a otra que ya existe, va contra el plan de gobierno o está inactiva."
+      "Sí. La Junta de Gobierno puede quitar el reconocimiento, rechazar una organización nueva o cambiar su liderazgo. Por ejemplo, si duplica a otra que ya existe, va contra el plan de gobierno o está inactiva."
     ],
     "articulos": [
       61
@@ -1743,7 +1743,7 @@
     ],
     "parrafos": [
       "Es el grupo del Presidente del Partido, el Comisionado Residente y los legisladores populares. Se divide en el caucus del Senado y el de la Cámara.",
-      "Define la estrategia legislativa, aplica el plan de gobierno y elige el liderato de cada cámara. Sus acuerdos obligan a todos."
+      "Define la estrategia legislativa, aplica el plan de gobierno y elige el liderato de cada cámara. Sus acuerdos obligan a todos sus miembros, salvo que se diga lo contrario."
     ],
     "articulos": [
       28,
@@ -1824,7 +1824,8 @@
       "¿Cuáles son los criterios de calificación para aspirar?"
     ],
     "parrafos": [
-      "Quien tenga una convicción por delito grave, quien no cumpla los requisitos de ley, quien apoyó a un candidato de otro partido, quien corrió contra el candidato oficial tras perder una primaria, quien dio información falsa o usó mal fondos del partido, y quien tenga deudas con Hacienda o de pensión alimentaria sin plan de pago, entre otros. La lista completa está en el Artículo 95."
+      "Quien tenga una convicción por delito grave, quien no cumpla los requisitos de ley, quien siendo funcionario apoyó a un candidato de otro partido, o quien corrió contra el candidato oficial tras perder una primaria.",
+      "Tampoco quien dio información falsa, usó mal fondos del partido, o tiene deudas con Hacienda o de pensión alimentaria sin plan de pago, entre otros. La lista completa está en el Artículo 95."
     ],
     "articulos": [
       95
@@ -1977,7 +1978,7 @@
       "¿Quién puede suspender sumariamente a un funcionario?"
     ],
     "parrafos": [
-      "Es una suspensión inmediata del cargo o de la candidatura, por violaciones graves o cuando hay causa probable de arresto por delito grave. La pueden imponer el Presidente o el Secretario General.",
+      "Es una suspensión inmediata del cargo o de la candidatura, por violaciones graves, por incumplir compromisos con el partido o cuando hay causa probable de arresto por delito grave. La pueden imponer el Presidente o el Secretario General.",
       "Se notifica por escrito y da derecho a un procedimiento expedito."
     ],
     "articulos": [
@@ -2017,7 +2018,7 @@
       "¿Ante quién se presenta una querella?"
     ],
     "parrafos": [
-      "Por escrito ante el Secretario General, dentro de 30 días de saber del hecho. Debe decir quién es quién, qué pasó y cuándo, qué pruebas hay y qué regla se violó. Va firmada y puede enviarse en papel o por correo electrónico."
+      "Por escrito ante el Secretario General, dentro de 30 días de saber del hecho. Debe decir quién es quién, qué pasó y cuándo, qué pruebas hay y qué regla se violó. Va firmada y puede entregarse en papel o de forma electrónica, según disponga el Secretario."
     ],
     "articulos": [
       102,
@@ -2137,7 +2138,7 @@
     ],
     "parrafos": [
       "La mitad más uno de los miembros con voto si el organismo tiene 100 personas o menos. Una tercera parte si tiene más de 100.",
-      "Sin quórum, se convoca otra reunión dentro de 14 días y ahí basta con los presentes."
+      "Sin quórum, se convoca otra reunión dentro de 14 días y ahí basta con los presentes. En una votación electrónica, el quórum se cuenta por los votos emitidos."
     ],
     "articulos": [
       113
@@ -2285,7 +2286,7 @@
       "¿Qué pasa si un tribunal anula parte del Reglamento?"
     ],
     "parrafos": [
-      "Nada. Si un tribunal anula una parte del Reglamento, el resto sigue vigente."
+      "El resto sigue vigente. Si un tribunal anula una parte del Reglamento, las demás disposiciones se mantienen."
     ],
     "articulos": [
       119
