@@ -2,7 +2,6 @@ import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { answerQuestion, AnswerUnavailableError } from "@/lib/answer";
-import { hasClaudeCredentials } from "@/lib/answer/prompt";
 import { toArticleRefs } from "@/lib/articulos";
 import { MAX_QUESTION_LENGTH } from "@/lib/constants";
 import { getOrCreateDeviceId } from "@/lib/device";
@@ -14,11 +13,6 @@ const AskBody = z.object({
 });
 
 export async function POST(request: Request) {
-  if (!hasClaudeCredentials()) {
-    console.error("[api/ask] ANTHROPIC_API_KEY no configurada: la app no puede contestar");
-    return NextResponse.json({ error: "not_configured" }, { status: 503 });
-  }
-
   let body: unknown;
   try {
     body = await request.json();
@@ -41,8 +35,13 @@ export async function POST(request: Request) {
   try {
     resultado = await answerQuestion(question);
   } catch (error) {
-    const detail = error instanceof AnswerUnavailableError ? error.message : String(error);
-    console.error("[api/ask] sin respuesta:", detail, error instanceof AnswerUnavailableError ? (error.cause ?? "") : "");
+    if (error instanceof AnswerUnavailableError) {
+      console.error("[api/ask] sin respuesta:", error.message, error.cause ?? "");
+      return error.code === "not_configured"
+        ? NextResponse.json({ error: "not_configured" }, { status: 503 })
+        : NextResponse.json({ error: "unavailable" }, { status: 502 });
+    }
+    console.error("[api/ask] sin respuesta:", error);
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
 

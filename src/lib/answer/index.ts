@@ -2,7 +2,7 @@ import type { UsoModelo } from "../pricing";
 import { sumarUso } from "../pricing";
 import { answerWithClaude } from "./claude";
 import { hasClaudeCredentials } from "./prompt";
-import { SERVIBLES, buscarConModelo, buscarExacta, toAnswer } from "./respuestas";
+import { SERVIBLES, buscarAproximada, buscarConModelo, buscarExacta, toAnswer } from "./respuestas";
 import { AnswerUnavailableError, type Answer } from "./types";
 
 export type Fuente = "respuestas" | "modelo";
@@ -15,17 +15,20 @@ export type ResultadoPregunta = {
 };
 
 /**
- * Orden: coincidencia literal con una respuesta generada (gratis), luego el
- * modelo reconoce si es una pregunta conocida (muy barato), y solo si no,
- * genera una respuesta en vivo. Sin credenciales falla en voz alta.
+ * Orden: coincidencia literal o aproximada con una respuesta guardada (gratis
+ * y sin credenciales), luego el modelo reconoce si es una pregunta conocida
+ * (muy barato), y solo si no, genera una respuesta en vivo. Sin credenciales,
+ * los pasos con modelo fallan en voz alta.
  */
 export async function answerQuestion(question: string): Promise<ResultadoPregunta> {
-  if (!hasClaudeCredentials()) {
-    throw new AnswerUnavailableError("ANTHROPIC_API_KEY no configurada: la app no puede contestar");
-  }
+  const guardada = buscarExacta(question) ?? buscarAproximada(question);
+  if (guardada) return { answer: toAnswer(guardada), fuente: "respuestas", respuestaId: guardada.id, uso: null };
 
-  const exacta = buscarExacta(question);
-  if (exacta) return { answer: toAnswer(exacta), fuente: "respuestas", respuestaId: exacta.id, uso: null };
+  if (!hasClaudeCredentials()) {
+    throw new AnswerUnavailableError("ANTHROPIC_API_KEY no configurada: solo se contestan las preguntas guardadas", {
+      code: "not_configured",
+    });
+  }
 
   let usoBusqueda: UsoModelo | null = null;
   if (SERVIBLES.length > 0) {

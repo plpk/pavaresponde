@@ -2,10 +2,14 @@ export type Answer =
   | { inScope: true; paragraphs: string[]; articles: number[] }
   | { inScope: false };
 
-/** El servicio que contesta no está disponible (red, credenciales, modelo). */
+export type UnavailableCode = "not_configured" | "upstream";
+
+/** El servicio que contesta no está disponible (credenciales, red, modelo). */
 export class AnswerUnavailableError extends Error {
-  constructor(message: string, options?: { cause?: unknown }) {
-    super(message, options);
+  readonly code: UnavailableCode;
+  constructor(message: string, options?: { cause?: unknown; code?: UnavailableCode }) {
+    super(message, { cause: options?.cause });
     this.name = "AnswerUnavailableError";
+    this.code = options?.code ?? "upstream";
   }
 }
