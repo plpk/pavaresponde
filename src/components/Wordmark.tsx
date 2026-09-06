@@ -17,7 +17,7 @@ export function Wordmark({ size = "md" }: { size?: keyof typeof SIZES }) {
 export function Brand({ size = "md" }: { size?: "md" | "lg" }) {
   return (
     <div className={`flex items-center ${size === "lg" ? "gap-3.5" : "gap-3"}`}>
-      <Image src="/logo-pava.png" alt="Partido Popular Democrático" width={44} height={44} priority className="h-11 w-11 flex-none object-contain" />
+      <Image src="/logo-pava.png" alt="Partido Popular Democrático" width={44} height={44} priority unoptimized className="h-11 w-11 flex-none object-contain" />
       <Wordmark size={size} />
     </div>
   );
