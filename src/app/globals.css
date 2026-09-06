@@ -137,4 +137,11 @@
   .field {
     @apply w-full rounded-field border-[1.5px] border-line-strong bg-white text-body text-ink placeholder:text-ink-soft;
   }
+  /* El campo de pregunta: más alto, con sombra y texto de 19px, para que domine la pantalla. */
+  .field-hero {
+    @apply w-full rounded-card border-[1.5px] border-line-strong bg-white text-answer text-ink shadow-card placeholder:text-ink-soft focus:border-blue;
+  }
+  .btn-skew-sm {
+    @apply min-h-11 px-3 text-[11px] tracking-[0.05em];
+  }
 }

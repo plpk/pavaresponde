@@ -13,7 +13,8 @@ type Props = {
   textareaRef: RefObject<HTMLTextAreaElement | null>;
 };
 
-const MAX_FIELD_HEIGHT = 124; // cuatro líneas; a partir de ahí hace scroll
+const MIN_FIELD_HEIGHT = 96; // tres líneas visibles: el campo es el protagonista de la pantalla
+const MAX_FIELD_HEIGHT = 148; // cinco líneas; a partir de ahí hace scroll
 
 export function AskBox({ value, onChange, onSend, onMic, notice, textareaRef }: Props) {
   // Dos líneas visibles; crece hasta cuatro y no más.
@@ -21,7 +22,7 @@ export function AskBox({ value, onChange, onSend, onMic, notice, textareaRef }: 
     const el = textareaRef.current;
     if (!el) return;
     el.style.height = "auto";
-    el.style.height = `${Math.min(Math.max(el.scrollHeight, 72), MAX_FIELD_HEIGHT)}px`;
+    el.style.height = `${Math.min(Math.max(el.scrollHeight, MIN_FIELD_HEIGHT), MAX_FIELD_HEIGHT)}px`;
   }, [value, textareaRef]);
 
   function onKeyDown(e: KeyboardEvent<HTMLTextAreaElement>) {
@@ -32,11 +33,11 @@ export function AskBox({ value, onChange, onSend, onMic, notice, textareaRef }: 
   }
 
   return (
-    <section className="mt-[22px] md:mt-6" aria-labelledby="pregunta-label">
+    <section className="mt-6 md:mt-7" aria-labelledby="pregunta-label">
       <label id="pregunta-label" htmlFor="pregunta" className="micro-label mb-2">
         Tu pregunta
       </label>
-      <div className="flex items-start gap-2.5 md:gap-3">
+      <div className="flex items-center gap-2.5 md:gap-3">
         <textarea
           id="pregunta"
           ref={textareaRef}
@@ -48,16 +49,16 @@ export function AskBox({ value, onChange, onSend, onMic, notice, textareaRef }: 
           maxLength={MAX_QUESTION_LENGTH}
           autoComplete="off"
           enterKeyHint="send"
-          className="field min-w-0 flex-1 resize-none px-4 py-3.5 md:h-[76px] md:px-4 md:py-4"
-          style={{ height: 72 }}
+          className="field-hero min-w-0 flex-1 resize-none px-4 py-3.5 md:px-[18px] md:py-4"
+          style={{ height: MIN_FIELD_HEIGHT }}
         />
         <button
           type="button"
           onClick={onMic}
           aria-label="Hablar tu pregunta"
-          className="flex h-[72px] w-[72px] flex-none flex-col items-center justify-center gap-0.5 rounded-full bg-red shadow-mic active:translate-y-px active:opacity-[0.96] md:h-[76px] md:w-[76px]"
+          className="flex h-[76px] w-[76px] flex-none flex-col items-center justify-center gap-0.5 rounded-full bg-red shadow-mic active:translate-y-px active:opacity-[0.96] md:h-20 md:w-20"
         >
-          <MicIcon size={26} />
+          <MicIcon size={28} />
           <span className="font-display text-[9px] font-bold uppercase tracking-[0.1em] text-white">Hablar</span>
         </button>
       </div>

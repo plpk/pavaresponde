@@ -159,11 +159,14 @@ export function PavaApp() {
 
       <main className="flex-1 px-4 pt-5 pb-6 md:px-8 md:pt-10 md:pb-8">
         <div className="mx-auto w-full max-w-[640px]">
-          <div className="md:hidden">
-            <Brand size="md" />
+          <div className="flex items-center justify-between gap-3 md:hidden">
+            <Brand size="sm" />
+            <a href={PDF_PATH} target="_blank" rel="noopener" className="btn-skew btn-skew-sm" aria-label="Ver el Reglamento en PDF">
+              <span>Reglamento</span>
+            </a>
           </div>
-          <p className="mt-3 text-[15px] leading-[1.45] text-ink-muted text-pretty md:mt-0 md:text-[17px] md:leading-[1.5]">{SUBTITLE}</p>
           <AsambleaCard />
+          <p className="mt-4 text-[15px] leading-[1.45] text-ink-muted text-pretty md:mt-5 md:text-[16px] md:leading-[1.5]">{SUBTITLE}</p>
 
           {status === "listening" ? (
             <ListeningPanel
