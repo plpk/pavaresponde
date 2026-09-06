@@ -10,7 +10,8 @@
     "data": "node scripts/build-reglamento-data.mjs",
     "typecheck": "tsc --noEmit",
     "respuestas": "tsx --env-file-if-exists=.env.local scripts/generate-respuestas.ts",
-    "contar-tokens": "tsx --env-file-if-exists=.env.local scripts/count-tokens.ts"
+    "contar-tokens": "tsx --env-file-if-exists=.env.local scripts/count-tokens.ts",
+    "revisar": "node scripts/revisar-respuestas.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",
