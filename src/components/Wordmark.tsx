@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SIZES = { sm: "text-[20px]", md: "text-[26px]", lg: "text-[28px]" } as const;
+const SIZES = { xs: "text-[20px]", sm: "text-[22px]", md: "text-[26px]", lg: "text-[28px]" } as const;
 
 /** Wordmark de texto (no imagen): escala y lo lee el lector de pantalla. */
 export function Wordmark({ size = "md" }: { size?: keyof typeof SIZES }) {
@@ -14,7 +14,7 @@ export function Wordmark({ size = "md" }: { size?: keyof typeof SIZES }) {
 }
 
 /** Marca de la pava (44px) + wordmark. */
-export function Brand({ size = "md" }: { size?: "md" | "lg" }) {
+export function Brand({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
   return (
     <div className={`flex items-center ${size === "lg" ? "gap-3.5" : "gap-3"}`}>
       <Image src="/logo-pava.png" alt="Partido Popular Democrático" width={44} height={44} priority unoptimized className="h-11 w-11 flex-none object-contain" />
