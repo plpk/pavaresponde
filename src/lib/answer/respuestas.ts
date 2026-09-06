@@ -51,7 +51,7 @@ export function buscarExacta(question: string): RespuestaGuardada | null {
 // Palabras que no distinguen una pregunta de otra. Se conservan los
 // interrogativos (quién, cuándo, dónde...) porque sí cambian el sentido.
 const VACIAS = new Set(
-  "de del la el los las un una unos unas y o u e en a al que se es son por para con sin su sus mi mis tu tus lo le les me te si ya hay ser esta este esto ese esa eso estas estos esas esos hasta sobre segun mas tambien puede pueden puedo tiene tienen tengo hace hacer va van voy".split(" "),
+  "de del la el los las un una unos unas y o u e en a al se es son por para con sin su sus mi mis tu tus lo le les me te si ya hay ser esta este esto ese esa eso estas estos esas esos hasta sobre segun mas tambien puede pueden puedo tiene tienen tengo hace hacer va van voy".split(" "),
 );
 
 function terminos(s: string): Set<string> {
@@ -67,12 +67,15 @@ function terminos(s: string): Set<string> {
 const INDICE_TERMINOS = SERVIBLES.flatMap((r) => r.preguntas.map((p) => ({ r, t: terminos(p) })));
 
 /** Umbral alto a propósito: mejor pasar al modelo que servir la respuesta equivocada. */
-const UMBRAL_APROXIMADA = 0.8;
+const UMBRAL_APROXIMADA = 0.85;
 
 /**
- * Coincidencia aproximada por solapamiento de términos (coeficiente de Dice)
- * con cualquiera de las formas conocidas. Gratis; captura variaciones como
- * "quien puede votar" frente a "¿Quién puede votar el 11 de octubre?".
+ * Coincidencia aproximada, gratis. Acepta dos casos:
+ * 1. Todos los términos de la pregunta están en una forma conocida (la persona
+ *    preguntó una versión más corta: "que hace el tesorero").
+ * 2. Solapamiento de términos (coeficiente de Dice) muy alto.
+ * Una pregunta con términos de más ("...de mi municipio") no coincide: podría
+ * pedir otra cosa, y eso lo decide el modelo.
  */
 export function buscarAproximada(question: string): RespuestaGuardada | null {
   const q = terminos(question);
@@ -81,7 +84,8 @@ export function buscarAproximada(question: string): RespuestaGuardada | null {
   for (const { r, t } of INDICE_TERMINOS) {
     let comunes = 0;
     for (const x of q) if (t.has(x)) comunes++;
-    const score = (2 * comunes) / (q.size + t.size);
+    const contenida = comunes === q.size && t.size - q.size <= 2;
+    const score = contenida ? 1 : (2 * comunes) / (q.size + t.size);
     if (!mejor || score > mejor.score) mejor = { r, score };
   }
   return mejor && mejor.score >= UMBRAL_APROXIMADA ? mejor.r : null;

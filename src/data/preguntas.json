@@ -197,7 +197,9 @@
     "preguntas": [
       "¿Se puede votar electrónicamente?",
       "¿Puedo votar por internet en la asamblea?",
-      "¿La Junta de Gobierno puede votar electrónicamente?"
+      "¿La Junta de Gobierno puede votar electrónicamente?",
+      "¿Puedo votar por internet?",
+      "¿Se puede votar por teléfono?"
     ],
     "articulos": [
       26,
@@ -468,7 +470,8 @@
       "¿Hay que pagar cuota para ser funcionario?",
       "¿Qué pasa si no pago la cuota?",
       "¿Cuánto es la cuota?",
-      "¿Hay que pagar cuota?"
+      "¿Hay que pagar cuota?",
+      "¿Cuánto es la cuota del partido?"
     ],
     "articulos": [
       18,
@@ -1227,7 +1230,8 @@
     "preguntas": [
       "¿Cuál es el quórum de los organismos del partido?",
       "¿Qué pasa si no hay quórum en una reunión?",
-      "¿Cómo se cuenta el quórum en una votación electrónica?"
+      "¿Cómo se cuenta el quórum en una votación electrónica?",
+      "¿Qué es el quórum?"
     ],
     "articulos": [
       113
@@ -1258,7 +1262,8 @@
     "id": "reglamento-certificacion",
     "preguntas": [
       "¿Quién certificó el Reglamento?",
-      "¿Quién firmó el reglamento?"
+      "¿Quién firmó el reglamento?",
+      "¿Quién firma el reglamento?"
     ],
     "articulos": [
       121

@@ -333,7 +333,9 @@
     "preguntas": [
       "¿Se puede votar electrónicamente?",
       "¿Puedo votar por internet en la asamblea?",
-      "¿La Junta de Gobierno puede votar electrónicamente?"
+      "¿La Junta de Gobierno puede votar electrónicamente?",
+      "¿Puedo votar por internet?",
+      "¿Se puede votar por teléfono?"
     ],
     "parrafos": [
       "El Reglamento solo contempla la votación electrónica para la Junta de Gobierno: cuando no está reunida, el Presidente puede someter resoluciones o nombramientos a votación electrónica, y el quórum se determina por los votos emitidos.",
@@ -810,7 +812,8 @@
       "¿Hay que pagar cuota para ser funcionario?",
       "¿Qué pasa si no pago la cuota?",
       "¿Cuánto es la cuota?",
-      "¿Hay que pagar cuota?"
+      "¿Hay que pagar cuota?",
+      "¿Cuánto es la cuota del partido?"
     ],
     "parrafos": [
       "La Junta de Gobierno establece las cuotas que deben aportar o recaudar los funcionarios y aspirantes del Partido.",
@@ -2163,7 +2166,8 @@
     "preguntas": [
       "¿Cuál es el quórum de los organismos del partido?",
       "¿Qué pasa si no hay quórum en una reunión?",
-      "¿Cómo se cuenta el quórum en una votación electrónica?"
+      "¿Cómo se cuenta el quórum en una votación electrónica?",
+      "¿Qué es el quórum?"
     ],
     "parrafos": [
       "En organismos de cien personas o menos, el quórum es la mitad más uno de los miembros con derecho a voto. En organismos de más de cien, es una tercera parte.",
@@ -2220,7 +2224,8 @@
     "id": "reglamento-certificacion",
     "preguntas": [
       "¿Quién certificó el Reglamento?",
-      "¿Quién firmó el reglamento?"
+      "¿Quién firmó el reglamento?",
+      "¿Quién firma el reglamento?"
     ],
     "parrafos": [
       "Lo certificaron Pablo José Hernández Rivera, Presidente del Partido, y Manuel Calderón Cerame, Secretario General."
