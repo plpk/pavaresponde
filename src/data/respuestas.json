@@ -13,17 +13,17 @@
       "¿Cuándo y dónde es la asamblea?"
     ],
     "parrafos": [
-      "La Asamblea General es el domingo 11 de octubre de 2026 en el Complejo Ferial de Puerto Rico, en Ponce.",
-      "La hora y los detalles de acceso van en la convocatoria del partido, que el Secretario General envía con al menos veintiún días de anticipación. Si no la has recibido, llama al (787) 721-2000 y pregunta por tu Comité Municipal."
+      "La Asamblea General es el domingo 11 de octubre de 2026 en el Complejo Ferial de Puerto Rico, en Ponce. La votación es de 8:00 a 11:00 de la mañana.",
+      "Si necesitas transporte o más detalles, llama al partido al (787) 721-2000."
     ],
     "articulos": [
       10
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar.",
-      "El lugar (Complejo Ferial de Puerto Rico) viene del prototipo de diseño, no del Reglamento. Confirmar con la Secretaría General antes de la Asamblea."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -40,19 +40,18 @@
       "¿Puedo votar?"
     ],
     "parrafos": [
-      "Votan los miembros de la Asamblea General. Son los delegados de cada municipio (uno por cada 400 votos del candidato popular más votado en la papeleta estatal de la elección anterior), los miembros de la Junta de Gobierno, los alcaldes, senadores, representantes y candidatos certificados a la Legislatura, los legisladores municipales, los miembros del Comité Central y de los comités municipales, los presidentes de comité de unidad, las directivas de las asociaciones y organizaciones sectoriales, y los exfuncionarios que lista el Artículo 8.",
-      "Los delegados por votos los cubre tu Comité Municipal con la lista de funcionarios de colegio de la pasada elección, o con los vicepresidentes, coordinadores y subcoordinadores electorales de unidad.",
-      "Para elegir al Presidente y a la Junta de Gobierno, la Junta decide si votan todos los afiliados o solo los delegados. Si no sabes si te toca, llama al (787) 721-2000 y pregunta por tu Comité Municipal."
+      "Este año puede votar cualquier persona que sea elector activo en el Registro General de Electores al 30 de septiembre de 2026 y vaya a la Asamblea. Es la primera vez que votan todos los asistentes y no solo los delegados.",
+      "El Reglamento permite las dos formas y la Junta de Gobierno escogió el voto directo (Artículo 20). Ojo con la fecha: cuenta tu estado en el registro electoral al 30 de septiembre. Si tienes dudas, llama al (787) 721-2000."
     ],
     "articulos": [
-      8,
-      9,
-      20
+      20,
+      8
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -67,19 +66,18 @@
       "¿Qué se va a elegir?"
     ],
     "parrafos": [
-      "Se eligen el Presidente del Partido, las dos vicepresidencias (la Ejecutiva y la de Sectores), los cinco miembros por acumulación y un miembro por cada distrito senatorial de la Junta de Gobierno. Cada elector puede votar por hasta cinco personas para miembros por acumulación.",
-      "La Asamblea General también fija las pautas fundamentales del Partido y, con el voto de tres cuartas partes de los delegados presentes, puede revocar decisiones de los organismos directivos y del Presidente."
+      "Se elige la Junta de Gobierno: el Presidente del Partido, las dos vicepresidencias, 5 miembros por acumulación y 1 miembro por cada distrito senatorial. Puedes votar por hasta 5 personas para acumulación.",
+      "La Asamblea también puede revocar decisiones del partido con el voto de 3 de cada 4 delegados presentes."
     ],
     "articulos": [
       20,
-      22,
       23,
       7
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -91,17 +89,17 @@
       "¿Cómo sé si soy delegado?"
     ],
     "parrafos": [
-      "El Artículo 8 lista quién es miembro. Por un lado, un delegado por cada 400 votos o fracción que obtuvo el candidato popular más votado en la papeleta estatal de la elección general anterior, divididos por municipio.",
-      "Por otro lado, por su cargo: los miembros de la Junta de Gobierno, alcaldes, senadores, representantes, candidatos certificados a la Legislatura, legisladores municipales, miembros del Comité Central y de cada Comité Municipal, presidentes de comité de unidad, las directivas de las asociaciones de jóvenes, mujeres y servidores públicos con sus presidentes municipales o de agencia, y las directivas de las organizaciones sectoriales reconocidas.",
-      "También los exgobernadores, excomisionados residentes, exalcaldes, exsenadores, exrepresentantes, excomisionados electorales, exsecretarios generales y expresidentes del Partido. Si no sabes si estás en la lista, pregunta en tu Comité Municipal o llama al (787) 721-2000."
+      "Son miembros los delegados de cada municipio (1 por cada 400 votos del PPD en la última elección), los alcaldes, legisladores y legisladores municipales, los miembros de la Junta de Gobierno, del Comité Central y de los comités municipales, los presidentes de unidad, las directivas de las asociaciones y varios exfuncionarios. La lista completa está en el Artículo 8.",
+      "Este año, además, vota cualquier elector activo que asista."
     ],
     "articulos": [
       8
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -113,17 +111,17 @@
       "¿Cuántos delegados tiene cada municipio?"
     ],
     "parrafos": [
-      "Cada municipio tiene un delegado por cada 400 votos, o fracción, que obtuvo el candidato popular más votado en la papeleta estatal de la elección general anterior.",
-      "Esos puestos los cubre el Comité Municipal con la lista de funcionarios de colegio de la pasada elección, o con los vicepresidentes, coordinadores o subcoordinadores electorales de unidad del municipio."
+      "Cada municipio tiene 1 delegado por cada 400 votos que sacó el candidato popular más votado en la papeleta estatal de la última elección general.",
+      "Esos puestos los cubre tu Comité Municipal con la lista de funcionarios de colegio de esa elección, o con los coordinadores electorales de unidad."
     ],
     "articulos": [
       8,
       9
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -135,16 +133,16 @@
       "Soy exlegislador municipal, ¿soy delegado?"
     ],
     "parrafos": [
-      "Sí. Son miembros de la Asamblea General los exgobernadores, excomisionados residentes, exalcaldes, exsenadores, exrepresentantes, excomisionados electorales, exsecretarios generales y expresidentes del Partido.",
-      "Los exlegisladores municipales no aparecen en esa lista. Los legisladores municipales en funciones sí son miembros."
+      "Sí. Los exgobernadores, excomisionados residentes, exalcaldes, exsenadores, exrepresentantes, excomisionados electorales, exsecretarios generales y expresidentes del partido son miembros de la Asamblea General.",
+      "Los exlegisladores municipales no están en esa lista."
     ],
     "articulos": [
       8
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -155,17 +153,17 @@
       "¿Quién manda cuando la asamblea no está reunida?"
     ],
     "parrafos": [
-      "La Asamblea General es el organismo soberano del Partido. Representa al pueblo popular en la elección de sus máximos oficiales y ejerce los poderes que le da el Reglamento.",
-      "Cuando la Asamblea no está reunida, el organismo supremo es la Junta de Gobierno."
+      "La Asamblea General es la máxima autoridad del partido. Elige a sus máximos oficiales y fija las pautas fundamentales.",
+      "Cuando no está reunida, manda la Junta de Gobierno."
     ],
     "articulos": [
       6,
       17
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -176,15 +174,15 @@
       "¿La asamblea puede cambiar decisiones del partido?"
     ],
     "parrafos": [
-      "Sí. Con el voto de al menos tres cuartas partes de los delegados presentes, la Asamblea General puede revocar decisiones de los organismos directivos del Partido y del Presidente."
+      "Sí. Con el voto de 3 de cada 4 delegados presentes, la Asamblea puede revocar decisiones de la Junta de Gobierno y del Presidente."
     ],
     "articulos": [
       7
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -195,17 +193,17 @@
       "¿Quién convoca la sesión ordinaria de la asamblea?"
     ],
     "parrafos": [
-      "La Asamblea General celebra por lo menos una sesión ordinaria cada cuatro años, convocada por la Junta de Gobierno.",
-      "Además puede haber sesiones extraordinarias, convocadas por el Presidente del Partido, por dos terceras partes de los miembros con voto en la Junta de Gobierno o por dos terceras partes de los miembros de la Asamblea."
+      "Por lo menos una vez cada 4 años. La convoca la Junta de Gobierno.",
+      "También puede haber asambleas extraordinarias si las convoca el Presidente, dos tercios de la Junta de Gobierno o dos tercios de la propia Asamblea."
     ],
     "articulos": [
       10,
       11
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -216,16 +214,15 @@
       "¿Quién cita a los miembros de la asamblea?"
     ],
     "parrafos": [
-      "El Secretario General debe citar a los miembros con al menos veintiún días de anticipación.",
-      "También debe establecer un mecanismo para que los miembros sometan asuntos adicionales, llevar el registro de asistencia y redactar el acta de los acuerdos."
+      "Con al menos 21 días de anticipación. Cita el Secretario General."
     ],
     "articulos": [
       10
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -235,15 +232,15 @@
       "¿Se puede convocar una asamblea fuera de fecha?"
     ],
     "parrafos": [
-      "Pueden convocar una sesión extraordinaria de la Asamblea General el Presidente del Partido, dos terceras partes de los miembros con voto en la Junta de Gobierno, o dos terceras partes de los miembros de la Asamblea General."
+      "El Presidente del Partido, dos terceras partes de la Junta de Gobierno con voto, o dos terceras partes de los miembros de la Asamblea."
     ],
     "articulos": [
       11
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -254,16 +251,16 @@
       "¿Los miembros pueden traer asuntos adicionales a la asamblea?"
     ],
     "parrafos": [
-      "Sí. El Reglamento obliga al Secretario General a establecer un mecanismo para que los miembros puedan someter asuntos adicionales a la Asamblea General.",
-      "Cómo y hasta cuándo se someten lo informa la Secretaría General en la convocatoria. Si no lo tienes, llama al (787) 721-2000."
+      "Sí. El Secretario General tiene que abrir una vía para que los miembros propongan asuntos. Cómo y hasta cuándo va en la convocatoria.",
+      "Si no la tienes, llama al (787) 721-2000."
     ],
     "articulos": [
       10
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -276,16 +273,16 @@
       "¿Cuántas personas hacen quórum?"
     ],
     "parrafos": [
-      "Como la Asamblea General tiene más de cien miembros, el quórum es una tercera parte de sus miembros con derecho a voto.",
-      "Si no se logra el quórum, hay que convocar una segunda reunión dentro de catorce días, y en esa el quórum lo forman los miembros presentes."
+      "Una tercera parte de los miembros con voto, porque la Asamblea tiene más de 100 miembros.",
+      "Si no se llega, se convoca otra reunión dentro de 14 días y ahí el quórum lo hacen los que estén."
     ],
     "articulos": [
       113
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -296,18 +293,17 @@
       "¿Qué es mayoría simple?"
     ],
     "parrafos": [
-      "Cuando hay quórum, los acuerdos se toman por mayoría simple: la mitad más uno de los miembros presentes.",
-      "El Reglamento distingue la mayoría absoluta, que es la mayoría de la totalidad de los miembros, y la usa solo cuando lo dice expresamente. Revocar una decisión en la Asamblea General requiere tres cuartas partes de los delegados presentes."
+      "Por mayoría simple: la mitad más uno de los presentes, siempre que haya quórum.",
+      "Para revocar una decisión hacen falta 3 de cada 4 delegados presentes."
     ],
     "articulos": [
       114,
-      5,
       7
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -318,15 +314,15 @@
       "¿Cuántos votos tiene una persona con varios cargos?"
     ],
     "parrafos": [
-      "No. Si una persona tiene más de una representación en un mismo organismo directivo, emite un solo voto y cuenta una sola vez para el quórum."
+      "No. Aunque tengas más de un cargo, votas una sola vez y cuentas una sola vez para el quórum."
     ],
     "articulos": [
       115
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -339,18 +335,18 @@
       "¿Se puede votar por teléfono?"
     ],
     "parrafos": [
-      "El Reglamento solo contempla la votación electrónica para la Junta de Gobierno: cuando no está reunida, el Presidente puede someter resoluciones o nombramientos a votación electrónica, y el quórum se determina por los votos emitidos.",
-      "Para la Asamblea General no dispone voto por internet. La elección se celebra en la fecha y forma que decida la Junta de Gobierno. Si tienes dudas sobre cómo votar, llama al (787) 721-2000."
+      "En la Asamblea General no. Se vota en persona, en Ponce, de 8:00 a 11:00 de la mañana.",
+      "El voto electrónico solo existe para la Junta de Gobierno, cuando el Presidente somete asuntos entre reuniones."
     ],
     "articulos": [
       26,
-      113,
       20
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -361,16 +357,16 @@
       "¿Cómo se cambia el reglamento del partido?"
     ],
     "parrafos": [
-      "El Reglamento lo pueden enmendar el Consejo de Gobierno o la Asamblea General.",
-      "Además, la Junta de Gobierno puede someter hasta tres enmiendas cada año al Consejo de Gobierno por votación electrónica."
+      "El Consejo de Gobierno o la Asamblea General.",
+      "La Junta de Gobierno puede proponer hasta 3 enmiendas al año al Consejo, por votación electrónica."
     ],
     "articulos": [
       116
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -381,17 +377,16 @@
       "¿Quién redacta el acta de la asamblea?"
     ],
     "parrafos": [
-      "El Secretario General lleva el registro de asistencia y redacta el acta de los acuerdos adoptados en la Asamblea General.",
-      "Es también quien redacta, certifica y custodia las actas y los documentos oficiales del Partido."
+      "El Secretario General. Lleva la asistencia, redacta el acta y la custodia."
     ],
     "articulos": [
       10,
       65
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -405,17 +400,18 @@
       "¿Cómo se escoge el presidente?"
     ],
     "parrafos": [
-      "El Presidente del Partido se elige por voto libre, directo y secreto de los afiliados, o por los delegados a la Asamblea General, según lo decida la Junta de Gobierno. En la misma elección se escogen las vicepresidencias y los miembros por acumulación y por distrito de la Junta.",
-      "Hay una excepción: si alguien que no es Presidente es certificado como candidato a la Gobernación, asume la presidencia del Partido automáticamente."
+      "Por voto directo y secreto de los afiliados, o por los delegados, según decida la Junta de Gobierno. Este año se escogió el voto directo: vota todo elector activo que vaya a la Asamblea del 11 de octubre.",
+      "Hay una excepción: quien sea certificado candidato a gobernador pasa a ser Presidente del Partido automáticamente."
     ],
     "articulos": [
       20,
       21
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -428,16 +424,17 @@
       "¿Cuándo se elige el presidente?"
     ],
     "parrafos": [
-      "La fecha la fija la Junta de Gobierno, y tiene que ser en o antes del 31 de diciembre del segundo año después de las elecciones generales. Los electos ocupan sus puestos hasta que se elijan sus sucesores.",
-      "Para este ciclo, la Asamblea General está convocada para el domingo 11 de octubre de 2026."
+      "Este ciclo, el 11 de octubre de 2026 en la Asamblea General de Ponce.",
+      "La regla general: la fecha la fija la Junta de Gobierno, y tiene que ser antes del 31 de diciembre del segundo año después de las elecciones generales."
     ],
     "articulos": [
       20
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -448,16 +445,17 @@
       "¿Van a votar todos los populares o solo la asamblea?"
     ],
     "parrafos": [
-      "Lo decide la Junta de Gobierno: la elección puede ser por voto libre, directo y secreto de los afiliados, o por los delegados a la Asamblea General. Los miembros por distrito los eligen los populares de su propio distrito.",
-      "Si no sabes si te toca votar, llama al (787) 721-2000 y pregunta por tu Comité Municipal."
+      "Lo decide la Junta de Gobierno, y este año decidió voto directo: vota cualquier elector activo que vaya a la Asamblea, no solo los delegados.",
+      "Los miembros por distrito los eligen los populares de cada distrito."
     ],
     "articulos": [
       20
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General."
     ]
   },
   {
@@ -468,15 +466,15 @@
       "¿Quién es presidente del partido después de una primaria de gobernación?"
     ],
     "parrafos": [
-      "Sí. Si una persona que no es Presidente del Partido es certificada como candidata a la Gobernación, ya sea después de una primaria o por ser la única aspirante, asume el cargo de Presidente del Partido automáticamente."
+      "Sí. Si el candidato certificado a gobernador no es el Presidente del Partido, asume la presidencia automáticamente."
     ],
     "articulos": [
       21
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -487,17 +485,16 @@
       "¿Quién elige al presidente del partido después de perder las elecciones?"
     ],
     "parrafos": [
-      "Si el Partido pierde la elección para gobernador, el Presidente debe convocar al Consejo de Gobierno en o antes del 28 de febrero del año siguiente para celebrar una elección al cargo de Presidente del Partido.",
-      "Mientras tanto, el Presidente sigue en funciones hasta que su sucesor sea electo y asuma el cargo."
+      "El Presidente tiene que convocar al Consejo de Gobierno antes del 28 de febrero del año siguiente para elegir un nuevo Presidente. Mientras tanto sigue en el cargo."
     ],
     "articulos": [
       21,
       13
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -509,16 +506,16 @@
       "¿Quién puede ser vicepresidente de sectores?"
     ],
     "parrafos": [
-      "El Partido tiene dos vicepresidencias fijas. La Vicepresidencia Ejecutiva sustituye al Presidente en caso de ausencia o vacante. La Vicepresidencia de Sectores representa en la Junta de Gobierno a las asociaciones y organizaciones sectoriales, y solo puede ocuparla un miembro activo de una de ellas.",
-      "Si ninguna de las dos la ocupa una mujer, se crea una Segunda Vicepresidencia Ejecutiva, que ocupa la Presidenta de la Asociación de Mujeres Populares."
+      "Dos. La Ejecutiva sustituye al Presidente cuando falta. La de Sectores representa a las asociaciones y organizaciones sectoriales en la Junta de Gobierno, y solo puede ocuparla alguien activo en una de ellas.",
+      "Si ninguna la ocupa una mujer, se crea una Segunda Vicepresidencia Ejecutiva para la presidenta de Mujeres Populares."
     ],
     "articulos": [
       22
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -529,15 +526,15 @@
       "¿La presidenta de las Mujeres Populares puede ser vicepresidenta?"
     ],
     "parrafos": [
-      "Si ninguna de las dos vicepresidencias la ocupa una mujer, se crea una Segunda Vicepresidencia Ejecutiva, que ocupa la Presidenta de la Asociación de Mujeres Populares."
+      "Se crea una Segunda Vicepresidencia Ejecutiva, que ocupa la presidenta de la Asociación de Mujeres Populares."
     ],
     "articulos": [
       22
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -548,17 +545,17 @@
       "¿Cuántos miembros por acumulación tiene la Junta de Gobierno?"
     ],
     "parrafos": [
-      "Son cinco miembros de la Junta de Gobierno que se eligen por votación de todos, no por distrito. Cada elector puede votar por hasta cinco personas para esos puestos.",
-      "Quienes ya están en la Junta de Gobierno por el cargo que ocupan en el Gobierno o en una asociación del Partido no pueden aspirar por acumulación."
+      "Son 5 miembros de la Junta de Gobierno que elige todo el partido, no un distrito. Puedes votar por hasta 5.",
+      "Quien ya está en la Junta por su cargo no puede aspirar por acumulación."
     ],
     "articulos": [
       23,
       19
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -569,16 +566,16 @@
       "¿Cuántos miembros por distrito hay en la Junta?"
     ],
     "parrafos": [
-      "La Junta de Gobierno tiene un miembro por cada distrito senatorial. Lo eligen los populares de ese distrito, por voto directo o por delegados, según decida la Junta de Gobierno."
+      "La Junta de Gobierno tiene 1 miembro por cada distrito senatorial. Lo eligen los populares de ese distrito."
     ],
     "articulos": [
       20,
       19
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -589,17 +586,17 @@
       "¿Los que ya están en la Junta por su cargo pueden correr por acumulación?"
     ],
     "parrafos": [
-      "No pueden aspirar por acumulación los miembros de la Junta de Gobierno que lo son por el cargo que ocupan en el Gobierno o en alguna asociación del Partido.",
-      "Un alcalde puede aspirar, salvo que ya sea miembro de la Junta por un cargo, como presidir la Asociación de Alcaldes Populares."
+      "Quien ya es miembro de la Junta de Gobierno por su cargo, como los presidentes de las asociaciones o los portavoces legislativos.",
+      "Un alcalde común sí puede aspirar."
     ],
     "articulos": [
       23,
       19
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -610,17 +607,16 @@
       "¿Cuándo termina el término de los electos?"
     ],
     "parrafos": [
-      "Los electos ocupan sus puestos hasta que sus sucesores sean electos. La siguiente elección ordinaria debe celebrarse en o antes del 31 de diciembre del segundo año después de las elecciones generales.",
-      "El Presidente del Partido continúa en funciones en todos los casos hasta que su sucesor sea electo y asuma el cargo."
+      "Hasta que se elijan sus sucesores. La próxima elección tiene que ser antes del 31 de diciembre del segundo año después de las elecciones generales."
     ],
     "articulos": [
       20,
       21
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -631,8 +627,8 @@
       "¿Quién cubre las vacantes en la Junta de Gobierno?"
     ],
     "parrafos": [
-      "En caso de ausencia o vacante, el Vicepresidente Ejecutivo sustituye al Presidente.",
-      "Si la vacante es permanente, el Consejo de Gobierno la cubre por voto directo y secreto de sus miembros dentro de treinta días. Si faltan el Presidente y los vicepresidentes, preside interinamente el Secretario General."
+      "Lo sustituye el Vicepresidente Ejecutivo. Si la vacante es definitiva, el Consejo de Gobierno elige un nuevo Presidente dentro de 30 días.",
+      "Si faltan el Presidente y los vicepresidentes, preside el Secretario General mientras tanto."
     ],
     "articulos": [
       22,
@@ -640,9 +636,9 @@
       65
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -653,17 +649,16 @@
       "¿Cuáles son las funciones de la Junta de Gobierno?"
     ],
     "parrafos": [
-      "La Junta de Gobierno es el organismo supremo del Partido cuando la Asamblea General no está reunida.",
-      "Entre sus funciones: fijar la posición política del Partido, aprobar los planes de reorganización, finanzas y trabajo electoral, interpretar el Reglamento y el plan de gobierno y resolver controversias, aprobar los nombramientos del Comité Central, atender apelaciones, crear comités especiales y fijar las cuotas."
+      "Es el organismo que manda cuando la Asamblea General no está reunida. Fija la posición política del partido, aprueba planes y nombramientos, interpreta el Reglamento y atiende apelaciones."
     ],
     "articulos": [
       17,
       18
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -675,16 +670,16 @@
       "¿Quién está en la Junta de Gobierno?"
     ],
     "parrafos": [
-      "Tienen voz y voto: el Presidente del Partido, el Vicepresidente Ejecutivo, el Vicepresidente Sectorial, el Gobernador si es del Partido y no ocupa la presidencia, el Comisionado Residente o el candidato certificado a ese cargo, los presidentes del Senado y de la Cámara o los portavoces de la minoría popular, los presidentes de las asociaciones de alcaldes, legisladores municipales, jóvenes, servidores públicos y mujeres, cinco miembros por acumulación y un miembro por cada distrito senatorial.",
-      "Tienen voz pero no voto los exgobernadores, el Secretario General, el Subsecretario, el Comisionado Electoral y su alterno, y un expresidente del Partido escogido entre sus pares."
+      "Con voto: el Presidente, los dos vicepresidentes, el Gobernador si es del partido, el Comisionado Residente, los líderes legislativos populares, los presidentes de las 5 asociaciones, 5 miembros por acumulación y 1 por cada distrito senatorial.",
+      "Con voz pero sin voto: exgobernadores, Secretario y Subsecretario General, los comisionados electorales y un expresidente."
     ],
     "articulos": [
       19
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -695,17 +690,17 @@
       "¿Los exgobernadores votan en la Junta de Gobierno?"
     ],
     "parrafos": [
-      "Tienen voz pero no voto los exgobernadores, el Secretario General, el Subsecretario General, el Comisionado Electoral, el Comisionado Electoral Alterno y un expresidente del Partido escogido entre sus pares. El Presidente puede invitar a otros miembros, también con voz y sin voto.",
-      "Como disposición de transición, los exgobernadores y el representante de los expresidentes que estaban en la Junta al aprobarse el Reglamento mantienen su voto si lo solicitaron al Secretario General dentro de los diez días siguientes a la aprobación."
+      "Los exgobernadores, el Secretario General, el Subsecretario, el Comisionado Electoral y su alterno, y un expresidente del partido escogido entre ellos.",
+      "Los exgobernadores y el representante de los expresidentes que ya estaban en la Junta pudieron conservar su voto si lo pidieron a tiempo."
     ],
     "articulos": [
       19,
       117
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -715,17 +710,17 @@
       "¿Quién convoca una reunión extraordinaria de la Junta?"
     ],
     "parrafos": [
-      "La Junta de Gobierno se reúne ordinariamente una vez cada dos meses en año no electoral y una vez al mes en año electoral.",
-      "Una reunión extraordinaria la puede convocar el Presidente del Partido o dos terceras partes de los miembros con derecho al voto. El Secretario General tramita la convocatoria."
+      "Cada 2 meses en año normal y cada mes en año electoral.",
+      "Una reunión extraordinaria la convoca el Presidente o dos tercios de los miembros con voto."
     ],
     "articulos": [
       24,
       25
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -735,17 +730,17 @@
       "¿Se pueden hacer reuniones virtuales?"
     ],
     "parrafos": [
-      "Sí. La Junta de Gobierno puede celebrar reuniones extraordinarias por videoconferencia, y el Comisionado Residente puede participar virtualmente en todas las reuniones.",
-      "Los Comités Municipales también pueden celebrar reuniones extraordinarias por videoconferencia."
+      "Sí, las reuniones extraordinarias pueden ser por videoconferencia. El Comisionado Residente puede participar a distancia en todas.",
+      "Los comités municipales también pueden reunirse en extraordinaria por video."
     ],
     "articulos": [
       26,
       85
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -755,16 +750,15 @@
       "¿Cuántas ausencias se permiten en la Junta?"
     ],
     "parrafos": [
-      "Cualquier miembro de la Junta de Gobierno, excepto el Comisionado Residente, pierde su cargo automáticamente si falta a tres reuniones consecutivas o a cuatro reuniones dentro de un año natural.",
-      "Una vez relevado, su puesto no cuenta para efectos de quórum."
+      "Pierde el cargo automáticamente si falta a 3 reuniones seguidas o a 4 en un año. La excepción es el Comisionado Residente."
     ],
     "articulos": [
       27
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -775,16 +769,16 @@
       "¿A quién le pregunto si no entiendo una regla?"
     ],
     "parrafos": [
-      "La Junta de Gobierno interpreta el Reglamento y el plan de gobierno, y resuelve cualquier controversia sobre su aplicación.",
-      "Para una orientación práctica sobre tu caso, llama al partido al (787) 721-2000."
+      "La Junta de Gobierno. Ella interpreta el Reglamento y resuelve las controversias.",
+      "Para tu caso concreto, llama al (787) 721-2000."
     ],
     "articulos": [
       18
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -795,15 +789,15 @@
       "¿Quién atiende las apelaciones?"
     ],
     "parrafos": [
-      "Las apelaciones las atiende la Junta de Gobierno. Cubre las decisiones de los Comités de Unidad, los Comités Municipales, las asociaciones y organizaciones sectoriales, y la Comisión Calificadora de Aspirantes."
+      "A la Junta de Gobierno. Atiende las apelaciones de los comités de unidad, los comités municipales, las asociaciones y la Comisión Calificadora."
     ],
     "articulos": [
       18
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -817,8 +811,8 @@
       "¿Cuánto es la cuota del partido?"
     ],
     "parrafos": [
-      "La Junta de Gobierno establece las cuotas que deben aportar o recaudar los funcionarios y aspirantes del Partido.",
-      "Para aspirar a un cargo hace falta una certificación de que estás al día con las cuotas, e incumplir el pago es motivo de medida disciplinaria. El monto y la forma de pago los informa el partido; llama al (787) 721-2000."
+      "Las fija la Junta de Gobierno. Para aspirar a un cargo hay que estar al día, y no pagar puede traer una medida disciplinaria.",
+      "Cuánto es y cómo se paga: llama al (787) 721-2000."
     ],
     "articulos": [
       18,
@@ -826,9 +820,9 @@
       97
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -840,8 +834,8 @@
       "¿Qué es el Consejo de Gobierno del PPD?"
     ],
     "parrafos": [
-      "El Consejo de Gobierno es el organismo deliberativo del Partido. Aprueba el reglamento, el plan de gobierno y las resoluciones programáticas que somete la Junta, recibe el informe anual del Presidente, cubre vacantes en la Junta de Gobierno y elige al Presidente en elección extraordinaria si el Partido pierde la gobernación.",
-      "La Junta de Gobierno, en cambio, es el organismo supremo entre asambleas y dirige el Partido en el día a día."
+      "Es el organismo que aprueba el Reglamento y el plan de gobierno, recibe el informe anual del Presidente y cubre vacantes en la Junta de Gobierno.",
+      "La Junta de Gobierno, en cambio, dirige el partido en el día a día."
     ],
     "articulos": [
       12,
@@ -849,9 +843,9 @@
       17
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -861,16 +855,15 @@
       "¿Los presidentes de comités municipales están en el Consejo de Gobierno?"
     ],
     "parrafos": [
-      "Son miembros los de la Junta de Gobierno, los alcaldes, senadores, representantes y candidatos certificados a la Legislatura, los presidentes y vicepresidentes de las legislaturas municipales donde el Partido es mayoría o los portavoces de minoría donde no lo es, los presidentes y vicepresidentes de los Comités Municipales, y las directivas de las asociaciones de mujeres, jóvenes y servidores públicos y de las organizaciones sectoriales reconocidas.",
-      "También los expresidentes del Partido y los excomisionados residentes, exalcaldes, exlegisladores, excomisionados electorales y exsecretarios generales que al 2025 eran miembros del Consejo General."
+      "La Junta de Gobierno, los alcaldes, legisladores y candidatos a la Legislatura, los líderes populares de las legislaturas municipales, los presidentes y vicepresidentes de los comités municipales, las directivas de las asociaciones y varios exfuncionarios. La lista completa está en el Artículo 14."
     ],
     "articulos": [
       14
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -881,17 +874,17 @@
       "¿Con cuánto tiempo citan al Consejo de Gobierno?"
     ],
     "parrafos": [
-      "El Presidente del Partido convoca al Consejo de Gobierno a una reunión ordinaria al menos una vez al año. El Secretario General cita con al menos diez días de anticipación.",
-      "Una reunión extraordinaria la puede convocar el Presidente o dos terceras partes de los miembros del Consejo."
+      "Al menos una vez al año, convocado por el Presidente y citado con 10 días de anticipación.",
+      "Una reunión extraordinaria la convoca el Presidente o dos tercios de los miembros."
     ],
     "articulos": [
       15,
       16
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -902,8 +895,8 @@
       "¿Qué es el plan de gobierno?"
     ],
     "parrafos": [
-      "El Consejo de Gobierno aprueba tanto el plan de gobierno como el reglamento, a propuesta de la Junta de Gobierno.",
-      "El plan de gobierno reúne las posiciones y compromisos del Partido con el electorado. Está vigente desde que se aprueba hasta que se aprueba el siguiente, y la Junta de Gobierno interpreta cualquier controversia sobre él."
+      "El Consejo de Gobierno aprueba tanto el plan de gobierno como el Reglamento, a propuesta de la Junta.",
+      "El plan de gobierno es la lista de compromisos del partido con el pueblo y rige hasta que se apruebe el siguiente."
     ],
     "articulos": [
       12,
@@ -911,9 +904,9 @@
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -928,16 +921,16 @@
       "¿Cómo me hago popular?"
     ],
     "parrafos": [
-      "Elector afiliado es la persona inscrita para votar en Puerto Rico, o con edad para votar en las próximas elecciones generales, que ha ingresado al Partido con actos afirmativos: manifestar públicamente su ingreso, participar en la organización de actividades o cooperar en sus funciones. Además apoya el plan de gobierno, cumple sus compromisos con el Partido y acata el Reglamento.",
-      "El Reglamento no describe un formulario de afiliación. Para ingresar, acércate a tu Comité Municipal o llama al (787) 721-2000."
+      "Es la persona inscrita para votar en Puerto Rico que ha ingresado al partido de forma pública: por ejemplo, participando en sus actividades o cooperando con él. También apoya el plan de gobierno y respeta el Reglamento.",
+      "Para afiliarte, acércate a tu Comité Municipal o llama al (787) 721-2000."
     ],
     "articulos": [
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -947,17 +940,17 @@
       "¿Hasta qué edad se es joven en el partido?"
     ],
     "parrafos": [
-      "Según las definiciones del Reglamento, joven es todo elector afiliado con menos de treinta años.",
-      "Ojo con una diferencia: la Juventud Popular Nacional está compuesta por todos los populares con menos de treinta y cinco años."
+      "Menos de 30 años, según las definiciones del Reglamento.",
+      "Para pertenecer a la Juventud Popular el límite es distinto: menos de 35."
     ],
     "articulos": [
       5,
       41
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -970,17 +963,17 @@
       "¿Qué edad tiene que tener un joven popular?"
     ],
     "parrafos": [
-      "La Juventud Popular Nacional está compuesta por todos los populares con menos de treinta y cinco años.",
-      "Ojo con una diferencia: en las definiciones del Reglamento, joven es el elector afiliado con menos de treinta años. La JPN llega hasta los treinta y cinco."
+      "Menos de 35 años. Todo popular con menos de 35 pertenece a la Juventud Popular Nacional.",
+      "Ojo: en las definiciones del Reglamento, «joven» es quien tiene menos de 30."
     ],
     "articulos": [
       41,
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -990,17 +983,17 @@
       "¿Cuál es la diferencia entre mayoría absoluta y simple?"
     ],
     "parrafos": [
-      "Mayoría absoluta es la mayoría de la totalidad de los miembros de un organismo. Mayoría simple es la mitad más uno de los miembros presentes.",
-      "Los acuerdos se toman por mayoría simple cuando hay quórum, salvo que el Reglamento pida otra cosa."
+      "Mayoría simple es la mitad más uno de los presentes. Mayoría absoluta es la mitad más uno de todos los miembros, estén o no.",
+      "Los acuerdos se toman por mayoría simple, salvo que el Reglamento pida otra cosa."
     ],
     "articulos": [
       5,
       114
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1011,16 +1004,16 @@
       "¿Qué es un barrio según el reglamento?"
     ],
     "parrafos": [
-      "Una unidad electoral es el grupo de vecinos asignados a un mismo centro o escuela de votación según la Comisión Estatal de Elecciones. En la mayoría de los casos coincide con el barrio, aunque puede incluir más de un barrio o solo sectores de uno.",
-      "El precinto es la división geográfica de los municipios para fines electorales y políticos. El barrio es una de las divisiones geográficas de un término municipal."
+      "La unidad electoral es el grupo de vecinos que vota en un mismo centro, según la Comisión Estatal de Elecciones. Casi siempre coincide con el barrio.",
+      "El precinto es la división del municipio para fines electorales."
     ],
     "articulos": [
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1030,17 +1023,16 @@
       "¿Quién prepara el plan de reorganización?"
     ],
     "parrafos": [
-      "Es el documento que el Secretario General somete a la aprobación de la Junta de Gobierno con las unidades de reorganización de cada precinto y municipio, y los procedimientos, fechas y lugares en que se realizan.",
-      "El Secretario General lo elabora y lo ejecuta."
+      "Es el documento del Secretario General que fija cómo, cuándo y dónde se reorganizan las unidades de cada precinto y municipio. Lo aprueba la Junta de Gobierno."
     ],
     "articulos": [
       5,
       65
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1051,17 +1043,16 @@
       "¿Qué tipo de partido es el PPD?"
     ],
     "parrafos": [
-      "El nombre oficial es «Partido Popular Democrático».",
-      "El Reglamento lo define como un partido realista, autonomista y de centro, fundado para adelantar la justicia social y económica del pueblo de Puerto Rico."
+      "«Partido Popular Democrático». El Reglamento lo define como un partido realista, autonomista y de centro, fundado para adelantar la justicia social y económica del pueblo."
     ],
     "articulos": [
       1,
       2
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1072,16 +1063,15 @@
       "¿Quién autoriza el uso del nombre y la insignia?"
     ],
     "parrafos": [
-      "La insignia oficial es el rostro de un campesino de perfil hacia la izquierda, con una pava con el ala doblada hacia arriba en la frente y hacia abajo atrás, en rojo sobre fondo blanco o en blanco sobre fondo rojo, y debajo el lema «PAN, TIERRA Y LIBERTAD».",
-      "Tanto la insignia como el nombre del Partido son propiedad de la colectividad. Nadie puede usarlos sin autorización de la Junta de Gobierno."
+      "No sin permiso. La insignia (el jíbaro de perfil con la pava, en rojo y blanco, con el lema «Pan, Tierra y Libertad») y el nombre del partido solo se pueden usar con autorización de la Junta de Gobierno."
     ],
     "articulos": [
       3
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1091,16 +1081,15 @@
       "¿Qué se espera de un funcionario del PPD?"
     ],
     "parrafos": [
-      "Todo funcionario debe comunicar al pueblo el mensaje del Partido y al Partido el sentir del pueblo, ayudar en la recaudación de fondos, movilizar simpatizantes a las actividades, reclutar voluntarios y funcionarios de colegio, y movilizar electores para que voten por el Partido y por todos sus candidatos.",
-      "También debe gobernar con honestidad y responsabilidad en representación del Partido, y resolver las diferencias políticas o personales con otros funcionarios dentro de los canales internos."
+      "Llevar el mensaje del partido al pueblo y el sentir del pueblo al partido, ayudar a recaudar fondos, movilizar gente a las actividades y a votar, reclutar voluntarios y funcionarios de colegio, gobernar con honestidad y resolver las diferencias por los canales internos."
     ],
     "articulos": [
       4
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1110,17 +1099,16 @@
       "¿Qué significa ser funcionario según el reglamento?"
     ],
     "parrafos": [
-      "Funcionario es toda persona electa o nombrada según el Reglamento a quien se le ha conferido autoridad bajo sus disposiciones. Todas las personas que ostentan una posición en virtud del Reglamento se consideran funcionarios.",
-      "Por serlo, tienen los deberes del Artículo 4 y están sujetas a las normas de conducta del Reglamento."
+      "Cualquier persona electa o nombrada bajo el Reglamento con autoridad en el partido. Todo funcionario tiene los deberes del Artículo 4 y está sujeto a las normas de conducta."
     ],
     "articulos": [
       5,
       4
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1130,15 +1118,15 @@
       "¿Qué es el Comité Central?"
     ],
     "parrafos": [
-      "El Comité Central lo forman el Presidente del Partido, el Vicepresidente Ejecutivo, el Vicepresidente Sectorial, el Secretario General, el Subsecretario General, el Comisionado Electoral, el Comisionado Electoral Alterno, el Tesorero y cualquier otra persona que el Presidente designe."
+      "El Presidente, los dos vicepresidentes, el Secretario General, el Subsecretario, el Comisionado Electoral y su alterno, el Tesorero y quien más designe el Presidente."
     ],
     "articulos": [
       63
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1149,16 +1137,16 @@
       "¿Puede el presidente suspender una decisión de un organismo?"
     ],
     "parrafos": [
-      "El Presidente establece la dirección ejecutiva, política y administrativa del Partido cuando la Junta de Gobierno no está reunida, implanta los acuerdos de los organismos, nombra al personal y a los miembros del Comité Central, preside las reuniones, rinde un informe anual al Consejo de Gobierno y dirige la campaña política.",
-      "También puede crear posiciones y grupos de trabajo, supervisa todos los comités, toma medidas de emergencia en situaciones no previstas, y puede suspender provisionalmente un acuerdo de un organismo interno mientras la Junta de Gobierno lo atiende."
+      "Dirige el partido cuando la Junta de Gobierno no está reunida, ejecuta sus acuerdos, nombra al personal y al Comité Central, preside las reuniones, dirige la campaña y rinde un informe anual al Consejo de Gobierno.",
+      "También puede tomar medidas de emergencia y suspender provisionalmente decisiones de un organismo interno mientras la Junta las revisa."
     ],
     "articulos": [
       64
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1169,17 +1157,17 @@
       "¿Puede el Secretario General ser candidato?"
     ],
     "parrafos": [
-      "El Secretario General lo nombra el Presidente del Partido, con la aprobación de la Junta de Gobierno. Ejecuta las funciones que le delega el Presidente, actúa como secretario de la Junta, del Consejo y de las Asambleas, redacta, certifica y custodia las actas y documentos oficiales, vela por el cumplimiento del Reglamento y es el portavoz oficial del Partido.",
-      "También elabora y ejecuta el Plan de Reorganización, mantiene el registro de contactos de los organismos y preside el Partido interinamente si faltan el Presidente y los vicepresidentes. Nadie puede ser Secretario en año electoral si aspira a una posición electiva."
+      "Lo nombra el Presidente con el visto bueno de la Junta de Gobierno. Es el secretario de todos los organismos, custodia las actas, vela por el Reglamento, es el portavoz oficial y elabora el plan de reorganización.",
+      "No puede ser Secretario en año electoral quien aspire a un cargo."
     ],
     "articulos": [
       65,
       18
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1189,16 +1177,15 @@
       "¿Quién sustituye al Secretario General?"
     ],
     "parrafos": [
-      "El Presidente puede nombrar un Subsecretario General, que asume las funciones del Secretario en su ausencia y lo apoya en todas sus gestiones.",
-      "Si el Secretario General es un funcionario electo, el Subsecretario no puede serlo. Tampoco puede ser Subsecretario en año electoral quien aspire a una posición electiva."
+      "Sustituye al Secretario General cuando falta y lo apoya en todo. Si el Secretario es funcionario electo, el Subsecretario no puede serlo."
     ],
     "articulos": [
       66
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1208,16 +1195,15 @@
       "¿Quién maneja los fondos del partido?"
     ],
     "parrafos": [
-      "El Tesorero lo nombra el Presidente. Recibe y custodia los fondos del Partido, desembolsa en consulta con el Secretario General, lleva la contabilidad, prepara el presupuesto anual junto al Secretario General y somete los informes que exige la ley ante la Oficina del Contralor Electoral.",
-      "Además informa al Presidente y a la Junta de Gobierno sobre la situación financiera del Partido."
+      "Custodia los fondos, lleva la contabilidad, prepara el presupuesto con el Secretario General y responde ante la Oficina del Contralor Electoral. Lo nombra el Presidente."
     ],
     "articulos": [
       67
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1229,16 +1215,16 @@
       "¿Quién organiza el voto adelantado?"
     ],
     "parrafos": [
-      "El Presidente nombra un Comisionado Electoral y un Comisionado Electoral Alterno. Ninguno puede ser funcionario electo ni aspirante a cargos electivos.",
-      "El Comisionado Electoral redacta los reglamentos de las elecciones internas, organiza y dirige todos los procesos electorales internos, representa al Partido ante los tribunales en asuntos electorales, asesora al Presidente y a la Junta, recluta y capacita a los funcionarios de colegio, organiza el voto adelantado y mantiene un sistema de información electoral."
+      "Organiza todas las elecciones internas, escribe sus reglamentos, representa al partido ante los tribunales en temas electorales, recluta a los funcionarios de colegio y organiza el voto adelantado.",
+      "Lo nombra el Presidente, igual que a su alterno. Ninguno puede ser candidato ni funcionario electo."
     ],
     "articulos": [
       68
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1248,17 +1234,16 @@
       "¿Qué hace el delegado presidencial?"
     ],
     "parrafos": [
-      "Es una persona que el Presidente del Partido designa ante cualquier organismo interno para cumplir encomiendas especiales.",
-      "Debe actuar con imparcialidad, resolver controversias internas y cumplir cualquier encomienda del Presidente o del Secretario General."
+      "Es alguien que el Presidente designa para una encomienda especial ante un organismo del partido. Debe ser imparcial y ayudar a resolver controversias."
     ],
     "articulos": [
       69,
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1267,15 +1252,15 @@
       "¿Quién es el portavoz oficial del partido?"
     ],
     "parrafos": [
-      "El portavoz oficial del Partido es el Secretario General."
+      "El Secretario General."
     ],
     "articulos": [
       65
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1286,18 +1271,16 @@
       "¿Quiénes son miembros del comité municipal de mi pueblo?"
     ],
     "parrafos": [
-      "El Comité Municipal es la estructura organizativa del Partido en cada municipio.",
-      "Lo componen el Presidente, el Vicepresidente, el Secretario, el Tesorero, los presidentes de los Comités de Unidad, la presidenta municipal de Mujeres Populares, el presidente municipal de Jóvenes Populares, el Coordinador Electoral en municipios con más de un precinto, el Comisionado Electoral de Precinto y su alterno, el Alcalde, los legisladores municipales y estatales populares del municipio, los miembros de la Junta de Gobierno que residan allí y el Presidente de Precinto donde lo haya.",
-      "Los expresidentes del Comité Municipal, exlegisladores, exalcaldes, exgobernadores y excomisionados residentes domiciliados en el municipio son miembros con voz pero sin voto. La Junta de Gobierno puede aprobar otra composición si hace falta."
+      "Es la organización del partido en cada pueblo. Lo forman su presidente, vicepresidente, secretario y tesorero, los presidentes de unidad, las presidentas de mujeres y jóvenes del municipio, los comisionados electorales, el alcalde y los legisladores populares del pueblo, entre otros. La lista completa está en el Artículo 71."
     ],
     "articulos": [
       70,
       71
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1308,16 +1291,16 @@
       "¿Quién escoge al presidente del comité municipal?"
     ],
     "parrafos": [
-      "El presidente del Comité Municipal se elige por voto directo y secreto de los electores populares del municipio, o en una asamblea de los delegados a la Asamblea General que residen en el municipio.",
-      "Quien asume la candidatura oficial del Partido a la alcaldía es automáticamente presidente del Comité Municipal, y sigue siéndolo mientras sea alcalde, salvo que renuncie a la alcaldía o a la presidencia, o que otra persona asuma la candidatura."
+      "Por voto directo de los populares del municipio, o en una asamblea de los delegados del municipio.",
+      "Quien sea candidato oficial a alcalde pasa a ser presidente del comité automáticamente, mientras sea alcalde."
     ],
     "articulos": [
       80
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1327,16 +1310,15 @@
       "¿Cuáles son las funciones del presidente municipal del partido?"
     ],
     "parrafos": [
-      "Dirige el Comité Municipal y toma las decisiones ejecutivas cuando este no está reunido; esas decisiones solo las puede revocar la mayoría absoluta del Comité o la Junta de Gobierno. Cumple las metas de voto adelantado y de reclutamiento y adiestramiento de funcionarios de colegio, y representa al Comité ante las estructuras del Partido.",
-      "También dirige la campaña en el municipio hasta que se seleccione al candidato a alcalde, designa a los miembros no electos del Comité, recomienda candidatos para comisionados locales y supervisa los fondos y bienes del Comité."
+      "Dirige el comité y toma las decisiones cuando no está reunido, cumple las metas de voto adelantado y funcionarios de colegio, dirige la campaña local hasta que haya candidato a alcalde, designa a los miembros no electos y supervisa los fondos."
     ],
     "articulos": [
       73
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1347,8 +1329,8 @@
       "¿Qué hace el tesorero del comité municipal?"
     ],
     "parrafos": [
-      "Al Vicepresidente, al Secretario y al Tesorero del Comité Municipal los designa el presidente del Comité, y sirven a su discreción.",
-      "El Vicepresidente apoya al presidente y garantiza la continuidad si falta. El Secretario lleva los documentos, convoca las reuniones, maneja la comunicación interna, preside interinamente si faltan el presidente y el vicepresidente, y envía copia de cada minuta al Secretario General. El Tesorero administra las finanzas del Comité y cumple con las reglas de la Oficina del Contralor Electoral."
+      "Los designa el presidente del comité municipal y sirven mientras él quiera.",
+      "El secretario lleva los documentos y convoca las reuniones. El tesorero administra el dinero. El vicepresidente sustituye al presidente cuando falta."
     ],
     "articulos": [
       80,
@@ -1357,9 +1339,9 @@
       76
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1370,8 +1352,8 @@
       "¿Quién convoca una reunión extraordinaria del comité municipal?"
     ],
     "parrafos": [
-      "El Comité Municipal tiene una reunión ordinaria cada tres meses en año no electoral y cada mes en año electoral. El Secretario del Comité convoca con al menos setenta y dos horas de anticipación, por el medio más eficaz disponible, y registra la asistencia.",
-      "El presidente, o la mayoría absoluta de los miembros con voto, puede convocar una reunión extraordinaria, que también puede ser por videoconferencia."
+      "Cada 3 meses en año normal y cada mes en año electoral, convocadas con al menos 72 horas de aviso.",
+      "El presidente, o la mayoría absoluta de los miembros con voto, puede convocar una extraordinaria, también por video."
     ],
     "articulos": [
       83,
@@ -1379,9 +1361,9 @@
       85
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1391,16 +1373,15 @@
       "¿Cómo se cubre una vacante en el comité municipal?"
     ],
     "parrafos": [
-      "El presidente o el secretario del Comité Municipal notifica la vacante al Secretario General. Si la vacante es de presidente o de Presidente de Precinto, la Junta de Gobierno decide cómo cubrirla según el momento y las circunstancias locales.",
-      "Cualquier otra posición se cubre de la misma forma en que se eligió a quien la dejó."
+      "Se avisa al Secretario General. Si la vacante es de presidente, la Junta de Gobierno decide cómo se cubre. Cualquier otro puesto se cubre igual que se eligió."
     ],
     "articulos": [
       81
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1410,16 +1391,15 @@
       "¿Cuánto tiempo tiene un funcionario saliente para hacer la transición?"
     ],
     "parrafos": [
-      "Todo funcionario saliente del Comité Municipal debe hacer una transición con su sucesor y entregar todos los bienes, fondos, archivos y documentos oficiales dentro de catorce días de dejar la posición.",
-      "Si no lo hace, el Comité puede informar al Secretario General, quien puede imponer medidas disciplinarias o acudir al foro correspondiente."
+      "Todo lo del comité: bienes, fondos, archivos y documentos, dentro de 14 días de dejar el puesto. Si no, el Secretario General puede tomar medidas."
     ],
     "articulos": [
       82
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1429,15 +1409,15 @@
       "¿Me pueden quitar el puesto por no ir a las reuniones?"
     ],
     "parrafos": [
-      "Los miembros con voto deben asistir puntualmente a todas las reuniones. El presidente del Comité Municipal puede declarar vacante una posición cuyo titular falte a más de dos reuniones consecutivas sin justificación."
+      "Sí. El presidente del comité puede declarar vacante tu puesto si faltas a más de 2 reuniones seguidas sin justificación."
     ],
     "articulos": [
       86
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1448,17 +1428,17 @@
       "¿El candidato a representante es presidente de precinto?"
     ],
     "parrafos": [
-      "En los municipios donde un precinto constituye por sí solo un distrito representativo, el Comité Municipal tiene un Presidente de Precinto, con autonomía y responsable del trabajo político para ganar ese distrito.",
-      "Se elige por voto directo y secreto de los electores populares del precinto, o en asamblea de los delegados a la Asamblea General que residen en él. Quien asume la candidatura oficial a representante por ese distrito es automáticamente Presidente de Precinto mientras sea representante."
+      "Existe en los pueblos donde un precinto es por sí solo un distrito representativo. Es responsable de ganar ese distrito.",
+      "Lo eligen los populares del precinto, o sus delegados. Quien sea candidato oficial a representante por ese distrito ocupa el puesto automáticamente."
     ],
     "articulos": [
       79,
       80
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1469,8 +1449,8 @@
       "¿Qué hace el comisionado electoral de precinto?"
     ],
     "parrafos": [
-      "El Coordinador Electoral organiza y supervisa los trabajos electorales del municipio en coordinación con los comisionados electorales, en los municipios con más de un precinto; puede ser uno de los comisionados. El Comisionado Electoral de Precinto y su alterno se encargan de los trabajos electorales en su precinto según el Código Electoral y las directrices del Comisionado Electoral del Partido.",
-      "A todos los nombra el Comisionado Electoral del Partido, a recomendación del presidente del Comité Municipal."
+      "El coordinador electoral organiza el trabajo electoral del municipio cuando hay más de un precinto. Los comisionados de precinto se encargan de su precinto según el Código Electoral.",
+      "A todos los nombra el Comisionado Electoral del partido, a recomendación del presidente municipal."
     ],
     "articulos": [
       77,
@@ -1478,9 +1458,9 @@
       80
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1491,17 +1471,16 @@
       "¿Qué es un comité de unidad?"
     ],
     "parrafos": [
-      "El Comité de Unidad Electoral es la base organizativa del Partido. Lo forman los electores de un barrio o sector asignados a un mismo centro de votación según la Comisión Estatal de Elecciones.",
-      "Lo componen un Presidente, un Vicepresidente, un Coordinador Electoral y un Subcoordinador Electoral. El presidente del Comité Municipal puede designar coordinadores de sector y otros auxiliares."
+      "Es la base del partido: los electores de un barrio o sector que votan en un mismo centro. Lo dirigen un presidente, un vicepresidente, un coordinador electoral y un subcoordinador."
     ],
     "articulos": [
       87,
       88
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1512,16 +1491,16 @@
       "¿Quién nombra a los coordinadores electorales de unidad?"
     ],
     "parrafos": [
-      "Los presidentes y vicepresidentes de unidad se eligen por voto directo y secreto de los afiliados domiciliados en la unidad, en una asamblea convocada para eso. El Comité Municipal puede celebrar asambleas conjuntas o virtuales para varias unidades, y su Secretario debe anunciar la elección con al menos cuarenta y ocho horas de anticipación.",
-      "Los coordinadores y subcoordinadores electorales de unidad los designa el presidente del Comité Municipal. Los presidentes y vicepresidentes de unidad no pueden ser coordinadores."
+      "Al presidente y vicepresidente los eligen por voto directo los afiliados de la unidad, en una asamblea anunciada con al menos 48 horas. Puede ser conjunta con otras unidades o virtual.",
+      "A los coordinadores electorales los nombra el presidente del comité municipal."
     ],
     "articulos": [
       91
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1532,17 +1511,16 @@
       "¿Qué hace el coordinador electoral de unidad?"
     ],
     "parrafos": [
-      "El presidente y el vicepresidente de unidad cumplen los deberes de comunicación, movilización y recaudación que fijan el Reglamento y el presidente del Comité Municipal, y se reúnen cada tres meses en año no electoral y cada mes en año electoral.",
-      "El coordinador y el subcoordinador electoral dirigen las tareas electorales de la unidad."
+      "Comunicar, movilizar y recaudar fondos en su barrio, y reunirse cada 3 meses (cada mes en año electoral). El coordinador y el subcoordinador dirigen el trabajo electoral."
     ],
     "articulos": [
       89,
       90
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1553,8 +1531,8 @@
       "¿Qué funciones tiene la JPN?"
     ],
     "parrafos": [
-      "La Juventud Popular Nacional (JPN) existe para organizar y movilizar a los jóvenes populares. La componen todos los populares con menos de treinta y cinco años, con un presidente en cada municipio y una directiva estatal formada por presidente, vicepresidente, una representante por cada distrito senatorial y cinco miembros por acumulación.",
-      "Tiene autonomía para autogobernarse. Entre sus funciones: identificar un representante en cada Comité de Unidad, aportar al plan de gobierno, inscribir y movilizar electores jóvenes, comunicar la visión del Partido y aportar a la recaudación de fondos."
+      "Es la organización de los jóvenes del partido: todos los populares con menos de 35 años. Tiene un presidente en cada pueblo y una directiva estatal, y se gobierna sola.",
+      "Moviliza e inscribe electores jóvenes, aporta al plan de gobierno y tiene un representante en cada comité de unidad."
     ],
     "articulos": [
       40,
@@ -1563,9 +1541,9 @@
       43
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1575,16 +1553,15 @@
       "¿Cómo se elige la directiva de la JPN?"
     ],
     "parrafos": [
-      "La Junta de Gobierno convoca las elecciones de los presidentes municipales y de la directiva de la JPN en o antes del 30 de junio del segundo año después de las elecciones generales.",
-      "El método para elegir al presidente en cada municipio lo acuerdan la Juventud Popular Nacional y la Junta de Gobierno."
+      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. El método para elegir presidentes municipales lo acuerdan la Juventud y la Junta."
     ],
     "articulos": [
       44
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1595,8 +1572,8 @@
       "¿Qué funciones tiene la Asociación de Mujeres Populares?"
     ],
     "parrafos": [
-      "La Asociación de Mujeres Populares (AMP) existe para organizar y movilizar a las mujeres populares. La componen todas las mujeres populares de Puerto Rico, con una presidenta en cada municipio y una directiva estatal formada por presidenta, vicepresidenta, una representante por cada distrito senatorial y cinco miembros por acumulación.",
-      "Además de las funciones comunes a las asociaciones, impulsa que los organismos del Partido tengan una composición equilibrada entre hombres y mujeres, capacita a las mujeres para aspirar a puestos electivos y organiza actividades de base sobre sus derechos civiles y políticos."
+      "Es la asociación de todas las mujeres populares. Tiene una presidenta en cada pueblo y una directiva estatal.",
+      "Además de organizar y movilizar, impulsa que haya igual número de mujeres y hombres en los organismos del partido y capacita a mujeres para aspirar a cargos."
     ],
     "articulos": [
       50,
@@ -1604,9 +1581,9 @@
       53
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1616,16 +1593,15 @@
       "¿Cómo se elige la presidenta municipal de Mujeres Populares?"
     ],
     "parrafos": [
-      "La Junta de Gobierno convoca las elecciones de las presidentas municipales y de la directiva de la AMP en o antes del 30 de junio del segundo año después de las elecciones generales.",
-      "El método para elegir a la presidenta en cada municipio lo acuerdan la Asociación y la Junta de Gobierno."
+      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. El método para las presidentas municipales lo acuerdan la asociación y la Junta."
     ],
     "articulos": [
       54
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1636,8 +1612,8 @@
       "¿Cuándo se elige la directiva de los servidores públicos?"
     ],
     "parrafos": [
-      "La Asociación de Servidores Públicos Populares (ASPP) organiza y moviliza a los servidores públicos afiliados al Partido. Tiene un presidente en cada agencia y una directiva estatal formada por presidente, vicepresidente, un representante por cada distrito senatorial y cinco miembros escogidos entre los presidentes de agencia.",
-      "La Junta de Gobierno convoca la elección de su directiva en o antes del 30 de junio del segundo año después de las elecciones generales; el método para elegir al presidente en cada agencia lo acuerdan la Asociación y la Junta."
+      "Es la asociación de los servidores públicos afiliados al partido. Tiene un presidente en cada agencia y una directiva estatal.",
+      "Sus elecciones las convoca la Junta de Gobierno antes del 30 de junio del segundo año después de las elecciones generales."
     ],
     "articulos": [
       45,
@@ -1646,9 +1622,9 @@
       49
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1659,8 +1635,8 @@
       "¿Cuándo se elige la directiva de los legisladores municipales?"
     ],
     "parrafos": [
-      "La Asociación de Alcaldes Populares fortalece la participación de los alcaldes en el Partido y coordina políticas públicas municipales; su composición y funciones reflejan las de la Asociación de Alcaldes de Puerto Rico en lo compatible con el Reglamento.",
-      "La Asociación de Legisladores Municipales Populares la forman todos los legisladores municipales populares, con una directiva de presidente, vicepresidente, una representante por distrito senatorial y cinco miembros por acumulación. Tiene autonomía, y la Junta de Gobierno convoca la elección de su directiva en o antes del 30 de junio del segundo año después de las elecciones generales."
+      "Son las asociaciones de los alcaldes populares y de los legisladores municipales populares. Coordinan la política municipal y se gobiernan solas.",
+      "La directiva de legisladores municipales se elige antes del 30 de junio del segundo año después de las elecciones generales."
     ],
     "articulos": [
       34,
@@ -1669,9 +1645,9 @@
       39
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1682,19 +1658,18 @@
       "¿Qué es una organización sectorial?"
     ],
     "parrafos": [
-      "Los populares pueden crear organizaciones sectoriales que representen a grupos de interés dentro del Partido. Cada una debe tener al menos presidente, vicepresidente y un representante por cada distrito senatorial, y aporta al plan de gobierno, inscribe y moviliza electores de su sector y mantiene una base de datos de personas afines.",
-      "Para tener representación en el Consejo de Gobierno y la Asamblea General, debe solicitar el reconocimiento oficial a la Vicepresidencia de Sectores y celebrar una elección interna con un mínimo de participación. Los requisitos los fija esa vicepresidencia con el consentimiento de la Junta de Gobierno, según el tamaño del sector, su importancia estratégica y su nivel de activismo."
+      "Los populares pueden crear una organización para representar a un sector, con presidente, vicepresidente y un representante por distrito senatorial.",
+      "Para tener voz en el Consejo de Gobierno y la Asamblea necesita el reconocimiento oficial de la Vicepresidencia de Sectores y una elección interna con participación mínima."
     ],
     "articulos": [
       55,
       57,
-      59,
-      56
+      59
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1704,16 +1679,15 @@
       "¿Por qué pueden rechazar una organización sectorial nueva?"
     ],
     "parrafos": [
-      "Sí. La Junta de Gobierno puede revocar el reconocimiento oficial de una organización sectorial, rechazar la creación de una nueva o iniciar un proceso para sustituir su liderazgo.",
-      "Las razones pueden ser redundancia con organizaciones existentes, actividades incompatibles con el plan de gobierno o la línea programática, inactividad o incumplimiento de los deberes con el Partido, o cualquier otra razón legítima en interés del Partido."
+      "Sí. La Junta de Gobierno puede quitar el reconocimiento, rechazar una organización nueva o cambiar su liderazgo. Por ejemplo, si repite a otra que ya existe, va contra el plan de gobierno o está inactiva."
     ],
     "articulos": [
       61
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1724,16 +1698,16 @@
       "¿Un funcionario electo puede ser presidente de una asociación?"
     ],
     "parrafos": [
-      "Salvo en las asociaciones de alcaldes y de legisladores municipales, ningún funcionario electo incumbente puede ser presidente ni vicepresidente de una organización sectorial o de una asociación.",
-      "El presidente de una asociación puede aspirar a una posición electiva en el año electoral. Cuando se convierte en candidato oficial del Partido, el vicepresidente asume interinamente hasta que terminen las elecciones; si el vicepresidente también es candidato, la Junta de Gobierno designa ambas posiciones de forma interina."
+      "No. Un funcionario electo no puede presidir ni ser vicepresidente de una asociación o sectorial, salvo en las asociaciones de alcaldes y legisladores municipales.",
+      "Si el presidente de una asociación se convierte en candidato, el vicepresidente asume hasta que pasen las elecciones."
     ],
     "articulos": [
       62
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1743,17 +1717,16 @@
       "¿Hasta cuándo mantienen su reconocimiento las organizaciones sectoriales actuales?"
     ],
     "parrafos": [
-      "El Consejo de Exfuncionarios y las organizaciones populares LGBTTIQ+, de PYMES, de Trabajadores del Sector Privado, Base de Fe, de Líderes Comunitarios, de la Comunidad Inmigrante, de Veteranos, de Pensionados, de Líderes Sindicales y de Personas con Diversidad Funcional mantienen su reconocimiento oficial en el Consejo de Gobierno y la Asamblea General hasta el 30 de junio de 2026 o hasta la próxima elección de su directiva, lo que ocurra primero.",
-      "Para conservarlo después, deben cumplir los requisitos de reconocimiento oficial que fija la Vicepresidencia de Sectores."
+      "Las que ya existían (LGBTTIQ+, PYMES, veteranos, pensionados, líderes sindicales y comunitarios, base de fe, inmigrantes, diversidad funcional, trabajadores privados y el Consejo de Exfuncionarios) mantienen su reconocimiento hasta el 30 de junio de 2026 o hasta que elijan directiva, lo que pase primero."
     ],
     "articulos": [
       117,
       59
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1764,19 +1737,18 @@
       "¿Quién preside la Conferencia Legislativa?"
     ],
     "parrafos": [
-      "La Conferencia Legislativa la forman el Presidente del Partido, que la preside, el Comisionado Residente y los senadores y representantes. Se divide en dos caucus: el del Senado y el de la Cámara de Representantes.",
-      "Implementa el plan de gobierno y la línea programática, define la estrategia legislativa en la Asamblea Legislativa y en el Congreso, y elige el liderazgo legislativo de cada cámara. El Presidente la convoca al comienzo de cada sesión legislativa, y sus acuerdos son por escrito y vinculantes para sus miembros."
+      "Es el grupo del Presidente del Partido, el Comisionado Residente y los legisladores populares. Se divide en el caucus del Senado y el de la Cámara.",
+      "Define la estrategia legislativa, aplica el plan de gobierno y elige el liderato de cada cámara. Sus acuerdos obligan a todos."
     ],
     "articulos": [
       28,
       29,
-      30,
       31
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1787,17 +1759,16 @@
       "¿Quién certifica que un aspirante cumple los requisitos?"
     ],
     "parrafos": [
-      "Las candidaturas a la Junta de Gobierno, a presidente de Comité Municipal, a Presidente de Precinto y a cargos públicos se radican ante el Secretario General, por el método que autorice la Junta de Gobierno y conforme al Código Electoral.",
-      "El Secretario General certifica si cada aspirante cumple los requisitos, y la Comisión Calificadora de Aspirantes evalúa si es idóneo."
+      "Ante el Secretario General, por el método que fije la Junta de Gobierno. El Secretario revisa los requisitos y la Comisión Calificadora decide si eres idóneo."
     ],
     "articulos": [
       92,
       93
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1807,16 +1778,16 @@
       "¿Tengo que volver a someter documentos si ya aspiré antes?"
     ],
     "parrafos": [
-      "Hay que presentar ante la Secretaría General toda la documentación que exige la ley para un aspirante en las elecciones generales, una certificación de que estás al día con las cuotas del Partido, y cualquier otro documento que pida la Secretaría o la Comisión Calificadora.",
-      "Quien ya presentó la documentación para un puesto electivo en las elecciones anteriores no tiene que volver a someterla si busca un cargo interno dentro de los dos años siguientes, salvo que el Secretario General o la Comisión dispongan lo contrario."
+      "Los que exige la ley para candidatos, una certificación de que estás al día con las cuotas, y lo que pidan la Secretaría o la Comisión Calificadora.",
+      "Si ya los sometiste en las elecciones anteriores, no tienes que repetirlos para un cargo interno en los 2 años siguientes."
     ],
     "articulos": [
       94
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1827,17 +1798,17 @@
       "¿Quién nombra a la Comisión Calificadora?"
     ],
     "parrafos": [
-      "La Comisión Calificadora de Aspirantes está adscrita a la Secretaría General y evalúa si un aspirante es idóneo para un cargo electivo. La forman un presidente y cuatro miembros nombrados por el Presidente del Partido con la ratificación de la Junta de Gobierno; uno debe ser Contador Público Autorizado.",
-      "Decide por resolución escrita dentro de diez días de recibir toda la documentación, plazo que puede extenderse por justa causa hasta veinte. Sus miembros no pueden aspirar a cargos electivos en las próximas elecciones."
+      "Es el grupo que decide si un aspirante es idóneo. La forman un presidente y 4 miembros nombrados por el Presidente del Partido, uno de ellos contador público autorizado.",
+      "Decide por escrito en 10 días, ampliables a 20."
     ],
     "articulos": [
       93,
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1848,17 +1819,15 @@
       "¿Cuáles son los criterios de calificación para aspirar?"
     ],
     "parrafos": [
-      "No puede aspirar quien haya sido convicto de delito grave o de delito menos grave que implique depravación moral, quien no cumpla los requisitos legales del cargo, quien no someta a tiempo los documentos, ni quien tenga sentencia firme por hostigamiento sexual o discrimen.",
-      "Tampoco quien, siendo funcionario, respaldó o votó por un candidato de otro partido; quien después de perder una primaria compitió contra el candidato oficial o se unió a la campaña de un opositor; quien dio información falsa o hizo uso ilegal de fondos del Partido; ni quien esté en incumplimiento con Hacienda sin plan de pago o con una pensión alimentaria.",
-      "En casos como una destitución de un puesto público, una licencia profesional revocada o un indulto, la Comisión Calificadora puede permitir la aspiración solo por decisión unánime. El Artículo 95 tiene la lista completa."
+      "Quien tenga una convicción por delito grave, quien no cumpla los requisitos de ley, quien apoyó a un candidato de otro partido, quien corrió contra el candidato oficial tras perder una primaria, quien dio información falsa o usó mal fondos del partido, y quien tenga deudas con Hacienda o de pensión alimentaria sin plan de pago, entre otros. La lista completa está en el Artículo 95."
     ],
     "articulos": [
       95
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1868,15 +1837,15 @@
       "¿Cuántos días tengo para pedir revisión de la Comisión Calificadora?"
     ],
     "parrafos": [
-      "Sí. Cualquier aspirante que no esté de acuerdo con la decisión final de la Comisión Calificadora puede solicitar revisión ante la Junta de Gobierno dentro de cinco días de ser notificado."
+      "Sí. Puedes pedir revisión a la Junta de Gobierno dentro de 5 días de que te notifiquen."
     ],
     "articulos": [
       93
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1886,17 +1855,16 @@
       "¿Puedo respaldar a un candidato de otro partido?"
     ],
     "parrafos": [
-      "Respaldar directa o indirectamente a un candidato que no sea del Partido es una acción sujeta a medidas disciplinarias.",
-      "Además, quien siendo funcionario del Partido haya respaldado o votado por un candidato de otro partido no puede aspirar a una candidatura."
+      "Es una falta que puede traer medidas disciplinarias, y además te impide aspirar a una candidatura del partido."
     ],
     "articulos": [
       97,
       95
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1906,16 +1874,15 @@
       "¿Qué pasa si compito contra el candidato oficial después de perder?"
     ],
     "parrafos": [
-      "No. Quien después de perder una elección interna o primaria compita contra el candidato oficial como independiente o por nominación directa, o se una a la campaña de un candidato opositor, no puede aspirar a una candidatura del Partido.",
-      "Lo mismo aplica a quien se haya negado a desautorizar públicamente un movimiento de nominación directa a su favor cuando el Secretario General se lo pidió."
+      "No. Quien después de perder una primaria compite contra el candidato oficial, por nominación directa o como independiente, o se une a la campaña de un rival, no puede volver a aspirar por el partido."
     ],
     "articulos": [
       95
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1925,18 +1892,17 @@
       "¿Qué certificación de cuotas necesito para ser candidato?"
     ],
     "parrafos": [
-      "Sí. Entre los documentos para aspirar está una certificación de que cumples con el pago de las cuotas establecidas por el Partido, y no pagar la cuota es motivo de medida disciplinaria.",
-      "El monto lo fija la Junta de Gobierno. Para saber cuánto es y cómo pagarlo, llama al (787) 721-2000."
+      "Sí. Entre los documentos hay que incluir una certificación de que estás al día con las cuotas.",
+      "El monto lo fija la Junta de Gobierno. Pregúntalo al (787) 721-2000."
     ],
     "articulos": [
       94,
-      97,
       18
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1947,18 +1913,17 @@
       "¿Quién impone las medidas disciplinarias?"
     ],
     "parrafos": [
-      "Las impone el Secretario General por instrucciones del Presidente del Partido o de la Junta de Gobierno. Son la indiferencia, la orden de cese y desista, la censura, el retiro de confianza, la suspensión o expulsión de posiciones dentro del Partido, la suspensión del derecho a ser aspirante o candidato, las multas o sanciones económicas, la suspensión sumaria y cualquier otra medida apropiada y justa.",
-      "Las medidas más graves dan derecho a un procedimiento expedito ante la Junta de Gobierno."
+      "De menor a mayor: indiferencia, cese y desista, censura, retiro de confianza, suspensión o expulsión del cargo, suspensión del derecho a aspirar, multas y suspensión sumaria.",
+      "Las impone el Secretario General por instrucciones del Presidente o la Junta de Gobierno."
     ],
     "articulos": [
       99,
-      97,
-      101
+      97
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1969,17 +1934,17 @@
       "¿Qué conductas están prohibidas para los funcionarios?"
     ],
     "parrafos": [
-      "Se puede disciplinar a funcionarios, aspirantes y candidatos por incumplir el Reglamento, el plan de gobierno o las decisiones de los organismos; criticar públicamente a otro miembro del Partido; respaldar a un candidato de otro partido; no pagar la cuota; enfrentar un procedimiento penal, administrativo o civil; ser arrestado por delito grave; usar un cargo para beneficio propio; ser destituido de un cargo público; incumplir acuerdos con el Partido, o poner en riesgo su imagen.",
-      "No se puede sancionar por debatir ideas con respeto y sin personalismos, por contrastar con respeto las ejecutorias de candidatos primaristas, ni por prestar servicios profesionales a un funcionario de otro partido si no hay conflicto de interés."
+      "Incumplir el Reglamento o las decisiones del partido, criticar públicamente a otro popular, apoyar a un candidato de otro partido, no pagar la cuota, usar un cargo en beneficio propio o dañar la imagen del partido, entre otras.",
+      "Debatir ideas con respeto no se sanciona."
     ],
     "articulos": [
       97,
       98
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1989,16 +1954,15 @@
       "¿Puedo contrastar mi trayectoria con la de otro candidato en una primaria?"
     ],
     "parrafos": [
-      "Sí. El Presidente y la Junta de Gobierno no pueden imponer medidas disciplinarias por debatir respetuosamente y sin personalismos ideas que estén bajo consideración de un organismo del Partido, ni por contrastar con respeto las ejecutorias, la trayectoria o las posiciones de candidatos primaristas.",
-      "Tampoco por prestar servicios profesionales a un funcionario electo de otro partido en su capacidad oficial, siempre que no haya conflicto de interés con un asunto bajo su jurisdicción en el Partido."
+      "Sí. No se puede sancionar a nadie por debatir ideas con respeto, ni por comparar con respeto la trayectoria de candidatos en una primaria."
     ],
     "articulos": [
       98
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2008,17 +1972,17 @@
       "¿Quién puede suspender sumariamente a un funcionario?"
     ],
     "parrafos": [
-      "Ante violaciones graves al Reglamento, incumplimiento de compromisos con el Partido, o una determinación de causa probable para arresto por delito grave o menos grave con depravación moral, el Presidente del Partido o el Secretario General pueden suspender sumariamente a la persona de sus posiciones o de su candidatura.",
-      "La suspensión se notifica por escrito, y la persona tiene derecho a un procedimiento expedito."
+      "Es una suspensión inmediata del cargo o de la candidatura, por violaciones graves o cuando hay causa probable de arresto por delito grave. La pueden imponer el Presidente o el Secretario General.",
+      "Se notifica por escrito y da derecho a un procedimiento expedito."
     ],
     "articulos": [
       100,
       101
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2029,16 +1993,15 @@
       "¿Cuándo tengo derecho a una vista?"
     ],
     "parrafos": [
-      "Tienen derecho a un procedimiento expedito quienes reciban una suspensión o expulsión de posiciones, una suspensión del derecho a ser candidato o una suspensión sumaria.",
-      "La Junta de Gobierno, o quien ella designe, celebra una vista oral para que la persona presente su defensa dentro de cinco días laborables desde la notificación. La Junta resuelve en dos días laborables y notifica por escrito una Resolución Final que informa del derecho a revisión judicial."
+      "Si te suspenden, te expulsan o te quitan el derecho a aspirar, tienes derecho a una vista ante la Junta de Gobierno dentro de 5 días laborables. La Junta decide en 2 días laborables, por escrito."
     ],
     "articulos": [
       101
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2049,8 +2012,7 @@
       "¿Ante quién se presenta una querella?"
     ],
     "parrafos": [
-      "Cualquier persona puede radicar una querella contra un funcionario del Partido ante el Secretario General, dentro de treinta días calendario de conocer la conducta que denuncia.",
-      "La querella debe identificar a las partes, describir los hechos de forma clara y cronológica, incluir las pruebas (declaraciones juradas, correspondencia, registros) y explicar cómo la conducta viola el Reglamento o los principios del Partido. Va firmada por quien la presenta y puede entregarse en papel o electrónicamente, según disponga el Secretario."
+      "Por escrito ante el Secretario General, dentro de 30 días de saber del hecho. Debe decir quién es quién, qué pasó y cuándo, qué pruebas hay y qué regla se violó. Va firmada y puede enviarse en papel o por correo electrónico."
     ],
     "articulos": [
       102,
@@ -2058,9 +2020,9 @@
       104
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2070,15 +2032,15 @@
       "¿Hay un plazo para presentar una querella?"
     ],
     "parrafos": [
-      "La querella debe presentarse en un plazo de treinta días calendario desde que se conoce la conducta o el hecho que se denuncia."
+      "30 días calendario desde que te enteras del hecho."
     ],
     "articulos": [
       103
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2089,8 +2051,8 @@
       "¿Quién nombra al oficial examinador?"
     ],
     "parrafos": [
-      "El Secretario General tiene cinco días laborables para revisar si la querella cumple los requisitos; si cumple, nombra un Oficial Examinador. El Oficial notifica al querellado con copia de la querella, informa las reglas del proceso y puede convocar una vista oral para presentar pruebas y testigos.",
-      "Emite un informe con su recomendación al Presidente dentro de sesenta días calendario desde su designación, y el Presidente o la Junta de Gobierno resuelven con una Resolución Final dentro de los treinta días siguientes."
+      "Es quien investiga una querella. Lo nombra el Secretario General si la querella cumple los requisitos, notifica al querellado, puede citar a una vista y en 60 días entrega su informe al Presidente.",
+      "El Presidente o la Junta de Gobierno deciden en los 30 días siguientes."
     ],
     "articulos": [
       105,
@@ -2099,9 +2061,9 @@
       110
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2111,17 +2073,16 @@
       "¿Qué pasa si no contesto una querella?"
     ],
     "parrafos": [
-      "El querellado tiene treinta días calendario para contestar la querella desde que se le notifica, sujeto a las instrucciones del Oficial Examinador.",
-      "Si no contesta en ese plazo, el Oficial Examinador evalúa los méritos de la querella sin considerar la postura del querellado."
+      "30 días calendario desde que te notifican. Si no contestas, el oficial examinador decide sin tu versión."
     ],
     "articulos": [
       107,
       108
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2131,15 +2092,15 @@
       "¿Cuántos días tengo para pedir reconsideración?"
     ],
     "parrafos": [
-      "Sí. Quien resulte afectado por una Resolución Final del procedimiento administrativo puede pedir reconsideración ante la Junta de Gobierno dentro de diez días laborables desde la notificación."
+      "Sí. Tienes 10 días laborables desde la notificación para pedirla a la Junta de Gobierno."
     ],
     "articulos": [
       111
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2150,16 +2111,15 @@
       "¿Cuántos días tengo para ir al tribunal?"
     ],
     "parrafos": [
-      "Sí, en dos casos: una Resolución Final de un procedimiento expedito, o una Resolución Final del procedimiento administrativo que imponga suspensión o expulsión de posiciones o la suspensión del derecho a aspirar, una vez agotados los remedios administrativos.",
-      "La revisión se pide ante el Tribunal de Primera Instancia dentro de treinta días calendario desde la notificación de la Resolución Final."
+      "Sí, en el Tribunal de Primera Instancia, dentro de 30 días de la resolución final. Aplica a las suspensiones sumarias y a las sanciones de suspensión, expulsión o pérdida del derecho a aspirar, después de agotar los remedios internos."
     ],
     "articulos": [
       112
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2171,16 +2131,16 @@
       "¿Qué es el quórum?"
     ],
     "parrafos": [
-      "En organismos de cien personas o menos, el quórum es la mitad más uno de los miembros con derecho a voto. En organismos de más de cien, es una tercera parte.",
-      "Si no hay quórum, se convoca una segunda reunión dentro de catorce días y el quórum lo forman los presentes. En una votación electrónica, el quórum se determina por la cantidad de votos emitidos."
+      "La mitad más uno de los miembros con voto si el organismo tiene 100 personas o menos. Una tercera parte si tiene más de 100.",
+      "Sin quórum, se convoca otra reunión dentro de 14 días y ahí basta con los presentes."
     ],
     "articulos": [
       113
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2190,15 +2150,15 @@
       "¿Qué pasa si el reglamento choca con la ley electoral?"
     ],
     "parrafos": [
-      "Si hay conflicto, contradicción o inconsistencia entre el Reglamento y el Código Electoral de Puerto Rico vigente, prevalece el Código Electoral."
+      "El Código Electoral. Si hay contradicción, manda la ley."
     ],
     "articulos": [
       120
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2209,16 +2169,15 @@
       "¿Dónde se aprobó el reglamento?"
     ],
     "parrafos": [
-      "El Reglamento lo aprobó la Asamblea de Programa y Reglamento del Partido Popular Democrático el domingo 28 de septiembre de 2025, en Coamo.",
-      "Entró en vigor al cerrar los trabajos de esa Asamblea."
+      "El 28 de septiembre de 2025, en la Asamblea de Programa y Reglamento celebrada en Coamo. Está en vigor desde ese día."
     ],
     "articulos": [
       121
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2229,15 +2188,15 @@
       "¿Quién firma el reglamento?"
     ],
     "parrafos": [
-      "Lo certificaron Pablo José Hernández Rivera, Presidente del Partido, y Manuel Calderón Cerame, Secretario General."
+      "Pablo José Hernández Rivera, Presidente del Partido, y Manuel Calderón Cerame, Secretario General."
     ],
     "articulos": [
       121
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2248,16 +2207,15 @@
       "¿Quién publica el reglamento?"
     ],
     "parrafos": [
-      "Sí. Este Reglamento deroga cualquier otro reglamento, reglas y normas anteriores.",
-      "El Secretario General es quien lo publica en forma adecuada."
+      "Sí. Deroga todos los reglamentos y normas anteriores. El Secretario General se encarga de publicarlo."
     ],
     "articulos": [
       118
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2267,16 +2225,15 @@
       "¿Qué pasa con los que tienen cargos ahora que hay reglamento nuevo?"
     ],
     "parrafos": [
-      "Sí. Todo funcionario que ocupaba un cargo al aprobarse el Reglamento continúa en funciones hasta que se elija a su sucesor.",
-      "Para la transición, la primera vicepresidencia se entiende como la Vicepresidencia Ejecutiva y la segunda como la de Sectores; los miembros por acumulación pasan a la nueva Junta de Gobierno, y los presidentes de las organizaciones de servidores públicos, jóvenes y mujeres pasan a presidir sus respectivas asociaciones."
+      "Sí. Quien tenía un cargo cuando se aprobó el Reglamento sigue hasta que elijan a su sucesor. La primera vicepresidencia pasó a ser la Ejecutiva y la segunda, la de Sectores."
     ],
     "articulos": [
       117
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2287,16 +2244,16 @@
       "¿Qué es una elección especial?"
     ],
     "parrafos": [
-      "Las primarias son el procedimiento, conforme al Código Electoral y a las reglas de la Comisión Estatal de Elecciones y del Partido, para elegir a los candidatos a cargos públicos. Un método alterno es un procedimiento aprobado por la Junta de Gobierno que sustituye una primaria o una elección especial, cumpliendo las garantías mínimas de la ley electoral.",
-      "Una elección especial es la votación que el Partido celebra en una fecha distinta a la elección general para cubrir vacantes de cargos públicos electivos."
+      "Las primarias son la votación para escoger candidatos a cargos públicos, según el Código Electoral. Un método alterno es otro procedimiento que la Junta de Gobierno aprueba en su lugar, con las mismas garantías de ley.",
+      "Una elección especial es la que se hace fuera de fecha para cubrir una vacante."
     ],
     "articulos": [
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2306,16 +2263,15 @@
       "¿Qué es un colegio de votación?"
     ],
     "parrafos": [
-      "Una elección interna es el procedimiento que usa el Partido para seleccionar por voto a los integrantes de sus organismos directivos, a los candidatos a puestos electivos y a sus funcionarios.",
-      "El colegio de votación es el lugar donde se ejerce el voto en una elección interna o en una primaria."
+      "Es cualquier votación del partido para escoger a sus dirigentes, candidatos o funcionarios. El colegio es el lugar donde se vota."
     ],
     "articulos": [
       5
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2324,15 +2280,15 @@
       "¿Qué pasa si un tribunal anula parte del Reglamento?"
     ],
     "parrafos": [
-      "Si un tribunal declara nula, inválida o inaplicable alguna disposición del Reglamento, las demás disposiciones siguen siendo válidas y aplicables."
+      "Nada. Si un tribunal anula una parte del Reglamento, el resto sigue vigente."
     ],
     "articulos": [
       119
     ],
     "verificada": false,
-    "redactada": "claude-code-2026-09-06",
+    "redactada": "claude-code-2026-09-07",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   }
 ]

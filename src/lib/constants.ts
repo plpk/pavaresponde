@@ -39,8 +39,10 @@ export const ASK_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_ASK_TIMEOUT_MS ?? 1
 // Límite por dispositivo (cookie), no por persona.
 export const RATE_LIMIT = { max: 6, windowMs: 60_000 } as const;
 
-// Datos de la Asamblea General. El lugar viene del prototipo de diseño;
-// confírmalo con la Secretaría General antes de publicar.
+// Datos de la Asamblea General 2026, según la convocatoria anunciada por el
+// Secretario General y recogida por la prensa (NotiCel 3 ago 2026, Metro
+// 18 jun 2026, Primera Hora, Foro Noticioso). Confirmar cambios con la
+// Secretaría General.
 export const ASAMBLEA = {
   fecha: "domingo 11 de octubre de 2026",
   fechaCorta: "Domingo 11 de octubre de 2026",
@@ -48,6 +50,13 @@ export const ASAMBLEA = {
   mes: "oct",
   ciudad: "Ponce",
   lugar: "Complejo Ferial de Puerto Rico, en Ponce",
+  horarioVotacion: "de 8:00 a 11:00 de la mañana",
+  quienVota:
+    "cualquier persona que sea elector activo en el Registro General de Electores al 30 de septiembre de 2026 y asista. Es la primera Asamblea abierta: votan todos los asistentes, no solo los delegados. La Junta de Gobierno escogió el voto directo, como permite el Artículo 20",
+  seElige:
+    "la Junta de Gobierno: Presidente del Partido, Vicepresidencia Ejecutiva, Vicepresidencia de Sectores, 5 miembros por acumulación y 1 miembro por cada distrito senatorial",
+  papeleta:
+    "para Presidente y las dos vicepresidencias hay una sola plancha (Pablo José Hernández Rivera, Luis Javier Hernández y Migdalia González Arroyo), que se ratifica. Hay contienda por los 5 puestos por acumulación y por algunos distritos senatoriales",
   telefono: PHONE_DISPLAY,
   /** Sitio oficial del evento, donde la gente se inscribe. */
   url: "https://www.todosporelcambio.com/",
