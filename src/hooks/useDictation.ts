@@ -18,6 +18,9 @@ export const DICTATION_MSG = {
 
 const SILENCE_HINT_MS = 6_000;
 const SILENCE_CLOSE_MS = 12_000;
+/** Chrome cierra la sesión tras unos segundos de silencio; la reabrimos, pero no sin límite. */
+const MAX_REINICIOS = 6;
+const REINICIO_MS = 300;
 const MIC_OK_KEY = "pr_mic_ok";
 
 // Tipos mínimos: lib.dom no incluye webkitSpeechRecognition.
@@ -63,6 +66,7 @@ export function useDictation({ onAutoClose, onFail }: Options) {
   const recRef = useRef<SRLike | null>(null);
   const activeRef = useRef(false);
   const transcriptRef = useRef("");
+  const reinicios = useRef(0);
   const hintTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const callbacks = useRef({ onAutoClose, onFail });
@@ -124,6 +128,7 @@ export function useDictation({ onAutoClose, onFail }: Options) {
     rec.maxAlternatives = 1;
 
     transcriptRef.current = "";
+    reinicios.current = 0;
     setTranscript("");
     setHint(null);
     setPhase(firstTime ? "permission" : "listening");
@@ -158,12 +163,18 @@ export function useDictation({ onAutoClose, onFail }: Options) {
     rec.onend = () => {
       // Chrome cierra la sesión tras unos segundos de silencio; la reabrimos
       // mientras el panel siga abierto para no perder lo que se diga después.
+      // Con tope y una pausa corta, por si el navegador la cierra al instante.
       if (!activeRef.current || recRef.current !== rec) return;
-      try {
-        rec.start();
-      } catch {
-        // el panel sigue abierto con lo que ya se transcribió
-      }
+      if (reinicios.current >= MAX_REINICIOS) return;
+      reinicios.current += 1;
+      setTimeout(() => {
+        if (!activeRef.current || recRef.current !== rec) return;
+        try {
+          rec.start();
+        } catch {
+          // el panel sigue abierto con lo que ya se transcribió
+        }
+      }, REINICIO_MS);
     };
 
     try {

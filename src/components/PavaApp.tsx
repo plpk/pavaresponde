@@ -159,9 +159,9 @@ export function PavaApp() {
 
       <main className="flex-1 px-4 pt-5 pb-6 md:px-8 md:pt-10 md:pb-8">
         <div className="mx-auto w-full max-w-[640px]">
-          <div className="flex items-center justify-between gap-3 md:hidden">
+          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 md:hidden">
             <Brand size="sm" />
-            <a href={PDF_PATH} target="_blank" rel="noopener" className="btn-skew btn-skew-sm" aria-label="Ver el Reglamento en PDF">
+            <a href={PDF_PATH} target="_blank" rel="noopener" className="btn-skew btn-skew-sm ml-auto" aria-label="Ver el Reglamento en PDF">
               <span>Reglamento</span>
             </a>
           </div>
@@ -177,7 +177,17 @@ export function PavaApp() {
               onCancel={onCancel}
             />
           ) : (
-            <AskBox value={input} onChange={setInput} onSend={() => void ask(input)} onMic={onMic} notice={notice} textareaRef={textareaRef} />
+            <AskBox
+              value={input}
+              onChange={(v) => {
+                setInput(v);
+                if (notice) setNotice(null);
+              }}
+              onSend={() => void ask(input)}
+              onMic={onMic}
+              notice={notice}
+              textareaRef={textareaRef}
+            />
           )}
 
           {status === "empty" && <SampleChips onPick={(q) => void ask(q)} />}
