@@ -9,8 +9,12 @@ type Row = {
   question: string;
   articles: string;
   answered: boolean;
+  fuente: "respuestas" | "modelo";
   feedback: "up" | "down" | null;
+  costoUsd: number;
 };
+
+type Resumen = { total: number; sinRespuesta: number; alModelo: number; costoUsd: number };
 
 type Props = { initialFrom: string; initialTo: string };
 
@@ -22,10 +26,11 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
   const [onlyNoAns, setOnlyNoAns] = useState(false);
   // Resultado y error se guardan junto con la consulta que los produjo: al
   // cambiar un filtro vuelven a "Cargando…" sin tocar estado dentro del efecto.
-  const [result, setResult] = useState<{ query: string; rows?: Row[]; error?: string } | null>(null);
+  const [result, setResult] = useState<{ query: string; rows?: Row[]; resumen?: Resumen; error?: string } | null>(null);
 
   const query = new URLSearchParams({ from, to, ...(onlyNoAns ? { onlyNoAns: "1" } : {}) }).toString();
   const rows = result?.query === query ? (result.rows ?? null) : null;
+  const resumen = result?.query === query ? (result.resumen ?? null) : null;
   const error = result?.query === query ? (result.error ?? null) : null;
 
   useEffect(() => {
@@ -37,8 +42,8 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
           return;
         }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = (await res.json()) as { rows: Row[] };
-        setResult({ query, rows: data.rows });
+        const data = (await res.json()) as { rows: Row[]; resumen: Resumen };
+        setResult({ query, rows: data.rows, resumen: data.resumen });
       })
       .catch((err: unknown) => {
         if ((err as Error).name === "AbortError") return;
@@ -100,7 +105,11 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
             </div>
           ))}
           <div className="px-5 py-3.5 text-[14px] text-ink-soft" role="status">
-            {error ?? (rows === null ? "Cargando…" : `${count} ${count === 1 ? "pregunta" : "preguntas"} en el rango seleccionado`)}
+            {error ??
+              (rows === null
+                ? "Cargando…"
+                : `${count} ${count === 1 ? "pregunta" : "preguntas"} en el rango seleccionado` +
+                  (resumen ? ` · ${resumen.alModelo} generadas en vivo · costo estimado $${resumen.costoUsd.toFixed(2)}` : ""))}
           </div>
         </div>
       </div>

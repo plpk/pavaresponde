@@ -15,12 +15,22 @@ Implementa el diseño `design/Pava Responde.dc.html` siguiendo la hoja `design/P
 
 ## Cómo contesta
 
-`src/lib/answer/` tiene dos modos:
+`src/lib/answer/` sigue este orden para cada pregunta:
 
-- **claude** (producción): manda el Reglamento completo y los datos de la Asamblea como contexto cacheado a `claude-opus-5` y pide una salida estructurada (`en_alcance`, `parrafos`, `articulos`). Se activa solo con credenciales (`ANTHROPIC_API_KEY`, `ANTHROPIC_AUTH_TOKEN` o un perfil `ANTHROPIC_PROFILE`).
-- **kb** (desarrollo, demos): las cinco respuestas fijas del prototipo, por palabras clave. Es el modo por defecto cuando no hay credenciales.
+1. **Coincidencia literal** con una de las respuestas ya generadas en `src/data/respuestas.json` (ignora acentos y signos). Gratis.
+2. **Reconocimiento con el modelo**: `claude-sonnet-5` decide si la pregunta es una de las conocidas. Cuesta una fracción de centavo.
+3. **Respuesta en vivo**: solo si nada coincide, el modelo contesta con el Reglamento completo como contexto cacheado y salida estructurada (`en_alcance`, `parrafos`, `articulos`).
 
-`PAVA_ANSWER_MODE=claude|kb` fuerza uno de los dos.
+Sin `ANTHROPIC_API_KEY` la app no contesta: muestra el estado de error y lo dice en el registro del servidor. No hay respuestas fijas de relleno.
+
+### Las respuestas generadas
+
+`src/data/preguntas.json` tiene 113 grupos de preguntas (310 formas de preguntar) escritos a partir de los 121 artículos. `npm run respuestas` genera la respuesta de cada grupo con Sonnet 5 y la somete a un revisor (`claude-opus-5`) que la coteja con el texto íntegro de los artículos citados. El resultado va a `src/data/respuestas.json` con `verificada: true|false` y `notas`. La app solo sirve las verificadas o las que alguien marque `revisada: true` a mano; el resto cae al modelo en vivo.
+
+- `npm run respuestas` genera las que falten; `-- --todas` regenera todo; `-- --solo id1,id2` unas pocas; `-- --sin-verificar` salta la revisión.
+- `npm run contar-tokens` dice exactamente cuántos tokens tiene el prompt (gratis).
+
+Las preguntas que llegan a `/admin` con «sin respuesta» o generadas en vivo son las candidatas a entrar en `preguntas.json`.
 
 ## Puesta en marcha
 
@@ -36,8 +46,8 @@ Otros comandos: `npm run build`, `npm run lint`, `npm run typecheck`, `npm run d
 
 | Variable | Para qué |
 | --- | --- |
-| `ANTHROPIC_API_KEY` | Credencial de Claude. Sin ella, modo `kb`. |
-| `PAVA_ANSWER_MODE` | `claude` o `kb`. Opcional. |
+| `ANTHROPIC_API_KEY` | Credencial de Claude. Sin ella la app no contesta. |
+| `DATABASE_URL` | Postgres de Supabase (pooler en modo transacción, puerto 6543). Sin ella, archivo local. |
 | `ADMIN_PASSWORD` | Contraseña de `/admin`. Sin ella, `/admin` no admite a nadie. |
 | `ADMIN_SESSION_SECRET` | Firma de la cookie de sesión. Opcional; si falta se deriva de la contraseña. |
 | `PAVA_DATA_DIR` | Carpeta del registro de preguntas. Por defecto `./data`. |
@@ -45,7 +55,9 @@ Otros comandos: `npm run build`, `npm run lint`, `npm run typecheck`, `npm run d
 
 ## Decisiones que conviene conocer
 
-- **Registro de preguntas.** `src/lib/store.ts` guarda en un archivo JSON (`data/questions.json`). Vale para un servidor propio. En Vercel el disco es efímero: implementa `QuestionStore` sobre tu base de datos y cámbialo en `getStore()`.
+- **Registro de preguntas.** `src/lib/store.ts` guarda en Postgres (Supabase, proyecto `pavaresponde`, tabla `preguntas`) cuando hay `DATABASE_URL`; en desarrollo sin ella, en `data/questions.json`. La tabla guarda también el uso del modelo y el costo estimado de cada pregunta, que `/admin` suma.
+- **Modelo.** `claude-sonnet-5` para contestar y reconocer preguntas; `claude-opus-5` solo como revisor en el script de generación. Precios en `src/lib/pricing.ts`.
+- **Despliegue.** Vercel, proyecto `pavaresponde` conectado a este repositorio: cada push a `main` despliega. Variables de entorno en Vercel: `ANTHROPIC_API_KEY`, `DATABASE_URL`, `ADMIN_PASSWORD`.
 - **Tiempo de espera.** La especificación pide caer a «Sin conexión» a los 6 segundos. Con un modelo de lenguaje detrás, 6 s produce falsos errores en señal débil; el valor por defecto es 10 s y se ajusta con `NEXT_PUBLIC_ASK_TIMEOUT_MS`.
 - **Lugar de la Asamblea.** `src/lib/constants.ts` dice «Complejo Ferial de Puerto Rico, en Ponce», tomado del prototipo. Confírmalo con la Secretaría General antes de publicar.
 - **Marca de la pava.** `public/logo-pava.png` viene del logo oficial. El Artículo 3 reserva la insignia a la Junta de Gobierno: hace falta autorización escrita antes de publicar.

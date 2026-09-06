@@ -2,6 +2,7 @@ import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { answerQuestion, AnswerUnavailableError } from "@/lib/answer";
+import { hasClaudeCredentials } from "@/lib/answer/prompt";
 import { toArticleRefs } from "@/lib/articulos";
 import { MAX_QUESTION_LENGTH } from "@/lib/constants";
 import { getOrCreateDeviceId } from "@/lib/device";
@@ -13,6 +14,11 @@ const AskBody = z.object({
 });
 
 export async function POST(request: Request) {
+  if (!hasClaudeCredentials()) {
+    console.error("[api/ask] ANTHROPIC_API_KEY no configurada: la app no puede contestar");
+    return NextResponse.json({ error: "not_configured" }, { status: 503 });
+  }
+
   let body: unknown;
   try {
     body = await request.json();
@@ -28,29 +34,38 @@ export async function POST(request: Request) {
   const device = await getOrCreateDeviceId();
   const limit = checkRateLimit(`ask:${device}`);
   if (!limit.ok) {
-    return NextResponse.json(
-      { error: "rate_limit" },
-      { status: 429, headers: { "Retry-After": String(limit.retryAfterSec) } },
-    );
+    return NextResponse.json({ error: "rate_limit" }, { status: 429, headers: { "Retry-After": String(limit.retryAfterSec) } });
   }
 
-  let answer;
+  let resultado;
   try {
-    answer = await answerQuestion(question);
+    resultado = await answerQuestion(question);
   } catch (error) {
     const detail = error instanceof AnswerUnavailableError ? error.message : String(error);
-    console.error("[api/ask] sin respuesta:", detail, error instanceof AnswerUnavailableError ? error.cause : "");
+    console.error("[api/ask] sin respuesta:", detail, error instanceof AnswerUnavailableError ? (error.cause ?? "") : "");
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
 
+  const { answer, fuente, uso } = resultado;
   const record: QuestionRecord = {
     id: randomUUID(),
     at: new Date().toISOString(),
     question,
     articles: answer.inScope ? answer.articles : [],
     answered: answer.inScope,
+    fuente,
     feedback: null,
+    modelo: uso?.modelo ?? null,
+    tokensEntrada: uso?.entrada ?? 0,
+    tokensCacheLectura: uso?.cacheLectura ?? 0,
+    tokensCacheEscritura: uso?.cacheEscritura ?? 0,
+    tokensSalida: uso?.salida ?? 0,
+    costoUsd: uso?.costoUsd ?? 0,
   };
+  console.info(
+    `[api/ask] ${fuente}${resultado.respuestaId ? ":" + resultado.respuestaId : ""} · ${answer.inScope ? "contestada" : "fuera de alcance"} · ` +
+      (uso ? `${uso.modelo} entrada=${uso.entrada} cache=${uso.cacheLectura}/${uso.cacheEscritura} salida=${uso.salida} $${uso.costoUsd.toFixed(5)}` : "sin costo"),
+  );
   try {
     await getStore().add(record);
   } catch (error) {
