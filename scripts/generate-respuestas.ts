@@ -6,10 +6,12 @@
 // la revisión queda en el archivo con sus `notas`, pero la app no lo sirve
 // hasta que alguien lo apruebe (`revisada: true`) o se regenere.
 //
-// Uso:  npm run respuestas                 (todas las que falten)
+// Uso:  npm run respuestas                 (genera las que falten)
 //       npm run respuestas -- --todas      (regenera todo)
 //       npm run respuestas -- --solo id1,id2
 //       npm run respuestas -- --sin-verificar
+//       npm run respuestas -- --verificar  (solo revisa las respuestas ya
+//                                          escritas, sin regenerarlas)
 import { readFileSync, writeFileSync } from "node:fs";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { z } from "zod";
@@ -37,8 +39,10 @@ type Salida = {
   articulos: number[];
   verificada: boolean;
   revisada?: boolean;
+  redactada?: string;
   notas?: string[];
   generada_en?: string;
+  verificada_en?: string;
 };
 
 const SALIDA = new URL("../src/data/respuestas.json", import.meta.url);
@@ -65,7 +69,12 @@ No señales paráfrasis, tono, ni la omisión de detalles menores que no cambien
 function args() {
   const a = process.argv.slice(2);
   const solo = a.find((x) => x.startsWith("--solo="))?.slice(7) ?? (a.includes("--solo") ? a[a.indexOf("--solo") + 1] : undefined);
-  return { todas: a.includes("--todas"), sinVerificar: a.includes("--sin-verificar"), solo: solo?.split(",").map((s) => s.trim()).filter(Boolean) };
+  return {
+    todas: a.includes("--todas"),
+    sinVerificar: a.includes("--sin-verificar"),
+    soloVerificar: a.includes("--verificar"),
+    solo: solo?.split(",").map((s) => s.trim()).filter(Boolean),
+  };
 }
 
 async function generar(grupo: Grupo): Promise<{ salida: Salida; uso: UsoModelo }> {
@@ -147,6 +156,30 @@ async function main() {
     existentes = [];
   }
   const porId = new Map(existentes.map((e) => [e.id, e]));
+
+  if (opts.soloVerificar) {
+    const candidatas = existentes.filter((e) => e.parrafos.length > 0 && (!opts.solo || opts.solo.includes(e.id)));
+    console.log(`Revisando ${candidatas.length} respuestas ya escritas con ${MODELO_VERIFICACION} (sin regenerar).`);
+    let usoV: UsoModelo | null = null;
+    await mapConcurrente(candidatas, CONCURRENCIA, async (e, i) => {
+      const v = await verificar(e);
+      usoV = sumarUso(usoV, v.uso);
+      e.verificada = v.respaldada;
+      e.verificada_en = new Date().toISOString();
+      delete e.redactada; // a partir de aquí manda la revisión
+      e.notas = v.problemas.length ? v.problemas : undefined;
+      if (!e.notas) delete e.notas;
+      console.log(`${v.respaldada ? "✓" : "⚠"} ${String(i + 1).padStart(3)}/${candidatas.length} ${e.id}${v.problemas.length ? " · " + v.problemas.join(" / ") : ""}`);
+    });
+    writeFileSync(SALIDA, JSON.stringify(existentes, null, 2) + "\n");
+    const ok = existentes.filter((r) => r.verificada || r.revisada).length;
+    const mal = existentes.filter((r) => !(r.verificada || r.revisada));
+    console.log(`\n${ok} verificadas · ${mal.length} con problemas${mal.length ? ": " + mal.map((m) => m.id).join(", ") : ""}.`);
+    const u = usoV as UsoModelo | null;
+    if (u) console.log(`Costo estimado de la revisión: $${u.costoUsd.toFixed(2)}`);
+    return;
+  }
+
   const grupos = (preguntas as Grupo[]).filter((g) => {
     if (opts.solo) return opts.solo.includes(g.id);
     if (opts.todas) return true;
@@ -170,7 +203,10 @@ async function main() {
     return salida;
   });
 
-  for (const r of resultados) porId.set(r.id, { ...porId.get(r.id), ...r, revisada: porId.get(r.id)?.revisada });
+  for (const r of resultados) {
+    const previa = porId.get(r.id);
+    porId.set(r.id, { ...previa, ...r, revisada: previa?.revisada, redactada: undefined });
+  }
   const orden = (preguntas as Grupo[]).map((g) => g.id);
   const final = orden.map((id) => porId.get(id)).filter((x): x is Salida => Boolean(x));
   writeFileSync(SALIDA, JSON.stringify(final, null, 2) + "\n");

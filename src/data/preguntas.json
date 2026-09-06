@@ -1,115 +1,1318 @@
 [
-  { "id": "asamblea-cuando-donde", "preguntas": ["¿Dónde y cuándo es la Asamblea General?", "¿Cuándo es la asamblea?", "¿Dónde es la asamblea del 11 de octubre?", "¿En qué pueblo es la asamblea?", "¿A qué hora es la asamblea?"], "articulos": [10] },
-  { "id": "asamblea-quien-vota", "preguntas": ["¿Quién puede votar el 11 de octubre?", "¿Puedo votar en la Asamblea General?", "¿Quién tiene derecho al voto en la asamblea?", "¿Todos los populares pueden votar en la asamblea?", "¿Me toca votar el 11 de octubre?"], "articulos": [8, 9, 20] },
-  { "id": "asamblea-que-se-elige", "preguntas": ["¿Qué se elige en la Asamblea General?", "¿Qué se vota el 11 de octubre?", "¿Para qué es la asamblea?", "¿Qué puestos se van a elegir?"], "articulos": [7, 20, 22, 23] },
-  { "id": "asamblea-miembros", "preguntas": ["¿Quiénes son miembros de la Asamblea General?", "¿Quién compone la Asamblea General?", "¿Quiénes son los delegados a la asamblea?", "¿Cómo sé si soy delegado?"], "articulos": [8] },
-  { "id": "asamblea-delegados-400", "preguntas": ["¿Cómo se escogen los delegados por cada 400 votos?", "¿Cómo se cubren los delegados proporcionales?", "¿Quién nombra a los delegados de mi municipio?", "¿Cuántos delegados tiene cada municipio?"], "articulos": [8, 9] },
-  { "id": "asamblea-exfuncionarios", "preguntas": ["¿Los exalcaldes son miembros de la Asamblea General?", "¿Los exsenadores y exrepresentantes pueden ir a la asamblea?", "¿Los expresidentes del partido son miembros de la asamblea?", "Soy exlegislador municipal, ¿soy delegado?"], "articulos": [8] },
-  { "id": "asamblea-autoridad", "preguntas": ["¿Qué autoridad tiene la Asamblea General?", "¿La Asamblea General es el organismo más alto del partido?", "¿Quién manda cuando la asamblea no está reunida?"], "articulos": [6, 17] },
-  { "id": "asamblea-revocar", "preguntas": ["¿Puede la Asamblea General revocar decisiones de la Junta de Gobierno?", "¿Con cuántos votos la asamblea revoca una decisión del presidente?", "¿La asamblea puede cambiar decisiones del partido?"], "articulos": [7] },
-  { "id": "asamblea-cada-cuanto", "preguntas": ["¿Cada cuánto se reúne la Asamblea General?", "¿Cada cuántos años hay Asamblea General?", "¿Quién convoca la sesión ordinaria de la asamblea?"], "articulos": [10] },
-  { "id": "asamblea-citacion", "preguntas": ["¿Con cuánto tiempo de anticipación citan a la Asamblea General?", "¿Cuándo debían avisar de la asamblea?", "¿Quién cita a los miembros de la asamblea?"], "articulos": [10] },
-  { "id": "asamblea-extraordinaria", "preguntas": ["¿Quién puede convocar una Asamblea General extraordinaria?", "¿Se puede convocar una asamblea fuera de fecha?"], "articulos": [11] },
-  { "id": "asamblea-asuntos-adicionales", "preguntas": ["¿Puedo someter asuntos para la Asamblea General?", "¿Cómo propongo un tema para la asamblea?", "¿Los miembros pueden traer asuntos adicionales a la asamblea?"], "articulos": [10] },
-  { "id": "asamblea-quorum", "preguntas": ["¿Cuál es el quórum de la Asamblea General?", "¿Cuántos miembros tienen que estar presentes en la asamblea?", "¿Qué pasa si no hay quórum en la asamblea?"], "articulos": [113] },
-  { "id": "acuerdos-mayoria", "preguntas": ["¿Cómo se toman los acuerdos en la asamblea?", "¿Qué mayoría se necesita para aprobar algo?", "¿Qué es mayoría simple?"], "articulos": [114, 5] },
-  { "id": "un-solo-voto", "preguntas": ["Si soy alcalde y miembro del Comité Municipal, ¿tengo dos votos?", "¿Puedo votar más de una vez si represento a varios organismos?", "¿Cuántos votos tiene una persona con varios cargos?"], "articulos": [115] },
-  { "id": "voto-electronico", "preguntas": ["¿Se puede votar electrónicamente?", "¿Puedo votar por internet en la asamblea?", "¿La Junta de Gobierno puede votar electrónicamente?"], "articulos": [26, 113] },
-  { "id": "enmendar-reglamento", "preguntas": ["¿Quién puede enmendar el Reglamento?", "¿Se pueden proponer enmiendas al reglamento en la asamblea?", "¿Cómo se cambia el reglamento del partido?"], "articulos": [116] },
-  { "id": "asamblea-acta", "preguntas": ["¿Quién lleva el registro de asistencia en la asamblea?", "¿Habrá acta de la Asamblea General?", "¿Quién redacta el acta de la asamblea?"], "articulos": [10, 65] },
-  { "id": "presidente-como-se-elige", "preguntas": ["¿Cómo se elige el Presidente del Partido?", "¿Quién elige al presidente del PPD?", "¿Cómo se escoge el presidente del partido?"], "articulos": [20] },
-  { "id": "presidente-cuando-eleccion", "preguntas": ["¿Cuándo se celebra la elección del Presidente del Partido?", "¿Hasta cuándo tiene que ser la elección de la Junta de Gobierno?", "¿Quién fija la fecha de la elección?"], "articulos": [20] },
-  { "id": "eleccion-directa-o-delegados", "preguntas": ["¿La elección es por voto directo de los afiliados o por delegados?", "¿Quién decide si votan todos los populares o solo los delegados?", "¿Van a votar todos los populares o solo la asamblea?"], "articulos": [20] },
-  { "id": "candidato-gobernador-presidente", "preguntas": ["¿Qué pasa si el candidato a gobernador no es el Presidente del Partido?", "¿El candidato a gobernador se convierte en presidente del partido?", "¿Quién es presidente del partido después de una primaria de gobernación?"], "articulos": [21] },
-  { "id": "perder-gobernacion", "preguntas": ["¿Qué pasa con el presidente del partido si el PPD pierde la gobernación?", "¿Cuándo se elige un nuevo presidente si se pierde la elección?", "¿Quién elige al presidente del partido después de perder las elecciones?"], "articulos": [21, 13] },
-  { "id": "vicepresidencias", "preguntas": ["¿Cuántas vicepresidencias tiene el Partido?", "¿Qué hace el Vicepresidente Ejecutivo?", "¿Qué es la Vicepresidencia de Sectores?", "¿Quién puede ser vicepresidente de sectores?"], "articulos": [22] },
-  { "id": "segunda-vicepresidencia-mujer", "preguntas": ["¿Qué pasa si ninguna vicepresidencia la ocupa una mujer?", "¿Existe una segunda vicepresidencia ejecutiva?", "¿La presidenta de las Mujeres Populares puede ser vicepresidenta?"], "articulos": [22] },
-  { "id": "miembros-acumulacion", "preguntas": ["¿Qué son los miembros por acumulación?", "¿Por cuántos miembros por acumulación puedo votar?", "¿Cuántos miembros por acumulación tiene la Junta de Gobierno?"], "articulos": [23, 19] },
-  { "id": "miembros-distrito", "preguntas": ["¿Cómo se eligen los miembros por distrito senatorial?", "¿Quién vota por el miembro de mi distrito en la Junta de Gobierno?", "¿Cuántos miembros por distrito hay en la Junta?"], "articulos": [20, 19] },
-  { "id": "acumulacion-quien-no", "preguntas": ["¿Quién no puede aspirar a miembro por acumulación?", "¿Un alcalde puede ser miembro por acumulación?", "¿Los que ya están en la Junta por su cargo pueden correr por acumulación?"], "articulos": [23] },
-  { "id": "duracion-cargos", "preguntas": ["¿Cuánto dura el término del Presidente del Partido?", "¿Hasta cuándo ocupan sus puestos los miembros de la Junta de Gobierno?", "¿Cuándo termina el término de los electos?"], "articulos": [20, 21] },
-  { "id": "vacante-presidente", "preguntas": ["¿Qué pasa si queda vacante la presidencia del partido?", "¿Quién sustituye al presidente del partido si renuncia?", "¿Quién cubre las vacantes en la Junta de Gobierno?"], "articulos": [13, 22, 65] },
-  { "id": "junta-que-es", "preguntas": ["¿Qué es la Junta de Gobierno?", "¿Qué hace la Junta de Gobierno?", "¿Cuáles son las funciones de la Junta de Gobierno?"], "articulos": [17, 18] },
-  { "id": "junta-miembros", "preguntas": ["¿Quiénes son miembros de la Junta de Gobierno?", "¿Quién tiene voto en la Junta de Gobierno?", "¿Cuántas personas componen la Junta de Gobierno?"], "articulos": [19] },
-  { "id": "junta-voz-sin-voto", "preguntas": ["¿Quién tiene voz pero no voto en la Junta de Gobierno?", "¿El Secretario General vota en la Junta?", "¿Los exgobernadores votan en la Junta de Gobierno?"], "articulos": [19, 117] },
-  { "id": "junta-reuniones", "preguntas": ["¿Cada cuánto se reúne la Junta de Gobierno?", "¿Quién convoca una reunión extraordinaria de la Junta?"], "articulos": [24, 25] },
-  { "id": "junta-virtual", "preguntas": ["¿La Junta de Gobierno puede reunirse por videoconferencia?", "¿Se pueden hacer reuniones virtuales?"], "articulos": [26, 85] },
-  { "id": "junta-asistencia", "preguntas": ["¿Qué pasa si un miembro de la Junta de Gobierno falta a las reuniones?", "¿Cuántas ausencias se permiten en la Junta?"], "articulos": [27] },
-  { "id": "junta-interpreta", "preguntas": ["¿Quién interpreta el Reglamento cuando hay dudas?", "¿Quién resuelve las controversias sobre el reglamento?", "¿A quién le pregunto si no entiendo una regla?"], "articulos": [18] },
-  { "id": "junta-apelaciones", "preguntas": ["¿A quién apelo una decisión del Comité Municipal?", "¿Dónde se apelan las decisiones de las asociaciones?", "¿Quién atiende las apelaciones?"], "articulos": [18] },
-  { "id": "cuotas", "preguntas": ["¿Quién fija las cuotas del partido?", "¿Hay que pagar cuota para ser funcionario?", "¿Qué pasa si no pago la cuota?"], "articulos": [18, 94, 97] },
-  { "id": "consejo-que-es", "preguntas": ["¿Qué es el Consejo de Gobierno?", "¿Cuál es la diferencia entre el Consejo de Gobierno y la Junta de Gobierno?", "¿Qué hace el Consejo de Gobierno?"], "articulos": [12, 13, 17] },
-  { "id": "consejo-miembros", "preguntas": ["¿Quiénes son miembros del Consejo de Gobierno?", "¿Los presidentes de comités municipales están en el Consejo de Gobierno?"], "articulos": [14] },
-  { "id": "consejo-reuniones", "preguntas": ["¿Cada cuánto se reúne el Consejo de Gobierno?", "¿Quién convoca al Consejo de Gobierno?", "¿Con cuánto tiempo citan al Consejo de Gobierno?"], "articulos": [15, 16] },
-  { "id": "plan-gobierno-aprobacion", "preguntas": ["¿Quién aprueba el plan de gobierno?", "¿Quién aprueba el reglamento del partido?", "¿Qué es el plan de gobierno?"], "articulos": [12, 13, 5] },
-  { "id": "elector-afiliado", "preguntas": ["¿Qué es un elector afiliado?", "¿Cómo me hago miembro del partido?", "¿Cómo me afilio al PPD?", "¿Qué se necesita para ser popular?"], "articulos": [5] },
-  { "id": "edad-joven", "preguntas": ["¿Qué edad es joven según el Reglamento?", "¿Hasta qué edad se es joven en el partido?"], "articulos": [5, 41] },
-  { "id": "edad-juventud-popular", "preguntas": ["¿Cuál es la edad máxima para la Juventud Popular?", "¿Hasta qué edad puedo estar en la Juventud Popular Nacional?", "¿Quiénes pertenecen a la JPN?"], "articulos": [41, 5] },
-  { "id": "mayoria-absoluta-simple", "preguntas": ["¿Qué es mayoría absoluta y qué es mayoría simple?", "¿Cuál es la diferencia entre mayoría absoluta y simple?"], "articulos": [5] },
-  { "id": "unidad-electoral-precinto", "preguntas": ["¿Qué es una unidad electoral?", "¿Qué es un precinto?", "¿Qué es un barrio según el reglamento?"], "articulos": [5] },
-  { "id": "plan-reorganizacion", "preguntas": ["¿Qué es el plan de reorganización?", "¿Quién prepara el plan de reorganización?"], "articulos": [5, 65] },
-  { "id": "nombre-proposito", "preguntas": ["¿Cuál es el nombre oficial del partido?", "¿Cuál es el propósito del PPD?", "¿Qué tipo de partido es el PPD?"], "articulos": [1, 2] },
-  { "id": "insignia", "preguntas": ["¿Puedo usar la pava y el logo del partido?", "¿Cuál es la insignia oficial del partido?", "¿Quién autoriza el uso del nombre y la insignia?"], "articulos": [3] },
-  { "id": "deberes-funcionarios", "preguntas": ["¿Cuáles son los deberes de un funcionario del partido?", "¿Qué se espera de un funcionario del PPD?"], "articulos": [4] },
-  { "id": "que-es-funcionario", "preguntas": ["¿Quién es funcionario del partido?", "¿Qué significa ser funcionario según el reglamento?"], "articulos": [5, 4] },
-  { "id": "comite-central", "preguntas": ["¿Quiénes forman el Comité Central?", "¿Qué es el Comité Central?"], "articulos": [63] },
-  { "id": "funciones-presidente", "preguntas": ["¿Cuáles son las funciones del Presidente del Partido?", "¿Qué poderes tiene el presidente del partido?", "¿Puede el presidente suspender una decisión de un organismo?"], "articulos": [64] },
-  { "id": "secretario-general", "preguntas": ["¿Qué hace el Secretario General?", "¿Quién nombra al Secretario General?", "¿Puede el Secretario General ser candidato?"], "articulos": [65, 18] },
-  { "id": "subsecretario-general", "preguntas": ["¿Qué hace el Subsecretario General?", "¿Quién sustituye al Secretario General?"], "articulos": [66] },
-  { "id": "tesorero", "preguntas": ["¿Qué hace el Tesorero del partido?", "¿Quién maneja los fondos del partido?"], "articulos": [67] },
-  { "id": "comisionado-electoral", "preguntas": ["¿Qué hace el Comisionado Electoral?", "¿Puede el Comisionado Electoral ser candidato?", "¿Quién organiza las elecciones internas?", "¿Quién organiza el voto adelantado?"], "articulos": [68] },
-  { "id": "delegado-presidencial", "preguntas": ["¿Qué es un delegado presidencial?", "¿Qué hace el delegado presidencial?"], "articulos": [69, 5] },
-  { "id": "portavoz-oficial", "preguntas": ["¿Quién es el portavoz oficial del partido?"], "articulos": [65] },
-  { "id": "comite-municipal-que-es", "preguntas": ["¿Qué es el Comité Municipal?", "¿Quiénes componen el Comité Municipal?", "¿Quiénes son miembros del comité municipal de mi pueblo?"], "articulos": [70, 71] },
-  { "id": "presidente-municipal-eleccion", "preguntas": ["¿Cómo se elige el presidente del Comité Municipal?", "¿El candidato a alcalde es automáticamente presidente del comité municipal?", "¿Quién escoge al presidente del comité municipal?"], "articulos": [80] },
-  { "id": "presidente-municipal-funciones", "preguntas": ["¿Qué hace el presidente del Comité Municipal?", "¿Cuáles son las funciones del presidente municipal del partido?"], "articulos": [73] },
-  { "id": "oficiales-municipales", "preguntas": ["¿Cómo se escogen el vicepresidente, el secretario y el tesorero del Comité Municipal?", "¿Qué hace el secretario del comité municipal?", "¿Qué hace el tesorero del comité municipal?"], "articulos": [80, 74, 75, 76] },
-  { "id": "reuniones-municipales", "preguntas": ["¿Cada cuánto se reúne el Comité Municipal?", "¿Con cuánto tiempo convocan las reuniones del comité municipal?", "¿Quién convoca una reunión extraordinaria del comité municipal?"], "articulos": [83, 84, 85] },
-  { "id": "vacantes-municipales", "preguntas": ["¿Qué pasa si renuncia el presidente del Comité Municipal?", "¿Cómo se cubre una vacante en el comité municipal?"], "articulos": [81] },
-  { "id": "transicion-14-dias", "preguntas": ["¿Qué debe entregar un funcionario saliente del Comité Municipal?", "¿Cuánto tiempo tiene un funcionario saliente para hacer la transición?"], "articulos": [82] },
-  { "id": "ausencias-municipales", "preguntas": ["¿Qué pasa si falto a las reuniones del Comité Municipal?", "¿Me pueden quitar el puesto por no ir a las reuniones?"], "articulos": [86] },
-  { "id": "presidente-precinto", "preguntas": ["¿Qué es el presidente de precinto?", "¿Cómo se elige el presidente de precinto?", "¿El candidato a representante es presidente de precinto?"], "articulos": [79, 80] },
-  { "id": "coordinador-comisionados-precinto", "preguntas": ["¿Qué hace el coordinador electoral del municipio?", "¿Quién nombra a los comisionados electorales de precinto?", "¿Qué hace el comisionado electoral de precinto?"], "articulos": [77, 78, 80] },
-  { "id": "comite-unidad", "preguntas": ["¿Qué es el Comité de Unidad Electoral?", "¿Quiénes componen el comité de unidad?", "¿Qué es un comité de unidad?"], "articulos": [87, 88] },
-  { "id": "eleccion-unidad", "preguntas": ["¿Cómo se eligen los presidentes de unidad?", "¿Con cuánto tiempo se anuncian las elecciones de los comités de unidad?", "¿Quién nombra a los coordinadores electorales de unidad?"], "articulos": [91] },
-  { "id": "funciones-unidad", "preguntas": ["¿Qué hacen el presidente y el vicepresidente de unidad?", "¿Cada cuánto se reúne el comité de unidad?", "¿Qué hace el coordinador electoral de unidad?"], "articulos": [89, 90] },
-  { "id": "jpn-que-es", "preguntas": ["¿Qué es la Juventud Popular Nacional?", "¿Cómo se organiza la Juventud Popular?", "¿Qué funciones tiene la JPN?"], "articulos": [40, 41, 42, 43] },
-  { "id": "jpn-elecciones", "preguntas": ["¿Cuándo se eligen los presidentes de la Juventud Popular?", "¿Cómo se elige la directiva de la JPN?"], "articulos": [44] },
-  { "id": "mujeres-populares", "preguntas": ["¿Qué es la Asociación de Mujeres Populares?", "¿Quién puede pertenecer a las Mujeres Populares?", "¿Qué funciones tiene la Asociación de Mujeres Populares?"], "articulos": [50, 51, 53] },
-  { "id": "mujeres-populares-elecciones", "preguntas": ["¿Cuándo se elige la directiva de las Mujeres Populares?", "¿Cómo se elige la presidenta municipal de Mujeres Populares?"], "articulos": [54] },
-  { "id": "servidores-publicos", "preguntas": ["¿Qué es la Asociación de Servidores Públicos Populares?", "¿Quién pertenece a la ASPP?", "¿Cuándo se elige la directiva de los servidores públicos?"], "articulos": [45, 46, 48, 49] },
-  { "id": "alcaldes-legisladores-municipales", "preguntas": ["¿Qué es la Asociación de Alcaldes Populares?", "¿Qué es la Asociación de Legisladores Municipales Populares?", "¿Cuándo se elige la directiva de los legisladores municipales?"], "articulos": [34, 35, 36, 37, 39] },
-  { "id": "organizaciones-sectoriales", "preguntas": ["¿Cómo se crea una organización sectorial?", "¿Qué se necesita para el reconocimiento oficial de una organización sectorial?", "¿Qué es una organización sectorial?"], "articulos": [55, 57, 59] },
-  { "id": "sectoriales-revocacion", "preguntas": ["¿Puede la Junta de Gobierno quitarle el reconocimiento a una organización sectorial?", "¿Por qué pueden rechazar una organización sectorial nueva?"], "articulos": [61] },
-  { "id": "sectoriales-restriccion", "preguntas": ["¿Puede un alcalde o legislador presidir una organización sectorial?", "¿Qué pasa si el presidente de una asociación se convierte en candidato?", "¿Un funcionario electo puede ser presidente de una asociación?"], "articulos": [62] },
-  { "id": "sectoriales-transicion", "preguntas": ["¿Qué pasa con las organizaciones sectoriales que ya existían, como veteranos o pensionados?", "¿Hasta cuándo mantienen su reconocimiento las organizaciones sectoriales actuales?"], "articulos": [117] },
-  { "id": "conferencia-legislativa", "preguntas": ["¿Qué es la Conferencia Legislativa?", "¿Qué es el caucus del partido?", "¿Quién preside la Conferencia Legislativa?"], "articulos": [28, 29, 30, 31] },
-  { "id": "candidatura-radicar", "preguntas": ["¿Cómo radico una candidatura?", "¿Ante quién se radican las candidaturas?", "¿Quién certifica que un aspirante cumple los requisitos?"], "articulos": [92] },
-  { "id": "candidatura-documentos", "preguntas": ["¿Qué documentos necesito para aspirar a un cargo?", "¿Tengo que volver a someter documentos si ya aspiré antes?"], "articulos": [94] },
-  { "id": "comision-calificadora", "preguntas": ["¿Qué es la Comisión Calificadora de Aspirantes?", "¿Cuánto tarda la Comisión Calificadora en decidir?", "¿Quién nombra a la Comisión Calificadora?"], "articulos": [93, 5] },
-  { "id": "quien-no-puede-aspirar", "preguntas": ["¿Quién no puede ser candidato del partido?", "¿Puede aspirar alguien convicto de delito grave?", "¿Cuáles son los criterios de calificación para aspirar?"], "articulos": [95] },
-  { "id": "apelar-comision", "preguntas": ["¿Puedo apelar la decisión de la Comisión Calificadora?", "¿Cuántos días tengo para pedir revisión de la Comisión Calificadora?"], "articulos": [93] },
-  { "id": "apoyo-otro-partido", "preguntas": ["¿Qué pasa si un funcionario apoyó a un candidato de otro partido?", "¿Puedo respaldar a un candidato de otro partido?"], "articulos": [95, 97] },
-  { "id": "nominacion-directa", "preguntas": ["¿Puedo correr por nominación directa si pierdo la primaria?", "¿Qué pasa si compito contra el candidato oficial después de perder?"], "articulos": [95] },
-  { "id": "cuota-para-aspirar", "preguntas": ["¿Tengo que estar al día con la cuota para aspirar?", "¿Qué certificación de cuotas necesito para ser candidato?"], "articulos": [94, 97] },
-  { "id": "medidas-disciplinarias", "preguntas": ["¿Qué medidas disciplinarias existen en el partido?", "¿Qué sanciones puede imponer el partido?", "¿Quién impone las medidas disciplinarias?"], "articulos": [99, 97] },
-  { "id": "acciones-sancionables", "preguntas": ["¿Por qué me pueden disciplinar en el partido?", "¿Puedo criticar públicamente a otro popular?", "¿Qué conductas están prohibidas para los funcionarios?"], "articulos": [97, 98] },
-  { "id": "debate-permitido", "preguntas": ["¿Se puede debatir ideas dentro del partido sin sanción?", "¿Puedo contrastar mi trayectoria con la de otro candidato en una primaria?"], "articulos": [98] },
-  { "id": "suspension-sumaria", "preguntas": ["¿Qué es la suspensión sumaria?", "¿Quién puede suspender sumariamente a un funcionario?"], "articulos": [100, 101] },
-  { "id": "procedimiento-expedito", "preguntas": ["¿Qué es el procedimiento expedito?", "¿Cuántos días tengo para defenderme si me suspenden?", "¿Cuándo tengo derecho a una vista?"], "articulos": [101] },
-  { "id": "querella-como", "preguntas": ["¿Cómo radico una querella contra un funcionario?", "¿Qué debe contener una querella?", "¿Ante quién se presenta una querella?"], "articulos": [102, 103, 104] },
-  { "id": "querella-plazo", "preguntas": ["¿Cuánto tiempo tengo para radicar una querella?", "¿Hay un plazo para presentar una querella?"], "articulos": [103] },
-  { "id": "oficial-examinador", "preguntas": ["¿Qué hace el oficial examinador?", "¿Cuánto tarda el proceso de una querella?", "¿Quién nombra al oficial examinador?"], "articulos": [105, 106, 109, 110, 5] },
-  { "id": "contestar-querella", "preguntas": ["¿Cuánto tiempo tengo para contestar una querella?", "¿Qué pasa si no contesto una querella?"], "articulos": [107, 108] },
-  { "id": "reconsideracion", "preguntas": ["¿Puedo pedir reconsideración de una resolución final?", "¿Cuántos días tengo para pedir reconsideración?"], "articulos": [111] },
-  { "id": "revision-judicial", "preguntas": ["¿Puedo ir al tribunal si me sancionan?", "¿Cuándo procede la revisión judicial?", "¿Cuántos días tengo para ir al tribunal?"], "articulos": [112] },
-  { "id": "quorum-general", "preguntas": ["¿Cuál es el quórum de los organismos del partido?", "¿Qué pasa si no hay quórum en una reunión?", "¿Cómo se cuenta el quórum en una votación electrónica?"], "articulos": [113] },
-  { "id": "reglamento-vs-codigo", "preguntas": ["¿Qué prevalece, el Reglamento o el Código Electoral?", "¿Qué pasa si el reglamento choca con la ley electoral?"], "articulos": [120] },
-  { "id": "reglamento-aprobacion", "preguntas": ["¿Cuándo se aprobó este Reglamento?", "¿Desde cuándo está vigente el reglamento?", "¿Dónde se aprobó el reglamento?"], "articulos": [121] },
-  { "id": "reglamento-certificacion", "preguntas": ["¿Quién certificó el Reglamento?", "¿Quién firmó el reglamento?"], "articulos": [121] },
-  { "id": "reglamento-deroga", "preguntas": ["¿Este Reglamento sustituye al anterior?", "¿Siguen vigentes las reglas viejas?", "¿Quién publica el reglamento?"], "articulos": [118] },
-  { "id": "transicion-funcionarios", "preguntas": ["¿Los funcionarios actuales siguen en su puesto hasta la elección?", "¿Qué pasa con los que tienen cargos ahora que hay reglamento nuevo?"], "articulos": [117] },
-  { "id": "metodo-alterno-primarias", "preguntas": ["¿Qué es un método alterno?", "¿Qué son las primarias según el reglamento?", "¿Qué es una elección especial?"], "articulos": [5] },
-  { "id": "eleccion-interna", "preguntas": ["¿Qué es una elección interna?", "¿Qué es un colegio de votación?"], "articulos": [5] },
-  { "id": "separabilidad", "preguntas": ["¿Qué pasa si un tribunal anula parte del Reglamento?"], "articulos": [119] }
+  {
+    "id": "asamblea-cuando-donde",
+    "preguntas": [
+      "¿Dónde y cuándo es la Asamblea General?",
+      "¿Cuándo es la asamblea?",
+      "¿Dónde es la asamblea del 11 de octubre?",
+      "¿En qué pueblo es la asamblea?",
+      "¿A qué hora es la asamblea?",
+      "¿Dónde es la asamblea?",
+      "¿Cuándo es la Asamblea General?",
+      "¿Dónde es la Asamblea General?",
+      "¿Cuándo y dónde es la asamblea?"
+    ],
+    "articulos": [
+      10
+    ]
+  },
+  {
+    "id": "asamblea-quien-vota",
+    "preguntas": [
+      "¿Quién puede votar el 11 de octubre?",
+      "¿Puedo votar en la Asamblea General?",
+      "¿Quién tiene derecho al voto en la asamblea?",
+      "¿Todos los populares pueden votar en la asamblea?",
+      "¿Me toca votar el 11 de octubre?",
+      "¿Quién puede votar?",
+      "¿Quién vota?",
+      "¿Quién vota en la asamblea?",
+      "¿Puedo votar?"
+    ],
+    "articulos": [
+      8,
+      9,
+      20
+    ]
+  },
+  {
+    "id": "asamblea-que-se-elige",
+    "preguntas": [
+      "¿Qué se elige en la Asamblea General?",
+      "¿Qué se vota el 11 de octubre?",
+      "¿Para qué es la asamblea?",
+      "¿Qué puestos se van a elegir?",
+      "¿Qué se elige?",
+      "¿Qué se vota en la asamblea?",
+      "¿Qué se va a elegir?"
+    ],
+    "articulos": [
+      7,
+      20,
+      22,
+      23
+    ]
+  },
+  {
+    "id": "asamblea-miembros",
+    "preguntas": [
+      "¿Quiénes son miembros de la Asamblea General?",
+      "¿Quién compone la Asamblea General?",
+      "¿Quiénes son los delegados a la asamblea?",
+      "¿Cómo sé si soy delegado?"
+    ],
+    "articulos": [
+      8
+    ]
+  },
+  {
+    "id": "asamblea-delegados-400",
+    "preguntas": [
+      "¿Cómo se escogen los delegados por cada 400 votos?",
+      "¿Cómo se cubren los delegados proporcionales?",
+      "¿Quién nombra a los delegados de mi municipio?",
+      "¿Cuántos delegados tiene cada municipio?"
+    ],
+    "articulos": [
+      8,
+      9
+    ]
+  },
+  {
+    "id": "asamblea-exfuncionarios",
+    "preguntas": [
+      "¿Los exalcaldes son miembros de la Asamblea General?",
+      "¿Los exsenadores y exrepresentantes pueden ir a la asamblea?",
+      "¿Los expresidentes del partido son miembros de la asamblea?",
+      "Soy exlegislador municipal, ¿soy delegado?"
+    ],
+    "articulos": [
+      8
+    ]
+  },
+  {
+    "id": "asamblea-autoridad",
+    "preguntas": [
+      "¿Qué autoridad tiene la Asamblea General?",
+      "¿La Asamblea General es el organismo más alto del partido?",
+      "¿Quién manda cuando la asamblea no está reunida?"
+    ],
+    "articulos": [
+      6,
+      17
+    ]
+  },
+  {
+    "id": "asamblea-revocar",
+    "preguntas": [
+      "¿Puede la Asamblea General revocar decisiones de la Junta de Gobierno?",
+      "¿Con cuántos votos la asamblea revoca una decisión del presidente?",
+      "¿La asamblea puede cambiar decisiones del partido?"
+    ],
+    "articulos": [
+      7
+    ]
+  },
+  {
+    "id": "asamblea-cada-cuanto",
+    "preguntas": [
+      "¿Cada cuánto se reúne la Asamblea General?",
+      "¿Cada cuántos años hay Asamblea General?",
+      "¿Quién convoca la sesión ordinaria de la asamblea?"
+    ],
+    "articulos": [
+      10
+    ]
+  },
+  {
+    "id": "asamblea-citacion",
+    "preguntas": [
+      "¿Con cuánto tiempo de anticipación citan a la Asamblea General?",
+      "¿Cuándo debían avisar de la asamblea?",
+      "¿Quién cita a los miembros de la asamblea?"
+    ],
+    "articulos": [
+      10
+    ]
+  },
+  {
+    "id": "asamblea-extraordinaria",
+    "preguntas": [
+      "¿Quién puede convocar una Asamblea General extraordinaria?",
+      "¿Se puede convocar una asamblea fuera de fecha?"
+    ],
+    "articulos": [
+      11
+    ]
+  },
+  {
+    "id": "asamblea-asuntos-adicionales",
+    "preguntas": [
+      "¿Puedo someter asuntos para la Asamblea General?",
+      "¿Cómo propongo un tema para la asamblea?",
+      "¿Los miembros pueden traer asuntos adicionales a la asamblea?"
+    ],
+    "articulos": [
+      10
+    ]
+  },
+  {
+    "id": "asamblea-quorum",
+    "preguntas": [
+      "¿Cuál es el quórum de la Asamblea General?",
+      "¿Cuántos miembros tienen que estar presentes en la asamblea?",
+      "¿Qué pasa si no hay quórum en la asamblea?",
+      "¿Cuál es el quórum?",
+      "¿Cuántas personas hacen quórum?"
+    ],
+    "articulos": [
+      113
+    ]
+  },
+  {
+    "id": "acuerdos-mayoria",
+    "preguntas": [
+      "¿Cómo se toman los acuerdos en la asamblea?",
+      "¿Qué mayoría se necesita para aprobar algo?",
+      "¿Qué es mayoría simple?"
+    ],
+    "articulos": [
+      114,
+      5
+    ]
+  },
+  {
+    "id": "un-solo-voto",
+    "preguntas": [
+      "Si soy alcalde y miembro del Comité Municipal, ¿tengo dos votos?",
+      "¿Puedo votar más de una vez si represento a varios organismos?",
+      "¿Cuántos votos tiene una persona con varios cargos?"
+    ],
+    "articulos": [
+      115
+    ]
+  },
+  {
+    "id": "voto-electronico",
+    "preguntas": [
+      "¿Se puede votar electrónicamente?",
+      "¿Puedo votar por internet en la asamblea?",
+      "¿La Junta de Gobierno puede votar electrónicamente?"
+    ],
+    "articulos": [
+      26,
+      113
+    ]
+  },
+  {
+    "id": "enmendar-reglamento",
+    "preguntas": [
+      "¿Quién puede enmendar el Reglamento?",
+      "¿Se pueden proponer enmiendas al reglamento en la asamblea?",
+      "¿Cómo se cambia el reglamento del partido?"
+    ],
+    "articulos": [
+      116
+    ]
+  },
+  {
+    "id": "asamblea-acta",
+    "preguntas": [
+      "¿Quién lleva el registro de asistencia en la asamblea?",
+      "¿Habrá acta de la Asamblea General?",
+      "¿Quién redacta el acta de la asamblea?"
+    ],
+    "articulos": [
+      10,
+      65
+    ]
+  },
+  {
+    "id": "presidente-como-se-elige",
+    "preguntas": [
+      "¿Cómo se elige el Presidente del Partido?",
+      "¿Quién elige al presidente del PPD?",
+      "¿Cómo se escoge el presidente del partido?",
+      "¿Cómo se elige el presidente?",
+      "¿Quién elige al presidente?",
+      "¿Cómo se escoge el presidente?"
+    ],
+    "articulos": [
+      20
+    ]
+  },
+  {
+    "id": "presidente-cuando-eleccion",
+    "preguntas": [
+      "¿Cuándo se celebra la elección del Presidente del Partido?",
+      "¿Hasta cuándo tiene que ser la elección de la Junta de Gobierno?",
+      "¿Quién fija la fecha de la elección?",
+      "¿Cuándo es la elección?",
+      "¿Cuándo se elige el presidente?"
+    ],
+    "articulos": [
+      20
+    ]
+  },
+  {
+    "id": "eleccion-directa-o-delegados",
+    "preguntas": [
+      "¿La elección es por voto directo de los afiliados o por delegados?",
+      "¿Quién decide si votan todos los populares o solo los delegados?",
+      "¿Van a votar todos los populares o solo la asamblea?"
+    ],
+    "articulos": [
+      20
+    ]
+  },
+  {
+    "id": "candidato-gobernador-presidente",
+    "preguntas": [
+      "¿Qué pasa si el candidato a gobernador no es el Presidente del Partido?",
+      "¿El candidato a gobernador se convierte en presidente del partido?",
+      "¿Quién es presidente del partido después de una primaria de gobernación?"
+    ],
+    "articulos": [
+      21
+    ]
+  },
+  {
+    "id": "perder-gobernacion",
+    "preguntas": [
+      "¿Qué pasa con el presidente del partido si el PPD pierde la gobernación?",
+      "¿Cuándo se elige un nuevo presidente si se pierde la elección?",
+      "¿Quién elige al presidente del partido después de perder las elecciones?"
+    ],
+    "articulos": [
+      21,
+      13
+    ]
+  },
+  {
+    "id": "vicepresidencias",
+    "preguntas": [
+      "¿Cuántas vicepresidencias tiene el Partido?",
+      "¿Qué hace el Vicepresidente Ejecutivo?",
+      "¿Qué es la Vicepresidencia de Sectores?",
+      "¿Quién puede ser vicepresidente de sectores?"
+    ],
+    "articulos": [
+      22
+    ]
+  },
+  {
+    "id": "segunda-vicepresidencia-mujer",
+    "preguntas": [
+      "¿Qué pasa si ninguna vicepresidencia la ocupa una mujer?",
+      "¿Existe una segunda vicepresidencia ejecutiva?",
+      "¿La presidenta de las Mujeres Populares puede ser vicepresidenta?"
+    ],
+    "articulos": [
+      22
+    ]
+  },
+  {
+    "id": "miembros-acumulacion",
+    "preguntas": [
+      "¿Qué son los miembros por acumulación?",
+      "¿Por cuántos miembros por acumulación puedo votar?",
+      "¿Cuántos miembros por acumulación tiene la Junta de Gobierno?"
+    ],
+    "articulos": [
+      23,
+      19
+    ]
+  },
+  {
+    "id": "miembros-distrito",
+    "preguntas": [
+      "¿Cómo se eligen los miembros por distrito senatorial?",
+      "¿Quién vota por el miembro de mi distrito en la Junta de Gobierno?",
+      "¿Cuántos miembros por distrito hay en la Junta?"
+    ],
+    "articulos": [
+      20,
+      19
+    ]
+  },
+  {
+    "id": "acumulacion-quien-no",
+    "preguntas": [
+      "¿Quién no puede aspirar a miembro por acumulación?",
+      "¿Un alcalde puede ser miembro por acumulación?",
+      "¿Los que ya están en la Junta por su cargo pueden correr por acumulación?"
+    ],
+    "articulos": [
+      23
+    ]
+  },
+  {
+    "id": "duracion-cargos",
+    "preguntas": [
+      "¿Cuánto dura el término del Presidente del Partido?",
+      "¿Hasta cuándo ocupan sus puestos los miembros de la Junta de Gobierno?",
+      "¿Cuándo termina el término de los electos?"
+    ],
+    "articulos": [
+      20,
+      21
+    ]
+  },
+  {
+    "id": "vacante-presidente",
+    "preguntas": [
+      "¿Qué pasa si queda vacante la presidencia del partido?",
+      "¿Quién sustituye al presidente del partido si renuncia?",
+      "¿Quién cubre las vacantes en la Junta de Gobierno?"
+    ],
+    "articulos": [
+      13,
+      22,
+      65
+    ]
+  },
+  {
+    "id": "junta-que-es",
+    "preguntas": [
+      "¿Qué es la Junta de Gobierno?",
+      "¿Qué hace la Junta de Gobierno?",
+      "¿Cuáles son las funciones de la Junta de Gobierno?"
+    ],
+    "articulos": [
+      17,
+      18
+    ]
+  },
+  {
+    "id": "junta-miembros",
+    "preguntas": [
+      "¿Quiénes son miembros de la Junta de Gobierno?",
+      "¿Quién tiene voto en la Junta de Gobierno?",
+      "¿Cuántas personas componen la Junta de Gobierno?",
+      "¿Quién está en la Junta de Gobierno?"
+    ],
+    "articulos": [
+      19
+    ]
+  },
+  {
+    "id": "junta-voz-sin-voto",
+    "preguntas": [
+      "¿Quién tiene voz pero no voto en la Junta de Gobierno?",
+      "¿El Secretario General vota en la Junta?",
+      "¿Los exgobernadores votan en la Junta de Gobierno?"
+    ],
+    "articulos": [
+      19,
+      117
+    ]
+  },
+  {
+    "id": "junta-reuniones",
+    "preguntas": [
+      "¿Cada cuánto se reúne la Junta de Gobierno?",
+      "¿Quién convoca una reunión extraordinaria de la Junta?"
+    ],
+    "articulos": [
+      24,
+      25
+    ]
+  },
+  {
+    "id": "junta-virtual",
+    "preguntas": [
+      "¿La Junta de Gobierno puede reunirse por videoconferencia?",
+      "¿Se pueden hacer reuniones virtuales?"
+    ],
+    "articulos": [
+      26,
+      85
+    ]
+  },
+  {
+    "id": "junta-asistencia",
+    "preguntas": [
+      "¿Qué pasa si un miembro de la Junta de Gobierno falta a las reuniones?",
+      "¿Cuántas ausencias se permiten en la Junta?"
+    ],
+    "articulos": [
+      27
+    ]
+  },
+  {
+    "id": "junta-interpreta",
+    "preguntas": [
+      "¿Quién interpreta el Reglamento cuando hay dudas?",
+      "¿Quién resuelve las controversias sobre el reglamento?",
+      "¿A quién le pregunto si no entiendo una regla?"
+    ],
+    "articulos": [
+      18
+    ]
+  },
+  {
+    "id": "junta-apelaciones",
+    "preguntas": [
+      "¿A quién apelo una decisión del Comité Municipal?",
+      "¿Dónde se apelan las decisiones de las asociaciones?",
+      "¿Quién atiende las apelaciones?"
+    ],
+    "articulos": [
+      18
+    ]
+  },
+  {
+    "id": "cuotas",
+    "preguntas": [
+      "¿Quién fija las cuotas del partido?",
+      "¿Hay que pagar cuota para ser funcionario?",
+      "¿Qué pasa si no pago la cuota?",
+      "¿Cuánto es la cuota?",
+      "¿Hay que pagar cuota?"
+    ],
+    "articulos": [
+      18,
+      94,
+      97
+    ]
+  },
+  {
+    "id": "consejo-que-es",
+    "preguntas": [
+      "¿Qué es el Consejo de Gobierno?",
+      "¿Cuál es la diferencia entre el Consejo de Gobierno y la Junta de Gobierno?",
+      "¿Qué hace el Consejo de Gobierno?",
+      "¿Qué es el Consejo de Gobierno del PPD?"
+    ],
+    "articulos": [
+      12,
+      13,
+      17
+    ]
+  },
+  {
+    "id": "consejo-miembros",
+    "preguntas": [
+      "¿Quiénes son miembros del Consejo de Gobierno?",
+      "¿Los presidentes de comités municipales están en el Consejo de Gobierno?"
+    ],
+    "articulos": [
+      14
+    ]
+  },
+  {
+    "id": "consejo-reuniones",
+    "preguntas": [
+      "¿Cada cuánto se reúne el Consejo de Gobierno?",
+      "¿Quién convoca al Consejo de Gobierno?",
+      "¿Con cuánto tiempo citan al Consejo de Gobierno?"
+    ],
+    "articulos": [
+      15,
+      16
+    ]
+  },
+  {
+    "id": "plan-gobierno-aprobacion",
+    "preguntas": [
+      "¿Quién aprueba el plan de gobierno?",
+      "¿Quién aprueba el reglamento del partido?",
+      "¿Qué es el plan de gobierno?"
+    ],
+    "articulos": [
+      12,
+      13,
+      5
+    ]
+  },
+  {
+    "id": "elector-afiliado",
+    "preguntas": [
+      "¿Qué es un elector afiliado?",
+      "¿Cómo me hago miembro del partido?",
+      "¿Cómo me afilio al PPD?",
+      "¿Qué se necesita para ser popular?",
+      "¿Cómo me afilio?",
+      "¿Cómo me inscribo en el partido?",
+      "¿Cómo me hago popular?"
+    ],
+    "articulos": [
+      5
+    ]
+  },
+  {
+    "id": "edad-joven",
+    "preguntas": [
+      "¿Qué edad es joven según el Reglamento?",
+      "¿Hasta qué edad se es joven en el partido?"
+    ],
+    "articulos": [
+      5,
+      41
+    ]
+  },
+  {
+    "id": "edad-juventud-popular",
+    "preguntas": [
+      "¿Cuál es la edad máxima para la Juventud Popular?",
+      "¿Hasta qué edad puedo estar en la Juventud Popular Nacional?",
+      "¿Quiénes pertenecen a la JPN?",
+      "¿Hasta qué edad es la Juventud Popular?",
+      "¿Qué edad tiene que tener un joven popular?"
+    ],
+    "articulos": [
+      41,
+      5
+    ]
+  },
+  {
+    "id": "mayoria-absoluta-simple",
+    "preguntas": [
+      "¿Qué es mayoría absoluta y qué es mayoría simple?",
+      "¿Cuál es la diferencia entre mayoría absoluta y simple?"
+    ],
+    "articulos": [
+      5
+    ]
+  },
+  {
+    "id": "unidad-electoral-precinto",
+    "preguntas": [
+      "¿Qué es una unidad electoral?",
+      "¿Qué es un precinto?",
+      "¿Qué es un barrio según el reglamento?"
+    ],
+    "articulos": [
+      5
+    ]
+  },
+  {
+    "id": "plan-reorganizacion",
+    "preguntas": [
+      "¿Qué es el plan de reorganización?",
+      "¿Quién prepara el plan de reorganización?"
+    ],
+    "articulos": [
+      5,
+      65
+    ]
+  },
+  {
+    "id": "nombre-proposito",
+    "preguntas": [
+      "¿Cuál es el nombre oficial del partido?",
+      "¿Cuál es el propósito del PPD?",
+      "¿Qué tipo de partido es el PPD?"
+    ],
+    "articulos": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "insignia",
+    "preguntas": [
+      "¿Puedo usar la pava y el logo del partido?",
+      "¿Cuál es la insignia oficial del partido?",
+      "¿Quién autoriza el uso del nombre y la insignia?"
+    ],
+    "articulos": [
+      3
+    ]
+  },
+  {
+    "id": "deberes-funcionarios",
+    "preguntas": [
+      "¿Cuáles son los deberes de un funcionario del partido?",
+      "¿Qué se espera de un funcionario del PPD?"
+    ],
+    "articulos": [
+      4
+    ]
+  },
+  {
+    "id": "que-es-funcionario",
+    "preguntas": [
+      "¿Quién es funcionario del partido?",
+      "¿Qué significa ser funcionario según el reglamento?"
+    ],
+    "articulos": [
+      5,
+      4
+    ]
+  },
+  {
+    "id": "comite-central",
+    "preguntas": [
+      "¿Quiénes forman el Comité Central?",
+      "¿Qué es el Comité Central?"
+    ],
+    "articulos": [
+      63
+    ]
+  },
+  {
+    "id": "funciones-presidente",
+    "preguntas": [
+      "¿Cuáles son las funciones del Presidente del Partido?",
+      "¿Qué poderes tiene el presidente del partido?",
+      "¿Puede el presidente suspender una decisión de un organismo?"
+    ],
+    "articulos": [
+      64
+    ]
+  },
+  {
+    "id": "secretario-general",
+    "preguntas": [
+      "¿Qué hace el Secretario General?",
+      "¿Quién nombra al Secretario General?",
+      "¿Puede el Secretario General ser candidato?"
+    ],
+    "articulos": [
+      65,
+      18
+    ]
+  },
+  {
+    "id": "subsecretario-general",
+    "preguntas": [
+      "¿Qué hace el Subsecretario General?",
+      "¿Quién sustituye al Secretario General?"
+    ],
+    "articulos": [
+      66
+    ]
+  },
+  {
+    "id": "tesorero",
+    "preguntas": [
+      "¿Qué hace el Tesorero del partido?",
+      "¿Quién maneja los fondos del partido?"
+    ],
+    "articulos": [
+      67
+    ]
+  },
+  {
+    "id": "comisionado-electoral",
+    "preguntas": [
+      "¿Qué hace el Comisionado Electoral?",
+      "¿Puede el Comisionado Electoral ser candidato?",
+      "¿Quién organiza las elecciones internas?",
+      "¿Quién organiza el voto adelantado?"
+    ],
+    "articulos": [
+      68
+    ]
+  },
+  {
+    "id": "delegado-presidencial",
+    "preguntas": [
+      "¿Qué es un delegado presidencial?",
+      "¿Qué hace el delegado presidencial?"
+    ],
+    "articulos": [
+      69,
+      5
+    ]
+  },
+  {
+    "id": "portavoz-oficial",
+    "preguntas": [
+      "¿Quién es el portavoz oficial del partido?"
+    ],
+    "articulos": [
+      65
+    ]
+  },
+  {
+    "id": "comite-municipal-que-es",
+    "preguntas": [
+      "¿Qué es el Comité Municipal?",
+      "¿Quiénes componen el Comité Municipal?",
+      "¿Quiénes son miembros del comité municipal de mi pueblo?"
+    ],
+    "articulos": [
+      70,
+      71
+    ]
+  },
+  {
+    "id": "presidente-municipal-eleccion",
+    "preguntas": [
+      "¿Cómo se elige el presidente del Comité Municipal?",
+      "¿El candidato a alcalde es automáticamente presidente del comité municipal?",
+      "¿Quién escoge al presidente del comité municipal?"
+    ],
+    "articulos": [
+      80
+    ]
+  },
+  {
+    "id": "presidente-municipal-funciones",
+    "preguntas": [
+      "¿Qué hace el presidente del Comité Municipal?",
+      "¿Cuáles son las funciones del presidente municipal del partido?"
+    ],
+    "articulos": [
+      73
+    ]
+  },
+  {
+    "id": "oficiales-municipales",
+    "preguntas": [
+      "¿Cómo se escogen el vicepresidente, el secretario y el tesorero del Comité Municipal?",
+      "¿Qué hace el secretario del comité municipal?",
+      "¿Qué hace el tesorero del comité municipal?"
+    ],
+    "articulos": [
+      80,
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "id": "reuniones-municipales",
+    "preguntas": [
+      "¿Cada cuánto se reúne el Comité Municipal?",
+      "¿Con cuánto tiempo convocan las reuniones del comité municipal?",
+      "¿Quién convoca una reunión extraordinaria del comité municipal?"
+    ],
+    "articulos": [
+      83,
+      84,
+      85
+    ]
+  },
+  {
+    "id": "vacantes-municipales",
+    "preguntas": [
+      "¿Qué pasa si renuncia el presidente del Comité Municipal?",
+      "¿Cómo se cubre una vacante en el comité municipal?"
+    ],
+    "articulos": [
+      81
+    ]
+  },
+  {
+    "id": "transicion-14-dias",
+    "preguntas": [
+      "¿Qué debe entregar un funcionario saliente del Comité Municipal?",
+      "¿Cuánto tiempo tiene un funcionario saliente para hacer la transición?"
+    ],
+    "articulos": [
+      82
+    ]
+  },
+  {
+    "id": "ausencias-municipales",
+    "preguntas": [
+      "¿Qué pasa si falto a las reuniones del Comité Municipal?",
+      "¿Me pueden quitar el puesto por no ir a las reuniones?"
+    ],
+    "articulos": [
+      86
+    ]
+  },
+  {
+    "id": "presidente-precinto",
+    "preguntas": [
+      "¿Qué es el presidente de precinto?",
+      "¿Cómo se elige el presidente de precinto?",
+      "¿El candidato a representante es presidente de precinto?"
+    ],
+    "articulos": [
+      79,
+      80
+    ]
+  },
+  {
+    "id": "coordinador-comisionados-precinto",
+    "preguntas": [
+      "¿Qué hace el coordinador electoral del municipio?",
+      "¿Quién nombra a los comisionados electorales de precinto?",
+      "¿Qué hace el comisionado electoral de precinto?"
+    ],
+    "articulos": [
+      77,
+      78,
+      80
+    ]
+  },
+  {
+    "id": "comite-unidad",
+    "preguntas": [
+      "¿Qué es el Comité de Unidad Electoral?",
+      "¿Quiénes componen el comité de unidad?",
+      "¿Qué es un comité de unidad?"
+    ],
+    "articulos": [
+      87,
+      88
+    ]
+  },
+  {
+    "id": "eleccion-unidad",
+    "preguntas": [
+      "¿Cómo se eligen los presidentes de unidad?",
+      "¿Con cuánto tiempo se anuncian las elecciones de los comités de unidad?",
+      "¿Quién nombra a los coordinadores electorales de unidad?"
+    ],
+    "articulos": [
+      91
+    ]
+  },
+  {
+    "id": "funciones-unidad",
+    "preguntas": [
+      "¿Qué hacen el presidente y el vicepresidente de unidad?",
+      "¿Cada cuánto se reúne el comité de unidad?",
+      "¿Qué hace el coordinador electoral de unidad?"
+    ],
+    "articulos": [
+      89,
+      90
+    ]
+  },
+  {
+    "id": "jpn-que-es",
+    "preguntas": [
+      "¿Qué es la Juventud Popular Nacional?",
+      "¿Cómo se organiza la Juventud Popular?",
+      "¿Qué funciones tiene la JPN?"
+    ],
+    "articulos": [
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "id": "jpn-elecciones",
+    "preguntas": [
+      "¿Cuándo se eligen los presidentes de la Juventud Popular?",
+      "¿Cómo se elige la directiva de la JPN?"
+    ],
+    "articulos": [
+      44
+    ]
+  },
+  {
+    "id": "mujeres-populares",
+    "preguntas": [
+      "¿Qué es la Asociación de Mujeres Populares?",
+      "¿Quién puede pertenecer a las Mujeres Populares?",
+      "¿Qué funciones tiene la Asociación de Mujeres Populares?"
+    ],
+    "articulos": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "id": "mujeres-populares-elecciones",
+    "preguntas": [
+      "¿Cuándo se elige la directiva de las Mujeres Populares?",
+      "¿Cómo se elige la presidenta municipal de Mujeres Populares?"
+    ],
+    "articulos": [
+      54
+    ]
+  },
+  {
+    "id": "servidores-publicos",
+    "preguntas": [
+      "¿Qué es la Asociación de Servidores Públicos Populares?",
+      "¿Quién pertenece a la ASPP?",
+      "¿Cuándo se elige la directiva de los servidores públicos?"
+    ],
+    "articulos": [
+      45,
+      46,
+      48,
+      49
+    ]
+  },
+  {
+    "id": "alcaldes-legisladores-municipales",
+    "preguntas": [
+      "¿Qué es la Asociación de Alcaldes Populares?",
+      "¿Qué es la Asociación de Legisladores Municipales Populares?",
+      "¿Cuándo se elige la directiva de los legisladores municipales?"
+    ],
+    "articulos": [
+      34,
+      35,
+      36,
+      37,
+      39
+    ]
+  },
+  {
+    "id": "organizaciones-sectoriales",
+    "preguntas": [
+      "¿Cómo se crea una organización sectorial?",
+      "¿Qué se necesita para el reconocimiento oficial de una organización sectorial?",
+      "¿Qué es una organización sectorial?"
+    ],
+    "articulos": [
+      55,
+      57,
+      59
+    ]
+  },
+  {
+    "id": "sectoriales-revocacion",
+    "preguntas": [
+      "¿Puede la Junta de Gobierno quitarle el reconocimiento a una organización sectorial?",
+      "¿Por qué pueden rechazar una organización sectorial nueva?"
+    ],
+    "articulos": [
+      61
+    ]
+  },
+  {
+    "id": "sectoriales-restriccion",
+    "preguntas": [
+      "¿Puede un alcalde o legislador presidir una organización sectorial?",
+      "¿Qué pasa si el presidente de una asociación se convierte en candidato?",
+      "¿Un funcionario electo puede ser presidente de una asociación?"
+    ],
+    "articulos": [
+      62
+    ]
+  },
+  {
+    "id": "sectoriales-transicion",
+    "preguntas": [
+      "¿Qué pasa con las organizaciones sectoriales que ya existían, como veteranos o pensionados?",
+      "¿Hasta cuándo mantienen su reconocimiento las organizaciones sectoriales actuales?"
+    ],
+    "articulos": [
+      117
+    ]
+  },
+  {
+    "id": "conferencia-legislativa",
+    "preguntas": [
+      "¿Qué es la Conferencia Legislativa?",
+      "¿Qué es el caucus del partido?",
+      "¿Quién preside la Conferencia Legislativa?"
+    ],
+    "articulos": [
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  {
+    "id": "candidatura-radicar",
+    "preguntas": [
+      "¿Cómo radico una candidatura?",
+      "¿Ante quién se radican las candidaturas?",
+      "¿Quién certifica que un aspirante cumple los requisitos?"
+    ],
+    "articulos": [
+      92
+    ]
+  },
+  {
+    "id": "candidatura-documentos",
+    "preguntas": [
+      "¿Qué documentos necesito para aspirar a un cargo?",
+      "¿Tengo que volver a someter documentos si ya aspiré antes?"
+    ],
+    "articulos": [
+      94
+    ]
+  },
+  {
+    "id": "comision-calificadora",
+    "preguntas": [
+      "¿Qué es la Comisión Calificadora de Aspirantes?",
+      "¿Cuánto tarda la Comisión Calificadora en decidir?",
+      "¿Quién nombra a la Comisión Calificadora?"
+    ],
+    "articulos": [
+      93,
+      5
+    ]
+  },
+  {
+    "id": "quien-no-puede-aspirar",
+    "preguntas": [
+      "¿Quién no puede ser candidato del partido?",
+      "¿Puede aspirar alguien convicto de delito grave?",
+      "¿Cuáles son los criterios de calificación para aspirar?"
+    ],
+    "articulos": [
+      95
+    ]
+  },
+  {
+    "id": "apelar-comision",
+    "preguntas": [
+      "¿Puedo apelar la decisión de la Comisión Calificadora?",
+      "¿Cuántos días tengo para pedir revisión de la Comisión Calificadora?"
+    ],
+    "articulos": [
+      93
+    ]
+  },
+  {
+    "id": "apoyo-otro-partido",
+    "preguntas": [
+      "¿Qué pasa si un funcionario apoyó a un candidato de otro partido?",
+      "¿Puedo respaldar a un candidato de otro partido?"
+    ],
+    "articulos": [
+      95,
+      97
+    ]
+  },
+  {
+    "id": "nominacion-directa",
+    "preguntas": [
+      "¿Puedo correr por nominación directa si pierdo la primaria?",
+      "¿Qué pasa si compito contra el candidato oficial después de perder?"
+    ],
+    "articulos": [
+      95
+    ]
+  },
+  {
+    "id": "cuota-para-aspirar",
+    "preguntas": [
+      "¿Tengo que estar al día con la cuota para aspirar?",
+      "¿Qué certificación de cuotas necesito para ser candidato?"
+    ],
+    "articulos": [
+      94,
+      97
+    ]
+  },
+  {
+    "id": "medidas-disciplinarias",
+    "preguntas": [
+      "¿Qué medidas disciplinarias existen en el partido?",
+      "¿Qué sanciones puede imponer el partido?",
+      "¿Quién impone las medidas disciplinarias?"
+    ],
+    "articulos": [
+      99,
+      97
+    ]
+  },
+  {
+    "id": "acciones-sancionables",
+    "preguntas": [
+      "¿Por qué me pueden disciplinar en el partido?",
+      "¿Puedo criticar públicamente a otro popular?",
+      "¿Qué conductas están prohibidas para los funcionarios?"
+    ],
+    "articulos": [
+      97,
+      98
+    ]
+  },
+  {
+    "id": "debate-permitido",
+    "preguntas": [
+      "¿Se puede debatir ideas dentro del partido sin sanción?",
+      "¿Puedo contrastar mi trayectoria con la de otro candidato en una primaria?"
+    ],
+    "articulos": [
+      98
+    ]
+  },
+  {
+    "id": "suspension-sumaria",
+    "preguntas": [
+      "¿Qué es la suspensión sumaria?",
+      "¿Quién puede suspender sumariamente a un funcionario?"
+    ],
+    "articulos": [
+      100,
+      101
+    ]
+  },
+  {
+    "id": "procedimiento-expedito",
+    "preguntas": [
+      "¿Qué es el procedimiento expedito?",
+      "¿Cuántos días tengo para defenderme si me suspenden?",
+      "¿Cuándo tengo derecho a una vista?"
+    ],
+    "articulos": [
+      101
+    ]
+  },
+  {
+    "id": "querella-como",
+    "preguntas": [
+      "¿Cómo radico una querella contra un funcionario?",
+      "¿Qué debe contener una querella?",
+      "¿Ante quién se presenta una querella?"
+    ],
+    "articulos": [
+      102,
+      103,
+      104
+    ]
+  },
+  {
+    "id": "querella-plazo",
+    "preguntas": [
+      "¿Cuánto tiempo tengo para radicar una querella?",
+      "¿Hay un plazo para presentar una querella?"
+    ],
+    "articulos": [
+      103
+    ]
+  },
+  {
+    "id": "oficial-examinador",
+    "preguntas": [
+      "¿Qué hace el oficial examinador?",
+      "¿Cuánto tarda el proceso de una querella?",
+      "¿Quién nombra al oficial examinador?"
+    ],
+    "articulos": [
+      105,
+      106,
+      109,
+      110,
+      5
+    ]
+  },
+  {
+    "id": "contestar-querella",
+    "preguntas": [
+      "¿Cuánto tiempo tengo para contestar una querella?",
+      "¿Qué pasa si no contesto una querella?"
+    ],
+    "articulos": [
+      107,
+      108
+    ]
+  },
+  {
+    "id": "reconsideracion",
+    "preguntas": [
+      "¿Puedo pedir reconsideración de una resolución final?",
+      "¿Cuántos días tengo para pedir reconsideración?"
+    ],
+    "articulos": [
+      111
+    ]
+  },
+  {
+    "id": "revision-judicial",
+    "preguntas": [
+      "¿Puedo ir al tribunal si me sancionan?",
+      "¿Cuándo procede la revisión judicial?",
+      "¿Cuántos días tengo para ir al tribunal?"
+    ],
+    "articulos": [
+      112
+    ]
+  },
+  {
+    "id": "quorum-general",
+    "preguntas": [
+      "¿Cuál es el quórum de los organismos del partido?",
+      "¿Qué pasa si no hay quórum en una reunión?",
+      "¿Cómo se cuenta el quórum en una votación electrónica?"
+    ],
+    "articulos": [
+      113
+    ]
+  },
+  {
+    "id": "reglamento-vs-codigo",
+    "preguntas": [
+      "¿Qué prevalece, el Reglamento o el Código Electoral?",
+      "¿Qué pasa si el reglamento choca con la ley electoral?"
+    ],
+    "articulos": [
+      120
+    ]
+  },
+  {
+    "id": "reglamento-aprobacion",
+    "preguntas": [
+      "¿Cuándo se aprobó este Reglamento?",
+      "¿Desde cuándo está vigente el reglamento?",
+      "¿Dónde se aprobó el reglamento?"
+    ],
+    "articulos": [
+      121
+    ]
+  },
+  {
+    "id": "reglamento-certificacion",
+    "preguntas": [
+      "¿Quién certificó el Reglamento?",
+      "¿Quién firmó el reglamento?"
+    ],
+    "articulos": [
+      121
+    ]
+  },
+  {
+    "id": "reglamento-deroga",
+    "preguntas": [
+      "¿Este Reglamento sustituye al anterior?",
+      "¿Siguen vigentes las reglas viejas?",
+      "¿Quién publica el reglamento?"
+    ],
+    "articulos": [
+      118
+    ]
+  },
+  {
+    "id": "transicion-funcionarios",
+    "preguntas": [
+      "¿Los funcionarios actuales siguen en su puesto hasta la elección?",
+      "¿Qué pasa con los que tienen cargos ahora que hay reglamento nuevo?"
+    ],
+    "articulos": [
+      117
+    ]
+  },
+  {
+    "id": "metodo-alterno-primarias",
+    "preguntas": [
+      "¿Qué es un método alterno?",
+      "¿Qué son las primarias según el reglamento?",
+      "¿Qué es una elección especial?"
+    ],
+    "articulos": [
+      5
+    ]
+  },
+  {
+    "id": "eleccion-interna",
+    "preguntas": [
+      "¿Qué es una elección interna?",
+      "¿Qué es un colegio de votación?"
+    ],
+    "articulos": [
+      5
+    ]
+  },
+  {
+    "id": "separabilidad",
+    "preguntas": [
+      "¿Qué pasa si un tribunal anula parte del Reglamento?"
+    ],
+    "articulos": [
+      119
+    ]
+  }
 ]
