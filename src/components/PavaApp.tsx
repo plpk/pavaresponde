@@ -158,6 +158,7 @@ export function PavaApp() {
       </header>
 
       <main className="flex-1 px-4 pt-5 pb-6 md:px-8 md:pt-10 md:pb-8">
+        <h1 className="sr-only">Pava Responde: preguntas sobre el Reglamento del PPD y la Asamblea General</h1>
         <div className="mx-auto w-full max-w-[640px]">
           <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 md:hidden">
             <Brand size="sm" />

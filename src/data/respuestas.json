@@ -22,7 +22,8 @@
     "verificada": false,
     "redactada": "claude-code-2026-09-06",
     "notas": [
-      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+      "Redactada por Claude en la sesión de desarrollo a partir del texto íntegro del Reglamento. Pendiente de la revisión automática: npm run respuestas -- --verificar.",
+      "El lugar (Complejo Ferial de Puerto Rico) viene del prototipo de diseño, no del Reglamento. Confirmar con la Secretaría General antes de la Asamblea."
     ]
   },
   {

@@ -18,11 +18,27 @@ const cairo = Cairo({
   display: "swap",
 });
 
+// Dirección pública, para que las vistas previas al compartir apunten bien.
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3210");
+
+const DESCRIPTION =
+  "Preguntas sobre el Reglamento del Partido Popular Democrático y la Asamblea General del 11 de octubre de 2026 en Ponce.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { default: "Pava Responde", template: "%s · Pava Responde" },
-  description:
-    "Preguntas sobre el Reglamento del Partido Popular Democrático y la Asamblea General del 11 de octubre de 2026 en Ponce.",
+  description: DESCRIPTION,
   applicationName: "Pava Responde",
+  openGraph: {
+    title: "Pava Responde",
+    description: DESCRIPTION,
+    siteName: "Pava Responde",
+    locale: "es_PR",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "Pava Responde", description: DESCRIPTION },
 };
 
 export const viewport: Viewport = {
