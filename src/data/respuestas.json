@@ -90,7 +90,7 @@
     ],
     "parrafos": [
       "Son miembros los delegados de cada municipio (1 por cada 400 votos del PPD en la última elección), los alcaldes, legisladores y legisladores municipales, los miembros de la Junta de Gobierno, del Comité Central y de los comités municipales, los presidentes de unidad, las directivas de las asociaciones y varios exfuncionarios. La lista completa está en el Artículo 8.",
-      "Este año, además, vota cualquier elector activo que asista."
+      "Este año, además, vota cualquier elector activo que asista. Si no sabes si eres delegado, pregunta en tu Comité Municipal."
     ],
     "articulos": [
       8
@@ -112,7 +112,7 @@
     ],
     "parrafos": [
       "Cada municipio tiene 1 delegado por cada 400 votos que sacó el candidato popular más votado en la papeleta estatal de la última elección general.",
-      "Esos puestos los cubre tu Comité Municipal con la lista de funcionarios de colegio de esa elección, o con los coordinadores electorales de unidad."
+      "Esos puestos los cubre tu Comité Municipal con la lista de funcionarios de colegio de esa elección, o con los vicepresidentes, coordinadores o subcoordinadores electorales de unidad."
     ],
     "articulos": [
       8,
@@ -158,6 +158,7 @@
     ],
     "articulos": [
       6,
+      7,
       17
     ],
     "verificada": false,
@@ -174,7 +175,7 @@
       "¿La asamblea puede cambiar decisiones del partido?"
     ],
     "parrafos": [
-      "Sí. Con el voto de 3 de cada 4 delegados presentes, la Asamblea puede revocar decisiones de la Junta de Gobierno y del Presidente."
+      "Sí. Con el voto de 3 de cada 4 delegados presentes, la Asamblea puede revocar decisiones de los organismos directivos del partido y del Presidente."
     ],
     "articulos": [
       7
@@ -336,10 +337,11 @@
     ],
     "parrafos": [
       "En la Asamblea General no. Se vota en persona, en Ponce, de 8:00 a 11:00 de la mañana.",
-      "El voto electrónico solo existe para la Junta de Gobierno, cuando el Presidente somete asuntos entre reuniones."
+      "El Reglamento solo prevé votación electrónica para la Junta de Gobierno, cuando el Presidente somete asuntos entre reuniones, y para enmiendas que la Junta manda al Consejo de Gobierno."
     ],
     "articulos": [
       26,
+      116,
       20
     ],
     "verificada": false,
@@ -587,7 +589,7 @@
     ],
     "parrafos": [
       "Quien ya es miembro de la Junta de Gobierno por su cargo, como los presidentes de las asociaciones o los portavoces legislativos.",
-      "Un alcalde común sí puede aspirar."
+      "Un alcalde que no esté en la Junta por su cargo sí puede aspirar."
     ],
     "articulos": [
       23,
@@ -811,7 +813,7 @@
       "¿Cuánto es la cuota del partido?"
     ],
     "parrafos": [
-      "Las fija la Junta de Gobierno. Para aspirar a un cargo hay que estar al día, y no pagar puede traer una medida disciplinaria.",
+      "Las cuotas aplican a los funcionarios y aspirantes del partido, y las fija la Junta de Gobierno. Para aspirar a un cargo hay que estar al día, y no pagar puede traer una medida disciplinaria.",
       "Cuánto es y cómo se paga: llama al (787) 721-2000."
     ],
     "articulos": [
@@ -921,7 +923,7 @@
       "¿Cómo me hago popular?"
     ],
     "parrafos": [
-      "Es la persona inscrita para votar en Puerto Rico que ha ingresado al partido de forma pública: por ejemplo, participando en sus actividades o cooperando con él. También apoya el plan de gobierno y respeta el Reglamento.",
+      "Es la persona inscrita para votar en Puerto Rico, o con edad para votar en las próximas elecciones, que ha ingresado al partido de forma pública: por ejemplo, participando en sus actividades o cooperando con él. También apoya el plan de gobierno y respeta el Reglamento.",
       "Para afiliarte, acércate a tu Comité Municipal o llama al (787) 721-2000."
     ],
     "articulos": [
@@ -983,7 +985,7 @@
       "¿Cuál es la diferencia entre mayoría absoluta y simple?"
     ],
     "parrafos": [
-      "Mayoría simple es la mitad más uno de los presentes. Mayoría absoluta es la mitad más uno de todos los miembros, estén o no.",
+      "Mayoría simple es la mitad más uno de los presentes. Mayoría absoluta es más de la mitad de todos los miembros, estén presentes o no.",
       "Los acuerdos se toman por mayoría simple, salvo que el Reglamento pida otra cosa."
     ],
     "articulos": [
@@ -1063,7 +1065,7 @@
       "¿Quién autoriza el uso del nombre y la insignia?"
     ],
     "parrafos": [
-      "No sin permiso. La insignia (el jíbaro de perfil con la pava, en rojo y blanco, con el lema «Pan, Tierra y Libertad») y el nombre del partido solo se pueden usar con autorización de la Junta de Gobierno."
+      "No sin permiso. La insignia (el rostro de un campesino de perfil con la pava, en rojo y blanco, con el lema «Pan, Tierra y Libertad») y el nombre del partido solo se pueden usar con autorización de la Junta de Gobierno."
     ],
     "articulos": [
       3
@@ -1271,7 +1273,7 @@
       "¿Quiénes son miembros del comité municipal de mi pueblo?"
     ],
     "parrafos": [
-      "Es la organización del partido en cada pueblo. Lo forman su presidente, vicepresidente, secretario y tesorero, los presidentes de unidad, las presidentas de mujeres y jóvenes del municipio, los comisionados electorales, el alcalde y los legisladores populares del pueblo, entre otros. La lista completa está en el Artículo 71."
+      "Es la organización del partido en cada pueblo. Lo forman su presidente, vicepresidente, secretario y tesorero, los presidentes de unidad, la presidenta de Mujeres Populares y el presidente de Jóvenes Populares del municipio, los comisionados electorales, el alcalde y los legisladores populares del pueblo, entre otros. La lista completa está en el Artículo 71."
     ],
     "articulos": [
       70,
@@ -1329,7 +1331,7 @@
       "¿Qué hace el tesorero del comité municipal?"
     ],
     "parrafos": [
-      "Los designa el presidente del comité municipal y sirven mientras él quiera.",
+      "Los designa el presidente del comité municipal y sirven mientras el presidente lo disponga.",
       "El secretario lleva los documentos y convoca las reuniones. El tesorero administra el dinero. El vicepresidente sustituye al presidente cuando falta."
     ],
     "articulos": [
@@ -1373,7 +1375,7 @@
       "¿Cómo se cubre una vacante en el comité municipal?"
     ],
     "parrafos": [
-      "Se avisa al Secretario General. Si la vacante es de presidente, la Junta de Gobierno decide cómo se cubre. Cualquier otro puesto se cubre igual que se eligió."
+      "Se avisa al Secretario General. Si la vacante es de presidente del comité o de presidente de precinto, la Junta de Gobierno decide cómo se cubre. Cualquier otro puesto se cubre igual que se eligió."
     ],
     "articulos": [
       81
@@ -1553,7 +1555,8 @@
       "¿Cómo se elige la directiva de la JPN?"
     ],
     "parrafos": [
-      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. El método para elegir presidentes municipales lo acuerdan la Juventud y la Junta."
+      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. Para este ciclo, esa fecha fue el 30 de junio de 2026.",
+      "El método para elegir presidentes municipales lo acuerdan la Juventud y la Junta."
     ],
     "articulos": [
       44
@@ -1573,7 +1576,7 @@
     ],
     "parrafos": [
       "Es la asociación de todas las mujeres populares. Tiene una presidenta en cada pueblo y una directiva estatal.",
-      "Además de organizar y movilizar, impulsa que haya igual número de mujeres y hombres en los organismos del partido y capacita a mujeres para aspirar a cargos."
+      "Además de organizar y movilizar, impulsa una composición equilibrada entre mujeres y hombres en los organismos del partido y capacita a mujeres para aspirar a cargos."
     ],
     "articulos": [
       50,
@@ -1593,7 +1596,8 @@
       "¿Cómo se elige la presidenta municipal de Mujeres Populares?"
     ],
     "parrafos": [
-      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. El método para las presidentas municipales lo acuerdan la asociación y la Junta."
+      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. Para este ciclo, esa fecha fue el 30 de junio de 2026.",
+      "El método para las presidentas municipales lo acuerdan la asociación y la Junta."
     ],
     "articulos": [
       54
@@ -1613,7 +1617,7 @@
     ],
     "parrafos": [
       "Es la asociación de los servidores públicos afiliados al partido. Tiene un presidente en cada agencia y una directiva estatal.",
-      "Sus elecciones las convoca la Junta de Gobierno antes del 30 de junio del segundo año después de las elecciones generales."
+      "Sus elecciones las convoca la Junta de Gobierno antes del 30 de junio del segundo año después de las elecciones generales. Para este ciclo, esa fecha fue el 30 de junio de 2026."
     ],
     "articulos": [
       45,
@@ -1635,12 +1639,12 @@
       "¿Cuándo se elige la directiva de los legisladores municipales?"
     ],
     "parrafos": [
-      "Son las asociaciones de los alcaldes populares y de los legisladores municipales populares. Coordinan la política municipal y se gobiernan solas.",
-      "La directiva de legisladores municipales se elige antes del 30 de junio del segundo año después de las elecciones generales."
+      "Son las asociaciones de los alcaldes populares y de los legisladores municipales populares. Fortalecen su participación en el partido y coordinan la política pública municipal.",
+      "La directiva de legisladores municipales se elige antes del 30 de junio del segundo año después de las elecciones generales. Para este ciclo, esa fecha fue el 30 de junio de 2026."
     ],
     "articulos": [
       34,
-      35,
+      36,
       37,
       39
     ],
@@ -1717,7 +1721,8 @@
       "¿Hasta cuándo mantienen su reconocimiento las organizaciones sectoriales actuales?"
     ],
     "parrafos": [
-      "Las que ya existían (LGBTTIQ+, PYMES, veteranos, pensionados, líderes sindicales y comunitarios, base de fe, inmigrantes, diversidad funcional, trabajadores privados y el Consejo de Exfuncionarios) mantienen su reconocimiento hasta el 30 de junio de 2026 o hasta que elijan directiva, lo que pase primero."
+      "Las que ya existían (LGBTTIQ+, PYMES, veteranos, pensionados, líderes sindicales y comunitarios, base de fe, inmigrantes, diversidad funcional, trabajadores privados y el Consejo de Exfuncionarios) mantenían su reconocimiento hasta el 30 de junio de 2026 o hasta elegir directiva, lo que pasara primero.",
+      "Esa fecha ya pasó. Si tu organización no ha elegido directiva, pregunta en la Vicepresidencia de Sectores o llama al (787) 721-2000."
     ],
     "articulos": [
       117,
@@ -1779,7 +1784,7 @@
     ],
     "parrafos": [
       "Los que exige la ley para candidatos, una certificación de que estás al día con las cuotas, y lo que pidan la Secretaría o la Comisión Calificadora.",
-      "Si ya los sometiste en las elecciones anteriores, no tienes que repetirlos para un cargo interno en los 2 años siguientes."
+      "Si ya los sometiste en las elecciones anteriores, no tienes que repetirlos para un cargo interno en los 2 años siguientes, salvo que te los vuelvan a pedir."
     ],
     "articulos": [
       94
@@ -1798,7 +1803,7 @@
       "¿Quién nombra a la Comisión Calificadora?"
     ],
     "parrafos": [
-      "Es el grupo que decide si un aspirante es idóneo. La forman un presidente y 4 miembros nombrados por el Presidente del Partido, uno de ellos contador público autorizado.",
+      "Es el grupo que decide si un aspirante es idóneo. La forman un presidente y 4 miembros nombrados por el Presidente del Partido y ratificados por la Junta de Gobierno, uno de ellos contador público autorizado.",
       "Decide por escrito en 10 días, ampliables a 20."
     ],
     "articulos": [
@@ -1855,7 +1860,7 @@
       "¿Puedo respaldar a un candidato de otro partido?"
     ],
     "parrafos": [
-      "Es una falta que puede traer medidas disciplinarias, y además te impide aspirar a una candidatura del partido."
+      "Es una falta que puede traer medidas disciplinarias. Y si lo hiciste siendo funcionario del partido, te impide aspirar a una candidatura."
     ],
     "articulos": [
       97,
@@ -1913,7 +1918,7 @@
       "¿Quién impone las medidas disciplinarias?"
     ],
     "parrafos": [
-      "De menor a mayor: indiferencia, cese y desista, censura, retiro de confianza, suspensión o expulsión del cargo, suspensión del derecho a aspirar, multas y suspensión sumaria.",
+      "Indiferencia, cese y desista, censura, retiro de confianza, suspensión o expulsión del cargo, suspensión del derecho a aspirar, multas y suspensión sumaria.",
       "Las impone el Secretario General por instrucciones del Presidente o la Junta de Gobierno."
     ],
     "articulos": [
