@@ -38,6 +38,13 @@ export function parseDateRange(from?: string | null, to?: string | null): { from
   const out: { from?: Date; to?: Date } = {};
   if (from && YMD.test(from)) out.from = new Date(`${from}T00:00:00.000${PR_OFFSET}`);
   if (to && YMD.test(to)) out.to = new Date(`${to}T23:59:59.999${PR_OFFSET}`);
+  if (out.from && Number.isNaN(out.from.getTime())) delete out.from;
+  if (out.to && Number.isNaN(out.to.getTime())) delete out.to;
+  if (out.from && out.to && out.from > out.to) {
+    const [a, b] = [from!, to!];
+    out.from = new Date(`${b}T00:00:00.000${PR_OFFSET}`);
+    out.to = new Date(`${a}T23:59:59.999${PR_OFFSET}`);
+  }
   return out;
 }
 
@@ -46,7 +53,10 @@ export function formatArticles(list: number[]): string {
 }
 
 function csvCell(value: string): string {
-  return `"${value.replace(/"/g, '""')}"`;
+  // Excel y Sheets ejecutan celdas que empiezan por = + - @ o tabulador.
+  // Un apóstrofo delante las deja como texto.
+  const seguro = /^[=+\-@\t\r]/.test(value) ? `'${value}` : value;
+  return `"${seguro.replace(/"/g, '""')}"`;
 }
 
 /** CSV en UTF-8 con BOM para que Excel abra bien los acentos. */

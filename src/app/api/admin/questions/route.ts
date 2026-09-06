@@ -7,7 +7,13 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
   const { searchParams } = new URL(request.url);
-  const rows = await listQuestions(filterFromSearch(searchParams));
+  let rows;
+  try {
+    rows = await listQuestions(filterFromSearch(searchParams));
+  } catch (error) {
+    console.error("[api/admin/questions] no se pudo leer el registro:", error);
+    return NextResponse.json({ error: "unavailable" }, { status: 502 });
+  }
   const resumen = {
     total: rows.length,
     sinRespuesta: rows.filter((r) => !r.answered).length,
