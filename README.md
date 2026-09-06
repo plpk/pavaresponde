@@ -29,6 +29,7 @@ Sin `ANTHROPIC_API_KEY` la app no contesta: muestra el estado de error y lo dice
 
 - `npm run respuestas` genera las que falten; `-- --todas` regenera todo; `-- --solo id1,id2` unas pocas; `-- --sin-verificar` salta la revisión.
 - `npm run contar-tokens` dice exactamente cuántos tokens tiene el prompt (gratis).
+- `npm run revisar` pasa las comprobaciones automáticas sobre las respuestas (estilo, formas repetidas, artículos citados, números respaldados). Córrelo después de editar `respuestas.json`.
 
 Las preguntas que llegan a `/admin` con «sin respuesta» o generadas en vivo son las candidatas a entrar en `preguntas.json`.
 
