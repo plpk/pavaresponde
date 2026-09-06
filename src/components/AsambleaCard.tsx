@@ -21,7 +21,7 @@ export function AsambleaCard() {
       </div>
       <div className="h-8 w-px flex-none bg-line" aria-hidden="true" />
       <div className="min-w-0 flex-1 leading-[1.3]">
-        <div className="font-sans text-[10.5px] font-semibold uppercase tracking-[0.15em] text-ink-soft">Asamblea General · {ASAMBLEA.ciudad}</div>
+        <div className="font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">Asamblea General · {ASAMBLEA.ciudad}</div>
         <div className="mt-px text-[14px] font-medium text-ink">{ASAMBLEA.fechaCorta}</div>
         <div className="text-[13px] font-semibold text-blue">Inscríbete en {ASAMBLEA.urlCorta}</div>
       </div>
