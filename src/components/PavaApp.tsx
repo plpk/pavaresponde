@@ -4,6 +4,7 @@ import { useCallback, useRef, useState } from "react";
 import type { ArticleRef } from "@/lib/articulos";
 import { ASK_TIMEOUT_MS, PDF_PATH, SUBTITLE } from "@/lib/constants";
 import { DICTATION_MSG, useDictation } from "@/hooks/useDictation";
+import { AsambleaCard } from "./AsambleaCard";
 import { AskBox } from "./AskBox";
 import { Footer } from "./Footer";
 import { ListeningPanel } from "./ListeningPanel";
@@ -14,7 +15,7 @@ import { AnswerCard, ErrorCard, LoadingCard, OutOfScopeCard, RateLimitCard } fro
 type Status = "empty" | "listening" | "loading" | "answer" | "outscope" | "error" | "ratelimit";
 
 export type AskResponse =
-  | { id: string; inScope: true; paragraphs: string[]; articles: ArticleRef[] }
+  | { id: string; inScope: true; paragraphs: string[]; articles: ArticleRef[]; fuente: "respuestas" | "modelo" }
   | { id: string; inScope: false };
 
 type Feedback = "up" | "down" | null;
@@ -162,6 +163,7 @@ export function PavaApp() {
             <Brand size="md" />
           </div>
           <p className="mt-3 text-[15px] leading-[1.45] text-ink-muted text-pretty md:mt-0 md:text-[17px] md:leading-[1.5]">{SUBTITLE}</p>
+          <AsambleaCard />
 
           {status === "listening" ? (
             <ListeningPanel
@@ -180,7 +182,7 @@ export function PavaApp() {
           <div aria-live="polite">
             {status === "loading" && <LoadingCard echo={echo} />}
             {status === "answer" && answer && (
-              <AnswerCard echo={echo} paragraphs={answer.paragraphs} articles={answer.articles} feedback={feedback} onFeedback={(v) => void sendFeedback(v)} />
+              <AnswerCard echo={echo} paragraphs={answer.paragraphs} articles={answer.articles} fuente={answer.fuente} feedback={feedback} onFeedback={(v) => void sendFeedback(v)} />
             )}
             {status === "outscope" && <OutOfScopeCard echo={echo} />}
             {status === "error" && <ErrorCard onRetry={() => void ask(echo)} />}

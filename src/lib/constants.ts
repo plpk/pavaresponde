@@ -7,10 +7,16 @@ export const PDF_PATH = "/reglamento.pdf";
 
 export const SUBTITLE = "Preguntas sobre el Reglamento del PPD y la Asamblea del 11 de octubre";
 
-// Divulgación exigida por la Ley 105-2026. Es el único lugar de la interfaz
-// donde se menciona la inteligencia artificial.
-export const DISCLOSURE =
-  "Las respuestas se generan con inteligencia artificial y pueden contener errores. Verifica con el Reglamento oficial.";
+// Divulgación exigida por la Ley 105-2026. Es la única mención a la
+// inteligencia artificial en la interfaz y acompaña a cada respuesta (no a la
+// pantalla inicial). La mayoría de las respuestas vienen preparadas de
+// antemano, no se generan en el momento.
+export const DISCLOSURE = {
+  /** Respuesta del conjunto preparado de antemano (la mayoría). */
+  respuestas: "Respuesta preparada de antemano con inteligencia artificial. Verifica con el Reglamento oficial.",
+  /** Respuesta generada en el momento por el modelo (preguntas que no coinciden con las preparadas). */
+  modelo: "Respuesta generada en este momento con inteligencia artificial y sujeta a error. Verifica con el Reglamento oficial.",
+} as const;
 
 export const OUT_OF_SCOPE_TEXT =
   "Eso no está en el Reglamento ni en la información de la Asamblea. Para orientación, llama al partido al (787) 721-2000.";
@@ -37,6 +43,13 @@ export const RATE_LIMIT = { max: 6, windowMs: 60_000 } as const;
 // confírmalo con la Secretaría General antes de publicar.
 export const ASAMBLEA = {
   fecha: "domingo 11 de octubre de 2026",
+  fechaCorta: "Domingo 11 de octubre de 2026",
+  dia: "11",
+  mes: "oct",
+  ciudad: "Ponce",
   lugar: "Complejo Ferial de Puerto Rico, en Ponce",
   telefono: PHONE_DISPLAY,
+  /** Sitio oficial del evento, donde la gente se inscribe. */
+  url: "https://www.todosporelcambio.com/",
+  urlCorta: "todosporelcambio.com",
 } as const;

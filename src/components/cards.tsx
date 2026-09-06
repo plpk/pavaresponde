@@ -1,5 +1,5 @@
 import type { ArticleRef } from "@/lib/articulos";
-import { OUT_OF_SCOPE_TEXT, PHONE_DISPLAY, PHONE_TEL } from "@/lib/constants";
+import { DISCLOSURE, OUT_OF_SCOPE_TEXT, PHONE_DISPLAY, PHONE_TEL } from "@/lib/constants";
 import { PhoneIcon, SignalOffIcon } from "./icons";
 
 function Echo({ text }: { text: string }) {
@@ -28,11 +28,12 @@ type AnswerProps = {
   echo: string;
   paragraphs: string[];
   articles: ArticleRef[];
+  fuente: "respuestas" | "modelo";
   feedback: "up" | "down" | null;
   onFeedback: (v: "up" | "down") => void;
 };
 
-export function AnswerCard({ echo, paragraphs, articles, feedback, onFeedback }: AnswerProps) {
+export function AnswerCard({ echo, paragraphs, articles, fuente, feedback, onFeedback }: AnswerProps) {
   const thumb = (v: "up" | "down") =>
     `min-h-12 min-w-14 rounded-[10px] border-[1.5px] text-xl active:translate-y-px ${
       feedback === v ? "border-blue bg-blue-50" : "border-line-strong bg-white"
@@ -60,7 +61,8 @@ export function AnswerCard({ echo, paragraphs, articles, feedback, onFeedback }:
           </div>
         </div>
       )}
-      <div className="mt-[18px] flex flex-wrap items-center gap-2.5 border-t border-line pt-3.5 md:mt-[22px] md:gap-3 md:pt-4">
+      <p className="mt-4 text-legal text-ink-soft text-pretty md:mt-5">{DISCLOSURE[fuente]}</p>
+      <div className="mt-3.5 flex flex-wrap items-center gap-2.5 border-t border-line pt-3.5 md:mt-4 md:gap-3 md:pt-4">
         <span className="text-meta font-medium text-ink-echo md:text-[17px]">¿Te ayudó?</span>
         <button type="button" onClick={() => onFeedback("up")} aria-label="Sí, me ayudó" aria-pressed={feedback === "up"} disabled={feedback !== null} className={thumb("up")}>
           👍

@@ -62,7 +62,8 @@ Otros comandos: `npm run build`, `npm run lint`, `npm run typecheck`, `npm run d
 - **Lugar de la Asamblea.** `src/lib/constants.ts` dice «Complejo Ferial de Puerto Rico, en Ponce», tomado del prototipo. Confírmalo con la Secretaría General antes de publicar.
 - **Marca de la pava.** `public/logo-pava.png` viene del logo oficial. El Artículo 3 reserva la insignia a la Junta de Gobierno: hace falta autorización escrita antes de publicar.
 - **Micrófono.** `src/hooks/useDictation.ts` usa la Web Speech API del navegador (`es-PR`). Sin soporte o sin permiso, el botón enfoca el campo y muestra el aviso; nunca desaparece. A los 6 s sin voz avisa; a los 12 s cierra el panel y deja lo transcrito en el campo.
-- **Divulgación legal.** La única mención a la inteligencia artificial está en el footer, como exige la Ley 105-2026.
+- **Divulgación legal.** La única mención a la inteligencia artificial acompaña a cada respuesta, dentro de la tarjeta, no a la pantalla inicial. El texto está en `src/lib/constants.ts` (`DISCLOSURE`) y se pinta en `src/components/cards.tsx`; el diseño original la ponía en el footer permanente, y volver a eso es un cambio de dos líneas. Confirma la ubicación con quien lleve el tema legal (Ley 105-2026).
+- **Tarjeta de la Asamblea.** Bajo el subtítulo, con la fecha y el enlace a todosporelcambio.com para inscribirse. Datos en `ASAMBLEA` dentro de `src/lib/constants.ts`.
 
 ## Diseño
 

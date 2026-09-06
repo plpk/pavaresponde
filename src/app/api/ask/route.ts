@@ -80,5 +80,6 @@ export async function POST(request: Request) {
     inScope: true,
     paragraphs: answer.paragraphs,
     articles: toArticleRefs(answer.articles),
+    fuente,
   });
 }
