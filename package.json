@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",
+    "@vercel/analytics": "^2.0.1",
     "next": "16.3.4",
     "postgres": "^3.4.9",
     "react": "19.2.8",
