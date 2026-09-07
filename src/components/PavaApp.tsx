@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { ArticleRef } from "@/lib/articulos";
 import { ASK_TIMEOUT_MS, PDF_PATH, SUBTITLE } from "@/lib/constants";
 import { DICTATION_MSG, useDictation } from "@/hooks/useDictation";
@@ -38,6 +38,32 @@ export function PavaApp() {
     setTimeout(() => textareaRef.current?.focus(), 0);
   }, []);
 
+  // Vuelve a la pantalla inicial (chips y campo vacío). Lo usan «Regresar» y
+  // el botón Atrás del teléfono. No enfoca el campo: en el móvil abriría el
+  // teclado y taparía las preguntas frecuentes.
+  const reset = useCallback(() => {
+    requestSeq.current++; // una respuesta que llegue tarde ya no se pinta
+    abortRef.current?.abort();
+    setStatus("empty");
+    setEcho("");
+    setAnswer(null);
+    setFeedback(null);
+    setNotice(null);
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  }, []);
+
+  // La primera pregunta añade una entrada al historial (misma URL). Así el
+  // botón Atrás del teléfono vuelve al inicio en vez de salir de la app.
+  // Next integra pushState con su router y conserva el `state` propio.
+  useEffect(() => {
+    const onPopState = (e: PopStateEvent) => {
+      if (!e.state?.pava) reset();
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [reset]);
+
   const ask = useCallback(
     async (raw: string) => {
       const question = raw.trim();
@@ -51,6 +77,7 @@ export function PavaApp() {
       const seq = ++requestSeq.current;
       const timer = setTimeout(() => controller.abort(), ASK_TIMEOUT_MS);
 
+      if (window.history.state?.pava !== "respuesta") window.history.pushState({ pava: "respuesta" }, "");
       setStatus("loading");
       setEcho(question);
       setInput("");
@@ -134,6 +161,13 @@ export function PavaApp() {
     focusField();
   }
 
+  function goBack() {
+    // Si la entrada del historial es nuestra, se retrocede y popstate llama a
+    // reset(); así Atrás no queda apuntando a una entrada muerta.
+    if (window.history.state?.pava) window.history.back();
+    else reset();
+  }
+
   async function sendFeedback(value: "up" | "down") {
     if (!answer || feedback) return;
     setFeedback(value);
@@ -199,11 +233,11 @@ export function PavaApp() {
           <div aria-live="polite">
             {status === "loading" && <LoadingCard echo={echo} />}
             {status === "answer" && answer && (
-              <AnswerCard echo={echo} paragraphs={answer.paragraphs} articles={answer.articles} fuente={answer.fuente} feedback={feedback} onFeedback={(v) => void sendFeedback(v)} />
+              <AnswerCard echo={echo} paragraphs={answer.paragraphs} articles={answer.articles} fuente={answer.fuente} feedback={feedback} onFeedback={(v) => void sendFeedback(v)} onBack={goBack} />
             )}
-            {status === "outscope" && <OutOfScopeCard echo={echo} />}
-            {status === "error" && <ErrorCard onRetry={() => void ask(echo)} />}
-            {status === "ratelimit" && <RateLimitCard />}
+            {status === "outscope" && <OutOfScopeCard echo={echo} onBack={goBack} />}
+            {status === "error" && <ErrorCard onRetry={() => void ask(echo)} onBack={goBack} />}
+            {status === "ratelimit" && <RateLimitCard onBack={goBack} />}
           </div>
         </div>
       </main>
