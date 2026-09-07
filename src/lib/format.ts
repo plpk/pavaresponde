@@ -2,7 +2,7 @@
 // cambio de horario).
 import type { QuestionRecord } from "./store";
 
-export const PR_TZ = "America/Puerto_Rico";
+const PR_TZ = "America/Puerto_Rico";
 const PR_OFFSET = "-04:00";
 
 const partsFmt = new Intl.DateTimeFormat("es-PR", {

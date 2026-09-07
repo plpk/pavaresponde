@@ -5,7 +5,7 @@ import { hasClaudeCredentials } from "./prompt";
 import { SERVIBLES, buscarAproximada, buscarConModelo, buscarExacta, toAnswer } from "./respuestas";
 import { AnswerUnavailableError, type Answer } from "./types";
 
-export type Fuente = "respuestas" | "modelo";
+type Fuente = "respuestas" | "modelo";
 
 export type ResultadoPregunta = {
   answer: Answer;
@@ -41,5 +41,4 @@ export async function answerQuestion(question: string): Promise<ResultadoPregunt
   return { answer, fuente: "modelo", respuestaId: null, uso: sumarUso(usoBusqueda, uso) };
 }
 
-export type { Answer } from "./types";
 export { AnswerUnavailableError } from "./types";

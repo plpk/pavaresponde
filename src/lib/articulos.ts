@@ -4,17 +4,17 @@ import { MAX_ARTICLES, PDF_PATH } from "./constants";
 type Entry = { page: number; title: string };
 const ARTICULOS = articulosJson as Record<string, Entry>;
 
-export function articleExists(n: number): boolean {
+function articleExists(n: number): boolean {
   return Number.isInteger(n) && String(n) in ARTICULOS;
 }
 
 /** Enlace al PDF abierto en la página donde empieza el artículo. */
-export function articleHref(n: number): string {
+function articleHref(n: number): string {
   const entry = ARTICULOS[String(n)];
   return entry ? `${PDF_PATH}#page=${entry.page}` : PDF_PATH;
 }
 
-export function articleLabel(n: number): string {
+function articleLabel(n: number): string {
   return `Artículo ${n}`;
 }
 
