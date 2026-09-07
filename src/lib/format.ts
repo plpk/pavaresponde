@@ -52,6 +52,13 @@ export function formatArticles(list: number[]): string {
   return list.length ? list.join(", ") : "—";
 }
 
+/** El pulgar de «¿Te ayudó?» como texto: "si", "no" o vacío si nadie lo pulsó. */
+function formatPulgar(feedback: QuestionRecord["feedback"]): string {
+  if (feedback === "up") return "si";
+  if (feedback === "down") return "no";
+  return "";
+}
+
 function csvCell(value: string): string {
   // Excel y Sheets ejecutan celdas que empiezan por = + - @ o tabulador.
   // Un apóstrofo delante las deja como texto.
@@ -61,9 +68,9 @@ function csvCell(value: string): string {
 
 /** CSV en UTF-8 con BOM para que Excel abra bien los acentos. */
 export function toCsv(rows: QuestionRecord[]): string {
-  const head = ["hora", "pregunta", "articulos_citados", "sin_respuesta", "fuente", "costo_usd"];
+  const head = ["hora", "pregunta", "articulos_citados", "sin_respuesta", "ayudo", "fuente", "costo_usd"];
   const lines = rows.map((r) =>
-    [formatHora(r.at), r.question, formatArticles(r.articles), r.answered ? "no" : "si", r.fuente, r.costoUsd.toFixed(5)]
+    [formatHora(r.at), r.question, formatArticles(r.articles), r.answered ? "no" : "si", formatPulgar(r.feedback), r.fuente, r.costoUsd.toFixed(5)]
       .map(csvCell)
       .join(","),
   );

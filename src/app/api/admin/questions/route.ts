@@ -18,6 +18,8 @@ export async function GET(request: Request) {
     total: rows.length,
     sinRespuesta: rows.filter((r) => !r.answered).length,
     alModelo: rows.filter((r) => r.fuente === "modelo").length,
+    pulgarArriba: rows.filter((r) => r.feedback === "up").length,
+    pulgarAbajo: rows.filter((r) => r.feedback === "down").length,
     costoUsd: rows.reduce((s, r) => s + r.costoUsd, 0),
   };
   return NextResponse.json({

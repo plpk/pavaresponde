@@ -7,9 +7,9 @@ Implementa el diseño `design/Pava Responde.dc.html` siguiendo la hoja `design/P
 ## Qué hay
 
 - `/` — la pantalla pública con sus siete estados: vacío, escuchando, cargando, respuesta, fuera de alcance, error o sin señal y límite de preguntas. En escritorio se centra en una columna de 640 px con la barra blanca y el botón sesgado del PDF.
-- `/admin` — contraseña, tabla de preguntas (hora, pregunta, artículos citados, sin respuesta), filtros por fecha y «solo sin respuesta», y «Exportar CSV» (UTF-8 con BOM). No se indexa.
+- `/admin` — contraseña, tabla de preguntas (hora, pregunta, artículos citados, sin respuesta, ¿ayudó?), filtros por fecha y «solo sin respuesta», resumen con el total de 👍 y 👎 del rango, y «Exportar CSV» (UTF-8 con BOM). No se indexa.
 - `POST /api/ask` — contesta una pregunta. Límite de 6 preguntas por minuto por dispositivo (cookie anónima). Registra pregunta, hora, artículos y si hubo respuesta. Nunca IP, nombre ni teléfono.
-- `POST /api/feedback` — guarda el pulgar de «¿Te ayudó?».
+- `POST /api/feedback` — guarda el pulgar de «¿Te ayudó?» en la columna `pulgar` de la misma fila de la pregunta (tabla `preguntas`). Se ve en `/admin` y en el CSV.
 - `GET /api/admin/questions`, `GET /api/admin/export` — datos de la tabla y CSV; requieren la cookie de /admin.
 - `public/reglamento.pdf` — el Reglamento; los chips de artículo abren `reglamento.pdf#page=N` con el mapa de `src/data/articulos.json`.
 
@@ -58,7 +58,7 @@ Otros comandos: `npm run build`, `npm run lint`, `npm run typecheck`, `npm run d
 
 - **Registro de preguntas.** `src/lib/store.ts` guarda en Postgres (Supabase, proyecto `pavaresponde`, tabla `preguntas`) cuando hay `DATABASE_URL`; en desarrollo sin ella, en `data/questions.json`. La tabla guarda también el uso del modelo y el costo estimado de cada pregunta, que `/admin` suma.
 - **Modelo.** `claude-sonnet-5` para contestar y reconocer preguntas; `claude-opus-5` solo como revisor en el script de generación. Precios en `src/lib/pricing.ts`.
-- **Despliegue.** Vercel, proyecto `pavaresponde` conectado a este repositorio: cada push a `main` despliega. Variables de entorno en Vercel: `ANTHROPIC_API_KEY`, `DATABASE_URL`, `ADMIN_PASSWORD`.
+- **Despliegue.** Vercel, proyecto `pavaresponde` conectado a este repositorio: cada push a `main` despliega. Variables de entorno en Vercel: `ANTHROPIC_API_KEY`, `DATABASE_URL`, `ADMIN_PASSWORD`. Una variable nueva o cambiada solo entra en vigor con un despliegue nuevo: `vercel redeploy pavaresponde.vercel.app --scope plpk-projects` (o un push a `main`). `vercel env ls production` dice cuáles existen.
 - **Tiempo de espera.** La especificación pide caer a «Sin conexión» a los 6 segundos. Con un modelo de lenguaje detrás, 6 s produce falsos errores en señal débil; el valor por defecto es 10 s y se ajusta con `NEXT_PUBLIC_ASK_TIMEOUT_MS`.
 - **Datos de la Asamblea 2026.** `ASAMBLEA` en `src/lib/constants.ts`: fecha, lugar (Complejo Ferial de Puerto Rico, Ponce), votación de 8:00 a 11:00 a.m., asamblea abierta a todo elector activo al 30 de septiembre de 2026, y la papeleta. Fuentes: la convocatoria del Secretario General recogida por [NotiCel](https://noticel.com/noticias/20260803/ppd-celebrara-en-ponce-su-asamblea-general-para-escoger-su-junta-de-gobierno/), [Metro](https://www.metro.pr/noticias/2026/06/18/ppd-celebrara-asamblea-general-en-ponce-en-el-mes-de-octubre/), [Primera Hora](https://www.primerahora.com/noticias/gobierno-politica/notas/pablo-jose-hernandez-quiere-seguir-al-frente-del-ppd/) y [Foro Noticioso](https://foronoticioso.com/ppd-presenta-la-papeleta-para-su-junta-de-gobierno-en-la-asamblea-general-del-11-de-octubre-en-ponce/). Si la convocatoria cambia, se edita ahí y en `src/data/respuestas.json`.
 - **Estilo de las respuestas.** Cortas (unas 30 palabras de media, máximo 70), la primera frase contesta, cifras en números, listas resumidas con remisión al artículo. Las 113 están en `src/data/respuestas.json`; el modelo en vivo sigue las mismas reglas en `src/lib/answer/prompt.ts`.

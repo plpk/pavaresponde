@@ -137,12 +137,15 @@ export function PavaApp() {
   async function sendFeedback(value: "up" | "down") {
     if (!answer || feedback) return;
     setFeedback(value);
+    // La tarjeta agradece al instante; si el registro falla se deja rastro en
+    // la consola, sin molestar a quien pregunta.
     try {
-      await fetch("/api/feedback", {
+      const res = await fetch("/api/feedback", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ id: answer.id, value }),
       });
+      if (!res.ok) console.warn(`No se pudo guardar el pulgar: HTTP ${res.status}`);
     } catch (error) {
       console.warn("No se pudo guardar el pulgar", error);
     }
