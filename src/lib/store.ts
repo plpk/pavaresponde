@@ -8,8 +8,8 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { getSql, hasDatabase } from "./db";
 
-export type Feedback = "up" | "down" | null;
-export type Fuente = "respuestas" | "modelo";
+type Feedback = "up" | "down" | null;
+type Fuente = "respuestas" | "modelo";
 
 export interface QuestionRecord {
   id: string;

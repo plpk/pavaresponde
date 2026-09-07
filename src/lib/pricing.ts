@@ -4,7 +4,7 @@ import type Anthropic from "@anthropic-ai/sdk";
 
 type Precio = { entrada: number; cacheEscritura1h: number; cacheLectura: number; salida: number };
 
-export const PRECIOS_USD_POR_MTOK: Record<string, Precio> = {
+const PRECIOS_USD_POR_MTOK: Record<string, Precio> = {
   "claude-opus-5": { entrada: 5, cacheEscritura1h: 10, cacheLectura: 0.5, salida: 25 },
   "claude-sonnet-5": { entrada: 2, cacheEscritura1h: 4, cacheLectura: 0.2, salida: 10 },
   "claude-haiku-4-5": { entrada: 1, cacheEscritura1h: 2, cacheLectura: 0.1, salida: 5 },

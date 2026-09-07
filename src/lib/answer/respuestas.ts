@@ -26,7 +26,7 @@ const TODAS = respuestasJson as RespuestaGuardada[];
 /** Se sirven las revisadas, las verificadas y las redactadas; el resto va al modelo en vivo. */
 export const SERVIBLES = TODAS.filter((r) => (r.revisada ?? (r.verificada || Boolean(r.redactada))) && r.parrafos.length > 0);
 
-export function normalizar(s: string): string {
+function normalizar(s: string): string {
   return s
     .toLowerCase()
     .normalize("NFD")

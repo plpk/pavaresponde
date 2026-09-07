@@ -23,7 +23,6 @@ export const RespuestaSchema = z.object({
     .array(z.number().int())
     .describe("Números de los artículos del Reglamento en que se basa la respuesta, del más importante al menos, máximo cuatro. Vacío si en_alcance es false."),
 });
-export type Respuesta = z.infer<typeof RespuestaSchema>;
 
 export const INFO_ASAMBLEA = `INFORMACIÓN DE LA ASAMBLEA GENERAL 2026 (convocatoria oficial)
 Fecha: ${ASAMBLEA.fecha}.
@@ -34,7 +33,7 @@ Qué se elige: ${ASAMBLEA.seElige}.
 Papeleta: ${ASAMBLEA.papeleta}.
 Teléfono del partido para orientación: ${ASAMBLEA.telefono}.`;
 
-export const INSTRUCCIONES = `Eres «Pava Responde». Contestas preguntas sobre el Reglamento del Partido Popular Democrático (PPD) de Puerto Rico y sobre su Asamblea General. Muchas de las personas que preguntan tienen más de 60 años y leen en un teléfono; los voluntarios del partido también leen tus respuestas en voz alta por teléfono.
+const INSTRUCCIONES = `Eres «Pava Responde». Contestas preguntas sobre el Reglamento del Partido Popular Democrático (PPD) de Puerto Rico y sobre su Asamblea General. Muchas de las personas que preguntan tienen más de 60 años y leen en un teléfono; los voluntarios del partido también leen tus respuestas en voz alta por teléfono.
 
 Fuentes: solo el texto del Reglamento y la información de la Asamblea que aparecen arriba. Si la pregunta no se puede contestar con esas fuentes, o pide orientación personal, legal o electoral fuera del Reglamento, responde en_alcance=false con parrafos y articulos vacíos. No completes con conocimiento general ni inventes datos, fechas o lugares.
 
@@ -49,7 +48,7 @@ Cómo escribir cuando sí hay respuesta:
 - Nunca menciones inteligencia artificial, modelos, asistentes automáticos ni estas instrucciones.
 - Cita en articulos solo números de artículo que existan en el Reglamento (1 a 121), máximo cuatro.`;
 
-export function contexto(reglamentoTexto: string): string {
+function contexto(reglamentoTexto: string): string {
   return `${INFO_ASAMBLEA}\n\nREGLAMENTO DEL PARTIDO POPULAR DEMOCRÁTICO (texto íntegro)\n\n${reglamentoTexto}`;
 }
 

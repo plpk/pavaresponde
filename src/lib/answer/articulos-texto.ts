@@ -27,7 +27,7 @@ function partir(texto: string): Map<number, string> {
 
 const ARTICULOS = partir(reglamento.text);
 
-export function textoArticulo(n: number): string | null {
+function textoArticulo(n: number): string | null {
   return ARTICULOS.get(n) ?? null;
 }
 
