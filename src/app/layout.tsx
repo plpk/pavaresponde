@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Cairo } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
 // Dos fuentes, cuatro pesos en total para el cuerpo y dos para display.
@@ -50,7 +51,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-PR" className={`${archivo.variable} ${cairo.variable} h-full`}>
-      <body className="min-h-full bg-warm font-sans text-ink">{children}</body>
+      <body className="min-h-full bg-warm font-sans text-ink">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
