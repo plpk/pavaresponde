@@ -6,6 +6,15 @@ function Echo({ text }: { text: string }) {
   return <div className="echo md:px-4 md:py-3.5 md:text-[17px]">{text}</div>;
 }
 
+/** Cierra cada tarjeta final: vuelve a la pantalla inicial con las preguntas frecuentes. */
+function BackButton({ onClick, className = "mt-2.5" }: { onClick: () => void; className?: string }) {
+  return (
+    <button type="button" onClick={onClick} className={`btn-tertiary ${className}`}>
+      Regresar
+    </button>
+  );
+}
+
 function Card({ children, padded = "p-4 md:p-6" }: { children: React.ReactNode; padded?: string }) {
   return <article className={`card mt-[22px] md:mt-7 ${padded}`}>{children}</article>;
 }
@@ -31,9 +40,10 @@ type AnswerProps = {
   fuente: "respuestas" | "modelo";
   feedback: "up" | "down" | null;
   onFeedback: (v: "up" | "down") => void;
+  onBack: () => void;
 };
 
-export function AnswerCard({ echo, paragraphs, articles, fuente, feedback, onFeedback }: AnswerProps) {
+export function AnswerCard({ echo, paragraphs, articles, fuente, feedback, onFeedback, onBack }: AnswerProps) {
   const thumb = (v: "up" | "down") =>
     `min-h-12 min-w-14 rounded-[10px] border-[1.5px] text-xl active:translate-y-px ${
       feedback === v ? "border-blue bg-blue-50" : "border-line-strong bg-white"
@@ -76,11 +86,12 @@ export function AnswerCard({ echo, paragraphs, articles, fuente, feedback, onFee
           </span>
         )}
       </div>
+      <BackButton onClick={onBack} className="mt-3.5 md:mt-4" />
     </Card>
   );
 }
 
-export function OutOfScopeCard({ echo }: { echo: string }) {
+export function OutOfScopeCard({ echo, onBack }: { echo: string; onBack: () => void }) {
   return (
     <Card padded="px-4 py-[18px] md:p-6">
       <Echo text={echo} />
@@ -89,11 +100,12 @@ export function OutOfScopeCard({ echo }: { echo: string }) {
         <PhoneIcon size={20} color="#fff" />
         Llamar al partido
       </a>
+      <BackButton onClick={onBack} />
     </Card>
   );
 }
 
-export function ErrorCard({ onRetry }: { onRetry: () => void }) {
+export function ErrorCard({ onRetry, onBack }: { onRetry: () => void; onBack: () => void }) {
   return (
     <Card padded="px-4 py-[18px] md:p-6">
       <div className="flex items-center gap-2.5">
@@ -107,11 +119,12 @@ export function ErrorCard({ onRetry }: { onRetry: () => void }) {
       <a href={PHONE_TEL} className="btn-tertiary mt-2.5">
         Llamar al {PHONE_DISPLAY}
       </a>
+      <BackButton onClick={onBack} />
     </Card>
   );
 }
 
-export function RateLimitCard() {
+export function RateLimitCard({ onBack }: { onBack: () => void }) {
   return (
     <Card padded="px-4 py-[18px] md:p-6">
       <h2 className="m-0 font-display text-[22px] font-bold uppercase text-ink">Espera un momento</h2>
@@ -120,6 +133,7 @@ export function RateLimitCard() {
       <a href={PHONE_TEL} className="btn-primary btn-primary-sm mt-4">
         Llamar al {PHONE_DISPLAY}
       </a>
+      <BackButton onClick={onBack} />
     </Card>
   );
 }
