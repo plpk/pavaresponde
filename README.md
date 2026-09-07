@@ -17,19 +17,25 @@ Implementa el diseño `design/Pava Responde.dc.html` siguiendo la hoja `design/P
 
 `src/lib/answer/` sigue este orden para cada pregunta:
 
-1. **Coincidencia literal** con una de las respuestas ya generadas en `src/data/respuestas.json` (ignora acentos y signos). Gratis.
-2. **Reconocimiento con el modelo**: `claude-sonnet-5` decide si la pregunta es una de las conocidas. Cuesta una fracción de centavo.
-3. **Respuesta en vivo**: solo si nada coincide, el modelo contesta con el Reglamento completo como contexto cacheado y salida estructurada (`en_alcance`, `parrafos`, `articulos`).
+1. **Coincidencia literal** con una de las formas de preguntar guardadas en `src/data/respuestas.json` (ignora acentos y signos). Gratis.
+2. **Coincidencia aproximada**, también gratis. `src/lib/answer/texto.ts` limpia la pregunta (acentos, números en letras, sinónimos del dominio, lematización ligera y corrección de errores de tecleo contra el vocabulario del banco) y `respuestas.ts` compara los términos ponderados por lo que distinguen: «quórum» pesa mucho, «partido» casi nada. Solo acepta si la mejor respuesta pasa de 0,8, ninguna otra queda cerca y la pregunta no pide algo que el grupo no menciona («…del comité municipal»); con un solo término de contenido («¿Qué hora es?») exige una forma casi idéntica. Ante la duda, pasa al modelo.
+3. **Reconocimiento con el modelo**: `claude-sonnet-5` decide si la pregunta es una de las conocidas. Cuesta una fracción de centavo.
+4. **Respuesta en vivo**: solo si nada coincide, el modelo contesta con el Reglamento completo como contexto cacheado y salida estructurada (`en_alcance`, `parrafos`, `articulos`).
 
 Sin `ANTHROPIC_API_KEY` la app no contesta: muestra el estado de error y lo dice en el registro del servidor. No hay respuestas fijas de relleno.
 
 ### Las respuestas generadas
 
-`src/data/preguntas.json` tiene 113 grupos de preguntas (310 formas de preguntar) escritos a partir de los 121 artículos. `npm run respuestas` genera la respuesta de cada grupo con Sonnet 5 y la somete a un revisor (`claude-opus-5`) que la coteja con el texto íntegro de los artículos citados. El resultado va a `src/data/respuestas.json` con `verificada: true|false` y `notas`. La app solo sirve las verificadas o las que alguien marque `revisada: true` a mano; el resto cae al modelo en vivo.
+`src/data/preguntas.json` tiene 113 grupos de preguntas (1.799 formas de preguntar: las 342 originales más las que Claude amplió el 7 de septiembre de 2026, marcadas en `notas` y pendientes de revisión) escritos a partir de los 121 artículos. `npm run respuestas` genera la respuesta de cada grupo con Sonnet 5 y la somete a un revisor (`claude-opus-5`) que la coteja con el texto íntegro de los artículos citados. El resultado va a `src/data/respuestas.json` con `verificada: true|false` y `notas`. La app sirve las verificadas, las que alguien marque `revisada: true` a mano y las redactadas a partir del texto íntegro (`redactada`, pendientes de revisión); el resto cae al modelo en vivo.
 
 - `npm run respuestas` genera las que falten; `-- --todas` regenera todo; `-- --solo id1,id2` unas pocas; `-- --sin-verificar` salta la revisión.
 - `npm run contar-tokens` dice exactamente cuántos tokens tiene el prompt (gratis).
-- `npm run revisar` pasa las comprobaciones automáticas sobre las respuestas (estilo, formas repetidas, artículos citados, números respaldados). Córrelo después de editar `respuestas.json`.
+- `npm run revisar` pasa las comprobaciones automáticas sobre las respuestas (estilo, formas repetidas, artículos citados, números respaldados, y que cada forma de preguntar comparta algún término lematizado con su respuesta, sus artículos o la pregunta principal del grupo). Córrelo después de editar `respuestas.json`.
+- `npm run medir` pasa las 308 preguntas del conjunto de prueba (`src/data/preguntas-prueba.json`, escritas aparte del banco: dictadas sin acentos, con errores, cortas, coloquiales, largas, y un grupo que NO debe coincidir con nada) por los dos pasos gratuitos y dice cuántas se contestan gratis, cuántas van al modelo y, sobre todo, si alguna recibiría una respuesta equivocada. Sale con error si hay alguna. Córrelo después de tocar `texto.ts`, `respuestas.ts` o las formas de preguntar.
+- `npm run comprobar` verifica la coherencia de los datos y del buscador: que los dos archivos de datos tengan las mismas formas, que ninguna forma se repita ni empate con otro grupo, que el conjunto de prueba siga fuera del banco y que el camino completo de la app conteste lo esperado.
+- `npm run explicar -- "pregunta"` enseña los términos que ve el buscador (con pesos y correcciones) y las cinco respuestas más parecidas con su puntuación. Para entender por qué una pregunta coincide o no.
+- `node scripts/anadir-formas.mjs formas.json` añade formas de preguntar a grupos que ya existen (`{ "id": ["¿...?", ...] }`) en los dos archivos de datos, descartando las repetidas, las que ya están en otro grupo y las que coinciden con el conjunto de prueba. Es la vía para promover a la lista las preguntas que llegan a `/admin`.
+- `npm run docx` genera `docs/Pava Responde - Preguntas y respuestas.docx` con las 113 respuestas, sus formas de preguntar, los artículos enlazados al PDF y el estado de revisión de cada una, para revisarlas fuera de la app.
 
 Las preguntas que llegan a `/admin` con «sin respuesta» o generadas en vivo son las candidatas a entrar en `preguntas.json`.
 
