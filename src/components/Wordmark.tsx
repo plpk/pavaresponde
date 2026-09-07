@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-const SIZES = { xs: "text-[20px]", sm: "text-[22px]", md: "text-[26px]", lg: "text-[28px]" } as const;
+const SIZES = {
+  xs: "text-[20px]",
+  sm: "text-[22px]",
+  md: "text-[26px]",
+  lg: "text-[28px]",
+  /** Cabecera: 20px en el móvil, 28px desde md. */
+  header: "text-[20px] md:text-[28px]",
+} as const;
 
 /** Wordmark de texto (no imagen): escala y lo lee el lector de pantalla. */
 export function Wordmark({ size = "md" }: { size?: keyof typeof SIZES }) {
@@ -13,12 +20,24 @@ export function Wordmark({ size = "md" }: { size?: keyof typeof SIZES }) {
   );
 }
 
-/** Marca de la pava (44px) + wordmark. */
-export function Brand({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
+/**
+ * Marca de la pava + wordmark, para la cabecera. En el móvil la marca mide
+ * 36px y el wordmark 20px, para que la pastilla de la Asamblea quepa al lado
+ * en una pantalla de 360px; desde md, 44px y 28px.
+ */
+export function Brand() {
   return (
-    <div className={`flex items-center ${size === "lg" ? "gap-3.5" : "gap-3"}`}>
-      <Image src="/logo-pava.png" alt="Partido Popular Democrático" width={44} height={44} priority unoptimized className="h-11 w-11 flex-none object-contain" />
-      <Wordmark size={size} />
+    <div className="flex items-center gap-2.5 md:gap-3.5">
+      <Image
+        src="/logo-pava.png"
+        alt="Partido Popular Democrático"
+        width={44}
+        height={44}
+        priority
+        unoptimized
+        className="h-9 w-9 flex-none object-contain md:h-11 md:w-11"
+      />
+      <Wordmark size="header" />
     </div>
   );
 }

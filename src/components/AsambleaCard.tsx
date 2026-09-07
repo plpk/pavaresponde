@@ -1,10 +1,15 @@
 import { ASAMBLEA } from "@/lib/constants";
 
 /**
- * Tarjeta del evento, deliberadamente discreta: fecha en rojo como las
- * tarjetas de cuenta regresiva del sitio oficial, sin sombra y con texto
- * pequeño, para que el campo de pregunta siga siendo lo primero que se ve.
- * Toda la tarjeta es el enlace.
+ * Tarjeta del evento, en la cabecera junto a la marca. Toda la tarjeta es el
+ * enlace al sitio donde la gente se inscribe. Fondo cálido sobre la cabecera
+ * blanca (al revés que el resto de tarjetas) para que siga leyéndose como un
+ * objeto.
+ *
+ * Móvil: pastilla con la fecha y «Asamblea General» en azul de enlace; mide
+ * unos 115px y cabe junto a la marca en una pantalla de 360px. Escritorio:
+ * fecha, qué y dónde, y la línea de inscripción. El nombre accesible lleva la
+ * información completa en ambos casos.
  */
 export function AsambleaCard() {
   return (
@@ -13,19 +18,24 @@ export function AsambleaCard() {
       target="_blank"
       rel="noopener"
       aria-label={`Asamblea General, ${ASAMBLEA.fecha} en ${ASAMBLEA.ciudad}. Inscríbete en ${ASAMBLEA.urlCorta}`}
-      className="mt-4 flex items-center gap-3 rounded-field border border-line bg-white px-3 py-2 no-underline transition-colors hover:border-blue-200 active:translate-y-px md:mt-5 md:px-3.5"
+      className="flex flex-none items-center gap-1.5 rounded-[12px] border border-line bg-warm px-[7px] py-[5px] no-underline transition-colors hover:border-blue-200 active:translate-y-px md:gap-3 md:rounded-field md:py-1.5 md:pr-3.5 md:pl-3"
     >
-      <div className="flex w-9 flex-none flex-col items-center leading-none" aria-hidden="true">
-        <span className="font-display text-[22px] font-black text-red">{ASAMBLEA.dia}</span>
-        <span className="mt-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-red-700">{ASAMBLEA.mes}</span>
-      </div>
-      <div className="h-8 w-px flex-none bg-line" aria-hidden="true" />
-      <div className="min-w-0 flex-1 leading-[1.3]">
-        <div className="font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">Asamblea General · {ASAMBLEA.ciudad}</div>
-        <div className="mt-px text-[14px] font-medium text-ink">{ASAMBLEA.fechaCorta}</div>
-        <div className="text-[13px] font-semibold text-blue">Inscríbete en {ASAMBLEA.urlCorta}</div>
-      </div>
-      <span className="flex-none text-lg font-semibold text-blue" aria-hidden="true">
+      <span className="flex w-[26px] flex-none flex-col items-center leading-none md:w-9" aria-hidden="true">
+        <span className="font-display text-[20px] font-black text-red md:text-[22px]">{ASAMBLEA.dia}</span>
+        <span className="mt-px font-sans text-[9px] font-semibold uppercase tracking-[0.15em] text-red-700 md:mt-0.5 md:text-[10px]">{ASAMBLEA.mes}</span>
+      </span>
+      <span className="hidden h-8 w-px flex-none bg-line md:block" aria-hidden="true" />
+      {/* Móvil: dos líneas en azul de enlace. */}
+      <span className="flex flex-col text-[12px] font-semibold leading-[1.2] text-blue md:hidden">
+        <span>Asamblea</span>
+        <span>General</span>
+      </span>
+      {/* Escritorio: qué y dónde, y la línea de inscripción. */}
+      <span className="hidden min-w-0 leading-[1.3] md:block">
+        <span className="block whitespace-nowrap font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft">Asamblea General · {ASAMBLEA.ciudad}</span>
+        <span className="mt-px block whitespace-nowrap text-[13px] font-semibold text-blue">Inscríbete en {ASAMBLEA.urlCorta}</span>
+      </span>
+      <span className="flex-none text-[16px] font-semibold leading-none text-blue md:text-lg" aria-hidden="true">
         ›
       </span>
     </a>
