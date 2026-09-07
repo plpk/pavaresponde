@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { ArticleRef } from "@/lib/articulos";
-import { ASK_TIMEOUT_MS, PDF_PATH, SUBTITLE } from "@/lib/constants";
+import { ASK_TIMEOUT_MS, SUBTITLE } from "@/lib/constants";
 import { DICTATION_MSG, useDictation } from "@/hooks/useDictation";
 import { AsambleaCard } from "./AsambleaCard";
 import { AskBox } from "./AskBox";
@@ -187,24 +187,16 @@ export function PavaApp() {
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="hidden items-center justify-between gap-5 border-b border-line bg-white px-8 py-4 md:flex">
-        <Brand size="lg" />
-        <a href={PDF_PATH} target="_blank" rel="noopener" className="btn-skew">
-          <span>Ver el Reglamento (PDF)</span>
-        </a>
+      {/* Cabecera blanca en todos los tamaños: marca a la izquierda, Asamblea a la derecha. */}
+      <header className="flex h-[60px] items-center justify-between gap-3 border-b border-line bg-white px-4 md:h-20 md:gap-5 md:px-8">
+        <Brand />
+        <AsambleaCard />
       </header>
 
       <main className="flex-1 px-4 pt-5 pb-6 md:px-8 md:pt-10 md:pb-8">
         <h1 className="sr-only">Pava Responde: preguntas sobre el Reglamento del PPD y la Asamblea General</h1>
         <div className="mx-auto w-full max-w-[640px]">
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 md:hidden">
-            <Brand size="sm" />
-            <a href={PDF_PATH} target="_blank" rel="noopener" className="btn-skew btn-skew-sm ml-auto" aria-label="Ver el Reglamento en PDF">
-              <span>Reglamento</span>
-            </a>
-          </div>
-          <AsambleaCard />
-          <p className="mt-4 text-[15px] leading-[1.45] text-ink-muted text-pretty md:mt-5 md:text-[16px] md:leading-[1.5]">{SUBTITLE}</p>
+          <p className="text-[15px] leading-[1.45] text-ink-muted text-pretty md:text-[16px] md:leading-[1.5]">{SUBTITLE}</p>
 
           {status === "listening" ? (
             <ListeningPanel

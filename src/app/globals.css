@@ -111,7 +111,7 @@
   .btn-tertiary {
     @apply flex w-full min-h-14 items-center justify-center rounded-btn border-[1.5px] border-line-btn bg-white px-4 text-[17px] font-medium text-ink no-underline hover:text-ink active:translate-y-px active:opacity-[0.96];
   }
-  /* Secundario sesgado: solo escritorio y /admin. El paralelogramo recorta el área táctil. */
+  /* Secundario sesgado: pie de página y /admin. El paralelogramo recorta el área táctil. */
   .btn-skew {
     @apply inline-flex min-h-12 items-center border-2 border-blue bg-white px-6 font-display text-[15px] font-bold uppercase tracking-[0.08em] text-blue no-underline -skew-x-[10deg] hover:text-blue active:translate-y-px active:opacity-[0.96];
   }
@@ -141,6 +141,7 @@
   .field-hero {
     @apply w-full rounded-card border-[1.5px] border-line-strong bg-white text-answer text-ink shadow-card placeholder:text-ink-soft focus:border-blue;
   }
+  /* Talla del móvil (pie de página): 44px de alto, el mínimo del footer. */
   .btn-skew-sm {
     @apply min-h-11 px-3 text-[11px] tracking-[0.05em];
   }

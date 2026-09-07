@@ -1,0 +1,372 @@
+<title>Pava Responde Realignment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    /* Review board (follows the viewer's theme) */
+    --board: #ebe8e2;
+    --board-ink: #0e1116;
+    --board-muted: #5a6068;
+    --board-line: #d6d0c7;
+    --board-card: #f7f5f2;
+    /* Markers: same colours as the arrows on the screenshot */
+    --mk-green: #3f8a2a;
+    --mk-yellow: #d4b400;
+    --mk-yellow-tag: #f2d024;
+    /* Site tokens (the app is light-only; painted explicitly inside artboards) */
+    --warm: #f7f5f2; --surface: #ffffff;
+    --ink: #0e1116; --ink-muted: #4e545c; --ink-soft: #5a6068;
+    --red: #e41e26; --red-700: #c4161c;
+    --blue: #0a6e9e; --blue-700: #075a82; --blue-200: #a9cfe3; --cyan-700: #0089bf;
+    --line: #e6e2dc; --line-strong: #d8d2c9; --line-chip: #e4dfd7;
+    --shadow-flat: 0 1px 2px rgba(14,17,22,.05);
+    --shadow-card: 0 1px 2px rgba(14,17,22,.05), 0 8px 24px rgba(14,17,22,.06);
+    --shadow-mic: 0 3px 10px rgba(196,22,28,.32);
+    --display: "Cairo", system-ui, sans-serif;
+    --sans: "Archivo", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --board: #1c1d20; --board-ink: #f1eee9; --board-muted: #a4a8ae; --board-line: #35373c; --board-card: #24262a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --board: #1c1d20; --board-ink: #f1eee9; --board-muted: #a4a8ae; --board-line: #35373c; --board-card: #24262a;
+  }
+
+  body { background: var(--board); color: var(--board-ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+  .board { max-width: 1120px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 40px; }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--board-muted); }
+  .intro { display: flex; flex-direction: column; gap: 12px; max-width: 64ch; }
+  .intro h1 { margin: 0; font-family: var(--display); font-weight: 900; font-size: 30px; line-height: 1.1; text-wrap: balance; }
+  .intro p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--board-muted); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 13px; font-weight: 500; }
+  .legend li { display: flex; align-items: center; gap: 8px; }
+  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+
+  .frame { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .frame-head { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; flex-wrap: wrap; }
+  .frame-head .meta { font-size: 13px; color: var(--board-muted); font-variant-numeric: tabular-nums; }
+  .fit { position: relative; overflow: hidden; width: 100%; }
+  .fit > .art { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+
+  .row { display: grid; grid-template-columns: minmax(260px, 375px) 1fr; gap: 32px; align-items: start; }
+  @media (max-width: 760px) { .row { grid-template-columns: 1fr; } }
+  .stack { display: flex; flex-direction: column; gap: 28px; }
+
+  .notes { display: flex; flex-direction: column; gap: 22px; padding: 22px 24px; background: var(--board-card); border: 1px solid var(--board-line); border-radius: 12px; }
+  .notes h2 { margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--board-muted); }
+  .notes ul { margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; line-height: 1.5; }
+  .notes b { font-weight: 600; }
+  .notes .flag { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+  .notes table { border-collapse: collapse; font-size: 13.5px; font-variant-numeric: tabular-nums; width: 100%; }
+  .notes th, .notes td { text-align: left; padding: 5px 0; border-bottom: 1px solid var(--board-line); }
+  .notes th { font-weight: 600; color: var(--board-muted); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  .notes td:last-child, .notes th:last-child { text-align: right; }
+
+  /* ───── Artboards: the app at real pixel size ───── */
+  .art { display: flex; flex-direction: column; background: var(--warm); color: var(--ink); font-family: var(--sans); border-radius: 6px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 12px 32px rgba(0,0,0,.10); }
+  .art * { box-sizing: border-box; }
+
+  .a-brand { display: flex; align-items: center; gap: 14px; }
+  .a-brand img { width: 44px; height: 44px; object-fit: contain; display: block; flex: none; }
+  .a-wm { display: flex; align-items: baseline; gap: 7px; line-height: 1; font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 28px; white-space: nowrap; }
+  .a-wm .p { color: var(--red); }
+  .a-wm .r { color: var(--cyan-700); font-style: italic; display: inline-block; transform: skewX(-9deg); }
+  /* Mobile brand: 36px mark, 20px wordmark */
+  .a-brand.xs { gap: 10px; }
+  .a-brand.xs img { width: 36px; height: 36px; }
+  .a-brand.xs .a-wm { font-size: 20px; }
+
+  .a-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 80px; padding: 0 32px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .a-header.m { height: 60px; padding: 0 16px; gap: 12px; }
+
+  /* Desktop: compact event card */
+  .a-evt { display: flex; align-items: center; gap: 12px; padding: 6px 14px 6px 12px; background: var(--warm); border: 1px solid var(--line); border-radius: 14px; color: inherit; text-decoration: none; }
+  .a-evt-date { display: flex; flex-direction: column; align-items: center; width: 36px; flex: none; line-height: 1; }
+  .a-evt-date b { font-family: var(--display); font-weight: 900; font-size: 22px; color: var(--red); }
+  .a-evt-date small { margin-top: 2px; font-size: 10px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--red-700); }
+  .a-evt-sep { width: 1px; height: 32px; background: var(--line); flex: none; }
+  .a-evt-txt { min-width: 0; flex: 1; line-height: 1.3; }
+  .a-evt-txt .eb, .a-evt-txt .cta { display: block; white-space: nowrap; }
+  .a-evt-txt .eb { font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--ink-soft); }
+  .a-evt-txt .cta { margin-top: 2px; font-size: 13px; font-weight: 600; color: var(--blue); }
+  .a-evt-chev { font-size: 18px; font-weight: 600; color: var(--blue); flex: none; }
+
+  /* Mobile: date pill */
+  .a-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 7px; background: var(--warm); border: 1px solid var(--line); border-radius: 12px; color: inherit; text-decoration: none; flex: none; }
+  .a-pill .d { display: flex; flex-direction: column; align-items: center; width: 26px; line-height: 1; }
+  .a-pill .d b { font-family: var(--display); font-weight: 900; font-size: 20px; color: var(--red); }
+  .a-pill .d small { margin-top: 1px; font-size: 9px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--red-700); }
+  .a-pill .l { display: flex; flex-direction: column; font-size: 12px; line-height: 1.2; font-weight: 600; color: var(--blue); white-space: nowrap; }
+  .a-pill .c { font-size: 16px; font-weight: 600; color: var(--blue); line-height: 1; }
+
+  .a-main { flex: 1; padding: 40px 32px 32px; }
+  .a-col { width: 640px; margin: 0 auto; }
+  .a-sub { font-size: 16px; line-height: 1.5; color: var(--ink-muted); text-wrap: pretty; }
+  .a-micro { display: block; font-size: 12px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--ink-soft); }
+  .a-ask { margin-top: 28px; }
+  .a-ask .a-micro { margin-bottom: 8px; }
+  .a-askrow { display: flex; align-items: center; gap: 12px; }
+  .a-field { flex: 1; min-width: 0; height: 96px; padding: 16px 18px; background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 16px; box-shadow: var(--shadow-card); font-size: 19px; line-height: 1.5; color: var(--ink-soft); }
+  .a-mic { width: 80px; height: 80px; flex: none; border-radius: 50%; background: var(--red); box-shadow: var(--shadow-mic); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #fff; }
+  .a-mic span { font-family: var(--display); font-weight: 700; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+  .a-hint { margin-top: 8px; font-size: 14px; line-height: 1.4; color: var(--ink-muted); }
+  .a-btn { margin-top: 14px; height: 56px; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 12px; background: var(--red); color: #fff; font-family: var(--display); font-weight: 700; font-size: 21px; letter-spacing: .03em; text-transform: uppercase; }
+  .a-btn i { font-style: normal; font-family: var(--sans); font-size: 20px; font-weight: 400; }
+  .a-faq { margin-top: 28px; }
+  .a-faq .a-micro { margin-bottom: 10px; }
+  .a-chips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .a-chip { min-height: 88px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 10px; padding: 14px; background: var(--surface); border: 1px solid var(--line-chip); border-radius: 14px; box-shadow: var(--shadow-flat); font-size: 16px; font-weight: 500; line-height: 1.35; color: var(--ink); text-wrap: pretty; }
+  .a-chip i { font-style: normal; font-size: 18px; font-weight: 600; color: var(--blue); }
+
+  /* Footer, variant B: phone link + bordered skewed button */
+  .a-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 8px 32px; background: var(--surface); border-top: 1px solid var(--line); }
+  .a-flink { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 15px; font-weight: 600; color: var(--blue); text-decoration: none; white-space: nowrap; }
+  .a-flink svg { flex: none; }
+  .a-skew { display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 2px solid var(--blue); background: var(--surface); color: var(--blue); font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; transform: skewX(-10deg); text-decoration: none; white-space: nowrap; flex: none; }
+  .a-skew span { display: inline-block; transform: skewX(10deg); }
+  .a-skew.sm { min-height: 44px; padding: 0 12px; font-size: 11px; letter-spacing: .05em; }
+
+  /* Mobile artboard */
+  .art.mobile { width: 375px; height: 780px; }
+  .m-main { flex: 1; padding: 20px 16px 24px; }
+  .m-main .a-sub { font-size: 15px; line-height: 1.45; }
+  .m-main .a-ask { margin-top: 24px; }
+  .m-main .a-askrow { gap: 10px; }
+  .m-main .a-field { padding: 14px 16px; }
+  .m-main .a-mic { width: 76px; height: 76px; }
+  .m-main .a-btn { margin-top: 12px; }
+  .m-main .a-faq { margin-top: 26px; }
+  .m-main .a-chips { display: flex; flex-direction: column; gap: 10px; }
+  .m-main .a-chip { min-height: 60px; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; font-size: 17px; }
+  .m-main .a-chip i { font-size: 20px; }
+  .m-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; padding: 8px 16px 12px; background: var(--surface); border-top: 1px solid var(--line); }
+  .m-phone { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--blue); text-decoration: none; }
+  .m-phone svg { flex: none; }
+  .m-phone .lbl { display: block; font-size: 12px; font-weight: 500; line-height: 1.3; color: var(--ink-muted); white-space: nowrap; }
+  .m-phone .num { display: block; font-size: 17px; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+  .m-gap { height: 14px; }
+
+  /* Markers drawn over the artboards */
+  .mark { position: relative; display: inline-flex; flex: none; }
+  .mark > * { outline: 2px dashed var(--mk-green); outline-offset: 8px; border-radius: 14px; }
+  .mark.yellow > * { outline-color: var(--mk-yellow); border-radius: 4px; }
+  .mark::after { content: attr(data-tag); position: absolute; right: 0; padding: 5px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; line-height: 1; white-space: nowrap; background: var(--mk-green); color: #fff; font-family: var(--sans); transform: none; }
+  .mark.yellow::after { background: var(--mk-yellow-tag); color: #0e1116; }
+  .mark.below::after { top: calc(100% + 16px); }
+  .mark.above::after { bottom: calc(100% + 16px); }
+  .mark.left::after { right: auto; left: 0; }
+  .mark.quiet::after { content: none; }
+</style>
+
+<main class="board">
+  <header class="intro">
+    <span class="eyebrow">Pava Responde · Mockup · v2</span>
+    <h1>White header on every size, bordered PDF button in the footer</h1>
+    <p>The header becomes a white bar on mobile too. Desktop keeps the compact Asamblea card; mobile gets a small date pill, 11 OCT · Asamblea General ›, on the same line as the brand. The footer pairs the phone with the bordered Reglamento button on both sizes.</p>
+    <ul class="legend">
+      <li><i style="background:var(--mk-green)"></i> Asamblea: card on desktop, pill on mobile</li>
+      <li><i style="background:var(--mk-yellow-tag)"></i> Reglamento PDF, bordered button</li>
+    </ul>
+  </header>
+
+  <!-- ───────── Desktop ───────── -->
+  <section class="frame">
+    <div class="frame-head">
+      <span class="eyebrow">Desktop · 1280 × 720</span>
+      <span class="meta">Header 80px · column 640px · footer 64px</span>
+    </div>
+    <div class="fit" style="aspect-ratio: 1280 / 720">
+      <div class="art" style="width:1280px;height:720px">
+        <div class="a-header">
+          <div class="a-brand">
+            <img src="data:image/png;base64,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" alt="">
+            <span class="a-wm"><span class="p">Pava</span><span class="r">Responde</span></span>
+          </div>
+          <span class="mark below" data-tag="1 · Asamblea card, unchanged from v1">
+            <a class="a-evt" href="#">
+              <span class="a-evt-date"><b>11</b><small>oct</small></span>
+              <span class="a-evt-sep"></span>
+              <span class="a-evt-txt">
+                <span class="eb">Asamblea General · Ponce</span>
+                <span class="cta">Inscríbete en todosporelcambio.com</span>
+              </span>
+              <span class="a-evt-chev">›</span>
+            </a>
+          </span>
+        </div>
+
+        <div class="a-main">
+          <div class="a-col">
+            <p class="a-sub">Preguntas sobre el Reglamento del PPD y la Asamblea del 11 de octubre</p>
+            <div class="a-ask">
+              <span class="a-micro">Tu pregunta</span>
+              <div class="a-askrow">
+                <div class="a-field">Escribe tu pregunta…</div>
+                <div class="a-mic">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"/><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"/><path d="M12 17.7V21"/></svg>
+                  <span>Hablar</span>
+                </div>
+              </div>
+              <p class="a-hint">Toca el botón rojo y habla. También puedes escribir.</p>
+              <div class="a-btn">Preguntar <i>→</i></div>
+            </div>
+            <div class="a-faq">
+              <span class="a-micro">Preguntas frecuentes</span>
+              <div class="a-chips">
+                <div class="a-chip"><span>¿Quién puede votar el 11 de octubre?</span><i>›</i></div>
+                <div class="a-chip"><span>¿Qué se elige en la Asamblea General?</span><i>›</i></div>
+                <div class="a-chip"><span>¿Cuál es la edad máxima para la Juventud Popular?</span><i>›</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="a-footer">
+          <a class="a-flink" href="#">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20 15.4 15.4 0 0 1 4 5.6 2.6 2.6 0 0 1 6.6 3Z"/></svg>
+            Hablar con una persona: (787) 721-2000
+          </a>
+          <span class="mark yellow above" data-tag="2 · PDF button, in the footer">
+            <a class="a-skew" href="#"><span>Ver el Reglamento (PDF)</span></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Mobile + notes ───────── -->
+  <section class="row">
+    <div class="stack">
+      <div class="frame">
+        <div class="frame-head">
+          <span class="eyebrow">Mobile · 375 wide</span>
+          <span class="meta">Header 60px · footer 60px</span>
+        </div>
+        <div class="fit" style="aspect-ratio: 375 / 780">
+          <div class="art mobile">
+            <div class="a-header m">
+              <div class="a-brand xs">
+                <img src="data:image/png;base64,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" alt="">
+                <span class="a-wm"><span class="p">Pava</span><span class="r">Responde</span></span>
+              </div>
+              <span class="mark below" data-tag="1 · Date pill">
+                <a class="a-pill" href="#">
+                  <span class="d"><b>11</b><small>oct</small></span>
+                  <span class="l"><span>Asamblea</span><span>General</span></span>
+                  <span class="c">›</span>
+                </a>
+              </span>
+            </div>
+            <div class="m-main">
+              <p class="a-sub">Preguntas sobre el Reglamento del PPD y la Asamblea del 11 de octubre</p>
+              <div class="a-ask">
+                <span class="a-micro">Tu pregunta</span>
+                <div class="a-askrow">
+                  <div class="a-field">Escribe tu pregunta…</div>
+                  <div class="a-mic">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round"><path d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z" fill="#fff" stroke="none"/><path d="M5.5 11.2a6.5 6.5 0 0 0 13 0"/><path d="M12 17.7V21"/></svg>
+                    <span>Hablar</span>
+                  </div>
+                </div>
+                <p class="a-hint">Toca el botón rojo y habla. También puedes escribir.</p>
+                <div class="a-btn">Preguntar <i>→</i></div>
+              </div>
+              <div class="a-faq">
+                <span class="a-micro">Preguntas frecuentes</span>
+                <div class="a-chips">
+                  <div class="a-chip"><span>¿Quién puede votar el 11 de octubre?</span><i>›</i></div>
+                  <div class="a-chip"><span>¿Qué se elige en la Asamblea General?</span><i>›</i></div>
+                  <div class="a-chip"><span>¿Cuál es la edad máxima para la Juventud Popular?</span><i>›</i></div>
+                </div>
+              </div>
+            </div>
+            <div class="m-footer">
+              <a class="m-phone" href="#">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20 15.4 15.4 0 0 1 4 5.6 2.6 2.6 0 0 1 6.6 3Z"/></svg>
+                <span><span class="lbl">Hablar con una persona</span><span class="num">(787) 721-2000</span></span>
+              </a>
+              <span class="mark yellow above" data-tag="2 · PDF button">
+                <a class="a-skew sm" href="#"><span>Reglamento (PDF)</span></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="frame-head">
+          <span class="eyebrow">Smallest common phone · 360 wide</span>
+          <span class="meta">Header and footer only</span>
+        </div>
+        <div class="fit" style="aspect-ratio: 360 / 134">
+          <div class="art" style="width:360px;height:134px">
+            <div class="a-header m">
+              <div class="a-brand xs">
+                <img src="data:image/png;base64,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" alt="">
+                <span class="a-wm"><span class="p">Pava</span><span class="r">Responde</span></span>
+              </div>
+              <a class="a-pill" href="#">
+                <span class="d"><b>11</b><small>oct</small></span>
+                <span class="l"><span>Asamblea</span><span>General</span></span>
+                <span class="c">›</span>
+              </a>
+            </div>
+            <div class="m-gap"></div>
+            <div class="m-footer">
+              <a class="m-phone" href="#">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 3h3.1l1.6 4-2.1 1.6a11 11 0 0 0 6.2 6.2l1.6-2.1 4 1.6v3.1A2.6 2.6 0 0 1 18.4 20 15.4 15.4 0 0 1 4 5.6 2.6 2.6 0 0 1 6.6 3Z"/></svg>
+                <span><span class="lbl">Hablar con una persona</span><span class="num">(787) 721-2000</span></span>
+              </a>
+              <a class="a-skew sm" href="#"><span>Reglamento (PDF)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <div>
+        <h2><span class="flag" style="background:var(--mk-green)"></span>Mobile header</h2>
+        <ul>
+          <li><b>Why it looked cream before:</b> on mobile there was no header bar at all. The brand and the small Reglamento button sat directly on the page background inside the column. Now the same white bar with the bottom rule spans every size.</li>
+          <li><b>The pill</b> shows only the red date block, "Asamblea General" in link blue on two lines, and a chevron. The whole pill is the link; the full label (date, Ponce, registration site) stays in the accessible name.</li>
+          <li><b>The brand gives up a little room:</b> 36px mark and 20px wordmark on mobile, down from 44 and 22, so the pill fits beside it on a 360px screen.</li>
+        </ul>
+      </div>
+      <div>
+        <h2><span class="flag" style="background:var(--mk-yellow-tag)"></span>Footer, variant B</h2>
+        <ul>
+          <li><b>Desktop:</b> phone link left, the full bordered button right. Footer grows from 56 to 64px to hold the 48px button.</li>
+          <li><b>Mobile:</b> the phone label stacks on two lines and the button uses the existing small size (44px) with "Reglamento (PDF)". One 60px row, no wrapping.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Measured fit on a 360px screen</h2>
+        <table>
+          <tr><th>Row</th><th>Contents</th><th>Used of 328px</th></tr>
+          <tr><td>Header</td><td>Brand 197 + gap 12 + pill 115</td><td>324</td></tr>
+          <tr><td>Footer</td><td>Phone 152 + gap 12 + button 140</td><td>304</td></tr>
+        </table>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<script>
+  // Artboards are built at real pixel size and scaled down to the column, so
+  // every measurement in the notes matches what is drawn.
+  function fit() {
+    document.querySelectorAll('.fit').forEach(function (w) {
+      var a = w.firstElementChild;
+      var s = Math.min(1, w.clientWidth / a.offsetWidth);
+      a.style.transform = 'scale(' + s + ')';
+      w.style.height = Math.ceil(a.offsetHeight * s) + 'px';
+    });
+  }
+  fit();
+  window.addEventListener('load', fit);
+  if (window.ResizeObserver) new ResizeObserver(fit).observe(document.body);
+  else window.addEventListener('resize', fit);
+</script>
