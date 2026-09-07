@@ -7,9 +7,9 @@ Implementa el diseño `design/Pava Responde.dc.html` siguiendo la hoja `design/P
 ## Qué hay
 
 - `/` — la pantalla pública con sus siete estados: vacío, escuchando, cargando, respuesta, fuera de alcance, error o sin señal y límite de preguntas. En escritorio se centra en una columna de 640 px con la barra blanca y el botón sesgado del PDF.
-- `/admin` — contraseña, tabla de preguntas (hora, pregunta, artículos citados, sin respuesta), filtros por fecha y «solo sin respuesta», y «Exportar CSV» (UTF-8 con BOM). No se indexa.
+- `/admin` — contraseña, tabla de preguntas (hora, pregunta, artículos citados, sin respuesta, ¿ayudó?), filtros por fecha y «solo sin respuesta», resumen con el total de 👍 y 👎 del rango, y «Exportar CSV» (UTF-8 con BOM). No se indexa.
 - `POST /api/ask` — contesta una pregunta. Límite de 6 preguntas por minuto por dispositivo (cookie anónima). Registra pregunta, hora, artículos y si hubo respuesta. Nunca IP, nombre ni teléfono.
-- `POST /api/feedback` — guarda el pulgar de «¿Te ayudó?».
+- `POST /api/feedback` — guarda el pulgar de «¿Te ayudó?» en la columna `pulgar` de la misma fila de la pregunta (tabla `preguntas`). Se ve en `/admin` y en el CSV.
 - `GET /api/admin/questions`, `GET /api/admin/export` — datos de la tabla y CSV; requieren la cookie de /admin.
 - `public/reglamento.pdf` — el Reglamento; los chips de artículo abren `reglamento.pdf#page=N` con el mapa de `src/data/articulos.json`.
 

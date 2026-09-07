@@ -14,11 +14,26 @@ type Row = {
   costoUsd: number;
 };
 
-type Resumen = { total: number; sinRespuesta: number; alModelo: number; costoUsd: number };
+type Resumen = { total: number; sinRespuesta: number; alModelo: number; pulgarArriba: number; pulgarAbajo: number; costoUsd: number };
 
 type Props = { initialFrom: string; initialTo: string };
 
-const GRID = "grid grid-cols-[120px_1fr_200px_130px] gap-4 px-5";
+const GRID = "grid grid-cols-[120px_1fr_180px_120px_100px] gap-4 px-5";
+
+const PULGAR: Record<"up" | "down", { icon: string; label: string }> = {
+  up: { icon: "👍", label: "Sí, le ayudó" },
+  down: { icon: "👎", label: "No le ayudó" },
+};
+
+function Pulgar({ value }: { value: Row["feedback"] }) {
+  if (!value) return <span className="text-ink-soft">—</span>;
+  const { icon, label } = PULGAR[value];
+  return (
+    <span role="img" aria-label={label} title={label} className="text-[22px] leading-none">
+      {icon}
+    </span>
+  );
+}
 
 export function AdminTable({ initialFrom, initialTo }: Props) {
   const [from, setFrom] = useState(initialFrom);
@@ -81,12 +96,13 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
       </div>
 
       <div className="mt-5 overflow-x-auto rounded-[14px] bg-white shadow-flat">
-        <div className="min-w-[760px]">
+        <div className="min-w-[860px]">
           <div className={`${GRID} border-b border-line py-3 text-[11px] font-semibold uppercase tracking-[0.15em] text-ink-soft`} role="row">
             <div>Hora</div>
             <div>Pregunta</div>
             <div>Artículos citados</div>
             <div>Sin respuesta</div>
+            <div>¿Ayudó?</div>
           </div>
           {rows?.map((r) => (
             <div key={r.id} className={`${GRID} items-center border-b border-echo py-3.5 text-meta text-ink`} role="row">
@@ -102,6 +118,9 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
                   </span>
                 )}
               </div>
+              <div>
+                <Pulgar value={r.feedback} />
+              </div>
             </div>
           ))}
           <div className="px-5 py-3.5 text-[14px] text-ink-soft" role="status">
@@ -109,7 +128,9 @@ export function AdminTable({ initialFrom, initialTo }: Props) {
               (rows === null
                 ? "Cargando…"
                 : `${count} ${count === 1 ? "pregunta" : "preguntas"} en el rango seleccionado` +
-                  (resumen ? ` · ${resumen.alModelo} generadas en vivo · costo estimado $${resumen.costoUsd.toFixed(2)}` : ""))}
+                  (resumen
+                    ? ` · ${resumen.alModelo} generadas en vivo · 👍 ${resumen.pulgarArriba} · 👎 ${resumen.pulgarAbajo} · costo estimado $${resumen.costoUsd.toFixed(2)}`
+                    : ""))}
           </div>
         </div>
       </div>
