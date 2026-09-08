@@ -35,14 +35,19 @@ for (const [i, g] of P.entries()) {
 // 2. contra HEAD: párrafos y artículos intactos, ninguna forma original perdida
 const headR = JSON.parse(execSync("git show HEAD:src/data/respuestas.json", { encoding: "utf8" })) as G[];
 const headP = JSON.parse(execSync("git show HEAD:src/data/preguntas.json", { encoding: "utf8" })) as G[];
+// Una forma puede MOVERSE a otro grupo (al repartir una tarjeta grande), pero
+// nunca desaparecer; y la pregunta principal de cada grupo no cambia.
+const todasLasFormas = new Set(R.flatMap((g) => g.preguntas.map(limpiar)));
 for (const h of headR) {
-  const r = R.find((x) => x.id === h.id)!;
+  const r = R.find((x) => x.id === h.id);
+  ok(Boolean(r), `${h.id}: grupo desaparecido`);
+  if (!r) continue;
   ok(JSON.stringify(h.parrafos) === JSON.stringify(r.parrafos), `${h.id}: párrafos cambiados`);
   ok(JSON.stringify(h.articulos) === JSON.stringify(r.articulos), `${h.id}: artículos cambiados`);
-  for (const f of h.preguntas) ok(r.preguntas.includes(f), `${h.id}: forma original perdida: ${f}`);
-  ok(JSON.stringify(h.preguntas) === JSON.stringify(r.preguntas.slice(0, h.preguntas.length)), `${h.id}: las formas originales ya no van primero`);
+  for (const f of h.preguntas) ok(todasLasFormas.has(limpiar(f)), `${h.id}: forma original perdida: ${f}`);
+  ok(h.preguntas[0] === r.preguntas[0], `${h.id}: la pregunta principal cambió`);
 }
-for (const h of headP) ok(JSON.stringify(h.articulos) === JSON.stringify(P.find((x) => x.id === h.id)!.articulos), `${h.id}: articulos cambiados en preguntas.json`);
+for (const h of headP) ok(JSON.stringify(h.articulos) === JSON.stringify(P.find((x) => x.id === h.id)?.articulos), `${h.id}: articulos cambiados en preguntas.json`);
 // 3. formato y duplicados
 const vistas = new Map<string, string>();
 for (const g of R) for (const f of g.preguntas) {
