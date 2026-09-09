@@ -151,9 +151,6 @@
       "¿Cómo saber si soy delegado?",
       "¿Quién es delegado a la Asamblea General?",
       "¿Soy delegado a la asamblea?",
-      "¿Los alcaldes son miembros de la asamblea?",
-      "¿Los legisladores municipales son delegados a la asamblea?",
-      "¿Los presidentes de unidad van a la asamblea?",
       "¿Cuántos miembros tiene la Asamblea General?",
       "¿Quién puede ser delegado?",
       "¿Cómo se sabe quién es delegado?",
@@ -172,6 +169,85 @@
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Datos de la Asamblea 2026 (asamblea abierta, voto de todos los afiliados, horario) tomados de Metro, NotiCel, Primera Hora y Foro Noticioso; confirmar con la Secretaría General.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "asamblea-alcaldes-legisladores",
+    "preguntas": [
+      "¿Los alcaldes son miembros de la Asamblea General?",
+      "¿Los alcaldes son miembros de la asamblea?",
+      "¿Los senadores y representantes son miembros de la asamblea?",
+      "¿Los legisladores municipales son delegados a la asamblea?",
+      "¿Los candidatos a la Legislatura son miembros de la Asamblea General?",
+      "¿Un alcalde vota en la Asamblea General?",
+      "¿Los legisladores van a la asamblea del partido?",
+      "¿Un legislador municipal es miembro de la Asamblea General?",
+      "¿Los representantes son delegados a la asamblea?",
+      "Soy legislador municipal, ¿soy miembro de la asamblea?"
+    ],
+    "parrafos": [
+      "Sí. Los alcaldes, los senadores, los representantes, los candidatos certificados a la Legislatura y los legisladores municipales son miembros de la Asamblea General por su cargo.",
+      "Este año, además, vota cualquier elector activo que asista, sea o no miembro."
+    ],
+    "articulos": [
+      8
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "asamblea-presidentes-unidad",
+    "preguntas": [
+      "¿Los presidentes de unidad son miembros de la Asamblea General?",
+      "¿Los presidentes de unidad van a la asamblea?",
+      "¿Los miembros del comité municipal son delegados a la asamblea?",
+      "¿Los miembros de la Junta de Gobierno son miembros de la asamblea?",
+      "¿El Comité Central está en la Asamblea General?",
+      "¿Un presidente de comité de unidad vota en la asamblea?",
+      "Soy presidente de unidad, ¿soy miembro de la Asamblea General?",
+      "¿Los miembros de mi comité municipal van a la asamblea?",
+      "¿Los presidentes de comité de unidad son delegados?"
+    ],
+    "parrafos": [
+      "Sí. Los presidentes de los comités de unidad, los miembros de cada comité municipal, los del Comité Central y los de la Junta de Gobierno son miembros de la Asamblea General.",
+      "Si no estás seguro de tu cargo, pregunta en tu Comité Municipal o llama al (787) 721-2000."
+    ],
+    "articulos": [
+      8
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "asamblea-asociaciones",
+    "preguntas": [
+      "¿Las directivas de las asociaciones son miembros de la Asamblea General?",
+      "¿La directiva de la Juventud Popular va a la asamblea?",
+      "¿Las presidentas municipales de Mujeres Populares son miembros de la asamblea?",
+      "¿Los presidentes de agencia de los servidores públicos van a la Asamblea General?",
+      "¿Las organizaciones sectoriales tienen miembros en la asamblea?",
+      "¿La directiva de Mujeres Populares es miembro de la Asamblea General?",
+      "¿Los presidentes municipales de la JPN son delegados a la asamblea?",
+      "¿Las asociaciones del partido participan en la Asamblea General?",
+      "¿Quién representa a las asociaciones en la asamblea?",
+      "¿La directiva de los servidores públicos es miembro de la Asamblea General?"
+    ],
+    "parrafos": [
+      "Sí. Las directivas de la Juventud Popular, de Mujeres Populares y de los Servidores Públicos, con sus presidentes municipales o de agencia, son miembros de la Asamblea General. También las directivas de las organizaciones sectoriales reconocidas."
+    ],
+    "articulos": [
+      8
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -832,16 +908,12 @@
     "preguntas": [
       "¿Cuántas vicepresidencias tiene el Partido?",
       "¿Qué hace el Vicepresidente Ejecutivo?",
-      "¿Qué es la Vicepresidencia de Sectores?",
-      "¿Quién puede ser vicepresidente de sectores?",
       "¿Cuántos vicepresidentes tiene el PPD?",
       "¿Cuáles son las vicepresidencias del partido?",
       "¿Qué vicepresidencias existen en el partido?",
       "¿Qué es la Vicepresidencia Ejecutiva?",
       "¿Cuáles son las funciones del vicepresidente ejecutivo?",
       "¿Quién sustituye al presidente cuando falta?",
-      "¿Qué hace el vicepresidente de sectores?",
-      "¿Para qué sirve la Vicepresidencia de Sectores?",
       "¿Quién puede ser vicepresidente ejecutivo?",
       "¿Cuáles son las funciones de los vicepresidentes?",
       "¿Qué hacen los vicepresidentes del partido?",
@@ -860,6 +932,33 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "vicepresidencia-sectores",
+    "preguntas": [
+      "¿Qué hace la Vicepresidencia de Sectores?",
+      "¿Qué es la Vicepresidencia de Sectores?",
+      "¿Quién puede ser vicepresidente de sectores?",
+      "¿Qué hace el vicepresidente de sectores?",
+      "¿Para qué sirve la Vicepresidencia de Sectores?",
+      "¿Quién representa a las asociaciones en la Junta de Gobierno?",
+      "¿Quién fija los requisitos para reconocer una organización sectorial?",
+      "¿A quién le pido el reconocimiento de mi organización sectorial?",
+      "¿Qué es el Vicepresidente Sectorial?"
+    ],
+    "parrafos": [
+      "Representa en la Junta de Gobierno a las asociaciones y organizaciones sectoriales del partido. Solo puede ocuparla un miembro activo de una de ellas.",
+      "Además, con el consentimiento de la Junta, fija los requisitos para reconocer oficialmente a las organizaciones sectoriales y el mínimo de participación en sus elecciones."
+    ],
+    "articulos": [
+      22,
+      59
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1099,6 +1198,57 @@
     ]
   },
   {
+    "id": "junta-nombramientos-aprueba",
+    "preguntas": [
+      "¿Qué nombramientos aprueba la Junta de Gobierno?",
+      "¿La Junta de Gobierno aprueba al Secretario General?",
+      "¿Quién aprueba el nombramiento del Tesorero?",
+      "¿La Junta tiene que aprobar al Comisionado Electoral?",
+      "¿Qué planes aprueba la Junta de Gobierno?",
+      "¿Quién aprueba el plan de finanzas del partido?",
+      "¿Quién aprueba el plan de trabajo electoral?",
+      "¿Los nombramientos del Comité Central pasan por la Junta?",
+      "¿La Junta de Gobierno confirma al Subsecretario General?"
+    ],
+    "parrafos": [
+      "Los que hace el Presidente para el Comité Central: Secretario General, Subsecretario General, Comisionado Electoral, Comisionado Electoral Alterno y Tesorero.",
+      "También aprueba los planes del partido para su reorganización, sus finanzas y su trabajo electoral."
+    ],
+    "articulos": [
+      18
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "junta-posicion-politica",
+    "preguntas": [
+      "¿Quién fija la posición política del partido?",
+      "¿Quién decide la postura del partido en los asuntos públicos?",
+      "¿La Junta de Gobierno fija la línea política?",
+      "¿Quién asesora al presidente sobre la asamblea y el consejo?",
+      "¿La Junta de Gobierno puede crear comités especiales?",
+      "¿Quién crea comités para asuntos internos?",
+      "¿Quién decide qué opina el partido sobre un tema de interés público?",
+      "¿Quién establece la posición del PPD en un asunto?"
+    ],
+    "parrafos": [
+      "La Junta de Gobierno. Establece la posición del partido en asuntos de interés público y asesora al Presidente en lo relacionado con el Consejo de Gobierno y la Asamblea General.",
+      "También puede crear comités especiales para atender asuntos internos."
+    ],
+    "articulos": [
+      18
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "junta-miembros",
     "preguntas": [
       "¿Quiénes son miembros de la Junta de Gobierno?",
@@ -1111,13 +1261,9 @@
       "¿Quién vota en la Junta de Gobierno?",
       "¿Quién es miembro de la Junta de Gobierno?",
       "¿Quiénes son los miembros con voto de la Junta?",
-      "¿El gobernador es miembro de la Junta de Gobierno?",
-      "¿El Comisionado Residente está en la Junta de Gobierno?",
-      "¿Los presidentes de las asociaciones están en la Junta de Gobierno?",
       "¿Cómo se compone la Junta de Gobierno?",
       "¿Cuál es la composición de la Junta de Gobierno?",
-      "¿Quiénes son los miembros de la Junta de Gobierno del PPD?",
-      "¿Los líderes legislativos son miembros de la Junta de Gobierno?"
+      "¿Quiénes son los miembros de la Junta de Gobierno del PPD?"
     ],
     "parrafos": [
       "Con voto: el Presidente, los dos vicepresidentes, el Gobernador si es del partido, el Comisionado Residente, los líderes legislativos populares, los presidentes de las 5 asociaciones, 5 miembros por acumulación y 1 por cada distrito senatorial.",
@@ -1131,6 +1277,80 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "junta-gobernador-comisionado",
+    "preguntas": [
+      "¿El gobernador es miembro de la Junta de Gobierno?",
+      "¿El Comisionado Residente está en la Junta de Gobierno?",
+      "¿Los líderes legislativos son miembros de la Junta de Gobierno?",
+      "¿El presidente del Senado vota en la Junta de Gobierno?",
+      "¿El portavoz de la minoría en la Cámara es miembro de la Junta?",
+      "¿El gobernador vota en la Junta de Gobierno del partido?",
+      "¿El candidato a comisionado residente está en la Junta?",
+      "¿Los presidentes de las cámaras están en la Junta de Gobierno?",
+      "¿Qué funcionarios electos tienen voto en la Junta de Gobierno?"
+    ],
+    "parrafos": [
+      "Sí, si es del partido y no ocupa la presidencia del partido. También tienen voto el Comisionado Residente o el candidato certificado a ese cargo, el presidente del Senado o el portavoz de la minoría popular en el Senado, y el presidente de la Cámara o el portavoz de la minoría popular en la Cámara."
+    ],
+    "articulos": [
+      19
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "junta-presidentes-asociaciones",
+    "preguntas": [
+      "¿Los presidentes de las asociaciones votan en la Junta de Gobierno?",
+      "¿Los presidentes de las asociaciones están en la Junta de Gobierno?",
+      "¿La presidenta de Mujeres Populares es miembro de la Junta de Gobierno?",
+      "¿El presidente de la Juventud Popular vota en la Junta?",
+      "¿El presidente de la Asociación de Alcaldes está en la Junta de Gobierno?",
+      "¿Qué asociaciones tienen voto en la Junta de Gobierno?",
+      "¿El presidente de los servidores públicos populares es miembro de la Junta?",
+      "¿Los presidentes de los legisladores municipales están en la Junta de Gobierno?",
+      "¿Cuántas asociaciones tienen asiento en la Junta de Gobierno?"
+    ],
+    "parrafos": [
+      "Sí. Tienen voz y voto los presidentes de las asociaciones de Alcaldes, de Legisladores Municipales, de Jóvenes y de Servidores Públicos, y la presidenta de Mujeres Populares. Son 5 asientos con voto."
+    ],
+    "articulos": [
+      19
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "junta-invitados",
+    "preguntas": [
+      "¿El presidente puede invitar a alguien a la Junta de Gobierno?",
+      "¿Pueden participar invitados en la Junta de Gobierno?",
+      "¿Los invitados votan en la Junta de Gobierno?",
+      "¿Puedo asistir a una reunión de la Junta de Gobierno si no soy miembro?",
+      "¿Las organizaciones sectoriales pueden participar en la Junta de Gobierno?",
+      "¿Quién decide quién asiste como invitado a la Junta?",
+      "¿Un miembro del partido puede ir a la Junta de Gobierno como invitado?",
+      "¿Los invitados a la Junta tienen voz?"
+    ],
+    "parrafos": [
+      "Sí. El Presidente del Partido puede invitar a cualquier miembro del partido para aportar a la discusión, y da prioridad a las organizaciones sectoriales cuando se trata un asunto de su interés. Los invitados tienen voz, pero no voto."
+    ],
+    "articulos": [
+      19
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1424,12 +1644,9 @@
       "¿Quién es miembro del Consejo de Gobierno?",
       "¿Cómo se compone el Consejo de Gobierno?",
       "¿Cuántos miembros tiene el Consejo de Gobierno?",
-      "¿Los alcaldes son miembros del Consejo de Gobierno?",
-      "¿Los legisladores son miembros del Consejo de Gobierno?",
       "¿Los presidentes municipales están en el Consejo de Gobierno?",
       "¿Los vicepresidentes de los comités municipales son miembros del Consejo?",
       "¿La Junta de Gobierno forma parte del Consejo de Gobierno?",
-      "¿Los candidatos a la Legislatura están en el Consejo de Gobierno?",
       "¿Quién puede ser miembro del Consejo de Gobierno?",
       "¿Cuál es la composición del Consejo de Gobierno?"
     ],
@@ -1444,6 +1661,56 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "consejo-legislaturas-municipales",
+    "preguntas": [
+      "¿Los legisladores municipales están en el Consejo de Gobierno?",
+      "¿Los alcaldes son miembros del Consejo de Gobierno?",
+      "¿Los legisladores son miembros del Consejo de Gobierno?",
+      "¿Los candidatos a la Legislatura están en el Consejo de Gobierno?",
+      "¿El presidente de la legislatura municipal es miembro del Consejo de Gobierno?",
+      "¿Los portavoces de minoría de las legislaturas municipales van al Consejo?",
+      "¿Un alcalde vota en el Consejo de Gobierno?",
+      "¿Los senadores son miembros del Consejo de Gobierno?",
+      "Soy portavoz alterno en mi legislatura municipal, ¿soy miembro del Consejo?"
+    ],
+    "parrafos": [
+      "Sí. Son miembros los alcaldes, senadores, representantes y candidatos certificados a la Legislatura. De las legislaturas municipales van los presidentes y vicepresidentes donde el partido es mayoría, y los portavoces y portavoces alternos de minoría donde es minoría."
+    ],
+    "articulos": [
+      14
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "consejo-exfuncionarios",
+    "preguntas": [
+      "¿Los exalcaldes son miembros del Consejo de Gobierno?",
+      "¿Los expresidentes del partido están en el Consejo de Gobierno?",
+      "¿Un exlegislador es miembro del Consejo de Gobierno?",
+      "¿Los excomisionados residentes van al Consejo de Gobierno?",
+      "¿Los exsecretarios generales están en el Consejo?",
+      "Soy exalcalde, ¿soy miembro del Consejo de Gobierno?",
+      "¿Qué exfuncionarios son miembros del Consejo de Gobierno?",
+      "¿Los excomisionados electorales son miembros del Consejo?",
+      "¿Los que eran del Consejo General siguen en el Consejo de Gobierno?"
+    ],
+    "parrafos": [
+      "Los expresidentes del partido, sí. Los exalcaldes, exlegisladores, excomisionados residentes, excomisionados electorales y exsecretarios generales solo si al 2025 ya eran miembros del Consejo General."
+    ],
+    "articulos": [
+      14
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1515,6 +1782,31 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "plan-gobierno-interpretacion",
+    "preguntas": [
+      "¿Quién interpreta el plan de gobierno?",
+      "¿Quién resuelve las dudas sobre el plan de gobierno?",
+      "¿Qué son las resoluciones programáticas?",
+      "¿Las resoluciones de la Junta forman parte del plan de gobierno?",
+      "¿Quién decide qué significa el plan de gobierno?",
+      "¿Quién resuelve una controversia sobre el plan de gobierno?",
+      "¿La Junta de Gobierno interpreta el plan de gobierno?",
+      "¿Qué pasa si hay una disputa sobre el plan de gobierno?"
+    ],
+    "parrafos": [
+      "La Junta de Gobierno resuelve toda controversia sobre el plan de gobierno. Las resoluciones programáticas que aprueba la Junta se consideran parte del plan."
+    ],
+    "articulos": [
+      5,
+      18
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1807,7 +2099,6 @@
       "¿Qué se le exige a un funcionario del partido?",
       "¿A qué se compromete un funcionario del partido?",
       "¿Qué debe hacer un funcionario según el Artículo 4?",
-      "¿Los funcionarios tienen que recaudar fondos?",
       "¿Cuáles son las obligaciones de un dirigente popular?",
       "¿Qué dice el reglamento sobre los deberes de los funcionarios?",
       "¿Qué compromisos tiene un funcionario del PPD?"
@@ -1823,6 +2114,56 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "deberes-recaudar-movilizar",
+    "preguntas": [
+      "¿Los funcionarios tienen que recaudar fondos?",
+      "¿Un funcionario del partido tiene que movilizar gente?",
+      "¿Los funcionarios tienen que reclutar funcionarios de colegio?",
+      "¿Es deber de los funcionarios llevar gente a votar?",
+      "¿Los dirigentes del partido tienen que buscar voluntarios?",
+      "¿Tengo que ayudar a recaudar dinero si soy funcionario del partido?",
+      "¿Los funcionarios deben movilizar electores el día de las elecciones?",
+      "¿Qué deberes electorales tiene un funcionario del partido?"
+    ],
+    "parrafos": [
+      "Sí. Entre los deberes de todo funcionario están ayudar a recaudar fondos, movilizar simpatizantes a las actividades del partido, reclutar voluntarios y funcionarios de colegio, y movilizar electores a votar por el partido y sus candidatos oficiales."
+    ],
+    "articulos": [
+      4
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "deberes-diferencias-internas",
+    "preguntas": [
+      "¿Qué pasa si tengo un problema con otro funcionario del partido?",
+      "¿Cómo se resuelven las diferencias entre funcionarios del partido?",
+      "¿Puedo resolver una disputa con otro dirigente en público?",
+      "¿Qué dice el reglamento sobre las peleas entre funcionarios?",
+      "¿Dónde se resuelven las diferencias políticas dentro del partido?",
+      "¿Tengo que usar los canales internos para una diferencia con otro funcionario?",
+      "¿Qué hago si tengo una diferencia personal con otro funcionario?",
+      "¿Los funcionarios deben resolver sus conflictos dentro del partido?"
+    ],
+    "parrafos": [
+      "El Reglamento pide resolver las diferencias políticas o personales con otros funcionarios por los canales internos del partido, no en público.",
+      "Si la diferencia es una falta al Reglamento, puedes radicar una querella ante el Secretario General."
+    ],
+    "articulos": [
+      4,
+      102
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -1892,22 +2233,15 @@
     "preguntas": [
       "¿Cuáles son las funciones del Presidente del Partido?",
       "¿Qué poderes tiene el presidente del partido?",
-      "¿Puede el presidente suspender una decisión de un organismo?",
       "¿Qué hace el Presidente del PPD?",
       "¿Qué facultades tiene el presidente del partido?",
       "¿Cuáles son los poderes del presidente del partido?",
       "¿Qué responsabilidades tiene el presidente del partido?",
       "¿Cuáles son las funciones del presidente del PPD?",
       "¿Qué puede hacer el presidente del partido?",
-      "¿El presidente del partido dirige la campaña?",
-      "¿El presidente del partido nombra al personal?",
-      "¿El presidente puede tomar medidas de emergencia?",
-      "¿El presidente puede suspender decisiones de un organismo del partido?",
       "¿Quién dirige el partido cuando la Junta no está reunida?",
       "¿Qué autoridad tiene el presidente del partido?",
       "¿Cuál es el papel del presidente del partido?",
-      "¿A quién le rinde cuentas el presidente del partido?",
-      "¿El presidente del partido preside las reuniones de la Junta?",
       "¿Qué deberes tiene el presidente del partido?"
     ],
     "parrafos": [
@@ -1925,6 +2259,109 @@
     ]
   },
   {
+    "id": "presidente-nombramientos",
+    "preguntas": [
+      "¿A quién nombra el presidente del partido?",
+      "¿El presidente del partido nombra al personal?",
+      "¿Qué cargos nombra el presidente del PPD?",
+      "¿El presidente escoge a los miembros del Comité Central?",
+      "¿Quién nombra a los empleados del partido?",
+      "¿El presidente puede nombrar a quien quiera en el Comité Central?",
+      "¿Los nombramientos del presidente necesitan aprobación?",
+      "¿Quién designa al Tesorero y al Comisionado Electoral?"
+    ],
+    "parrafos": [
+      "Al personal del partido, a los miembros del Comité Central y a los delegados presidenciales.",
+      "Los nombramientos de Secretario General, Subsecretario, Comisionado Electoral, su alterno y Tesorero los aprueba la Junta de Gobierno."
+    ],
+    "articulos": [
+      64,
+      18,
+      69
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "presidente-emergencia",
+    "preguntas": [
+      "¿El presidente puede tomar medidas de emergencia?",
+      "¿El presidente puede suspender decisiones de un organismo del partido?",
+      "¿Puede el presidente suspender una decisión de un organismo?",
+      "¿Qué pasa si surge algo que el reglamento no prevé?",
+      "¿El presidente puede parar una decisión de un comité municipal?",
+      "¿Quién decide en una situación no prevista por el reglamento?",
+      "¿El presidente puede suspender un acuerdo de una asociación?",
+      "¿Cuánto dura una suspensión provisional decidida por el presidente?",
+      "¿El presidente puede actuar en una emergencia sin la Junta?"
+    ],
+    "parrafos": [
+      "Sí. En situaciones que el Reglamento no prevé, el Presidente puede tomar las medidas de emergencia necesarias.",
+      "También puede suspender provisionalmente cualquier acuerdo o decisión de un organismo interno mientras la Junta de Gobierno lo atiende."
+    ],
+    "articulos": [
+      64
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "presidente-campana-informe",
+    "preguntas": [
+      "¿El presidente del partido dirige la campaña?",
+      "¿El presidente del partido preside las reuniones de la Junta?",
+      "¿A quién le rinde cuentas el presidente del partido?",
+      "¿Quién dirige la campaña política del PPD?",
+      "¿Quién preside las reuniones de los organismos del partido?",
+      "¿El presidente tiene que rendir un informe anual?",
+      "¿Sobre qué informa el presidente al Consejo de Gobierno?",
+      "¿El presidente supervisa los comités del partido?",
+      "¿El presidente es miembro de todos los comités?"
+    ],
+    "parrafos": [
+      "Sí. El Presidente dirige la campaña política del partido, preside las reuniones de sus organismos y supervisa todos los comités, de los que es miembro exoficio.",
+      "Cada año rinde al Consejo de Gobierno un informe sobre la situación política, electoral y financiera del partido."
+    ],
+    "articulos": [
+      64
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "presidente-crear-posiciones",
+    "preguntas": [
+      "¿El presidente puede crear puestos nuevos?",
+      "¿El presidente puede crear una subsecretaría?",
+      "¿Quién puede crear grupos de trabajo en el partido?",
+      "¿El presidente puede crear programas especiales?",
+      "¿Se pueden crear posiciones que no están en el reglamento?",
+      "¿Quién crea posiciones nuevas en el partido?",
+      "¿El presidente puede nombrar un grupo de trabajo?",
+      "¿Qué pasa con los asuntos que el reglamento no contempla?"
+    ],
+    "parrafos": [
+      "Sí. El Presidente puede crear posiciones, subsecretarías, grupos de trabajo o programas especiales para cumplir los objetivos del partido en asuntos que el Reglamento no contempla."
+    ],
+    "articulos": [
+      64
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "secretario-general",
     "preguntas": [
       "¿Qué hace el Secretario General?",
@@ -1934,8 +2371,6 @@
       "¿Quién escoge al Secretario General?",
       "¿Cómo se nombra al Secretario General?",
       "¿El Secretario General lo nombra el presidente?",
-      "¿El Secretario General puede aspirar a un puesto electivo?",
-      "¿El Secretario General puede ser candidato en año electoral?",
       "¿Qué responsabilidades tiene el Secretario General?",
       "¿Quién custodia las actas del partido?",
       "¿Quién vela por el cumplimiento del Reglamento?",
@@ -1970,7 +2405,6 @@
       "¿Quién ocupa el lugar del Secretario General cuando falta?",
       "¿Qué es el Subsecretario General?",
       "¿Para qué sirve el Subsecretario General?",
-      "¿El Subsecretario puede ser funcionario electo?",
       "¿Qué responsabilidades tiene el Subsecretario General?",
       "¿Quién apoya al Secretario General?",
       "¿Quién suple al Secretario General?",
@@ -1990,6 +2424,58 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "secretario-registro-contactos",
+    "preguntas": [
+      "¿Quién mantiene el registro de los miembros del partido?",
+      "¿Quién tiene los datos de contacto de los funcionarios del partido?",
+      "¿Hay un registro de contactos de los organismos del partido?",
+      "¿Quién actualiza la lista de miembros de los comités?",
+      "¿Qué entrega el Secretario General al terminar su gestión?",
+      "¿El Secretario General rinde informes?",
+      "¿Quién guarda los datos de contacto de los presidentes de unidad?",
+      "¿A quién le pido la lista de miembros de un organismo?"
+    ],
+    "parrafos": [
+      "El Secretario General mantiene un registro actualizado con los datos de contacto de todos los miembros de los organismos del partido.",
+      "Rinde informes sobre los asuntos a su cargo y, al terminar su gestión, entrega toda la documentación, fondos, archivos y recursos."
+    ],
+    "articulos": [
+      65
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "secretario-subsecretario-aspirantes",
+    "preguntas": [
+      "¿El Secretario o el Subsecretario pueden ser aspirantes en año electoral?",
+      "¿El Secretario General puede aspirar a un puesto electivo?",
+      "¿El Secretario General puede ser candidato en año electoral?",
+      "¿El Subsecretario puede ser funcionario electo?",
+      "¿Puede el Subsecretario General aspirar a un cargo?",
+      "¿Qué pasa si el Secretario General quiere ser candidato?",
+      "¿El Secretario y el Subsecretario pueden ser funcionarios electos a la vez?",
+      "¿Un legislador puede ser Secretario General?",
+      "¿El Subsecretario puede ser candidato?"
+    ],
+    "parrafos": [
+      "No. Nadie puede ser Secretario General ni Subsecretario General en año electoral si aspira a una posición electiva.",
+      "Además, si el Secretario General es funcionario electo, el Subsecretario no puede serlo."
+    ],
+    "articulos": [
+      65,
+      66
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2040,7 +2526,6 @@
       "¿El Comisionado Electoral puede ser candidato a un cargo?",
       "¿El Comisionado Electoral puede ser funcionario electo?",
       "¿Quién recluta a los funcionarios de colegio?",
-      "¿Quién escribe los reglamentos de las elecciones internas?",
       "¿Quién se encarga del voto adelantado?",
       "¿Qué es el Comisionado Electoral?",
       "¿Qué es el comisionado electoral alterno?",
@@ -2060,6 +2545,55 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "comisionado-reglamentos-elecciones",
+    "preguntas": [
+      "¿Quién escribe los reglamentos de las elecciones internas?",
+      "¿Quién redacta las reglas de las elecciones de los comités municipales?",
+      "¿Quién aprueba los reglamentos de las elecciones internas?",
+      "¿Hay un reglamento para elegir a los comités de unidad?",
+      "¿Quién prepara las reglas para elegir la Junta de Gobierno?",
+      "¿Quién hace el reglamento de las primarias internas?",
+      "¿Quién dicta las normas de las elecciones internas?",
+      "¿Los reglamentos electorales internos los aprueba la Junta?"
+    ],
+    "parrafos": [
+      "El Comisionado Electoral redacta los reglamentos de las elecciones internas de los comités municipales, los comités de unidad y la Junta de Gobierno, y los somete a la Junta de Gobierno para su aprobación."
+    ],
+    "articulos": [
+      68
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "comisionado-informacion-electoral",
+    "preguntas": [
+      "¿Quién lleva los datos de inscripciones y resultados electorales?",
+      "¿Quién informa a la Junta sobre cambios en la ley electoral?",
+      "¿Quién asesora al presidente en asuntos electorales?",
+      "¿Hay un sistema de información electoral en el partido?",
+      "¿Quién recopila los datos de voto adelantado?",
+      "¿Quién capacita a los funcionarios de colegio?",
+      "¿Quién instruye a los comités sobre sus funciones electorales?",
+      "¿Quién distribuye los resultados electorales dentro del partido?"
+    ],
+    "parrafos": [
+      "El Comisionado Electoral. Mantiene un sistema de información electoral con datos de inscripciones, solicitudes de voto adelantado y resultados, informa al Presidente y a la Junta sobre los asuntos electorales y los cambios en la ley, y los asesora.",
+      "También capacita a los funcionarios de colegio e instruye a los organismos del partido sobre sus funciones."
+    ],
+    "articulos": [
+      68
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2137,8 +2671,6 @@
       "¿El alcalde es miembro del comité municipal?",
       "¿Los presidentes de unidad están en el comité municipal?",
       "¿Qué es la organización del partido en mi pueblo?",
-      "¿Para qué sirve el Comité Municipal?",
-      "¿Qué hace el Comité Municipal?",
       "¿Cuál es la composición del Comité Municipal?",
       "¿Quién dirige el partido en cada municipio?"
     ],
@@ -2154,6 +2686,80 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "comite-municipal-funciones",
+    "preguntas": [
+      "¿Qué hace el Comité Municipal?",
+      "¿Para qué sirve el Comité Municipal?",
+      "¿Cuáles son las funciones del Comité Municipal?",
+      "¿Qué responsabilidades tiene el comité municipal?",
+      "¿El comité municipal tiene que tener una sede?",
+      "¿Quién cubre una vacante de alcalde en año electoral?",
+      "¿Quién dirige la gestión electoral del partido en el municipio?",
+      "¿El comité municipal cubre las vacantes en la legislatura municipal?",
+      "¿Qué hace el comité municipal en año electoral?"
+    ],
+    "parrafos": [
+      "Dirige la gestión política, administrativa y electoral del partido en su municipio.",
+      "En año electoral mantiene una sede para sus actividades y cubre, conforme a la ley, las vacantes de alcalde o de la legislatura municipal que le toquen al partido."
+    ],
+    "articulos": [
+      72,
+      70
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "comite-municipal-exfuncionarios",
+    "preguntas": [
+      "¿Los expresidentes del comité municipal siguen siendo miembros?",
+      "¿Un exalcalde es miembro del comité municipal?",
+      "¿Los exlegisladores son miembros del comité municipal?",
+      "¿Los exfuncionarios votan en el comité municipal?",
+      "¿Los miembros exoficio del comité municipal cuentan para el quórum?",
+      "¿Un exgobernador es miembro del comité municipal de su pueblo?",
+      "Soy expresidente del comité municipal, ¿sigo siendo miembro?",
+      "¿Qué exfuncionarios están en el comité municipal?"
+    ],
+    "parrafos": [
+      "Sí, con voz pero sin voto. Los expresidentes del comité municipal, exlegisladores, exalcaldes, exgobernadores y excomisionados residentes que vivan en el municipio son miembros exoficio, y no cuentan para el quórum."
+    ],
+    "articulos": [
+      71
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "comite-municipal-composicion-especial",
+    "preguntas": [
+      "¿La Junta puede cambiar la composición de un comité municipal?",
+      "¿Todos los comités municipales tienen la misma composición?",
+      "¿Se puede organizar un comité municipal de otra forma?",
+      "¿Quién puede aprobar una composición distinta para el comité municipal?",
+      "¿Un comité municipal puede tener otra estructura?",
+      "¿La composición del comité municipal es fija?",
+      "¿Puede mi pueblo tener un comité municipal distinto?"
+    ],
+    "parrafos": [
+      "Sí. La Junta de Gobierno puede aprobar cualquier otro tipo de composición del Comité Municipal que se ajuste a las necesidades del partido."
+    ],
+    "articulos": [
+      71
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2223,21 +2829,9 @@
     "id": "oficiales-municipales",
     "preguntas": [
       "¿Cómo se escogen el vicepresidente, el secretario y el tesorero del Comité Municipal?",
-      "¿Qué hace el secretario del comité municipal?",
-      "¿Qué hace el tesorero del comité municipal?",
-      "¿Quién escoge al secretario del comité municipal?",
-      "¿Qué hace el tesorero del comité municipal del partido?",
-      "¿Quién nombra al tesorero del comité municipal?",
-      "¿Quién nombra al vicepresidente del comité municipal?",
-      "¿Cómo se escoge al vicepresidente del comité municipal?",
-      "¿Qué hace el vicepresidente del comité municipal?",
-      "¿Qué hace el secretario municipal del partido?",
       "¿Cuánto duran el secretario y el tesorero del comité municipal?",
       "¿Los oficiales del comité municipal se eligen o se nombran?",
-      "¿Quién lleva los documentos del comité municipal?",
-      "¿Quién administra el dinero del comité municipal?",
-      "¿Cuáles son los oficiales del comité municipal?",
-      "¿Quién sustituye al presidente del comité municipal cuando falta?"
+      "¿Cuáles son los oficiales del comité municipal?"
     ],
     "parrafos": [
       "Los designa el presidente del comité municipal y sirven mientras el presidente lo disponga.",
@@ -2254,6 +2848,89 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "vicepresidente-municipal",
+    "preguntas": [
+      "¿Qué hace el vicepresidente del comité municipal?",
+      "¿Quién nombra al vicepresidente del comité municipal?",
+      "¿Cómo se escoge al vicepresidente del comité municipal?",
+      "¿Quién sustituye al presidente del comité municipal cuando falta?",
+      "¿Cuáles son las funciones del vicepresidente municipal del partido?",
+      "¿El vicepresidente del comité municipal se elige?",
+      "¿Quién dirige el comité municipal si el presidente está ausente?",
+      "¿Para qué sirve el vicepresidente del comité municipal?",
+      "¿Cuánto dura el vicepresidente del comité municipal?"
+    ],
+    "parrafos": [
+      "Apoya la gestión del presidente y garantiza la continuidad del comité cuando el presidente falta.",
+      "Lo designa el presidente del comité municipal y sirve mientras este lo disponga."
+    ],
+    "articulos": [
+      74,
+      80
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "secretario-municipal",
+    "preguntas": [
+      "¿Qué hace el secretario del comité municipal?",
+      "¿Quién escoge al secretario del comité municipal?",
+      "¿Qué hace el secretario municipal del partido?",
+      "¿Quién lleva los documentos del comité municipal?",
+      "¿Quién convoca las reuniones ordinarias del comité municipal?",
+      "¿Quién redacta las actas del comité municipal?",
+      "¿Quién manda las minutas del comité municipal al Secretario General?",
+      "¿Quién preside el comité municipal si faltan el presidente y el vicepresidente?",
+      "¿Cuáles son las funciones del secretario del comité municipal?",
+      "¿Quién registra la asistencia en el comité municipal?"
+    ],
+    "parrafos": [
+      "Lleva los documentos y la comunicación interna del comité, convoca las reuniones ordinarias con al menos 72 horas de aviso, registra la asistencia, redacta el acta y manda copia de cada minuta al Secretario General.",
+      "Preside el comité si faltan el presidente y el vicepresidente. Lo designa el presidente del comité."
+    ],
+    "articulos": [
+      75,
+      83,
+      80
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "tesorero-municipal",
+    "preguntas": [
+      "¿Qué hace el tesorero del comité municipal?",
+      "¿Qué hace el tesorero del comité municipal del partido?",
+      "¿Quién nombra al tesorero del comité municipal?",
+      "¿Quién administra el dinero del comité municipal?",
+      "¿Cuáles son las funciones del tesorero municipal del partido?",
+      "¿Quién responde por las finanzas del comité municipal?",
+      "¿El tesorero del comité municipal tiene que cumplir con el Contralor Electoral?",
+      "¿Quién maneja los fondos del comité municipal?",
+      "¿Cómo se escoge al tesorero del comité municipal?"
+    ],
+    "parrafos": [
+      "Administra el dinero del comité y responde por sus obligaciones financieras, incluidas las leyes vigentes y los reglamentos de la Oficina del Contralor Electoral.",
+      "Lo designa el presidente del comité municipal y sirve mientras este lo disponga."
+    ],
+    "articulos": [
+      76,
+      80
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2423,20 +3100,11 @@
     "id": "coordinador-comisionados-precinto",
     "preguntas": [
       "¿Qué hace el coordinador electoral del municipio?",
-      "¿Quién nombra a los comisionados electorales de precinto?",
-      "¿Qué hace el comisionado electoral de precinto?",
       "¿Cuáles son las funciones del coordinador electoral del municipio?",
-      "¿Quién nombra a los comisionados electorales de mi precinto?",
       "¿Quién nombra al coordinador electoral del municipio?",
       "¿Qué es el coordinador electoral municipal?",
       "¿Cuándo hay coordinador electoral en un municipio?",
-      "¿Qué hace el comisionado electoral de mi precinto?",
-      "¿Qué es un comisionado electoral de precinto?",
       "¿Quién organiza el trabajo electoral del municipio?",
-      "¿Quién escoge a los comisionados de precinto?",
-      "¿El presidente municipal nombra a los comisionados de precinto?",
-      "¿Cuáles son las funciones del comisionado electoral de precinto?",
-      "¿Quién se encarga del trabajo electoral en cada precinto?",
       "¿Cómo se nombra al coordinador electoral municipal?"
     ],
     "parrafos": [
@@ -2453,6 +3121,35 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "comisionado-precinto",
+    "preguntas": [
+      "¿Qué hace el comisionado electoral de precinto?",
+      "¿Quién nombra a los comisionados electorales de precinto?",
+      "¿Quién nombra a los comisionados electorales de mi precinto?",
+      "¿Qué hace el comisionado electoral de mi precinto?",
+      "¿Qué es un comisionado electoral de precinto?",
+      "¿Quién escoge a los comisionados de precinto?",
+      "¿El presidente municipal nombra a los comisionados de precinto?",
+      "¿Cuáles son las funciones del comisionado electoral de precinto?",
+      "¿Quién se encarga del trabajo electoral en cada precinto?",
+      "¿Qué hace el comisionado electoral alterno de precinto?",
+      "¿Cómo se nombra al comisionado de precinto?"
+    ],
+    "parrafos": [
+      "Se encarga, junto con su alterno, de los trabajos electorales de su precinto, según el Código Electoral y las instrucciones del Comisionado Electoral del partido.",
+      "A los dos los nombra el Comisionado Electoral del partido, a recomendación del presidente del comité municipal."
+    ],
+    "articulos": [
+      78,
+      80
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2494,15 +3191,12 @@
     "preguntas": [
       "¿Cómo se eligen los presidentes de unidad?",
       "¿Con cuánto tiempo se anuncian las elecciones de los comités de unidad?",
-      "¿Quién nombra a los coordinadores electorales de unidad?",
       "¿Quién elige al presidente de unidad?",
       "¿Con cuántas horas de anticipación se anuncia la elección de unidad?",
       "¿Cómo se eligen los oficiales del comité de unidad?",
       "¿Quién vota por el presidente de unidad?",
       "¿Cómo se elige el vicepresidente de unidad?",
       "¿La elección de unidad puede ser virtual?",
-      "¿Quién nombra al coordinador electoral de unidad?",
-      "¿Quién nombra al subcoordinador electoral de unidad?",
       "¿Cómo se convoca la asamblea de unidad?",
       "¿Se puede hacer la elección de varias unidades juntas?",
       "¿Los afiliados de la unidad eligen a su presidente?",
@@ -2528,18 +3222,14 @@
     "preguntas": [
       "¿Qué hacen el presidente y el vicepresidente de unidad?",
       "¿Cada cuánto se reúne el comité de unidad?",
-      "¿Qué hace el coordinador electoral de unidad?",
       "¿Cuáles son las funciones del presidente de unidad?",
       "¿Con qué frecuencia se reúne el comité de unidad?",
       "¿Cuáles son las funciones del comité de unidad?",
       "¿Qué hace el vicepresidente de unidad?",
-      "¿Qué hace el coordinador electoral de mi unidad?",
-      "¿Qué hace el subcoordinador electoral de unidad?",
       "¿Cuántas veces al año se reúne el comité de unidad?",
       "¿Cuándo se reúne el comité de unidad?",
       "¿Qué responsabilidades tiene el presidente de unidad?",
       "¿Qué tiene que hacer el presidente de mi barrio?",
-      "¿Quién dirige el trabajo electoral en la unidad?",
       "¿El comité de unidad se reúne todos los meses en año electoral?",
       "¿Cuál es el papel del presidente de unidad?"
     ],
@@ -2558,24 +3248,70 @@
     ]
   },
   {
+    "id": "coordinador-unidad",
+    "preguntas": [
+      "¿Qué hace el coordinador electoral de unidad?",
+      "¿Quién nombra a los coordinadores electorales de unidad?",
+      "¿Qué hace el coordinador electoral de mi unidad?",
+      "¿Qué hace el subcoordinador electoral de unidad?",
+      "¿Quién dirige el trabajo electoral en la unidad?",
+      "¿Quién nombra al coordinador electoral de unidad?",
+      "¿Quién nombra al subcoordinador electoral de unidad?",
+      "¿El presidente de unidad puede ser coordinador electoral?",
+      "¿Cómo se escoge al coordinador electoral de unidad?",
+      "¿Cuáles son las funciones del coordinador electoral de unidad?"
+    ],
+    "parrafos": [
+      "El coordinador y el subcoordinador dirigen las tareas electorales de su unidad.",
+      "Los designa el presidente del comité municipal. El presidente y el vicepresidente de la unidad no pueden ser coordinadores ni subcoordinadores."
+    ],
+    "articulos": [
+      90,
+      91
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "unidad-coordinadores-sector",
+    "preguntas": [
+      "¿Qué son los coordinadores de sector?",
+      "¿El comité de unidad puede tener más miembros?",
+      "¿Quién nombra a los coordinadores de sector?",
+      "¿Qué es un miembro auxiliar del comité de unidad?",
+      "¿Puede haber ayudantes en el comité de unidad?",
+      "¿El presidente municipal puede añadir miembros al comité de unidad?",
+      "¿Cuántos miembros puede tener un comité de unidad?",
+      "¿Quién designa a los coordinadores de sector en un barrio?"
+    ],
+    "parrafos": [
+      "Son miembros auxiliares del comité de unidad. El presidente del comité municipal puede designar coordinadores de sector y otros ayudantes cuando hagan falta para cumplir las funciones del comité."
+    ],
+    "articulos": [
+      88
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "jpn-que-es",
     "preguntas": [
       "¿Qué es la Juventud Popular Nacional?",
       "¿Cómo se organiza la Juventud Popular?",
-      "¿Qué funciones tiene la JPN?",
       "¿Qué es la JPN?",
       "¿Cómo está organizada la Juventud Popular Nacional?",
-      "¿Qué hace la Juventud Popular?",
-      "¿Cuáles son las funciones de la Juventud Popular Nacional?",
       "¿Quién pertenece a la Juventud Popular?",
       "¿Quiénes son los jóvenes populares?",
       "¿La Juventud Popular tiene autonomía?",
       "¿La JPN se gobierna sola?",
       "¿Hay un presidente de la Juventud Popular en cada pueblo?",
       "¿Qué es la organización de jóvenes del PPD?",
-      "¿Qué hace la JPN?",
-      "¿Para qué sirve la Juventud Popular Nacional?",
-      "¿La Juventud Popular tiene representante en los comités de unidad?",
       "¿Qué significa JPN?",
       "¿Cómo se organiza la JPN?"
     ],
@@ -2594,6 +3330,58 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "jpn-funciones",
+    "preguntas": [
+      "¿Qué funciones tiene la JPN?",
+      "¿Qué hace la Juventud Popular?",
+      "¿Cuáles son las funciones de la Juventud Popular Nacional?",
+      "¿Qué hace la JPN?",
+      "¿La Juventud Popular tiene representante en los comités de unidad?",
+      "¿Cuáles son las tareas de la Juventud Popular?",
+      "¿La JPN inscribe electores?",
+      "¿La Juventud Popular aporta al plan de gobierno?",
+      "¿La JPN recauda fondos?",
+      "¿A qué se dedica la Juventud Popular Nacional?",
+      "¿Para qué sirve la Juventud Popular Nacional?"
+    ],
+    "parrafos": [
+      "Nombra un representante de la JPN en cada comité de unidad, aporta al plan de gobierno, inscribe y moviliza a los electores jóvenes, mantiene una base de datos de personas afines al sector, comunica la visión del partido a sus miembros y ayuda a recaudar fondos."
+    ],
+    "articulos": [
+      43
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "jpn-directiva",
+    "preguntas": [
+      "¿Cómo está compuesta la directiva de la Juventud Popular?",
+      "¿Quiénes forman la directiva de la JPN?",
+      "¿Cuántos miembros tiene la directiva de la Juventud Popular Nacional?",
+      "¿La JPN tiene presidente en cada pueblo?",
+      "¿Qué cargos tiene la directiva estatal de la Juventud Popular?",
+      "¿La Juventud Popular tiene representantes por distrito senatorial?",
+      "¿Cómo se organiza la directiva de la JPN?",
+      "¿Quién compone la Juventud Popular Nacional?"
+    ],
+    "parrafos": [
+      "Un presidente en cada municipio y una directiva estatal con presidente, vicepresidente, un representante por cada distrito senatorial y 5 miembros por acumulación.",
+      "Son miembros de la JPN todos los populares con menos de 35 años."
+    ],
+    "articulos": [
+      41
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2633,19 +3421,11 @@
     "preguntas": [
       "¿Qué es la Asociación de Mujeres Populares?",
       "¿Quién puede pertenecer a las Mujeres Populares?",
-      "¿Qué funciones tiene la Asociación de Mujeres Populares?",
       "¿Qué es la organización de Mujeres Populares?",
       "¿Quiénes son miembros de Mujeres Populares?",
-      "¿Qué hace la Asociación de Mujeres Populares?",
-      "¿Cuáles son las funciones de Mujeres Populares?",
-      "¿Cómo está organizada la Asociación de Mujeres Populares?",
-      "¿Hay una presidenta de Mujeres Populares en cada pueblo?",
       "¿Todas las mujeres del partido son de Mujeres Populares?",
-      "¿Para qué sirve la Asociación de Mujeres Populares?",
       "¿Qué es la asociación de mujeres del PPD?",
       "¿Cómo me uno a Mujeres Populares?",
-      "¿Mujeres Populares capacita a mujeres para aspirar a cargos?",
-      "¿Qué hace Mujeres Populares por la igualdad en el partido?",
       "¿Qué es la organización de las mujeres del partido?"
     ],
     "parrafos": [
@@ -2662,6 +3442,58 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "mujeres-populares-funciones",
+    "preguntas": [
+      "¿Qué funciones tiene la Asociación de Mujeres Populares?",
+      "¿Qué hace la Asociación de Mujeres Populares?",
+      "¿Cuáles son las funciones de Mujeres Populares?",
+      "¿Mujeres Populares capacita a mujeres para aspirar a cargos?",
+      "¿Qué hace Mujeres Populares por la igualdad en el partido?",
+      "¿Mujeres Populares tiene representante en los comités de unidad?",
+      "¿Mujeres Populares ofrece talleres de campaña?",
+      "¿A qué se dedica la Asociación de Mujeres Populares?",
+      "¿Mujeres Populares educa sobre derechos de la mujer?",
+      "¿Cuáles son las tareas de Mujeres Populares?",
+      "¿Para qué sirve la Asociación de Mujeres Populares?"
+    ],
+    "parrafos": [
+      "Además de organizar y movilizar a las mujeres populares, impulsa una composición equilibrada entre mujeres y hombres en los organismos del partido, capacita a mujeres para aspirar y para diseñar sus campañas, y organiza actividades de base sobre equidad y derechos civiles y políticos.",
+      "También tiene una representante en cada comité de unidad, aporta al plan de gobierno e inscribe y moviliza electoras."
+    ],
+    "articulos": [
+      53
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "mujeres-populares-directiva",
+    "preguntas": [
+      "¿Cómo está organizada la Asociación de Mujeres Populares?",
+      "¿Hay una presidenta de Mujeres Populares en cada pueblo?",
+      "¿Quiénes forman la directiva de Mujeres Populares?",
+      "¿Cuántos miembros tiene la directiva de Mujeres Populares?",
+      "¿Qué cargos tiene la directiva estatal de Mujeres Populares?",
+      "¿Mujeres Populares tiene representantes por distrito senatorial?",
+      "¿Cómo se compone la directiva de la AMP?",
+      "¿Qué es la AMP?"
+    ],
+    "parrafos": [
+      "Una presidenta en cada municipio y una directiva estatal con presidenta, vicepresidenta, una representante por cada distrito senatorial y 5 miembros por acumulación. Son miembros todas las mujeres populares de Puerto Rico."
+    ],
+    "articulos": [
+      51
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2705,12 +3537,9 @@
       "¿Quiénes son miembros de la ASPP?",
       "¿Qué es la Asociación de Servidores Públicos del PPD?",
       "¿Los empleados públicos tienen asociación en el partido?",
-      "¿Cómo se organiza la Asociación de Servidores Públicos Populares?",
-      "¿Hay un presidente de servidores públicos en cada agencia?",
       "¿Cuándo se elige la directiva de la ASPP?",
       "¿Quién convoca las elecciones de los servidores públicos populares?",
       "¿Cómo se elige la directiva de los servidores públicos?",
-      "¿Qué hace la Asociación de Servidores Públicos Populares?",
       "¿Cómo me uno a los servidores públicos populares?",
       "¿Qué significa ASPP?",
       "¿Cuándo fueron las elecciones de los servidores públicos este ciclo?"
@@ -2730,6 +3559,56 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "servidores-publicos-funciones",
+    "preguntas": [
+      "¿Qué hace la Asociación de Servidores Públicos Populares?",
+      "¿Cuáles son las funciones de la ASPP?",
+      "¿La ASPP inscribe electores?",
+      "¿Los servidores públicos populares aportan al plan de gobierno?",
+      "¿Qué tareas tiene la asociación de servidores públicos?",
+      "¿A qué se dedica la ASPP?",
+      "¿La ASPP convoca elecciones en las agencias?",
+      "¿La asociación de servidores públicos recauda fondos?"
+    ],
+    "parrafos": [
+      "Convoca la elección de un presidente de la ASPP en cada agencia, aporta al plan de gobierno, inscribe y moviliza a los servidores públicos, mantiene una base de datos de personas afines al sector, comunica la visión del partido a sus miembros y ayuda a recaudar fondos."
+    ],
+    "articulos": [
+      48
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "servidores-publicos-directiva",
+    "preguntas": [
+      "¿Cómo se organiza la Asociación de Servidores Públicos Populares?",
+      "¿Hay un presidente de servidores públicos en cada agencia?",
+      "¿Quiénes forman la directiva de la ASPP?",
+      "¿Cuántos miembros tiene la directiva de los servidores públicos populares?",
+      "¿Cómo se elige al presidente de la ASPP en mi agencia?",
+      "¿Qué cargos tiene la directiva estatal de la ASPP?",
+      "¿Quién decide cómo se elige al presidente de agencia de la ASPP?",
+      "¿Cómo se compone la directiva de la asociación de servidores públicos?"
+    ],
+    "parrafos": [
+      "Un presidente en cada agencia y una directiva estatal con presidente, vicepresidente, un representante por cada distrito senatorial y 5 miembros escogidos entre los presidentes de agencia.",
+      "El método para elegir al presidente de cada agencia lo acuerdan la asociación y la Junta de Gobierno."
+    ],
+    "articulos": [
+      46,
+      49
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2769,6 +3648,32 @@
     ]
   },
   {
+    "id": "alcaldes-asociacion-composicion",
+    "preguntas": [
+      "¿Cómo está organizada la Asociación de Alcaldes Populares?",
+      "¿Quiénes forman la directiva de la Asociación de Legisladores Municipales Populares?",
+      "¿La Asociación de Alcaldes Populares tiene directiva propia?",
+      "¿Cuántos miembros tiene la directiva de los legisladores municipales populares?",
+      "¿Cómo se compone la asociación de alcaldes del PPD?",
+      "¿Qué cargos tiene la directiva de los legisladores municipales populares?",
+      "¿La asociación de alcaldes populares sigue la estructura de la Asociación de Alcaldes de Puerto Rico?",
+      "¿Quiénes son miembros de la Asociación de Legisladores Municipales Populares?"
+    ],
+    "parrafos": [
+      "La Asociación de Alcaldes Populares sigue la composición y las funciones de la Asociación de Alcaldes de Puerto Rico, en lo que sea compatible con el Reglamento.",
+      "La de Legisladores Municipales la forman todos los legisladores municipales populares, con una directiva estatal de presidente, vicepresidente, un representante por distrito senatorial y 5 miembros por acumulación."
+    ],
+    "articulos": [
+      35,
+      37
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "organizaciones-sectoriales",
     "preguntas": [
       "¿Cómo se crea una organización sectorial?",
@@ -2783,7 +3688,6 @@
       "¿Qué estructura tiene una organización sectorial?",
       "¿Quién dirige una organización sectorial?",
       "¿Las organizaciones sectoriales tienen voz en el Consejo de Gobierno?",
-      "¿Qué requisitos tiene una organización sectorial?",
       "¿Cómo se organiza un sector en el PPD?",
       "¿Qué es un sector del partido?",
       "¿Las organizaciones sectoriales participan en la asamblea?",
@@ -2803,6 +3707,82 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "sectoriales-funciones",
+    "preguntas": [
+      "¿Qué hacen las organizaciones sectoriales?",
+      "¿Cuáles son las funciones de una organización sectorial?",
+      "¿Para qué sirven las organizaciones sectoriales?",
+      "¿Las organizaciones sectoriales aportan al plan de gobierno?",
+      "¿Las sectoriales inscriben electores?",
+      "¿Qué tareas tiene una organización sectorial?",
+      "¿A qué se dedica una organización sectorial del partido?",
+      "¿Las organizaciones sectoriales llevan una base de datos?"
+    ],
+    "parrafos": [
+      "Aportan al plan de gobierno con propuestas de política pública para su sector, inscriben y movilizan a los electores de ese sector, y mantienen una base de datos de personas afines al sector y al partido.",
+      "Existen para fortalecer la participación y la representación de distintos sectores en las estructuras del partido."
+    ],
+    "articulos": [
+      56,
+      55
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sectoriales-reconocimiento-criterios",
+    "preguntas": [
+      "¿Qué criterios se usan para reconocer una organización sectorial?",
+      "¿Qué requisitos tiene una organización sectorial?",
+      "¿Cuál es el mínimo de participación para una organización sectorial?",
+      "¿Quién fija el mínimo de participación de las sectoriales?",
+      "¿Qué se toma en cuenta para reconocer un sector?",
+      "¿Importa el tamaño del sector para el reconocimiento oficial?",
+      "¿Cómo se decide si un sector merece reconocimiento?",
+      "¿Qué pide la Vicepresidencia de Sectores para reconocer una organización?"
+    ],
+    "parrafos": [
+      "El tamaño y la capacidad de convocatoria del sector, su importancia estratégica para el partido y su nivel de activismo, presente o pasado.",
+      "Con esos criterios, y con el consentimiento de la Junta de Gobierno, la Vicepresidencia de Sectores fija los requisitos para el reconocimiento oficial y el mínimo de participación en la elección interna."
+    ],
+    "articulos": [
+      59
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sectoriales-eleccion",
+    "preguntas": [
+      "¿Cuándo se eligen las directivas de las organizaciones sectoriales?",
+      "¿Quién convoca las elecciones de las organizaciones sectoriales?",
+      "¿Cuándo elige directiva una organización sectorial nueva?",
+      "¿Cómo se elige la directiva de una organización sectorial?",
+      "¿Hasta cuándo tenían que elegir directiva las sectoriales?",
+      "¿Ya pasaron las elecciones de las organizaciones sectoriales?",
+      "¿Cada cuánto se elige la directiva de una sectorial?",
+      "¿Qué pasa si una sectorial se crea después del 30 de junio?"
+    ],
+    "parrafos": [
+      "La Junta de Gobierno las convoca antes del 30 de junio del segundo año después de las elecciones generales. Para este ciclo, esa fecha fue el 30 de junio de 2026.",
+      "Si una organización sectorial se crea después de esa fecha, la Junta convoca su elección cuando lo estime conveniente."
+    ],
+    "articulos": [
+      60
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2904,6 +3884,35 @@
     ]
   },
   {
+    "id": "asociaciones-autonomia",
+    "preguntas": [
+      "¿Las asociaciones del partido se gobiernan solas?",
+      "¿Las organizaciones sectoriales tienen autonomía?",
+      "¿Mujeres Populares tiene autonomía?",
+      "¿La Asociación de Servidores Públicos se gobierna sola?",
+      "¿Los legisladores municipales populares tienen autonomía en su asociación?",
+      "¿Quién decide la estructura interna de una asociación del partido?",
+      "¿Las asociaciones pueden crear su propia estructura?",
+      "¿Qué significa que una asociación tenga autonomía?",
+      "¿La Junta de Gobierno controla las asociaciones?"
+    ],
+    "parrafos": [
+      "Sí. La Juventud Popular, Mujeres Populares, los Servidores Públicos, los Legisladores Municipales y las organizaciones sectoriales tienen autonomía para gobernarse y crear su propia estructura, según lo decida su directiva.",
+      "La Juventud y Mujeres Populares lo hacen en coordinación con sus presidentes municipales. La Junta de Gobierno conserva la facultad de revocar el reconocimiento de una sectorial o sustituir su liderazgo."
+    ],
+    "articulos": [
+      38,
+      47,
+      52,
+      58
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "conferencia-legislativa",
     "preguntas": [
       "¿Qué es la Conferencia Legislativa?",
@@ -2917,7 +3926,6 @@
       "¿Qué es el caucus de la Cámara?",
       "¿Quién elige el liderato legislativo del partido?",
       "¿Cómo se elige el portavoz legislativo?",
-      "¿Los acuerdos del caucus obligan a los legisladores?",
       "¿Qué es el caucus legislativo popular?",
       "¿Quién define la estrategia legislativa del partido?",
       "¿El Comisionado Residente es parte de la Conferencia Legislativa?",
@@ -2938,6 +3946,59 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "conferencia-legislativa-reuniones",
+    "preguntas": [
+      "¿Cuándo se reúne la Conferencia Legislativa?",
+      "¿Quién convoca la Conferencia Legislativa?",
+      "¿Cada cuánto se reúne el caucus del partido?",
+      "¿Los acuerdos de la Conferencia Legislativa son obligatorios?",
+      "¿Los acuerdos del caucus obligan a los legisladores?",
+      "¿Los legisladores tienen que cumplir los acuerdos del caucus?",
+      "¿Cómo se toman los acuerdos en la Conferencia Legislativa?",
+      "¿El presidente del partido convoca al caucus?",
+      "¿Los acuerdos del caucus tienen que ser por escrito?"
+    ],
+    "parrafos": [
+      "El Presidente del Partido la convoca al comienzo de cada sesión legislativa y cuando lo estime necesario.",
+      "Sus acuerdos son por escrito y obligan a todos sus miembros, salvo que se indique lo contrario."
+    ],
+    "articulos": [
+      30,
+      31
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "reglamento-caucus",
+    "preguntas": [
+      "¿La Conferencia Legislativa tiene su propio reglamento?",
+      "¿Quién aprueba el reglamento de la Conferencia Legislativa?",
+      "¿Los caucus tienen reglamento propio?",
+      "¿Cuándo hay que aprobar el reglamento del caucus?",
+      "¿Cuánto tiempo tiene la Conferencia Legislativa para hacer su reglamento?",
+      "¿El reglamento del caucus tiene que seguir el reglamento del partido?",
+      "¿Quién redacta el reglamento de la Conferencia Legislativa?",
+      "¿Qué es el reglamento de caucus?"
+    ],
+    "parrafos": [
+      "Sí. La Conferencia Legislativa redacta un reglamento para su gobierno interno y lo somete a la Junta de Gobierno dentro de 20 días de la juramentación de sus miembros.",
+      "Cada caucus adopta el suyo dentro de los 10 días siguientes a que la Junta apruebe el de la Conferencia, y tiene que respetar el Reglamento del partido y el de la Conferencia."
+    ],
+    "articulos": [
+      32,
+      33
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -2977,6 +4038,31 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "candidatura-que-cargos",
+    "preguntas": [
+      "¿Para qué cargos hay que radicar candidatura ante el Secretario General?",
+      "¿Los aspirantes a presidente de comité municipal radican candidatura?",
+      "¿Hay que radicar candidatura para presidente de precinto?",
+      "¿Los candidatos a alcalde radican ante el Secretario General?",
+      "¿Qué aspirantes radican ante la Secretaría General?",
+      "¿Para aspirar a la Junta de Gobierno hay que radicar candidatura?",
+      "¿Los candidatos a las elecciones generales radican en el partido?",
+      "¿Qué posiciones requieren radicar candidatura?"
+    ],
+    "parrafos": [
+      "Los aspirantes a la Junta de Gobierno, a presidente de comité municipal, a presidente de precinto y a los cargos electivos de las elecciones generales.",
+      "Radican ante el Secretario General, por el método que autorice la Junta de Gobierno y conforme al Código Electoral, y el Secretario certifica si cumplen los requisitos."
+    ],
+    "articulos": [
+      92
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -3047,6 +4133,31 @@
     ]
   },
   {
+    "id": "comision-calificadora-miembros-aspirar",
+    "preguntas": [
+      "¿Los miembros de la Comisión Calificadora pueden aspirar?",
+      "¿Quién es el secretario de la Comisión Calificadora?",
+      "¿Se puede cambiar el número de miembros de la Comisión Calificadora?",
+      "¿Un miembro de la Comisión Calificadora puede ser candidato después?",
+      "¿Qué restricciones tienen los miembros de la Comisión Calificadora?",
+      "¿La Comisión Calificadora escoge su secretario?",
+      "¿El presidente puede ampliar la Comisión Calificadora?",
+      "¿Puedo aspirar si fui miembro de la Comisión Calificadora?"
+    ],
+    "parrafos": [
+      "No en las próximas elecciones después de haber servido en ella.",
+      "La Comisión escoge un secretario entre sus miembros, y el Presidente del Partido puede cambiar el número de integrantes cuando lo entienda necesario."
+    ],
+    "articulos": [
+      93
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "quien-no-puede-aspirar",
     "preguntas": [
       "¿Quién no puede ser candidato del partido?",
@@ -3057,8 +4168,6 @@
       "¿Qué requisitos hay para ser candidato del PPD?",
       "¿Quién está descalificado para aspirar?",
       "¿Qué impide ser candidato del partido?",
-      "¿Puedo aspirar si tengo deudas con Hacienda?",
-      "¿Puedo aspirar si debo pensión alimentaria?",
       "¿Qué me descalifica como aspirante?",
       "¿Cuáles son los criterios para calificar a un aspirante?",
       "¿Puede aspirar alguien que usó mal fondos del partido?",
@@ -3078,6 +4187,153 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "aspirar-deudas",
+    "preguntas": [
+      "¿Puedo aspirar si tengo deudas con Hacienda?",
+      "¿Puedo aspirar si debo pensión alimentaria?",
+      "¿Puedo ser candidato si tengo un plan de pago con Hacienda?",
+      "¿Las deudas con el gobierno impiden aspirar?",
+      "¿Puedo aspirar si debo contribuciones?",
+      "¿Puedo ser candidato si estoy atrasado en la pensión de mis hijos?",
+      "¿Hay que estar al día con Hacienda para ser candidato del partido?",
+      "¿Las deudas de pensión alimentaria descalifican a un aspirante?"
+    ],
+    "parrafos": [
+      "No, salvo que tengas un plan de pago con la agencia. Quien no ha cumplido sus obligaciones fiscales con el Estado Libre Asociado no puede aspirar.",
+      "Tampoco puede aspirar quien esté en incumplimiento con una pensión alimentaria, según declaración del tribunal."
+    ],
+    "articulos": [
+      95
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "aspirar-destituido-profesion",
+    "preguntas": [
+      "¿Puede aspirar alguien destituido de un puesto público?",
+      "¿Puedo aspirar si renuncié a un cargo público para evitar un proceso?",
+      "¿Puede ser candidato alguien que perdió su licencia profesional?",
+      "¿Puedo aspirar si estoy suspendido de mi profesión?",
+      "¿Puede aspirar alguien que recibió un indulto?",
+      "¿La Comisión Calificadora puede hacer una excepción con un aspirante destituido?",
+      "¿Un abogado suspendido puede ser candidato del partido?",
+      "¿Qué pasa si me destituyeron de un puesto público y quiero aspirar?",
+      "¿Puedo ser candidato si recibí un perdón ejecutivo?"
+    ],
+    "parrafos": [
+      "En principio no. Tampoco quien renunció a un cargo público para evitar un proceso tras cargos administrativos o causa probable de arresto, quien perdió su licencia profesional por violar normas de ética, quien está suspendido de su profesión mientras dure la suspensión, ni quien recibió un indulto o perdón ejecutivo.",
+      "En todos estos casos la Comisión Calificadora puede permitirlo si lo decide por unanimidad."
+    ],
+    "articulos": [
+      95
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "aspirar-hostigamiento",
+    "preguntas": [
+      "¿Puede aspirar alguien condenado por hostigamiento sexual?",
+      "¿Puede ser candidato alguien encontrado responsable de discrimen?",
+      "¿El hostigamiento sexual descalifica a un aspirante?",
+      "¿Puedo aspirar si un tribunal me encontró responsable de discrimen por género?",
+      "¿Una sentencia por discrimen impide ser candidato del partido?",
+      "¿Qué pasa si un aspirante tiene una sentencia por hostigamiento?",
+      "¿El discrimen por edad o raza descalifica a un candidato?"
+    ],
+    "parrafos": [
+      "No. Quien haya sido encontrado responsable, por sentencia final y firme, de hostigamiento sexual o de discrimen por género, edad, raza u otra circunstancia parecida no puede aspirar a una candidatura del partido."
+    ],
+    "articulos": [
+      95
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "aspirar-documentos-tarde",
+    "preguntas": [
+      "¿Qué pasa si no someto los documentos a tiempo?",
+      "¿Me descalifican si entrego los documentos tarde?",
+      "¿Puedo aspirar si di información falsa en mis documentos?",
+      "¿Qué pasa si miento en la información que pide el partido?",
+      "¿Hay fecha límite para entregar los documentos de candidatura?",
+      "¿Me pueden descalificar por un documento que faltó?",
+      "¿La información falsa descalifica a un aspirante?",
+      "¿Qué pasa si no entrego todos los documentos requeridos?"
+    ],
+    "parrafos": [
+      "No puedes aspirar. Quien no someta a tiempo ante la Secretaría General todos los documentos requeridos queda fuera, igual que quien dé información falsa sobre lo que el partido pide a los candidatos."
+    ],
+    "articulos": [
+      95,
+      94
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "aspirar-nominacion-desautorizar",
+    "preguntas": [
+      "¿Qué pasa si no desautorizo una campaña por nominación directa a mi favor?",
+      "¿Tengo que rechazar una campaña de nominación directa a mi nombre?",
+      "¿Me pueden descalificar por no desautorizar una nominación directa?",
+      "¿Qué pasa si el Secretario General me pide desautorizar un movimiento a mi favor?",
+      "¿Puedo aspirar si otros hicieron campaña por mí por nominación directa?",
+      "¿Es obligatorio desautorizar una campaña por nominación directa?",
+      "¿Qué pasa si incumplo un acuerdo firmado con el partido?"
+    ],
+    "parrafos": [
+      "No puedes aspirar en las siguientes elecciones. Si el Secretario General te pidió desautorizar públicamente un movimiento por nominación directa a tu favor y te negaste, quedas descalificado.",
+      "Lo mismo aplica a quien incumpla un acuerdo firmado con el partido."
+    ],
+    "articulos": [
+      95
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "aspirar-otras-razones",
+    "preguntas": [
+      "¿La Comisión Calificadora puede descalificar por otras razones?",
+      "¿La Junta puede decidir que alguien no es idóneo?",
+      "¿Hay razones no escritas para descalificar a un aspirante?",
+      "¿Qué significa que un aspirante no es idóneo?",
+      "¿La lista de descalificaciones es cerrada?",
+      "¿Pueden rechazar mi candidatura por los intereses del partido?",
+      "¿Quién decide que un aspirante va contra los intereses del partido?"
+    ],
+    "parrafos": [
+      "Sí. La Comisión Calificadora o la Junta de Gobierno pueden decidir que una persona no es un candidato idóneo por cualquier otra razón que vaya contra los mejores intereses del partido.",
+      "La lista completa de causas está en el Artículo 95."
+    ],
+    "articulos": [
+      95
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -3219,15 +4475,9 @@
       "¿Qué castigos puede imponer el partido?",
       "¿Qué tipos de sanción hay en el reglamento?",
       "¿Cuáles son las sanciones del reglamento?",
-      "¿Me pueden expulsar del partido?",
-      "¿Me pueden multar en el partido?",
-      "¿Qué es una censura en el partido?",
-      "¿Qué es el retiro de confianza?",
-      "¿Qué es el cese y desista?",
       "¿Quién decide las sanciones en el partido?",
       "¿Quién puede sancionar a un funcionario?",
       "¿Qué medidas puede tomar el partido contra un funcionario?",
-      "¿Pueden quitarme el derecho a aspirar como sanción?",
       "¿Cuáles son las penalidades del reglamento?"
     ],
     "parrafos": [
@@ -3246,6 +4496,134 @@
     ]
   },
   {
+    "id": "normas-conducta-quien",
+    "preguntas": [
+      "¿A quién aplican las normas de conducta del partido?",
+      "¿Las normas de disciplina aplican a los candidatos?",
+      "¿Los aspirantes están sujetos a las medidas disciplinarias?",
+      "¿Un afiliado sin cargo puede ser sancionado?",
+      "¿Quién tiene que cumplir las normas de conducta del reglamento?",
+      "¿Las sanciones aplican solo a los funcionarios?",
+      "¿Qué son las normas de conducta del partido?",
+      "¿Quiénes pueden recibir medidas disciplinarias?"
+    ],
+    "parrafos": [
+      "A todos los funcionarios, aspirantes y candidatos del partido. Son ellos quienes tienen que cumplir las normas de conducta y a quienes se les pueden imponer medidas disciplinarias.",
+      "Las normas de conducta son el capítulo de disciplina del Reglamento: las faltas, las medidas y el procedimiento de querellas."
+    ],
+    "articulos": [
+      96,
+      97
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-censura-indiferencia",
+    "preguntas": [
+      "¿Qué es una censura en el partido?",
+      "¿Qué significa indiferencia como medida disciplinaria?",
+      "¿Qué es la indiferencia en el reglamento?",
+      "¿Cuál es la sanción más leve del partido?",
+      "¿Qué es una censura formal?",
+      "¿La censura es una sanción?",
+      "¿Qué pasa si me censuran en el partido?",
+      "¿Qué diferencia hay entre censura e indiferencia?"
+    ],
+    "parrafos": [
+      "La censura es una expresión formal de desaprobación: el partido deja claro que la conducta del funcionario no es aceptable.",
+      "La indiferencia es la medida más leve: hacer caso omiso de una conducta impropia que no va contra los principios del partido."
+    ],
+    "articulos": [
+      99,
+      5
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-cese-retiro-confianza",
+    "preguntas": [
+      "¿Qué es el cese y desista?",
+      "¿Qué es el retiro de confianza?",
+      "¿Qué significa una orden de cese y desista del partido?",
+      "¿Qué pasa si me retiran la confianza?",
+      "¿El partido puede ordenarme parar una actividad?",
+      "¿Qué es una orden de cese y desista?",
+      "¿El retiro de confianza es una sanción?",
+      "¿Qué sanciones intermedias tiene el partido?"
+    ],
+    "parrafos": [
+      "El cese y desista es la orden de parar una práctica o actividad. El retiro de confianza es la pérdida formal de la confianza del partido en un funcionario.",
+      "Son medidas intermedias. Las más graves son la suspensión o expulsión del cargo, la pérdida del derecho a aspirar, las multas y la suspensión sumaria."
+    ],
+    "articulos": [
+      99
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-multas",
+    "preguntas": [
+      "¿Me pueden multar en el partido?",
+      "¿El partido puede imponer sanciones económicas?",
+      "¿Cuánto es la multa por una falta en el partido?",
+      "¿Quién impone las multas en el partido?",
+      "¿Hay multas en el reglamento del PPD?",
+      "¿Me pueden cobrar dinero como sanción?",
+      "¿Las sanciones del partido incluyen dinero?"
+    ],
+    "parrafos": [
+      "Sí. Entre las medidas disciplinarias están las multas o sanciones económicas. Las impone el Secretario General por instrucciones del Presidente o de la Junta de Gobierno.",
+      "El Reglamento no fija cantidades. Para saber más, llama al (787) 721-2000."
+    ],
+    "articulos": [
+      99
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-expulsion",
+    "preguntas": [
+      "¿Me pueden expulsar del partido?",
+      "¿Me pueden quitar el cargo como sanción?",
+      "¿Pueden quitarme el derecho a aspirar como sanción?",
+      "¿Qué pasa si me expulsan de mi posición en el partido?",
+      "¿La expulsión es una medida disciplinaria?",
+      "¿Me pueden suspender del cargo como castigo?",
+      "¿Cuáles son las sanciones más graves del partido?",
+      "¿Tengo derecho a defenderme si me expulsan?",
+      "¿Pueden prohibirme ser candidato?"
+    ],
+    "parrafos": [
+      "Sí. El partido puede suspenderte o expulsarte de tus posiciones y suspender tu derecho a ser aspirante o candidato.",
+      "En esos casos tienes derecho a un procedimiento expedito: una vista ante la Junta de Gobierno dentro de 5 días laborables, y una decisión por escrito en 2 días laborables más."
+    ],
+    "articulos": [
+      99,
+      101
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
     "id": "acciones-sancionables",
     "preguntas": [
       "¿Por qué me pueden disciplinar en el partido?",
@@ -3261,8 +4639,6 @@
       "¿Por qué pueden disciplinar a un funcionario?",
       "¿Cuáles son las acciones sujetas a medidas disciplinarias?",
       "¿Me pueden sancionar por incumplir el reglamento?",
-      "¿Es una falta usar el cargo en beneficio propio?",
-      "¿Qué pasa si daño la imagen del partido?",
       "¿Qué está prohibido para los funcionarios del PPD?",
       "¿Qué acciones pueden traer una sanción?",
       "¿Me pueden disciplinar por hablar mal de otro popular?"
@@ -3280,6 +4656,102 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "sancion-decisiones-organismos",
+    "preguntas": [
+      "¿Me pueden sancionar por no acatar una decisión de mi comité?",
+      "¿Es una falta incumplir el plan de gobierno?",
+      "¿Me pueden sancionar por desobedecer a la Junta de Gobierno?",
+      "¿Incumplir una decisión de la asamblea es sancionable?",
+      "¿Qué pasa si no cumplo una decisión del comité de unidad?",
+      "¿Los acuerdos de las asociaciones son obligatorios?",
+      "¿Me pueden sancionar por no seguir las decisiones del partido?",
+      "¿Es una falta ignorar los acuerdos de la Conferencia Legislativa?"
+    ],
+    "parrafos": [
+      "Sí. Incumplir el Reglamento, el plan de gobierno o las decisiones de la Asamblea General, el Consejo de Gobierno, la Junta de Gobierno, los comités municipales y de unidad, las asociaciones y organizaciones sectoriales o la Conferencia Legislativa es causa de medidas disciplinarias."
+    ],
+    "articulos": [
+      97
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-procedimiento-penal",
+    "preguntas": [
+      "¿Me pueden sancionar si tengo un caso en los tribunales?",
+      "¿Me pueden disciplinar si me arrestan?",
+      "¿Un proceso administrativo en mi contra es causa de sanción?",
+      "¿Qué pasa si me destituyen de un cargo público?",
+      "¿Enfrentar una demanda civil es una falta en el partido?",
+      "¿Un arresto por delito grave trae medidas disciplinarias?",
+      "¿Me pueden sancionar por un caso penal aunque no me hayan condenado?",
+      "¿La destitución de un puesto público se sanciona en el partido?"
+    ],
+    "parrafos": [
+      "Sí. Enfrentar un procedimiento penal, administrativo o civil, o ser arrestado por un delito grave o por uno menos grave que implique depravación moral, son causas de medidas disciplinarias.",
+      "También lo es ser destituido de un cargo público por conducta impropia."
+    ],
+    "articulos": [
+      97
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-beneficio-propio",
+    "preguntas": [
+      "¿Es una falta usar el cargo en beneficio propio?",
+      "¿Me pueden sancionar por usar mi puesto para ayudar a un familiar?",
+      "¿Usar un cargo público para beneficio personal es sancionable?",
+      "¿Qué pasa si un funcionario favorece intereses privados?",
+      "¿Es una falta beneficiar a allegados desde un cargo político?",
+      "¿El partido sanciona el uso indebido del cargo?",
+      "¿Puedo usar mi cargo en el partido para un negocio personal?"
+    ],
+    "parrafos": [
+      "Sí. Usar un cargo público o político para beneficio personal, de parientes o allegados, o de intereses privados en contra del interés público, es causa de medidas disciplinarias."
+    ],
+    "articulos": [
+      97
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "sancion-imagen-partido",
+    "preguntas": [
+      "¿Qué pasa si daño la imagen del partido?",
+      "¿Me pueden sancionar por afectar el nombre del partido?",
+      "¿Es una falta poner en riesgo los intereses del partido?",
+      "¿Me pueden sancionar por incumplir un acuerdo con el partido?",
+      "¿Qué pasa si rompo un convenio con el partido?",
+      "¿Dañar la reputación del PPD es sancionable?",
+      "¿Me pueden disciplinar por un escándalo que afecte al partido?"
+    ],
+    "parrafos": [
+      "Sí. Cualquier acción o situación que ponga en riesgo o afecte la imagen, el nombre o los intereses del partido puede traer una medida disciplinaria.",
+      "Lo mismo aplica a incumplir cualquier convenio o acuerdo contraído con el partido."
+    ],
+    "articulos": [
+      97
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -3311,6 +4783,31 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "servicios-profesionales-otro-partido",
+    "preguntas": [
+      "¿Puedo trabajar para un funcionario electo de otro partido?",
+      "¿Es una falta dar servicios profesionales a un alcalde de otro partido?",
+      "¿Un abogado popular puede dar servicios profesionales a un legislador de otro partido?",
+      "¿Me pueden sancionar por trabajar en una agencia bajo otro partido?",
+      "¿Puedo ser contratista de un funcionario del PNP?",
+      "¿Qué pasa si hay conflicto de interés por trabajar con otro partido?",
+      "¿El presidente puede relevarme por un conflicto de interés?",
+      "¿Prestar servicios profesionales a otro partido es sancionable?"
+    ],
+    "parrafos": [
+      "Sí, sin que sea una falta, siempre que sea en su capacidad oficial y no haya conflicto de interés con un asunto bajo tu jurisdicción en el partido.",
+      "Si el Presidente determina que hay conflicto, puede relevarte temporal y limitadamente de tus funciones en el partido mientras dure."
+    ],
+    "articulos": [
+      98
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -3462,8 +4959,6 @@
       "¿A quién le entrega el informe el oficial examinador?",
       "¿Quién decide después del informe del oficial examinador?",
       "¿Cuál es el proceso de una querella?",
-      "¿Qué pasa después de radicar una querella?",
-      "¿El oficial examinador puede citar a una vista?",
       "¿Cuántos días tiene el presidente para decidir una querella?",
       "¿Cuánto dura el proceso disciplinario?",
       "¿Quién resuelve una querella?"
@@ -3483,6 +4978,57 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "querella-revision-preliminar",
+    "preguntas": [
+      "¿Qué pasa después de radicar una querella?",
+      "¿Cuánto tarda el Secretario General en revisar una querella?",
+      "¿Quién revisa si la querella cumple los requisitos?",
+      "¿Qué pasa si mi querella no cumple los requisitos?",
+      "¿Cuándo se nombra al oficial examinador?",
+      "¿Cómo se entera el querellado de una querella?",
+      "¿El querellado recibe copia de la querella?",
+      "¿Cuántos días tiene el Secretario General para evaluar una querella?"
+    ],
+    "parrafos": [
+      "El Secretario General, o quien autorice, tiene 5 días laborables para revisar si cumple los requisitos. Si cumple, nombra un oficial examinador.",
+      "El oficial examinador notifica al querellado el inicio de la investigación, le da copia de la querella y le informa las reglas del proceso."
+    ],
+    "articulos": [
+      105,
+      106
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
+    ]
+  },
+  {
+    "id": "querella-vista",
+    "preguntas": [
+      "¿Hay una vista en el proceso de querella?",
+      "¿El oficial examinador puede citar a una vista?",
+      "¿Puedo presentar testigos en una querella?",
+      "¿Puedo presentar pruebas ante el oficial examinador?",
+      "¿El querellado tiene derecho a ser escuchado?",
+      "¿Cómo se presentan las pruebas en una querella?",
+      "¿Se hace una vista oral por una querella?",
+      "¿Qué garantías tienen las partes en una querella?"
+    ],
+    "parrafos": [
+      "Puede haberla. El oficial examinador puede convocar una vista oral para que las partes presenten pruebas y testigos, y tomar otras medidas para garantizar el derecho de ambas a ser escuchadas.",
+      "Su informe con recomendaciones va al Presidente dentro de 60 días de su designación."
+    ],
+    "articulos": [
+      109
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {
@@ -3772,6 +5318,30 @@
     "notas": [
       "Redactada por Claude a partir del texto íntegro del Reglamento y de la cobertura de prensa de la convocatoria (junio a agosto de 2026). Pendiente de la revisión automática: npm run respuestas -- --verificar.",
       "Formas de preguntar ampliadas por Claude el 2026-09-07, pendientes de revisión."
+    ]
+  },
+  {
+    "id": "transicion-acumulacion-asociaciones",
+    "preguntas": [
+      "¿Qué pasó con los miembros por acumulación con el reglamento nuevo?",
+      "¿Los miembros por acumulación de la Junta anterior siguieron en la nueva?",
+      "¿Qué pasó con los presidentes de las organizaciones con el reglamento nuevo?",
+      "¿El presidente de la Juventud Popular pasó a presidir la asociación?",
+      "¿Cómo fue la transición de las asociaciones con el reglamento nuevo?",
+      "¿Los miembros por acumulación tuvieron que volver a elegirse en 2025?",
+      "¿Qué dice la transición sobre los miembros por acumulación?"
+    ],
+    "parrafos": [
+      "Pasaron a ser miembros por acumulación de la nueva Junta de Gobierno.",
+      "Los presidentes de la Organización de Servidores Públicos, de la Juventud Popular Nacional y de la Organización de las Mujeres Populares pasaron a presidir sus respectivas asociaciones."
+    ],
+    "articulos": [
+      117
+    ],
+    "verificada": false,
+    "redactada": "claude-code-2026-09-08",
+    "notas": [
+      "Redactada por Claude a partir del texto íntegro del Reglamento el 2026-09-08. Pendiente de la revisión automática: npm run respuestas -- --verificar."
     ]
   },
   {

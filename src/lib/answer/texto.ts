@@ -48,14 +48,14 @@ export const VACIAS = new Set(
     "nuestro nuestra nuestros nuestras lo le les me te nos si ya hay habra habia haber ser estar esta estan estoy estamos estaba estaban " +
     "este esto ese esa eso estas estos esas esos aquel aquella aquello sobre segun mas menos tambien ademas aparte igual asi bien mal " +
     "puede pueden puedo podria podrian podemos pudiera pudieran posible permitido permitida permite permiten permitir tiene tienen tengo tener " +
-    "tenemos tenia tenian hace hacen hacer hago hizo hicieron va van voy vamos ir iba iban debe deben debo debemos deberia deberian obligatorio " +
+    "tenemos tenia tenian hacer hago hizo hicieron va van voy vamos ir iba iban debe deben debo debemos deberia deberian obligatorio " +
     "obligatoria obligado obligada yo usted ustedes ella ellos ellas nada solo solamente todo toda todos todas algo alguien alguna alguno " +
     "algunos algunas otro otra otros otras mismo misma mismos mismas hola buenas buenos saludos mire mira oiga oye favor gracias quiero " +
     "quisiera queria necesito necesitaba deseo gustaria saber conocer informacion informar explicar explicame expliqueme dime digame diga " +
     "decir pregunta preguntita ahi aqui alla entonces pues bueno ok sea osea ver veo dale ahora senor senora don dona companero companera " +
     "muy mucho mucha muchos muchas poco poca pocos pocas tan tanto tanta tantos tantas cosa cosas acerca respecto referente relacionado " +
     "entre ante contra tras durante mediante hacia dentro toma toman tomar tomo lleva llevar llevan llevo tiempo vez veces parte " +
-    "significa significan significado quiere dejar deja dejas dejan dejo sirve sirven servir existe existen existir"
+    "significa significan significado quiere dejar deja dejas dejan dejo existe existen existir"
   ).split(" "),
 );
 
@@ -125,15 +125,16 @@ const LEMAS: Record<string, string[]> = {
   cargo: ["cargo", "cargos", "puesto", "puestos", "posicion", "posiciones"],
   funcion: [
     "funcion", "funciones", "deber", "deberes", "obligacion", "obligaciones", "responsabilidad", "responsabilidades", "tarea", "tareas",
-    "facultad", "facultades", "poder", "poderes", "atribucion", "atribuciones", "rol", "roles", "papel",
+    "facultad", "facultades", "poder", "poderes", "atribucion", "atribuciones", "rol", "roles", "papel", "hace", "hacen", "sirve", "sirven", "servir",
   ],
   // acciones
   votar: ["votar", "vota", "votan", "voto", "votos", "votacion", "votaciones", "votamos", "vote", "votando", "votado", "votada"],
   elegir: [
     "elegir", "elige", "eligen", "elijo", "elija", "elijan", "elegido", "elegidos", "elegida", "electo", "electos", "electa", "eleccion", "elecciones",
     "escoger", "escoge", "escogen", "escojo", "escoja", "escogido", "escogidos", "escogida", "escogemos", "seleccionar", "selecciona", "seleccionan",
-    "nombrar", "nombra", "nombran", "nombro", "nombramiento", "nombramientos", "designar", "designa", "designan", "designado", "designada",
   ],
+  nombrar: ["nombrar", "nombra", "nombran", "nombro", "nombramiento", "nombramientos", "designar", "designa", "designan", "designado", "designada"],
+  interes: ["interes", "intereses"],
   convocar: ["convocar", "convoca", "convocan", "convoco", "convocatoria", "convocado", "convocada"],
   citar: ["citar", "cita", "citan", "citacion", "citado", "citados"],
   reunion: ["reunion", "reuniones", "reunir", "reune", "reunen", "reunirse", "reunimos", "reunirnos", "sesion", "sesiones"],
