@@ -14,6 +14,7 @@
     "revisar": "tsx scripts/revisar-respuestas.ts",
     "docx": "tsx scripts/exportar-docx.ts",
     "medir": "tsx scripts/medir.ts",
+    "metricas": "tsx --env-file-if-exists=.env.local scripts/metricas.ts",
     "explicar": "tsx scripts/explicar.ts",
     "comprobar": "tsx scripts/comprobar-datos.ts"
   },
